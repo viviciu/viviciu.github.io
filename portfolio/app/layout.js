@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" type="image/svg+xml" href="portfolio/public/assets/images/apple.svg" />
-        <title>Viviana</title>
+        <title>staicu, viviana</title>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
