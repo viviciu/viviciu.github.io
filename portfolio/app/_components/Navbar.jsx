@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         
         <div>
-          {['work', 'play', 'blog'].map((item, index, array) => (
+          {['work', 'play', 'blogs'].map((item, index, array) => (
             // The React.Fragment is used to group the elements together without adding an extra node to the DOM. The key prop is moved to the React.Fragment because keys should be on the outermost element returned by map.
             <React.Fragment key={item}>
               <Link 

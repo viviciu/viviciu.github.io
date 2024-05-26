@@ -1,41 +1,19 @@
-import remarkGfm from 'remark-gfm'
-import createMDX from '@next/mdx'
- 
+import createMDX from "@next/mdx"
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Configure `pageExtensions`` to include MDX files
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
 }
- 
+
 const withMDX = createMDX({
   // Add markdown plugins here, as desired
   options: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [],
     rehypePlugins: [],
   },
 })
- 
-// Wrap MDX and Next.js config with each other
+
+// Merge MDX config with Next.js config
 export default withMDX(nextConfig)
-// import * as NextMdx from '@next/mdx'
-
-// // ...
-
-// const withMDX = NextMdx.default({
-//   extension: /\.mdx?$/,
-//   options: {
-//     remarkPlugins: [], // ESM ✅
-//   },
-//   experimental: {
-//     mdxRs: true,
-//   },
-// });
-
-// ...
-
-
- 
-
- 
-
