@@ -16,6 +16,7 @@ export default async function BlogPage({
   return (
     // Blog Post itself
     <main className="">
+      <div>date created:: {blog.frontmatter.publishDate}</div>
       <article>{blog.content}</article>
     </main>
   )
