@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: CMU Serif;
+    font-weight: 400;
+    src: url(/fonts/cmunbi.ttf) format("ttf");
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +17,15 @@
 }
 
 body {
-  color: white;
+  /* color is the font color */
+  color: grey; 
   width: 100dvw;
   overflow-x: hidden;
   height: 100%;
   background: #000;
   border-color: #3b3b3b;
   user-select: none;
+  /* font-family: CMU Serif; */
 }
 
 canvas {

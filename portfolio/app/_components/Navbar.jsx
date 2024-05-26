@@ -6,19 +6,20 @@ import React from 'react'
 const Navbar = () => {
   return (
     <header>
-      <nav className='flex justify-between'>
+      <nav className='flex justify-between text-base'>
         <div className='flex space-x-4'>
           <Image src={appleImg} />
-          <h2>staicu,viviana</h2>
+          <Link 
+          href='/'>staicu,viviana</Link>
         </div>
         
         <div>
-          {['work', 'play', 'archive'].map((item, index, array) => (
+          {['work', 'play', 'blog'].map((item, index, array) => (
             // The React.Fragment is used to group the elements together without adding an extra node to the DOM. The key prop is moved to the React.Fragment because keys should be on the outermost element returned by map.
             <React.Fragment key={item}>
               <Link 
               href={'/' + item} // you can combine strings like this 
-              className='hover:text-gray-500 hover:underline'>
+              className='hover:text-gray-400 hover:underline'>
                 {item}
               </Link>
               {index < array.length - 1 && ', '}
