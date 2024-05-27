@@ -15,9 +15,10 @@ export default async function BlogPage({
   const blog = await getBlogBySlug(params.slug)
   return (
     // Blog Post itself
-    <main className="">
+    <main className="mt-8 mx-auto prose text-white">
       <div>date created:: {blog.frontmatter.publishDate}</div>
       <article>{blog.content}</article>
+      
     </main>
   )
 }

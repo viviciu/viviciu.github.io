@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/svg+xml" href="portfolio/public/assets/images/apple.svg" />
         <title>staicu, viviana</title>
       </head>
-      <body>{children}</body>
+      <body className="flex flex-col min-h-screen justify-between p-2">
+        {children}
+      </body>
     </html>
   );
 }
