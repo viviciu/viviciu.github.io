@@ -32,6 +32,11 @@ a:hover {
 }
 
 img {
+  /* so The image will always stay
+   within the boundaries of its parent container.
+   For example, on a smaller screen like a mobile device, an
+    image with max-width: 100% will 
+   shrink to fit the screen, preventing horizontal scrolling. */
   max-width: 100%;
   display: block;
 }
