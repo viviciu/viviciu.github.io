@@ -12,6 +12,14 @@ module.exports = withMDX({
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
+    h1: ({ children }) => <h1 className='h1-restyled'>{children}</h1>,
+    img: (props) => (
+      <Image
+        sizes="100vw"
+        style={{width: '100%, height: 'auto}} 
+        {...(props as ImageProps)}
+        />
+    ),
     ...components,
   }
 }
