@@ -4,7 +4,7 @@ export default function Work() {
     return (
         <main>
             <Navbar />
-            <h2>Work</h2>
+            <h2>Working on the work rn.</h2>
         </main>
 
     )

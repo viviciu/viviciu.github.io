@@ -12,16 +12,11 @@ export default function Play() {
                 <div className="projects__sticky">
                     <div className="slider__container">
                         <div className="projects__slider">
-                        <CreateProjects />
+                            play be a work in progress. come back soon !!
                         </div>
                     </div>
                 </div>
             </section>
-
-            
-
-
         </main>
-    
     )
 }
