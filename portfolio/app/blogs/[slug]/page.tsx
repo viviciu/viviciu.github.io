@@ -17,7 +17,8 @@ export default async function BlogPage({
     // Blog Post itself
     // Helpful tailwind css typography reference github: https://github.com/tailwindlabs/tailwindcss-typography
     <main className="prose  mt-8 mx-auto px-5 max-w-2xl">
-      <article className=' prose-headings:text-white
+      <article className=' 
+      prose-headings:text-white
       prose-p:text-neutral-400
       prose-ul:text-neutral-400
       prose-blockquote:text-neutral-400
@@ -28,11 +29,12 @@ export default async function BlogPage({
       prose-strong:text-white
       prose-p:font-medium
       prose-ul:font-medium'>
-      <p className="prose-p:text-neutral-400">date created:: {blog.frontmatter.publishDate}</p>
+        <p className="prose-p:text-neutral-400">published:: {blog.frontmatter.publishDate}</p>
+        <Link className="hover:text-white hover:underline text-neutral-400 font-medium prose-a:m-5" href="/blogs">Back to Blogs</Link>
         {blog.content}
+        <Link className="hover:text-white hover:underline text-neutral-400 font-medium" href="/blogs">Back to Blogs</Link>
       </article>
-      {/* <Link> component does not get prose applied to it. It wont inherit. I guess because it isnt mdx content. */}
-      <Link className="hover:text-white hover:underline text-neutral-400 font-medium" href="/blogs">Back to Blogs</Link>
+      {/* Reminder: You must place the <link> inside the <article> because <article> is the parent with prose applied. */}
     </main>
   )
 }

@@ -10,7 +10,6 @@ export default function MdxLayout({ children }) {
     return <div>
       <Navbar />
         {children}
-        <Link className="hover:text-white hover:underline mt-8 mx-auto px-5 max-w-2xl" href="/blogs">Back to Blogs</Link>
       <Footer />
       </div>
   }
