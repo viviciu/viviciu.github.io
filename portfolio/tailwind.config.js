@@ -17,15 +17,23 @@ module.exports = {
           300: "#42424570",
           400: "#E8EAEC"
         },
-        zinc: "#101010"
+        zinc: "#101010",
+        'threejsBlue': "hsl(0, 95, 70)",
+        'blog-headerBlock': 'rgba(217, 217, 217, 0.14)',
       },
 
       // Typography
       fontSize: {
-        base: "1.25rem",
-        lg: "1.5rem",
-        xl: "1.75rem"
-      }
+        base: "1rem",
+        lg: "1.375rem", // This is the 'entry' text in styleguide!
+        xl: "1.75rem",
+        '9xl': "3.88rem",
+      },
+
+      // font family
+      fontFamily: {
+        serif: ["Adobe Text Pro"],
+      },
     },
   },
   plugins: [

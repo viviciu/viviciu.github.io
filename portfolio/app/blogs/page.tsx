@@ -1,8 +1,12 @@
 // Blog list page
 
 import Link from "next/link"
+import Lenis from 'lenis'
 import { getBlogs } from "./fetchers"
 import Navbar from "../_components/Navbar"
+import BlogEntry from "../_components/BlogEntry"
+
+
 
 export default async function BlogsPage() {
   const blogs = await getBlogs()
@@ -23,29 +27,42 @@ export default async function BlogsPage() {
 
   return (
     <main>
+      {/* comonents we need:
+      Navbar DONE
+      Directory title section
+      blog headers section
+      blog entries section
+        -> blog entry component */}
       <Navbar />
-      <section className="grid grid-cols-5 gap-4 text-3xl mt-10 px-20 text-white">
-        <h2>title</h2>
-        <h2>author</h2>
-        <h2>date</h2>
-      </section>
-      <hr className="border-1 border-neutral-700 mt-2 w-1/2"/>
-      <section className="flex-col text-3xl mt-10 px-20">
-      {blogs.map((blog, i) => (
-          <article key={blog.slug} className="max-h-screen text-base grid grid-cols-5 gap-x-4">
-            <Link
-            href={`/blogs/${blog.slug}`}>
-              <h1 className>
-                {blog.frontmatter.title}
-              </h1>
-            </Link>
-            
-            <p>{blog.frontmatter.author}</p>
-            <p>::{blog.frontmatter.publishDate}</p>
-            {/* <Link href={`/blogs/${blog.slug}`}>Read More</Link> */}
-          </article>
-        
-      ))}
+      <section className="flex flex-col items-start">
+        {/* DIRECTORY DIV */}
+        <section className="grid grid-cols-5 w-full pt-80 pb-20">
+          <div></div>
+          <div></div>
+          <div></div>
+          {/* NOTE ON GRIDS:  child divs will each take up one column, regardless of their content. Thus, we can't highlight the whole box of 'directory', since its text size and thus width takes up more than 1 column.*/}
+          <div className="inline-block h-9">
+            {/* recall text-9xl is reset in tailwind.config */}
+            <h1 className="text-white 
+            font-medium 
+            text-9xl
+            leading-6 
+            tracking-tight">Directory</h1>
+          </div>
+          <div></div>
+        </section>
+         {/* BLOG HEADER DIV */}
+         <section className="bg-blog-headerBlock flex justify-end gap-x-64 text-lg w-full items-center h-8">
+          <div className="flex w-40 gap-x-9 text-white font-serif ">
+            <h2>published</h2>
+            <h2>entry</h2>
+          </div>
+          <div className="text-white font-serif">desc.</div>
+         </section>
+         {/* BLOG ENTRY COMPONENTS */}
+         <section className="flex flex-col justify-end items-end w-full ">
+          <BlogEntry />
+         </section>
       </section>
     </main>
   )

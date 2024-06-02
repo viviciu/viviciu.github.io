@@ -8,6 +8,15 @@
     font-weight: 400;
     src: url(/fonts/cmunbi.ttf) format("ttf");
   }
+  @font-face {
+    font-family: 'AdobeTextPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AdobeTextPro-Regular'), url('../public/assets/fonts/AdobeTextPro-Regular.woff') format('woff'); 
+    /* resume work at deepwork hour number 2: 41 minutes left. */
+    }
+
+
   a {
     @apply hover:underline hover:text-white
   }
@@ -44,6 +53,11 @@ canvas {
   position: relative;
   max-width: 1120px;
 }
+
+
+
+
+/* CAN DELETE... FROM APPLE SITE TUTORIAL */
 
 @layer utilities {
   .flex-center {
