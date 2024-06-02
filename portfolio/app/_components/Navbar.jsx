@@ -19,7 +19,7 @@ const Navbar = () => {
             <React.Fragment key={item}>
               <Link 
               href={'/' + item} // you can combine strings like this 
-              className='hover:text-gray-400 hover:underline'>
+              className='hover:text-white hover:underline'>
                 {item}
               </Link>
               {index < array.length - 1 && ', '}

@@ -3,6 +3,7 @@
 
 import Footer from "../../_components/Footer";
 import Navbar from "../../_components/Navbar";
+import Link from 'next/link'
 
 export default function MdxLayout({ children }) {
     // Create any shared layout or styles here

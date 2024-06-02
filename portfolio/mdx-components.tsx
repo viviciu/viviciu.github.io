@@ -12,6 +12,7 @@ module.exports = withMDX({
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
+    
     ...components,
   }
 }

@@ -8,7 +8,21 @@
     font-weight: 400;
     src: url(/fonts/cmunbi.ttf) format("ttf");
   }
+  @font-face {
+    font-family: 'AdobeTextPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AdobeTextPro-Regular'), url('../public/assets/fonts/AdobeTextPro-Regular.woff') format('woff'); 
+    /* resume work at deepwork hour number 2: 41 minutes left. */
+    }
+
+
+  a {
+    @apply hover:underline hover:text-white
+  }
 }
+
+
 
 * {
   margin: 0;
@@ -18,11 +32,12 @@
 
 body {
   /* color is the font color */
+  /* see some tailwind preset colors: https://tailwindcss.com/docs/customizing-colors */
   color: grey; 
   width: 100dvw;
   overflow-x: hidden;
   height: 100%;
-  background: #000;
+  background: rgb(28,28,28); /* tailwind equivalent util: bg-zinc-900 */
   border-color: #3b3b3b;
   user-select: none;
   /* font-family: CMU Serif; */
@@ -38,6 +53,11 @@ canvas {
   position: relative;
   max-width: 1120px;
 }
+
+
+
+
+/* CAN DELETE... FROM APPLE SITE TUTORIAL */
 
 @layer utilities {
   .flex-center {
