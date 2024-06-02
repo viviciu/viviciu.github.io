@@ -17,14 +17,30 @@ module.exports = {
           300: "#42424570",
           400: "#E8EAEC"
         },
-        zinc: "#101010"
+        zinc: "#101010",
+        'threejsBlue': "hsl(0, 95, 70)",
+        'blog-headerBlock': 'rgba(217, 217, 217, 0.14)',
       },
 
       // Typography
       fontSize: {
-        base: "1.25rem",
-        lg: "1.5rem",
-        xl: "1.75rem"
+        base: "1rem",
+        lg: "1.375rem", // This is the 'entry' text in styleguide!
+        xl: "1.75rem",
+        '9xl': "3.88rem",
+      },
+
+      // font family
+      fontFamily: {
+        serif: ["Adobe Text Pro"],
+      },
+
+      // RESPONSIVE DESIGN : SCREEN SIZES
+      // SEE https://tailwindcss.com/docs/responsive-design FOR DEFAULTS (sm,md,lg,xl,2xl)
+      // SEE THIS SIZE FOR COMMON DEVICE WIDTHS: https://www.mydevice.io/ and https://www.icwebdesign.co.uk/common-viewport-sizes
+      // md is like an iPad air. iPad pro is 1024px wide.
+      screens: {
+        'xs': '390px', // 390px is an iPhone 12 Pro
       }
     },
   },

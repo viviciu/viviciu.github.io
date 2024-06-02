@@ -1,10 +1,11 @@
 ---
 title: "Blog1"
 author: "viviana"
-publishDate: "1/10/2024"
+publishDate: "05-29-2024"
+desription: "This is a test blog post."
 ---
 
-# Blog1
+# Blog1 - h1
 
 this is some text
 
@@ -12,8 +13,49 @@ this is some text
 - bullet list
 - more bullets
 
-> block quote
+## Content of this note - h2
+
+> Lots of this info was pulled from [this youtube tutorial](https://www.youtube.com/watch?v=MYTjeqaezHw) referenced in-depth in my [[Figma to Tailwind CSS Workflow]] note. Some information is from asking [[🗣️ CHATGPT MOC|ChatGPT]] phrases like “Why do we apply `min-height: 100vh` to our `<main></main>` container in html? What benefit does this serve?
+
+## Running List of notes from this [youtube tutorial](https://www.youtube.com/watch?v=MYTjeqaezHw)
+***
+- Make sure to establish your base `rem` in the `globals.css` `body`. See `global.css` file below.
+- use `className="flex flex-col text items-center justify between min-h-screen p-24 text-display"` in `<main>` → `text-display` is our custom css var i think?
+- How to import a font starts at `9:16` → [link here to 9:16](https://youtu.be/MYTjeqaezHw?si=CWGGGNQBcXOfa-fb&t=556) see [[Figma to Tailwind CSS Workflow#`layout.js` file containing font config|`layout.js` file containing font config]] in this note.
+- He starts by building the components, then the sections to keep flow going. 
+- See [17:22](https://youtu.be/MYTjeqaezHw?si=OhsmhwAKPuiOacEv&t=1042) for a great way to correctly style a cool tilted icon arrow, add good padding, and use the tailwind `gap` util. See [gap util tailwind documentation here](https://tailwindcss.com/docs/gap) You could also alter this on `hover:`!
+- Make sure you add the content of these components in variables saved to a config file or something. See [[Figma to Tailwind CSS Workflow#Example 1 Card component|card component code below]].
+- Copy an svg from figma → code [at 19:04](https://youtu.be/MYTjeqaezHw?si=rxPapvyrOOexXxn5&t=1144).
+- Use a `bg-black-500` to outline your divs when developing!! Borders are very helpful–just remove this once you’re done.
+- Commonly needed top-level component utils are:
+	- `flex, flex-col, items-start, gap-3, max-w-[24.5rem] justify-between flex-1`
+	- Below that: `w-full`
+- Creating `icons.js` at [here in video](https://youtu.be/MYTjeqaezHw?si=-FEhmqXDRibDJKtl&t=1339).
+- Figma VSCode plugin allows direct **image importing** [24:42](https://youtu.be/MYTjeqaezHw?si=6MSAFz2zt5IT1twZ&t=1482)  to `/public/images` and **next.js image importing
+- Services page he spaces out the cards. Might be useful for my **navbar** or the boxes containing my **work**. → [32:58](https://youtu.be/MYTjeqaezHw?si=s1ECR5IBRbrK-kbA&t=1978)
+
+### Navbar component styling example
 
 ```js
-<h2></h2>
-```
+import React from 'react'
+
+export default function Navbar() {
+  return (
+    <nav className="flex justify-between w-full">
+        <div>
+            <Logo />
+        </div>
+        <div className='flex text-white-100'>
+            <p className='py-[1.2rem] px-[3rem] flex items-center justify-center text-green-100'>
+                Sample Page
+            </p>
+            <p className='py-[1.2rem] px-[3rem] flex items-center justify-center'>
+                Sample Page
+            </p>
+            <p className='py-[1.2rem] px-[3rem] flex items-center justify-center'>
+                Sample Page
+            </p>
+        </div>
+    </nav>
+  )
+}```
