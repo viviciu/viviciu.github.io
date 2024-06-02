@@ -20,25 +20,43 @@ const blogs = await getBlogs()
 
 function BlogEntry() {
   return (
-    <div className=''>
+    <div>
         {blogs.map((blog, i) => (
-            <div key={blog.slug} className='h-fit'>
-                <article key={blog.slug} className="flex h-0 text-lg gap-x-60">
-                    {/* PUBLISHED AND ENTRY LINKS GROUPED */}
-                    <div className='flex gap-x-8'>
-                        <p>::{blog.frontmatter.publishDate}</p>
+            <div key={blog.slug} className='
+            grid grid-cols-3 lg:grid-cols-5 my-5'>
+                <article key={blog.slug} className="
+                col-span-full
+                grid lg:grid-cols-5 gap-5 w-full
+                xs:grid-cols-3
+                xs:text-sm
+                ">
+
+                        <p className='
+                        lg:col-start-3
+                        md:text-lg
+                        xs:text-sm
+                        justify-self-end'>::{blog.frontmatter.publishDate}</p>
                         <Link
                         href={`/blogs/${blog.slug}`}>
-                            <h1 className>{blog.frontmatter.title}</h1>
+                            <h1 className="
+                            md:text-lg
+                            xs:text-sm">{blog.frontmatter.title}</h1>
                         </Link>
-                    </div>
+
                     {/* DESC. SECTION */}
-                    <p>{blog.frontmatter.author}</p>
+                    <p className='
+                        md:text-lg
+                        xs:text-sm'>{blog.frontmatter.author}</p>
+
+                    {/* BREAK LINE */}
+                    
+
                 </article>
-                <hr className='h-px my-8 bg-gray-200 border-0 dark:bg-gray-700' />
+                <hr className='h-px mt-0.5 bg-gray-200 border-0 dark:bg-gray-700
+                col-end-4 col-span-2
+                lg:col-end-6 lg:col-span-2' />
             </div>
         ))}
-        
     </div>
   )
 }

@@ -34,33 +34,58 @@ export default async function BlogsPage() {
       blog entries section
         -> blog entry component */}
       <Navbar />
-      <section className="flex flex-col items-start">
+
+
+
+      <section className="wraps-the-whole-blog"> 
         {/* DIRECTORY DIV */}
-        <section className="grid grid-cols-5 w-full pt-80 pb-20">
-          <div></div>
-          <div></div>
-          <div></div>
-          {/* NOTE ON GRIDS:  child divs will each take up one column, regardless of their content. Thus, we can't highlight the whole box of 'directory', since its text size and thus width takes up more than 1 column.*/}
-          <div className="inline-block h-9">
-            {/* recall text-9xl is reset in tailwind.config */}
-            <h1 className="text-white 
+        <section className="
+        grid lg:grid-cols-5 gap-5 w-full h-80
+        grid-cols-3
+        ">
+          <h1 className="text-white 
             font-medium 
-            text-9xl
+            lg:text-9xl
+            md:text-6xl
+            xs:text-6xl
             leading-6 
-            tracking-tight">Directory</h1>
-          </div>
-          <div></div>
+            tracking-tight
+            self-end
+            lg:col-start-4
+            col-start-2
+            pb-16
+            md:pb-32
+            ">Directory</h1>
         </section>
+
+
          {/* BLOG HEADER DIV */}
-         <section className="bg-blog-headerBlock flex justify-end gap-x-64 text-lg w-full items-center h-8">
-          <div className="flex w-40 gap-x-9 text-white font-serif ">
-            <h2>published</h2>
-            <h2>entry</h2>
-          </div>
-          <div className="text-white font-serif">desc.</div>
-         </section>
+         <section className="
+            grid gap-5 w-full h-8 
+            text-white font-serif text-lg
+            xs:text-md
+            grid-cols-3
+            lg:grid-cols-5
+            
+">
+            <h2 className="
+              self-end justify-self-end pr-0
+              lg:col-start-3
+            ">published</h2>
+            <h2 className="
+              self-end
+              xs:pr-0 
+            ">entry</h2>
+            <p className="
+              self-end
+              xs:pr-0
+            ">desc.</p>
+        </section>
+
+
+
          {/* BLOG ENTRY COMPONENTS */}
-         <section className="flex flex-col justify-end items-end w-full ">
+         <section className="w-full">
           <BlogEntry />
          </section>
       </section>

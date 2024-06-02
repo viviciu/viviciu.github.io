@@ -34,6 +34,14 @@ module.exports = {
       fontFamily: {
         serif: ["Adobe Text Pro"],
       },
+
+      // RESPONSIVE DESIGN : SCREEN SIZES
+      // SEE https://tailwindcss.com/docs/responsive-design FOR DEFAULTS (sm,md,lg,xl,2xl)
+      // SEE THIS SIZE FOR COMMON DEVICE WIDTHS: https://www.mydevice.io/ and https://www.icwebdesign.co.uk/common-viewport-sizes
+      // md is like an iPad air. iPad pro is 1024px wide.
+      screens: {
+        'xs': '390px', // 390px is an iPhone 12 Pro
+      }
     },
   },
   plugins: [
