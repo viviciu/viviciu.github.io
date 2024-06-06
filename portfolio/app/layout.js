@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="flex flex-col min-h-screen justify-between p-2">
         <SmoothScrolling>
+        
           {children}
         </SmoothScrolling>
       </body>
