@@ -5,6 +5,8 @@ const nextConfig = {
   // Configure `pageExtensions`` to include MDX files
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
+  // threejs packages -> installation instructions: https://docs.pmnd.rs/react-three-fiber/getting-started/installation
+  transpilePackages: ['three'],
 }
 
 const withMDX = createMDX({

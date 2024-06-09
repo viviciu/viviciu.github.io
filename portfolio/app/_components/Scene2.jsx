@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { useRef, useState } from "react"
 import { Canvas, useThree, useFrame } from "@react-three/fiber"
 import { Suspense } from "react"
@@ -20,7 +20,7 @@ function Loader() {
 export default function Scene() {
   
   return (
-    <Canvas gl={{ antialias: true }} dpr={[1, 1.5]} className="relative h-svh">
+    <Canvas gl={{ antialias: true }} dpr={[1, 1.5]}>
       
       <directionalLight position={[-5, -5, 5]} intensity={4} />
       <spotLight position={[20, 20, 10]} penumbra={1} castShadow angle={0.2} />
