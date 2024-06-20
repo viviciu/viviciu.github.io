@@ -1,6 +1,6 @@
 import Navbar from "../_components/Navbar"
-import "./app.js"
-import "./play.css"
+// import "./app.js
+// import "./play.css"
 import CreateProjects from "./projects.jsx";
 
 export default function Play() {
@@ -12,7 +12,7 @@ export default function Play() {
                 <div className="projects__sticky">
                     <div className="slider__container">
                         <div className="projects__slider">
-                        <CreateProjects />
+                        {/* <CreateProjects /> */}
                         </div>
                     </div>
                 </div>
