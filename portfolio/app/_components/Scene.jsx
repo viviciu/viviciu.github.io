@@ -1,5 +1,5 @@
 "use client"
-
+// THIS SCENE CREATES A 3D ENVIRONMENT WITH A REFLECTIVE BOX THAT ROTATES ON MOUSE HOVER
 import { Canvas, useThree } from "@react-three/fiber"
 import { Suspense } from "react"
 import { useProgress, Html, ScrollControls } from "@react-three/drei"
