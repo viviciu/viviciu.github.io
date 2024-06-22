@@ -1,17 +1,19 @@
 import Navbar from './_components/Navbar.jsx';
 import Footer from './_components/Footer';
-import Head from 'next/head.js';
-import { metadata } from './layout.js';
+import HorizontalScrollCarousel from './_components/HorizontalScrollCarousel';
+import App from './_components/monitors/src/App.js'
+import dynamic from "next/dynamic"
+
+// const Scene = dynamic(() => import("./_components/_unusedComponents/Scene.jsx"), { ssr: false })
 
 
 export default function Home() {
   return (
-    <main>
-      <Head>
-        <link rel="icon" type="image/svg+xml" href="portfolio/public/assets/images/apple.svg" />
-        <title>{metadata.title}</title>
-      </Head>
-      <Navbar />
+    <main className="relative h-screen">
+      {/* <Navbar className='z-10' /> */}
+      {/* <Scene /> */}
+      <App />
+      <HorizontalScrollCarousel />
       <Footer />
     </main>
   );
