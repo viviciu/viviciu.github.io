@@ -1,7 +1,7 @@
 import * as THREE from 'three'
-import { useMemo, useContext, createContext, useRef } from 'react'
+import { useMemo, useContext, createContext, useRef, Suspense } from 'react'
 import { useFrame } from '@react-three/fiber'
-import { useGLTF, Merged, RenderTexture, PerspectiveCamera, Text } from '@react-three/drei'
+import { useGLTF, Merged, RenderTexture, PerspectiveCamera, Text, useAspect, useVideoTexture, useTexture } from '@react-three/drei'
 import { SpinningBox } from './SpinningBox'
 THREE.ColorManagement.legacyMode = false
 
@@ -47,6 +47,7 @@ export function Instances({ children, ...props }) {
 export function Computers(props) {
   const { nodes: n, materials: m } = useGLTF('/computers_1-transformed.glb')
   const instances = useContext(context)
+  const video1 = "/plane-slog2-shortest-reordered.mov"
   return (
     <group {...props} dispose={null}>
       <instances.Object position={[0.16, 0.79, -1.97]} rotation={[-0.54, 0.93, -1.12]} scale={0.5} />
@@ -150,7 +151,10 @@ export function Computers(props) {
       <instances.Object36 position={[-5.25, 4.29, -1.47]} rotation={[0, 1.25, 0]} />
       <mesh castShadow receiveShadow geometry={n.Object_204.geometry} material={m.Texture} position={[3.2, 4.29, -3.09]} rotation={[-Math.PI, 0.56, 0]} scale={-1} />
       <ScreenInteractive frame="Object_206" panel="Object_207" position={[0.27, 1.53, -2.61]} />
-      <ScreenText frame="Object_209" panel="Object_210" y={5} position={[-1.43, 2.5, -1.8]} rotation={[0, 1, 0]} />
+      {/* failed to pass in url. */}
+      <ScreenInteractive frame="Object_209" panel="Object_210" y={5} position={[-1.43, 2.5, -1.8]} rotation={[0, 1, 0]} url="/plane-slog2-shortest-reordered.mov"  />
+
+      {/* <ScreenText frame="Object_209" panel="Object_210" y={5} position={[-1.43, 2.5, -1.8]} rotation={[0, 1, 0]} /> */}
       <ScreenText invert frame="Object_212" panel="Object_213" x={-5} y={5} position={[-2.73, 0.63, -0.52]} rotation={[0, 1.09, 0]} />
       <ScreenText invert frame="Object_215" panel="Object_216" position={[1.84, 0.38, -1.77]} rotation={[0, -Math.PI / 9, 0]} />
       <ScreenText invert frame="Object_218" panel="Object_219" x={-5} position={[3.11, 2.15, -0.18]} rotation={[0, -0.79, 0]} scale={0.81} />
@@ -199,16 +203,36 @@ function ScreenText({ invert, x = 0, y = 1.2, ...props }) {
   )
 }
 
-/* Renders a monitor with a spinning box */
-function ScreenInteractive(props) {
+/* Renders a monitor with a spinning box  ; or a video! */
+ // VIDEO TEXTURE -> EXAMPLE https://codesandbox.io/s/39hg8?file=/src/App.js:512-788
+
+function VideoMaterial({ url }) {
+  const texture = useVideoTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+
+function FallbackMaterial({ url }) {
+  const texture = useTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+function ScreenInteractive(props, url ) {
+  console.log(url)
+  const size = useAspect(1800, 1000)
   return (
     <Screen {...props}>
-      <PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 10]} />
+      {/* <PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 10]} />
       <color attach="background" args={['orange']} />
       <ambientLight intensity={Math.PI / 2} />
       <pointLight decay={0} position={[10, 10, 10]} intensity={Math.PI} />
       <pointLight decay={0} position={[-10, -10, -10]} />
-      <SpinningBox position={[-3.15, 0.75, 0]} scale={0.5} />
+      <SpinningBox position={[-3.15, 0.75, 0]} scale={0.5} /> */}
+      
+      <mesh scale={size}>
+        <planeGeometry />
+        <Suspense fallback={<FallbackMaterial url={'/ss-plane-slog.png'} />}>
+          <VideoMaterial url="/plane-slog2-shortest-reordered.mov" />
+        </Suspense>
+      </mesh>
     </Screen>
   )
 }
