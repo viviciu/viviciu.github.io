@@ -192,8 +192,8 @@ function ScreenText({ invert, x = 0, y = 1.2, ...props }) {
       <color attach="background" args={[invert ? 'black' : '#35c19f']} />
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 10, 5]} />
-      <Text font="/Inter-Medium.woff" position={[x, y, 0]} ref={textRef} fontSize={4} letterSpacing={-0.1} color={!invert ? 'black' : '#35c19f'}>
-        peek my brain.
+      <Text font="/Inter-Medium.woff" position={[x, y, 0]} ref={textRef} fontSize={3} letterSpacing={-0.1} color={!invert ? 'black' : '#35c19f'}>
+        play more.
       </Text>
     </Screen>
   )
