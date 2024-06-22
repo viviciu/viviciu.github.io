@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main className="relative h-screen m-0">
       <Navbar className='absolute top-0 left-0' />
-      <Scene3  />
-      {/* <HorizontalScrollCarousel /> */}
+      <Scene2 />
+      <HorizontalScrollCarousel />
       <Footer />
     </main>
   );
