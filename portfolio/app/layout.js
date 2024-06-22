@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/svg+xml" href="portfolio/public/assets/images/apple.svg" />
         <title>staicu, viviana</title>
       </head>
-      <body className="flex flex-col min-h-screen justify-between p-2">
+      <body className="">
         <SmoothScrolling>
         
           {children}

@@ -5,12 +5,12 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <header>
+    <div className='absolute z-10 w-full'>
       {/* nav originally had className="flex justify-between text-lg sticky top-0"  */}
       <nav className='grid 
       lg:grid-cols-5
-      gap-5 w-full h-80
-      grid-cols-3'>
+      gap-5 w-full
+      grid-cols-3 h-fit'>
         <div className='lg:col-start-1 justify-self-end uppercase'>
           {/* Apple logo if you wanted to throw in a logo i guess */}
           {/* <Image src={appleImg} /> */}
@@ -32,7 +32,7 @@ const Navbar = () => {
           ))}
         </div>
       </nav>
-    </header>
+    </div>
   )
 }
 
