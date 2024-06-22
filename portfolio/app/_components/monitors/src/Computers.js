@@ -39,7 +39,7 @@ export function Instances({ children, ...props }) {
   )
   return (
     <Merged castShadow receiveShadow meshes={instances} {...props}>
-      {(instances) => <context.Provider value={instances} children={children} />}
+      {(instances) => <context.Provider value={instances}>{children}</context.Provider>}
     </Merged>
   )
 }
@@ -215,8 +215,7 @@ function FallbackMaterial({ url }) {
   const texture = useTexture(url)
   return <meshBasicMaterial map={texture} toneMapped={false} />
 }
-function ScreenInteractive(props, url ) {
-  console.log(url)
+function ScreenInteractive(props) {
   const size = useAspect(1800, 1000)
   return (
     <Screen {...props}>
