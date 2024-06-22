@@ -1,11 +1,11 @@
 import Navbar from "../_components/Navbar"
 
 
-export default function Play() {
+export default function theSketchbook() {
     return (
         <main>
-
-            <h2>Play</h2>
+            {/* <Navbar /> */}
+            <h2>theSKetchbook here</h2>
             
         </main>
     

@@ -5,7 +5,7 @@ import { Suspense } from "react"
 import { useProgress, Html, ScrollControls } from "@react-three/drei"
 import { EffectComposer, N8AO, TiltShift2 } from "@react-three/postprocessing";
 import { useGLTF, Float, Lightformer, Text, ContactShadows, Environment, MeshTransmissionMaterial } from "@react-three/drei";
-import Box from "./Box.jsx"
+import Box from "./_unusedComponents/Box-UNUSED.jsx/index.js"
 
 function Loader() {
   const { progress, active } = useProgress()

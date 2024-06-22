@@ -37,7 +37,7 @@ body {
   width: 100dvw;
   overflow: hidden; /* hides both x and y direction scrollbars -> see https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   height: 100%;
-  background: #151515; /* tailwind equivalent util: bg-zinc-900 */
+  background: #080808; /* bg used to be #151515 */
   border-color: #3b3b3b;
   user-select: none;
   
