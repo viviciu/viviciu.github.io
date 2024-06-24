@@ -28,7 +28,7 @@ export default function App() {
       <group position={[-0, -1, 0]}>
 
         {/* physics applies */}
-      <Physics /*debug*/ timeStep="vary" gravity={[0, -9.81, 0]}>
+      <Physics debug timeStep="vary" gravity={[0, -9.81, 0]}>
         {/* Auto-instanced sketchfab model */}
         {/* wrap the <Instances> in a <RigidBody> if you want to make it solid. */}
         <Instances>
@@ -62,7 +62,7 @@ export default function App() {
         {/* floating magic cube */}
         
           <Pointer />
-          <Model scale={0.2} position={[0, 1, 0.5]} route='/blogs' />
+          <Model scale={0.4} position={[0, 1, 0.5]} route='/blogs' />
           {/* <SpinningBox scale={0.4} position={[0, 1, 0.5]} route='/blogs' /> */}
         </Physics>
         <pointLight  distance={10} intensity={10} position={[0, 1, 0.5]} color="orange" />
@@ -96,7 +96,8 @@ function Pointer({ vec = new THREE.Vector3() }) {
   useFrame(({ mouse, viewport }) => ref.current?.setNextKinematicTranslation(vec.set((mouse.x * viewport.width) / 2, (mouse.y * viewport.height) / 2, 0)))
   return (
     <RigidBody position={[0, 0, 0]} type="kinematicPosition" colliders={false} ref={ref}>
-      <BallCollider args={[0.05]} />
+      {/* change n in  args={[n]}  to alter the size of the ballcolider in pointer. The smaller n is, the closer the pointer can get to touching the cube's ballCollider. */}
+      <BallCollider args={[0.01]} />
     </RigidBody>
   )
 }

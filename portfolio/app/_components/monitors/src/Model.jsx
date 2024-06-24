@@ -78,6 +78,7 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
         delta = Math.min(0.1, delta)
         api.current?.applyImpulse(vec.copy(api.current.translation()).negate().multiplyScalar(0.2))
         mesh.current.rotation.x = mesh.current.rotation.y += delta
+        if (hovered) mesh.current.rotation.x = mesh.current.rotation.y += delta * 12
 
         
         
@@ -86,8 +87,8 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
     return (
         // put scale={viewport.width / 12} into <group> as a prop to make it scale responsively
     <group>
-      {/* <RigidBody linearDamping={4} angularDamping={1} friction={0.1} {...props} ref={api} colliders={false} {...props}> */}
-      <BallCollider args={[1]} />
+      <RigidBody linearDamping={4} angularDamping={1} friction={0.1} {...props} ref={api} colliders={false} {...props}>
+      <BallCollider args={[0.85]} />
         <mesh 
         ref={mesh}
         scale={hovered ? 1.5 : 1}
@@ -103,7 +104,7 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
         <boxGeometry args={[1, 1, 1]} />
         <MeshTransmissionMaterial {...config} />
         </mesh>
-        {/* </RigidBody> */}
+        </RigidBody>
     </group>
   )
 }
