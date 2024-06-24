@@ -1,4 +1,6 @@
+// CURRENTLY THIS FILE ISNT BEING USED, AND THE CONFIG COLORS AND INCREASING SPINNING FUNCTIONALITY DOESNT WORK. SEE V7 FOR THE WORKING VERSION.
 // The <Box /> component creates a box with a reflective material that rotates faster on mouse hover.
+
 "use client"
 import React, { useEffect, useRef, useState } from "react";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
