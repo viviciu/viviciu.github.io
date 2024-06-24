@@ -80,9 +80,6 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
         api.current?.applyImpulse(vec.copy(api.current.translation()).negate().multiplyScalar(0.2))
         mesh.current.rotation.x = mesh.current.rotation.y += delta
         if (hovered) mesh.current.rotation.x = mesh.current.rotation.y += delta * 12
-
-        
-        
       })
 
     return (
@@ -91,10 +88,10 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
         
     <group>
       <RigidBody linearDamping={4} angularDamping={1} friction={0.1} {...props} ref={api} colliders={false} {...props}>
-      <BallCollider args={[0.85]} />
+      <BallCollider args={[0.7]} />
         <mesh 
         ref={mesh}
-        scale={hovered ? 1.5 : 1}
+        scale={hovered ? 1.3 : 1}
         onClick={handleClick}
         onPointerOver={() => {
           setHovered(true);
