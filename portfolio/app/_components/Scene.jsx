@@ -1,5 +1,6 @@
 "use client"
-// THIS SCENE CREATES A 3D ENVIRONMENT WITH A REFLECTIVE BOX THAT ROTATES ON MOUSE HOVER
+// THIS SCENE CREATES A 3D ENVIRONMENT WITH A REFLECTIVE BOX THAT ROTATES ON MOUSE HOVER.
+// it includes the <Box /> component which creates a box with a reflective material that rotates on mouse hover.
 import { Canvas, useThree } from "@react-three/fiber"
 import { Suspense } from "react"
 import { useProgress, Html, ScrollControls } from "@react-three/drei"

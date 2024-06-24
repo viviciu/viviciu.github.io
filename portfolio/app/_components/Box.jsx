@@ -1,3 +1,4 @@
+// The <Box /> component creates a box with a reflective material that rotates faster on mouse hover.
 "use client"
 import React, { useEffect, useRef, useState } from "react";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
