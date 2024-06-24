@@ -2,16 +2,13 @@
 import React from 'react'
 import * as THREE from 'three'
 import { useFrame, useThree } from '@react-three/fiber'
-import { useRef, useState, useMemo } from 'react'
-import { MeshTransmissionMaterial } from '@react-three/drei'
-import { useControls } from 'leva'
+import { useRef, useState, useMemo,  } from 'react'
+import { MeshTransmissionMaterial, Html } from '@react-three/drei'
 import { BallCollider, Physics, RigidBody } from '@react-three/rapier'
 import { easing } from 'maath'
 import { useRouter } from 'next/navigation';
 
 export default function Model(props, position, vec = new THREE.Vector3(), r = THREE.MathUtils.randFloatSpread) {
-  // route
-  const route = props.route;
   // raycaster events
   const [hovered, setHovered] = useState(false);
   const router = useRouter();
@@ -19,6 +16,10 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
   const handleClick = () => {
     router.push(route); // Use router.push for navigation
   };
+  
+  // route
+  const route = props.route;
+  
 
   // then rest
     const {viewport} = useThree()
@@ -86,6 +87,8 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
 
     return (
         // put scale={viewport.width / 12} into <group> as a prop to make it scale responsively
+        <>
+        
     <group>
       <RigidBody linearDamping={4} angularDamping={1} friction={0.1} {...props} ref={api} colliders={false} {...props}>
       <BallCollider args={[0.85]} />
@@ -106,5 +109,6 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
         </mesh>
         </RigidBody>
     </group>
+    </>
   )
 }
