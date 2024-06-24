@@ -72,12 +72,14 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
       // };
   
       const api = useRef()
-      const ref = useRef()
+
       const pos = useMemo(() => position || [r(10), r(10), r(10)], [])
       useFrame((state, delta) => {
         delta = Math.min(0.1, delta)
         api.current?.applyImpulse(vec.copy(api.current.translation()).negate().multiplyScalar(0.2))
         mesh.current.rotation.x = mesh.current.rotation.y += delta
+
+        
         
       })
 
@@ -98,7 +100,7 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
           setHovered(false);
           document.body.style.cursor = 'default';
         }} >
-        <boxGeometry />
+        <boxGeometry args={[1, 1, 1]} />
         <MeshTransmissionMaterial {...config} />
         </mesh>
         {/* </RigidBody> */}

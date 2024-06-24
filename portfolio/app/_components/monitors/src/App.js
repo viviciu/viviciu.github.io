@@ -8,6 +8,7 @@ import { BallCollider, Physics, RigidBody } from '@react-three/rapier'
 import { easing } from 'maath'
 import { Instances, Computers } from './Computers'
 import Model from './Model'
+import { SpinningBox } from './SpinningBox';
 
 
 
@@ -61,7 +62,8 @@ export default function App() {
         {/* floating magic cube */}
         
           <Pointer />
-          <Model scale={0.4} position={[0, 1, 0.5]} targetPosition={[0,0,0]} route='/blogs' />
+          <Model scale={0.2} position={[0, 1, 0.5]} route='/blogs' />
+          {/* <SpinningBox scale={0.4} position={[0, 1, 0.5]} route='/blogs' /> */}
         </Physics>
         <pointLight  distance={10} intensity={10} position={[0, 1, 0.5]} color="orange" />
 
