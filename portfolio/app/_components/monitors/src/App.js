@@ -1,17 +1,22 @@
 "use client";
 import * as THREE from 'three'
-import { useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { MeshReflectorMaterial, BakeShadows } from '@react-three/drei'
+import { useRef, useState, useMemo } from 'react'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { MeshReflectorMaterial, MeshTransmissionMaterial, BakeShadows } from '@react-three/drei'
 import { EffectComposer, Bloom, DepthOfField, ToneMapping } from '@react-three/postprocessing'
 import { BallCollider, Physics, RigidBody } from '@react-three/rapier'
 import { easing } from 'maath'
 import { Instances, Computers } from './Computers'
-import Model from './Model';
+import Model from './Model'
 
 
 
 export default function App() {
+  
+
+  
+
+
   return (
     <Canvas shadows dpr={[1, 1.5]} camera={{ position: [-1.5, 1, 5.5], fov: 45, near: 1, far: 20 }}>
       {/* Lights */}
@@ -56,7 +61,7 @@ export default function App() {
         {/* floating magic cube */}
         
           <Pointer />
-          <Model scale={0.4} position={[0, 1, 0.5]} />
+          <Model scale={0.4} position={[0, 1, 0.5]} targetPosition={[0,0,0]} route='/blogs' />
         </Physics>
         <pointLight  distance={10} intensity={10} position={[0, 1, 0.5]} color="orange" />
 
@@ -92,4 +97,16 @@ function Pointer({ vec = new THREE.Vector3() }) {
       <BallCollider args={[0.05]} />
     </RigidBody>
   )
+}
+
+
+function CameraRigZoomer({ zooming, targetPosition }) {
+  useFrame((state) => {
+    // state.camera.position.lerp({ x, y, z }, 0.1)
+    // state.camera.lookAt(0, 0, 0)
+    if (zooming && targetPosition) {
+      state.camera.position.lerp(targetPosition, 0.1); // Adjust the speed as needed
+      state.camera.updateProjectionMatrix();
+    }
+  })
 }
