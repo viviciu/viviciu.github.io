@@ -1,9 +1,4 @@
 "use client";
-import Navbar from "../_components/Navbar";
-import Image from "next/image";
-
-// import myPhoto from "/ss-plane-slog.png"
-
 import { useState } from "react";
 import { items } from "./items.js";
 
@@ -40,14 +35,14 @@ export default function Projects() {
     )
     .map((item) => (
       <div key={item.id} className="item space-y-2">
-        <div className="flex justify-center relative overflow-hidden group cursor-pointer rounded-xl">
+        <div className="flex justify-center relative overflow-hidden group cursor-pointer">
           <img
             src={item.url}
             alt={item.name}
             className="w-full h-full object-cover"
           />
           <div className="bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0">
-            Link
+            LINK
           </div>
         </div>
         <p className="font-semibold">{item.name}</p>
