@@ -1,3 +1,6 @@
+// NOTES
+// If changing category names in ./items.js or in this file, make sure to change category names EVERYWHERE. I have noted this in a comment called "// this must be changed if category changes." Note this is for EACH div containing a label.
+
 "use client";
 import { useState } from "react";
 import { items } from "./items.js";
@@ -45,15 +48,21 @@ export default function Projects() {
             LINK
           </div>
         </div>
-        <p className="font-semibold">{item.name}</p>
-        <pre>{item.category}</pre>
+        <p className="font-display">{item.name}</p>
+        {/* CARD CATEGORY LABEL */}
+        {/* <pre>{item.category}</pre> */}
       </div>
   ));
 
   return (
-    <main className="mx-auto flex justify-center items-center flex-col gap-4">
-      <h1 className="text-3xl font-semibold">Items</h1>
-      <section className="relative">
+    // Previous <main> className: className="mx-auto flex justify-center items-center flex-col gap-4"
+    <main className="">
+      <h1 className="text-xl font-display my-16 ml-16">
+        photography,videography,code0909
+      </h1>
+
+      {/*                  ————SEARCHBAR————                 */}
+      {/* <section className="relative">
         <input
           type="text"
           id="search"
@@ -61,37 +70,57 @@ export default function Projects() {
           placeholder="Search items..."
           onChange={handleSearch}
         />
-      </section>
+      </section> */}
       <section className="flex flex-col md:flex-row mx-auto container max-w-6xl">
         <article className="space-y-2 p-2 w-full max-w-[10rem]">
-          <h2 className="text-xl font-semibold">Category</h2>
           <aside className="flex sm:flex-col gap-2">
             <div className="flex flex-row items-center">
               <input
                 type="checkbox"
-                id="CategoryOne"
-                className="mr-1"
+                id="code"
+                className="mr-1
+                appearance-none"
                 onChange={handleCheckbox}
               />
-              <label htmlFor="CategoryOne">Category 1</label>
+              <label
+                className="font-CMUSerif
+                checkbox-label-checked" // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
+                htmlFor="code"
+              >
+                code
+              </label>
             </div>
             <div className="flex flex-row items-center">
               <input
                 type="checkbox"
-                id="CategoryTwo"
-                className="mr-1"
+                id="photo"
+                className="mr-1 
+                appearance-none"
                 onChange={handleCheckbox}
               />
-              <label htmlFor="CategoryTwo">Category 2</label>
+              <label
+                className="font-CMUSerif
+              checkbox-label-checked"
+                htmlFor="photo"
+              >
+                photo
+              </label>
             </div>
             <div className="flex flex-row items-center">
               <input
                 type="checkbox"
-                id="CategoryThree"
-                className="mr-1"
+                id="video" // this must be changed if category changes.
+                className="mr-1
+                appearance-none"
                 onChange={handleCheckbox}
               />
-              <label htmlFor="CategoryThree">Category 3</label>
+              <label
+                className="font-CMUSerif
+              checkbox-label-checked"
+                htmlFor="video" // this must be changed if category changes.
+              >
+                video
+              </label>
             </div>
           </aside>
         </article>
