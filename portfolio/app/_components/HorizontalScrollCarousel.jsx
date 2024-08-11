@@ -2,7 +2,7 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import myPhoto from "./edit-03512-3.jpg"
+// import myPhoto from "./public/edit-03512-3.jpg"
 
 const Example = () => {
   return (
@@ -61,23 +61,29 @@ const HorizontalScrollCarousel = () => {
 const Card = ({ card }) => {
   return (
     <>
-    <div className="flex flex-col">
-    <div
-      key={card.id}
-      className="group relative h-[30vh] w-[25vw] overflow-hidden bg-neutral-200"
-    >
-      <div
-        style={{
-          backgroundImage: `url(${card.url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-      ><Image src={myPhoto}
-      alt="project photo" /></div>
-    </div>
-    <div className="text-left">{card.title}</div>
-    </div>
+      <div className="flex flex-col">
+        <div
+          key={card.id}
+          className="group relative h-[30vh] w-[25vw] overflow-hidden bg-neutral-200"
+        >
+          <div
+            style={{
+              backgroundImage: `url(${card.url})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+          >
+            <Image
+              src="/edit-03512-3.jpg"
+              width="500"
+              height="500"
+              alt="project photo"
+            />
+          </div>
+        </div>
+        <div className="text-left">{card.title}</div>
+      </div>
     </>
   );
 };
