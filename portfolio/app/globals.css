@@ -4,7 +4,7 @@
 
 @layer base {
   @font-face {
-    font-family: CMU Serif;
+    font-family: 'CMU-Serif';
     font-weight: 400;
     src: url(/fonts/cmunbi.ttf) format("ttf");
   }
@@ -12,10 +12,14 @@
     font-family: 'AdobeTextPro-Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('AdobeTextPro-Regular'), url('../public/assets/fonts/AdobeTextPro-Regular.woff') format('woff'); 
-    /* resume work at deepwork hour number 2: 41 minutes left. */
+    src: local('AdobeTextPro-Regular'), url(../public/assets/fonts/AdobeTextPro-Regular.woff) format('woff'); 
     }
-
+  @font-face {
+    font-family: 'Suisse';
+    src: url(../public/assets/fonts/Suiss/SuisseIntlTrial-Book.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
   a {
     @apply hover:underline hover:text-white
@@ -40,9 +44,8 @@ body {
   background: #080808; /* bg used to be #151515 */
   border-color: #3b3b3b;
   user-select: none;
-  
-  /* font-family: CMU Serif; */
 }
+  
 
 canvas {
   touch-action: none;
@@ -53,4 +56,10 @@ canvas {
   margin-inline-end: auto;
   position: relative;
   max-width: 1120px;
+}
+
+/* FOR PLAY PAGE — MAKE CLICK A SMOOTH TRANSITION TO GREY */
+.clicked {
+  color: grey;
+  transition: color 0.5s ease;
 }

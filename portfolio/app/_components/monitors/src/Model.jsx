@@ -2,14 +2,26 @@
 import React from 'react'
 import * as THREE from 'three'
 import { useFrame, useThree } from '@react-three/fiber'
-import { useRef, useMemo } from 'react'
-import { MeshTransmissionMaterial } from '@react-three/drei'
-import { useControls } from 'leva'
+import { useRef, useState, useMemo,  } from 'react'
+import { MeshTransmissionMaterial, Html } from '@react-three/drei'
 import { BallCollider, Physics, RigidBody } from '@react-three/rapier'
 import { easing } from 'maath'
+import { useRouter } from 'next/navigation';
 
 export default function Model(props, position, vec = new THREE.Vector3(), r = THREE.MathUtils.randFloatSpread) {
+  // raycaster events
+  const [hovered, setHovered] = useState(false);
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(route); // Use router.push for navigation
+  };
   
+  // route
+  const route = props.route;
+  
+
+  // then rest
     const {viewport} = useThree()
     const mesh = useRef()
 
@@ -61,24 +73,39 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
       // };
   
       const api = useRef()
-      const ref = useRef()
+
       const pos = useMemo(() => position || [r(10), r(10), r(10)], [])
       useFrame((state, delta) => {
         delta = Math.min(0.1, delta)
         api.current?.applyImpulse(vec.copy(api.current.translation()).negate().multiplyScalar(0.2))
-        
+        mesh.current.rotation.x = mesh.current.rotation.y += delta
+        if (hovered) mesh.current.rotation.x = mesh.current.rotation.y += delta * 12
       })
 
     return (
         // put scale={viewport.width / 12} into <group> as a prop to make it scale responsively
+        <>
+        
     <group>
       <RigidBody linearDamping={4} angularDamping={1} friction={0.1} {...props} ref={api} colliders={false} {...props}>
-      <BallCollider args={[1]} />
-        <mesh ref={mesh} >
-        <boxGeometry />
+      <BallCollider args={[0.7]} />
+        <mesh 
+        ref={mesh}
+        scale={hovered ? 1.3 : 1}
+        onClick={handleClick}
+        onPointerOver={() => {
+          setHovered(true);
+          document.body.style.cursor = 'pointer';
+        }}
+        onPointerOut={() => {
+          setHovered(false);
+          document.body.style.cursor = 'default';
+        }} >
+        <boxGeometry args={[1, 1, 1]} />
         <MeshTransmissionMaterial {...config} />
         </mesh>
         </RigidBody>
     </group>
+    </>
   )
 }

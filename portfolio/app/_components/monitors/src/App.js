@@ -1,17 +1,23 @@
 "use client";
 import * as THREE from 'three'
-import { useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { MeshReflectorMaterial, BakeShadows } from '@react-three/drei'
+import { useRef, useState, useMemo } from 'react'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { MeshReflectorMaterial, MeshTransmissionMaterial, BakeShadows } from '@react-three/drei'
 import { EffectComposer, Bloom, DepthOfField, ToneMapping } from '@react-three/postprocessing'
 import { BallCollider, Physics, RigidBody } from '@react-three/rapier'
 import { easing } from 'maath'
 import { Instances, Computers } from './Computers'
-import Model from './Model';
+import Model from './Model'
+import { SpinningBox } from './SpinningBox';
 
 
 
 export default function App() {
+  
+
+  
+
+
   return (
     <Canvas shadows dpr={[1, 1.5]} camera={{ position: [-1.5, 1, 5.5], fov: 45, near: 1, far: 20 }}>
       {/* Lights */}
@@ -22,7 +28,7 @@ export default function App() {
       <group position={[-0, -1, 0]}>
 
         {/* physics applies */}
-      <Physics /*debug*/ timeStep="vary" gravity={[0, -9.81, 0]}>
+      <Physics debug timeStep="vary" gravity={[0, -9.81, 0]}>
         {/* Auto-instanced sketchfab model */}
         {/* wrap the <Instances> in a <RigidBody> if you want to make it solid. */}
         <Instances>
@@ -56,7 +62,8 @@ export default function App() {
         {/* floating magic cube */}
         
           <Pointer />
-          <Model scale={0.4} position={[0, 1, 0.5]} />
+          <Model scale={0.4} position={[0, 1, 0.5]} route='/play' />
+          {/* <SpinningBox scale={0.4} position={[0, 1, 0.5]} route='/blogs' /> */}
         </Physics>
         <pointLight  distance={10} intensity={10} position={[0, 1, 0.5]} color="orange" />
 
@@ -89,7 +96,20 @@ function Pointer({ vec = new THREE.Vector3() }) {
   useFrame(({ mouse, viewport }) => ref.current?.setNextKinematicTranslation(vec.set((mouse.x * viewport.width) / 2, (mouse.y * viewport.height) / 2, 0)))
   return (
     <RigidBody position={[0, 0, 0]} type="kinematicPosition" colliders={false} ref={ref}>
-      <BallCollider args={[0.05]} />
+      {/* change n in  args={[n]}  to alter the size of the ballcolider in pointer. The smaller n is, the closer the pointer can get to touching the cube's ballCollider. */}
+      <BallCollider args={[0.01]} />
     </RigidBody>
   )
+}
+
+
+function CameraRigZoomer({ zooming, targetPosition }) {
+  useFrame((state) => {
+    // state.camera.position.lerp({ x, y, z }, 0.1)
+    // state.camera.lookAt(0, 0, 0)
+    if (zooming && targetPosition) {
+      state.camera.position.lerp(targetPosition, 0.1); // Adjust the speed as needed
+      state.camera.updateProjectionMatrix();
+    }
+  })
 }

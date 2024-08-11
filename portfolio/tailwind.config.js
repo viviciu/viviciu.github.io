@@ -15,11 +15,11 @@ module.exports = {
           100: "#94928d",
           200: "#afafaf",
           300: "#42424570",
-          400: "#E8EAEC"
+          400: "#E8EAEC",
         },
         zinc: "#101010",
-        'threejsBlue': "hsl(0, 95, 70)",
-        'blog-headerBlock': 'rgba(217, 217, 217, 0.14)',
+        threejsBlue: "hsl(0, 95, 70)",
+        "blog-headerBlock": "rgba(217, 217, 217, 0.14)",
       },
 
       // Typography
@@ -27,12 +27,15 @@ module.exports = {
         base: "1rem",
         lg: "1.375rem", // This is the 'entry' text in styleguide!
         xl: "1.75rem",
-        '9xl': "3.88rem",
+        "9xl": "3.88rem",
       },
 
       // font family
       fontFamily: {
-        serif: ["Adobe Text Pro"],
+        serif: ["AdobeTextPro-Regular"],
+        display: ["Suisse"],
+        CMUSerif: ["CMU-Serif"],
+        CMUSerif: ["CMU-Serif"],
       },
 
       // RESPONSIVE DESIGN : SCREEN SIZES
@@ -40,12 +43,22 @@ module.exports = {
       // SEE THIS SIZE FOR COMMON DEVICE WIDTHS: https://www.mydevice.io/ and https://www.icwebdesign.co.uk/common-viewport-sizes
       // md is like an iPad air. iPad pro is 1024px wide.
       screens: {
-        'xs': '390px', // 390px is an iPhone 12 Pro
-      }
+        xs: "390px", // 390px is an iPhone 12 Pro
+      },
     },
   },
   plugins: [
     // for prose
-    require('@tailwindcss/typography'),
+    require("@tailwindcss/typography"),
+    // for checkbox changing color of label
+    function ({ addUtilities }) {
+      addUtilities({
+        ".checkbox-label-checked": {
+          'input[type="checkbox"]:checked ~ &': {
+            color: "#94928d", // Customize this color as needed
+          },
+        },
+      });
+    },
   ],
 };
