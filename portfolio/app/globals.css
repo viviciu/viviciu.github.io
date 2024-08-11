@@ -57,3 +57,9 @@ canvas {
   position: relative;
   max-width: 1120px;
 }
+
+/* FOR PLAY PAGE — MAKE CLICK A SMOOTH TRANSITION TO GREY */
+.clicked {
+  color: grey;
+  transition: color 0.5s ease;
+}

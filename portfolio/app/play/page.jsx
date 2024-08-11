@@ -9,6 +9,15 @@ export default function Projects() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState([]);
 
+  // CHange color on click
+  const [clickedLabels, setClickedLabels] = useState({});
+  const handleClick = (label) => {
+    setClickedLabels((prevState) => ({
+      ...prevState,
+      [label]: !prevState[label],
+    }));
+  };
+
   function handleSearch(e) {
     setSearchQuery(e.target.value);
   }
@@ -38,21 +47,36 @@ export default function Projects() {
     )
     .map((item) => (
       <div key={item.id} className="item space-y-2">
-        <div className="flex justify-center relative overflow-hidden group cursor-pointer">
+        {/* PARENT GROUP */}
+        <div
+          className="flex flex-col justify-center relative group cursor-pointer
+          "
+        >
+          <p className="font-display">{item.name}</p>
+          <p className="
+              font-CMUSerif
+              opacity-0
+              transition
+              group-hover:opacity-100"
+          >
+            ::081124
+          </p>
           <img
             src={item.url}
             alt={item.name}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover 
+            translate-y-0 transition group-hover:translate-y-2"
           />
-          <div className="bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0">
-            LINK
-          </div>
+          {/* ————POPUP FLAG———— */}
+          {/* <div className="bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0">
+            (._.)
+          </div> */}
         </div>
-        <p className="font-display">{item.name}</p>
+
         {/* CARD CATEGORY LABEL */}
         {/* <pre>{item.category}</pre> */}
       </div>
-  ));
+    ));
 
   return (
     // Previous <main> className: className="mx-auto flex justify-center items-center flex-col gap-4"
@@ -74,7 +98,7 @@ export default function Projects() {
       <section className="flex flex-col md:flex-row mx-auto container max-w-6xl">
         <article className="space-y-2 p-2 w-full max-w-[10rem]">
           <aside className="flex sm:flex-col gap-2">
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center ">
               <input
                 type="checkbox"
                 id="code"
@@ -83,9 +107,14 @@ export default function Projects() {
                 onChange={handleCheckbox}
               />
               <label
-                className="font-CMUSerif
-                checkbox-label-checked" // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
+                className={`font-CMUSerif
+                cursor-pointer
+                checkbox-label-checked
+                ${
+    clickedLabels['code'] ? 'clicked' : ''
+  }`} // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
                 htmlFor="code"
+                onClick={() => handleClick('code')}
               >
                 code
               </label>
@@ -99,9 +128,14 @@ export default function Projects() {
                 onChange={handleCheckbox}
               />
               <label
-                className="font-CMUSerif
-              checkbox-label-checked"
+                className={`font-CMUSerif
+                cursor-pointer
+                checkbox-label-checked
+                ${
+    clickedLabels['photo'] ? 'clicked' : ''
+  }`}
                 htmlFor="photo"
+                onClick={() => handleClick('photo')}
               >
                 photo
               </label>
@@ -115,9 +149,14 @@ export default function Projects() {
                 onChange={handleCheckbox}
               />
               <label
-                className="font-CMUSerif
-              checkbox-label-checked"
+                className={`font-CMUSerif
+                cursor-pointer
+                checkbox-label-checked
+                ${
+    clickedLabels['video'] ? 'clicked' : ''
+  }`}
                 htmlFor="video" // this must be changed if category changes.
+                onClick={() => handleClick('video')}
               >
                 video
               </label>
