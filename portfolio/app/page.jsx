@@ -13,7 +13,6 @@ export default function Home() {
       {/* <Navbar className='z-10' /> */}
       {/* <Scene /> */}
       <App />
-      <HorizontalScrollCarousel />
       <Footer />
     </main>
   );

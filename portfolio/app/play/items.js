@@ -15,7 +15,7 @@ export const items = [
   {
     id: "Item 3",
     name: "Item 3",
-    url: "/ss-plane-slog.png",
+    url: "/refrigerator-lut_1.2.1.jpg",
     category: "CategoryThree",
   },
 ];
