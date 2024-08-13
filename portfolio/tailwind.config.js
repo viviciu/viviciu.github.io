@@ -24,6 +24,9 @@ module.exports = {
 
       // Typography
       fontSize: {
+        xxs: "0.5rem",
+        xs: "0.75rem",
+        sm: "0.8rem",
         base: "1rem",
         lg: "1.375rem", // This is the 'entry' text in styleguide!
         xl: "1.75rem",
