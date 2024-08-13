@@ -60,6 +60,15 @@ canvas {
 
 /* FOR PLAY PAGE — MAKE CLICK A SMOOTH TRANSITION TO GREY */
 .clicked {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.checkbox-label-checked {
   color: grey;
   transition: color 0.5s ease;
+}
+
+.checkbox-label-checked:hover {
+  color: white;
 }

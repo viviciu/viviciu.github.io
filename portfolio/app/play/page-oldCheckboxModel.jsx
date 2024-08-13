@@ -6,19 +6,45 @@ import { useState } from "react";
 import { items } from "./items.js";
 
 export default function Projects() {
-  // const [searchQuery, setSearchQuery] = useState("");
-  // const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedLabel, setSelectedLabel] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategories, setSelectedCategories] = useState([]);
 
+  // CHange color on click
+  const [clickedLabels, setClickedLabels] = useState({});
   const handleClick = (label) => {
-    setSelectedLabel(label);
+    setClickedLabels((prevState) => ({
+      ...prevState,
+      [label]: !prevState[label],
+    }));
   };
 
+  function handleSearch(e) {
+    setSearchQuery(e.target.value);
+  }
+
+  function handleCheckbox(e) {
+    const category = e.target.id;
+
+    if (e.target.checked) {
+      setSelectedCategories((prevCategories) => [...prevCategories, category]);
+    } else {
+      setSelectedCategories((prevCategories) =>
+        prevCategories.filter((prevCategory) => prevCategory !== category)
+      );
+    }
+  }
 
   const displayedItems = items
-    // important
-    .filter((item) => !selectedLabel || selectedLabel === item.category)
-    
+    .filter(
+      (item) =>
+        selectedCategories.length === 0 ||
+        selectedCategories.includes(item.category)
+    )
+    .filter(
+      (item) =>
+        item.name.toLowerCase().includes(searchQuery.trim().toLowerCase()) ||
+        item.category.toLowerCase().includes(searchQuery.trim().toLowerCase())
+    )
     .map((item) => (
       <div key={item.id} className="item space-y-2">
         {/* PARENT GROUP */}
@@ -27,8 +53,7 @@ export default function Projects() {
           "
         >
           <p className="font-display">{item.name}</p>
-          <p
-            className="
+          <p className="
               font-CMUSerif
               opacity-0
               transition
@@ -69,35 +94,13 @@ export default function Projects() {
       <section className="flex flex-col md:flex-col mx-auto container max-w-6xl">
         <article className="my-16 mx-16 space-y-2 w-full">
           <aside className="flex sm:flex-row">
-            {/* SHOW ALL ITEMS */}
-            <div className="flex flex-row items-center">
-              <input
-                type="radio"
-                id="all"
-                className="mr-1 appearance-none"
-                onChange={() => handleClick(null)}
-              />
-              <label
-                className={`
-                  text-xl
-                  font-display
-                  cursor-pointer
-                  checkbox-label-checked
-                  ${selectedLabel === null ? "clicked" : ""}
-                `}
-                htmlFor="all"
-                onClick={() => handleClick(null)}
-              >
-                All,
-              </label>
-            </div>
             <div className="flex flex-row items-center ">
               <input
-                type="radio"
+                type="checkbox"
                 id="code"
                 className="mr-1
                 appearance-none"
-                onChange={() => handleClick("code")}
+                onChange={handleCheckbox}
               />
               <label
                 className={`
@@ -105,7 +108,7 @@ export default function Projects() {
                 font-display
                 cursor-pointer
                 checkbox-label-checked
-                ${selectedLabel === "code" ? "clicked" : ""}`} // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
+                ${clickedLabels["code"] ? "clicked" : ""}`} // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
                 htmlFor="code"
                 onClick={() => handleClick("code")}
               >
@@ -114,11 +117,11 @@ export default function Projects() {
             </div>
             <div className="flex flex-row items-center">
               <input
-                type="radio"
+                type="checkbox"
                 id="photo"
                 className="mr-1 
                 appearance-none"
-                onChange={() => handleClick("code")}
+                onChange={handleCheckbox}
               />
               <label
                 className={`
@@ -126,7 +129,7 @@ export default function Projects() {
                 font-display
                 cursor-pointer
                 checkbox-label-checked
-                ${selectedLabel === "photo" ? "clicked" : ""}`}
+                ${clickedLabels["photo"] ? "clicked" : ""}`}
                 htmlFor="photo"
                 onClick={() => handleClick("photo")}
               >
@@ -135,11 +138,11 @@ export default function Projects() {
             </div>
             <div className="flex flex-row items-center">
               <input
-                type="radio"
+                type="checkbox"
                 id="video" // this must be changed if category changes.
                 className="mr-1
                 appearance-none"
-                onChange={() => handleClick("code")}
+                onChange={handleCheckbox}
               />
               <label
                 className={`
@@ -147,7 +150,7 @@ export default function Projects() {
                 font-display
                 cursor-pointer
                 checkbox-label-checked
-                ${selectedLabel === "video" ? "clicked" : ""}`}
+                ${clickedLabels["video"] ? "clicked" : ""}`}
                 htmlFor="video" // this must be changed if category changes.
                 onClick={() => handleClick("video")}
               >
