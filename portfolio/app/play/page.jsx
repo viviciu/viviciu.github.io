@@ -6,19 +6,17 @@ import { useState } from "react";
 import { items } from "./items.js";
 
 export default function Projects() {
-  // const [searchQuery, setSearchQuery] = useState("");
-  // const [selectedCategories, setSelectedCategories] = useState([]);
+  // RADIO BUTTONS: https://www.w3schools.com/tags/att_input_type_radio.asp
   const [selectedLabel, setSelectedLabel] = useState(null);
 
   const handleClick = (label) => {
     setSelectedLabel(label);
   };
 
-
   const displayedItems = items
     // important
     .filter((item) => !selectedLabel || selectedLabel === item.category)
-    
+
     .map((item) => (
       <div key={item.id} className="item space-y-2">
         {/* PARENT GROUP */}
@@ -42,35 +40,19 @@ export default function Projects() {
             className="w-full h-full object-cover 
             translate-y-0 transition group-hover:translate-y-2"
           />
-          {/* ————POPUP FLAG———— */}
-          {/* <div className="bg-black text-white absolute bottom-0 left-0 right-0 text-center py-2 translate-y-full transition group-hover:translate-y-0">
-            (._.)
-          </div> */}
         </div>
-
         {/* CARD CATEGORY LABEL */}
         {/* <pre>{item.category}</pre> */}
       </div>
     ));
 
   return (
-    // Previous <main> className: className="mx-auto flex justify-center items-center flex-col gap-4"
-    <main className="">
-      {/*                  ————SEARCHBAR————                 */}
-      {/* <section className="relative">
-        <input
-          type="text"
-          id="search"
-          className="p-2 bg-gray-50 border-gray-300 rounded-md"
-          placeholder="Search items..."
-          onChange={handleSearch}
-        />
-      </section> */}
-      <section className="flex flex-col md:flex-col mx-auto container max-w-6xl">
+    <main className="m-1">
+      <section className="flex flex-col md:flex-col mx-4 container max-w-6xl">
         {/* SELECTION BAR */}
         <article
-          className="mb-[11vh] mt-[33vh] mx-16 justify-end flex sm:flex-row 
-        text-4xl
+          className="mb-[11vh] mt-[33vh] flex sm:flex-row 
+        lg:text-6xl text-xl
         font-display"
         >
           {/* SHOW ALL ITEMS */}
@@ -151,7 +133,6 @@ export default function Projects() {
             </label>
           </div>
         </article>
-
         {/* ITEMS */}
         <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-content-center p-2">
           {displayedItems}
