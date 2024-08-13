@@ -67,95 +67,92 @@ export default function Projects() {
         />
       </section> */}
       <section className="flex flex-col md:flex-col mx-auto container max-w-6xl">
-        <article className="my-16 mx-16 space-y-2 w-full">
-          <aside className="flex sm:flex-row">
-            {/* SHOW ALL ITEMS */}
-            <div className="flex flex-row items-center">
-              <input
-                type="radio"
-                id="all"
-                className="mr-1 appearance-none"
-                onChange={() => handleClick(null)}
-              />
-              <label
-                className={`
-                  text-xl
-                  font-display
+        {/* SELECTION BAR */}
+        <article
+          className="mb-[11vh] mt-[33vh] mx-16 justify-end flex sm:flex-row 
+        text-4xl
+        font-display"
+        >
+          {/* SHOW ALL ITEMS */}
+          <div className="">
+            <input
+              type="radio"
+              id="all"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick(null)}
+            />
+            <label
+              className={`
                   cursor-pointer
                   checkbox-label-checked
                   ${selectedLabel === null ? "clicked" : ""}
                 `}
-                htmlFor="all"
-                onClick={() => handleClick(null)}
-              >
-                All,
-              </label>
-            </div>
-            <div className="flex flex-row items-center ">
-              <input
-                type="radio"
-                id="code"
-                className="mr-1
+              htmlFor="all"
+              onClick={() => handleClick(null)}
+            >
+              All,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="code"
+              className="mr-1
                 appearance-none"
-                onChange={() => handleClick("code")}
-              />
-              <label
-                className={`
-                text-xl
-                font-display
+              onChange={() => handleClick("code")}
+            />
+            <label
+              className={`
                 cursor-pointer
                 checkbox-label-checked
                 ${selectedLabel === "code" ? "clicked" : ""}`} // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
-                htmlFor="code"
-                onClick={() => handleClick("code")}
-              >
-                code,
-              </label>
-            </div>
-            <div className="flex flex-row items-center">
-              <input
-                type="radio"
-                id="photo"
-                className="mr-1 
+              htmlFor="code"
+              onClick={() => handleClick("code")}
+            >
+              code,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="photo"
+              className="mr-1 
                 appearance-none"
-                onChange={() => handleClick("code")}
-              />
-              <label
-                className={`
-                text-xl
-                font-display
+              onChange={() => handleClick("code")}
+            />
+            <label
+              className={`
                 cursor-pointer
                 checkbox-label-checked
                 ${selectedLabel === "photo" ? "clicked" : ""}`}
-                htmlFor="photo"
-                onClick={() => handleClick("photo")}
-              >
-                photo,
-              </label>
-            </div>
-            <div className="flex flex-row items-center">
-              <input
-                type="radio"
-                id="video" // this must be changed if category changes.
-                className="mr-1
+              htmlFor="photo"
+              onClick={() => handleClick("photo")}
+            >
+              photo,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="video" // this must be changed if category changes.
+              className="mr-1
                 appearance-none"
-                onChange={() => handleClick("code")}
-              />
-              <label
-                className={`
-                text-xl
-                font-display
+              onChange={() => handleClick("code")}
+            />
+            <label
+              className={`
                 cursor-pointer
                 checkbox-label-checked
                 ${selectedLabel === "video" ? "clicked" : ""}`}
-                htmlFor="video" // this must be changed if category changes.
-                onClick={() => handleClick("video")}
-              >
-                video,
-              </label>
-            </div>
-          </aside>
+              htmlFor="video" // this must be changed if category changes.
+              onClick={() => handleClick("video")}
+            >
+              video,
+            </label>
+          </div>
         </article>
+
+        {/* ITEMS */}
         <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-content-center p-2">
           {displayedItems}
         </article>
@@ -163,64 +160,3 @@ export default function Projects() {
     </main>
   );
 }
-// export default function Play() {
-//   return (
-//     <main className="">
-//       <h2>Play</h2>
-//       <div className="grid grid-cols-4">
-//         {cards.map((card) => {
-//           return <Card card={card} key={card.id} />;
-//         })}
-//       </div>
-//     </main>
-//   );
-// }
-
-// const Card = ({ card }) => {
-//   return (
-//     <div key={card.id}>
-//       <div className="w-12">
-//         <Image src={"/ss-plane-slog.png"} fill={true} alt="project photo" />
-//         <div className="text-left">{card.title}</div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// const cards = [
-//   {
-//     url: "portfolio/app/_components/edit-03512-3.jpg",
-//     title: "Title 1",
-//     id: 1,
-//   },
-//   {
-//     url: "/imgs/abstract/2.jpg",
-//     title: "Title 2",
-//     id: 2,
-//   },
-//   {
-//     url: "/imgs/abstract/3.jpg",
-//     title: "Title 3",
-//     id: 3,
-//   },
-//   {
-//     url: "/imgs/abstract/4.jpg",
-//     title: "Title 4",
-//     id: 4,
-//   },
-//   {
-//     url: "/imgs/abstract/5.jpg",
-//     title: "Title 5",
-//     id: 5,
-//   },
-//   {
-//     url: "/imgs/abstract/6.jpg",
-//     title: "Title 6",
-//     id: 6,
-//   },
-//   {
-//     url: "/imgs/abstract/7.jpg",
-//     title: "Title 7",
-//     id: 7,
-//   },
-// ];
