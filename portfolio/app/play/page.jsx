@@ -95,9 +95,9 @@ export default function Projects() {
           onChange={handleSearch}
         />
       </section> */}
-      <section className="flex flex-col md:flex-row mx-auto container max-w-6xl">
+      <section className="flex flex-row md:flex-row mx-auto container max-w-6xl">
         <article className="space-y-2 p-2 w-full max-w-[10rem]">
-          <aside className="flex sm:flex-col gap-2">
+          <aside className="flex sm:flex-row gap-2">
             <div className="flex flex-row items-center ">
               <input
                 type="checkbox"
