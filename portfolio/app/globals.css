@@ -11,19 +11,37 @@
   @font-face {
     font-family: 'AdobeTextPro-Regular';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     src: local('AdobeTextPro-Regular'), url(../public/assets/fonts/AdobeTextPro-Regular.woff) format('woff'); 
     }
   @font-face {
     font-family: 'Suisse';
     src: url(../public/assets/fonts/Suiss/SuisseIntlTrial-Book.otf) format('opentype');
-    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: 'Helvetica-Neue-Medium';
+    src: url(../public/assets/fonts/helvetica/HelveticaNeueMedium.otf) format('opentype');
+    font-weight: medium;
     font-style: normal;
   }
 
   a {
     @apply hover:underline hover:text-white
   }
+
+  :root{
+    /* FONTS */
+    --font-h1: "Helvetica-Neue-Medium";
+    --fs-h1: 3.875rem;
+    --lh-h1: 1.625rem;
+    --ls-h1: -0.13019rem;
+
+    --fs-p: 1.37294rem;
+    --lh-p: 1.625rem;
+  }
+
 }
 
 
@@ -49,6 +67,10 @@ body {
 
 canvas {
   touch-action: none;
+}
+
+html{
+  font-size: 16px;
 }
 
 .scrim-max-width {

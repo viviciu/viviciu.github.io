@@ -31,6 +31,14 @@ module.exports = {
         lg: "1.375rem", // This is the 'entry' text in styleguide!
         xl: "1.75rem",
         "9xl": "3.88rem",
+        "h1": "var(--fs-h1)",
+        "p": "var(--fs-p)",
+      },
+
+      // LINE HEIGHT
+      lineHeight: {
+        "h1": 'var(--lh-h1)',
+        "p": 'var(--lh-p)',
       },
 
       // font family
@@ -38,7 +46,7 @@ module.exports = {
         serif: ["AdobeTextPro-Regular"],
         display: ["Suisse"],
         CMUSerif: ["CMU-Serif"],
-        CMUSerif: ["CMU-Serif"],
+        HelveticaMedium: ["Helvetica-Neue-Medium"],
       },
 
       // RESPONSIVE DESIGN : SCREEN SIZES

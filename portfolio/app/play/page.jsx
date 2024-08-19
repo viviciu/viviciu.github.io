@@ -4,6 +4,7 @@
 "use client";
 import { useState } from "react";
 import { items } from "./items.js";
+import Link from "next/link.js";
 
 export default function Projects() {
   // RADIO BUTTONS: https://www.w3schools.com/tags/att_input_type_radio.asp
@@ -20,27 +21,29 @@ export default function Projects() {
     .map((item) => (
       <div key={item.id} className="item space-y-2">
         {/* PARENT GROUP */}
-        <div
-          className="flex flex-col justify-center relative group cursor-pointer
+        <Link href={"/play/" + item.id}>
+          <div
+            className="flex flex-col justify-center relative group cursor-pointer
           "
-        >
-          <p className="font-display">{item.name}</p>
-          <p
-            className="
+          >
+            <p className="font-display">{item.name}</p>
+            <p
+              className="
               font-CMUSerif
               opacity-0
               transition
               group-hover:opacity-100"
-          >
-            ::081124
-          </p>
-          <img
-            src={item.url}
-            alt={item.name}
-            className="w-full h-full object-cover 
+            >
+              ::081124
+            </p>
+            <img
+              src={item.url}
+              alt={item.name}
+              className="w-full h-full object-cover 
             translate-y-0 transition group-hover:translate-y-2"
-          />
-        </div>
+            />
+          </div>
+        </Link>
         {/* CARD CATEGORY LABEL */}
         {/* <pre>{item.category}</pre> */}
       </div>
