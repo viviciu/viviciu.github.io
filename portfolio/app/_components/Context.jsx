@@ -6,8 +6,9 @@ const Navbar = () => {
     <main>
       <div
         className="
-      pt-[2.9375rem] pb-[5.06rem]
-      grid lg:grid-cols-5 gap-[5.06rem] w-full h-80 grid-cols-3"
+      pt-[2.9375rem] pb-[5.06rem] mt-[3.5rem]
+      grid lg:grid-cols-5 gap-[5.06rem] w-full h-80 grid-cols-3
+      "
       >
         <h1
           className="text-white 
