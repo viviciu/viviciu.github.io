@@ -1,0 +1,7 @@
+.grid-background {
+    background-image: repeating-linear-gradient(to right,
+            transparent,
+            transparent 20.1vw,
+            rgba(255, 255, 255, 0.15) 20.2vw);
+    background-size: 100vw 100%;
+}

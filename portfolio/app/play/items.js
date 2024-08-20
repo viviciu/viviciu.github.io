@@ -1,7 +1,7 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
   {
-    id: "item-01",
+    id: "liminal",
     name: "lunar gala web dev & design",
     url: "/lg-gif-compressed.gif",
     category: "code",
@@ -13,13 +13,13 @@ export const items = [
     category: "sketch",
   },
   {
-    id: "Item 3",
+    id: "item-03",
     name: "Item 3",
     url: "/refrigerator-lut_1.2.1.jpg",
     category: "video", // this must be changed if category changes in html
   },
   {
-    id: "Item 4",
+    id: "item-04",
     name: "Item 3",
     url: "/lucy-2-prada.jpg",
     category: "photo",
