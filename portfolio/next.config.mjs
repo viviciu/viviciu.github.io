@@ -2,12 +2,17 @@ import createMDX from "@next/mdx"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/portfolio",
+  output: "export",
+  reactStrictMode: true,
   // Configure `pageExtensions`` to include MDX files
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
   // threejs packages -> installation instructions: https://docs.pmnd.rs/react-three-fiber/getting-started/installation
   transpilePackages: ['three'],
 }
+
+
 
 const withMDX = createMDX({
   // Add markdown plugins here, as desired
@@ -19,3 +24,4 @@ const withMDX = createMDX({
 
 // Merge MDX config with Next.js config
 export default withMDX(nextConfig)
+
