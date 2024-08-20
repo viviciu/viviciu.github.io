@@ -9,10 +9,10 @@
     src: url(/fonts/cmunbi.ttf) format("ttf");
   }
   @font-face {
-    font-family: 'AdobeTextPro-Regular';
+    font-family: 'AdobeTextPro';
     font-style: normal;
     font-weight: 400;
-    src: local('AdobeTextPro-Regular'), url(../public/assets/fonts/AdobeTextPro-Regular.woff) format('woff'); 
+    src: url(../public/assets/fonts/AdobeTextPro-Regular.woff) format('woff'); 
     }
   @font-face {
     font-family: 'Suisse';
@@ -20,10 +20,31 @@
     font-weight: 400;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Helvetica-Neue';
+    src: url(../public/assets/fonts/helvetica/HelveticaNeueRoman.otf) format('opentype');
+    /* NORMAL */
+    font-weight: 400;
+    font-style: normal;
+  }
   @font-face{
-    font-family: 'Helvetica-Neue-Medium';
+    font-family: 'Helvetica-Neue';
     src: url(../public/assets/fonts/helvetica/HelveticaNeueMedium.otf) format('opentype');
-    font-weight: medium;
+    /* MEDIUM */
+    font-weight: 500; 
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Helvetica-Neue';
+    src: url(../public/assets/fonts/helvetica/HelveticaNeueBold.otf) format('opentype');
+    /* BOLD */
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Helvetica-Neue';
+    src: url(../public/assets/fonts/helvetica/HelveticaNeueBlack.otf) format('opentype');
+    font-weight: 900;
     font-style: normal;
   }
 
@@ -33,11 +54,12 @@
 
   :root{
     /* FONTS */
-    --font-h1: "Helvetica-Neue-Medium";
+    --font-h1: "Helvetica-Neue";
     --fs-h1: 3.875rem;
     --lh-h1: 1.625rem;
     --ls-h1: -0.13019rem;
 
+    
     --fs-p: 1.37294rem;
     --lh-p: 1.625rem;
   }

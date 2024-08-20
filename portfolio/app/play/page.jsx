@@ -26,10 +26,10 @@ export default function Projects() {
             className="flex flex-col justify-center relative group cursor-pointer
           "
           >
-            <p className="font-display">{item.name}</p>
+            <p className="font-AdobeTextPro">{item.name}</p>
             <p
               className="
-              font-CMUSerif
+              font-AdobeTextPro
               opacity-0
               transition
               group-hover:opacity-100"
@@ -54,9 +54,12 @@ export default function Projects() {
       <section className="flex flex-col md:flex-col mx-4 container max-w-6xl">
         {/* SELECTION BAR */}
         <article
-          className="mb-[11vh] mt-[33vh] flex sm:flex-row 
-        lg:text-6xl text-xl
-        font-display"
+          className="
+          mb-[11vh] mt-[11vh] 
+          flex flex-wrap sm:flex-row 
+          md:text-h1 text-3xl
+          leading-h1 
+          font-h1 font-medium"
         >
           {/* SHOW ALL ITEMS */}
           <div className="">
@@ -68,6 +71,7 @@ export default function Projects() {
             />
             <label
               className={`
+                
                   cursor-pointer
                   checkbox-label-checked
                   ${selectedLabel === null ? "clicked" : ""}

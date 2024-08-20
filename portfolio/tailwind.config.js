@@ -31,22 +31,27 @@ module.exports = {
         lg: "1.375rem", // This is the 'entry' text in styleguide!
         xl: "1.75rem",
         "9xl": "3.88rem",
-        "h1": "var(--fs-h1)",
-        "p": "var(--fs-p)",
+        h1: "var(--fs-h1)",
+        p: "var(--fs-p)",
       },
 
       // LINE HEIGHT
       lineHeight: {
-        "h1": 'var(--lh-h1)',
-        "p": 'var(--lh-p)',
+        h1: "var(--lh-h1)",
+        p: "var(--lh-p)",
+      },
+
+      // LETTER SPACING (tracking?)
+      letterSpacing: {
+        h1: "-0.13019rem",
       },
 
       // font family
       fontFamily: {
-        serif: ["AdobeTextPro-Regular"],
-        display: ["Suisse"],
+        AdobeTextPro: ["AdobeTextPro"],
+        Suisse: ["Suisse"],
         CMUSerif: ["CMU-Serif"],
-        HelveticaMedium: ["Helvetica-Neue-Medium"],
+        Helvetica: ["Helvetica-Neue"],
       },
 
       // RESPONSIVE DESIGN : SCREEN SIZES
