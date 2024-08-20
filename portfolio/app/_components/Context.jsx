@@ -1,50 +1,52 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { forwardRef } from 'react' // IMPORTANT
 
-const Navbar = () => {
+const Context = forwardRef(({ text1, text2 }, ref) => { // NOTICE REF HERE
   return (
-    <main>
+    // NOTICE REF IN MAIN
+    <main ref={ref}> 
       <div
+        // gap-[5.06rem] !!
         className="
       pt-[2.9375rem] pb-[5.06rem] mt-[3.5rem]
-      grid lg:grid-cols-5 gap-[5.06rem] w-full h-80 grid-cols-3
+      grid lg:grid-cols-5 grid-cols-3
+      gap-[5.06rem] 
+      w-full h-fit 
+      items-start
       "
       >
         <h1
           className="text-white 
-            font-HelveticaMedium
+            font-Helvetica
             tracking-['var(--ls-h1)']
             leading-['var(--lh-h1)]
             lg:text-h1
             md:text-h1
             xs:text-6xl
-            self-end
             col-span-2
             lg:col-span-2
             lg:col-start-1
             col-start-2
-            pb-16
-            md:pb-32"
+            "
         >
-          A realm where the very essence of self and time finds itself in flux.
+          {text1}
         </h1>
         <p
           className="
+          indent-[33%]
         col-start-3
-        col-span-2
-        lg:col-span-2 
-        leading-p 
-        text-p 
-        font-[AdobeTextPro-Regular]"
+        col-span-3
+        lg:col-span-3
+        leading-callout
+        text-callout
+        font-Helvetica
+        font-[var(--w-callout)]"
         >
-          We define Liminality as a captivating interlude, where the boundaries
-          of reality blur and reconfigure. It is a passage where the soul's
-          chrysalis unfurls, and the harmonious transition from the familiar to
-          the enigmatic.
+          {text2}
         </p>
       </div>
     </main>
   );
-}
+});
 
-export default Navbar
+export default Context

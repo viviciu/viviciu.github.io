@@ -15,9 +15,27 @@
     src: url(../public/assets/fonts/AdobeTextPro-Regular.woff) format('woff'); 
     }
   @font-face {
+    font-family: 'Suisse-Works';
+    src: url(../public/assets/fonts/suisseWorks/SuisseWorks-Regular-WebTrial.woff2) format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Suisse-Works';
+    src: url(../public/assets/fonts/suisseWorks/SuisseWorks-RegularItalic-WebTrial.woff2) format('woff');
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
     font-family: 'Suisse';
     src: url(../public/assets/fonts/Suiss/SuisseIntlTrial-Book.otf) format('opentype');
     font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Helvetica-Neue';
+    src: url(../public/assets/fonts/helvetica/HelveticaNeueLight.otf) format('opentype');
+    font-weight: 300;
     font-style: normal;
   }
   @font-face {
@@ -62,6 +80,10 @@
     
     --fs-p: 1.37294rem;
     --lh-p: 1.625rem;
+
+    --fs-callout: 3.1925rem;
+    --lh-callout: 3.25rem;
+    --w-callout: 300;
   }
 
 }

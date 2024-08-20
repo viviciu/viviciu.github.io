@@ -33,12 +33,14 @@ module.exports = {
         "9xl": "3.88rem",
         h1: "var(--fs-h1)",
         p: "var(--fs-p)",
+        callout: "var(--fs-callout)",
       },
 
       // LINE HEIGHT
       lineHeight: {
         h1: "var(--lh-h1)",
         p: "var(--lh-p)",
+        callout: "var(--lh-callout)",
       },
 
       // LETTER SPACING (tracking?)
@@ -52,6 +54,7 @@ module.exports = {
         Suisse: ["Suisse"],
         CMUSerif: ["CMU-Serif"],
         Helvetica: ["Helvetica-Neue"],
+        SuisseWorks: ["Suisse-Works"]
       },
 
       // RESPONSIVE DESIGN : SCREEN SIZES
