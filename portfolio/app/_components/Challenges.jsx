@@ -19,7 +19,11 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
         <h1 className="text-h1 leading-h1 tracking-h1">Challenges</h1>
 
         <div className="flex col-start-3">
-          <p>●</p>
+          <p className={`${
+              index === 0 && activeIndex === index
+                ? "text-white"
+                : "text-gray-500"
+            }`}>●</p>
           <p
             className={`indent-[11%] font-SuisseWorks ${
               index === 0 && activeIndex === index
@@ -31,7 +35,11 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
           </p>
         </div>
         <div className="flex">
-          <p>●</p>
+          <p className={`${
+              index === 1 && activeIndex === index
+                ? "text-white"
+                : "text-gray-500"
+            }`}>●</p>
           <p
             className={`indent-[11%] font-SuisseWorks ${
               index === 1 && activeIndex === index
@@ -43,7 +51,11 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
           </p>
         </div>
         <div className="flex">
-          <p>●</p>
+          <p className={`${
+              index === 2 && activeIndex === index
+                ? "text-white"
+                : "text-gray-500"
+            }`}>●</p>
           <p
             className={`indent-[11%] font-SuisseWorks ${
               index === 2 && activeIndex === index
@@ -54,39 +66,6 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
             Liminality in <span className="italic">interaction</span>
           </p>
         </div>
-
-        {/* <h1 className="text-h1 leading-h1 tracking-h1">Challenges</h1>
-
-      <div className="flex col-start-3">
-        <p>●</p>
-        <p
-          className={`indent-[11%] font-SuisseWorks ${
-            activeIndex === 0 ? "text-white" : "text-gray-500"
-          }`}
-        >
-          Liminality in <span className="italic">form</span>
-        </p>
-      </div>
-      <div className="flex">
-        <p>●</p>
-        <p
-          className={`indent-[11%] font-SuisseWorks ${
-            activeIndex === 1 ? "text-white" : "text-gray-500"
-          }`}
-        >
-          Liminality in <span className="italic">function</span>
-        </p>
-      </div>
-      <div className="flex">
-        <p>●</p>
-        <p
-          className={`indent-[11%] font-SuisseWorks ${
-            activeIndex === 2 ? "text-white" : "text-gray-500"
-          }`}
-        >
-          Liminality in <span className="italic">interaction</span>
-        </p>
-      </div> */}
       </div>
     </main>
   );
