@@ -3,6 +3,10 @@ import React, { useState, useEffect, useRef } from "react";
 import Context from "../../_components/Context";
 import CoverYAML from "../../_components/CoverYAML";
 import Challenges from "../../_components/Challenges";
+import Callout from "../../_components/Callout";
+import Solution from "../../_components/Solution";
+import ImageGrid1 from "../../_components/ImageGrid1";
+
 import "../../_components/greyBGLines.css";
 
 export default function Liminal() {
@@ -34,38 +38,55 @@ export default function Liminal() {
   }, []);
   
   return (
-    <main className="m-5 h-fit block grid-background">
-      <Context
-        text1="A realm where the very essence of self and time finds itself in flux."
-        text2="We define Liminality as a captivating interlude, where the boundaries
+    <main className=" h-fit block grid-background">
+      <div className="m-5">
+        <Context
+          text1="A realm where the very essence of self and time finds itself in flux."
+          text2="We define Liminality as a captivating interlude, where the boundaries
           of reality blur and reconfigure. It is a passage where the soul's
           chrysalis unfurls, and the harmonious transition from the familiar to
           the enigmatic."
-      />
-      <CoverYAML />
-      <Context
-        text1="'LIMINAL'"
-        text2="             We define Liminality as a captivating interlude, where the boundaries of reality blur and reconfigure. It is a passage where the soul's chrysalis unfurls, and the harmonious transition from the familiar to the enigmatic."
-      />
-      {/* <Callout /> */}
-      {/* Scene */}
-      <Challenges activeIndex={activeIndex} index={0} ref={componentRefs[0]} />
+        />
+        <CoverYAML />
+        <Context
+          text1="'LIMINAL'"
+          text2="             We define Liminality as a captivating interlude, where the boundaries of reality blur and reconfigure. It is a passage where the soul's chrysalis unfurls, and the harmonious transition from the familiar to the enigmatic."
+        />
 
-      <Context
-        text1="'LIMINAL'"
-        text2="             We define Liminality as a captivating interlude, where the boundaries of reality blur and reconfigure. It is a passage where the soul's chrysalis unfurls, and the harmonious transition from the familiar to the enigmatic."
+        {/* Scene */}
+        <Challenges
+          activeIndex={activeIndex}
+          index={0}
+          ref={componentRefs[0]}
+        />
+      </div>
+      {/* CALLOUT HAS MARGIN 0, others use a wrapper div with m-5 */}
+      <Callout
+        className="m-0"
+        text="WHAT FORM LANGUAGE CREATES A LIMINAL SPACE?"
       />
-      <Challenges activeIndex={activeIndex} index={1} ref={componentRefs[1]} />
-      <Context
-        text1="'LIMINAL'"
-        text2="             We define Liminality as a captivating interlude, where the boundaries of reality blur and reconfigure. It is a passage where the soul's chrysalis unfurls, and the harmonious transition from the familiar to the enigmatic."
-      />
-      <Challenges activeIndex={activeIndex} index={2} ref={componentRefs[2]} />
-      <Context
-        text1="'LIMINAL'"
-        text2="             We define Liminality as a captivating interlude, where the boundaries of reality blur and reconfigure. It is a passage where the soul's chrysalis unfurls, and the harmonious transition from the familiar to the enigmatic."
-      />
-      {/* <Solution /> */}
+
+      <div className="m-5">
+        <Context
+          text1="'LIMINAL'"
+          text2="             We define Liminality as a captivating interlude, where the boundaries of reality blur and reconfigure. It is a passage where the soul's chrysalis unfurls, and the harmonious transition from the familiar to the enigmatic."
+        />
+        <Challenges
+          activeIndex={activeIndex}
+          index={1}
+          ref={componentRefs[1]}
+        />
+        
+        <Challenges
+          activeIndex={activeIndex}
+          index={2}
+          ref={componentRefs[2]}
+        />
+        
+        <Solution>
+          <ImageGrid1 img="IMAG0009.JPG" />
+        </Solution>
+      </div>
     </main>
   );
 }
