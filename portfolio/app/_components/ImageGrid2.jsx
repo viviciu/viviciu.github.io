@@ -2,7 +2,7 @@ import React from "react"; // IMPORTANT
 import Image from "next/image";
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
-const ImageGrid2 = ({ img, img2 }) => {
+const ImageGrid2 = ({ img }) => {
   return (
     <main className="">
       {/* DIVIDER LINE */}
@@ -31,7 +31,7 @@ const ImageGrid2 = ({ img, img2 }) => {
             col-start-1"
         >
           <Image
-            src={"/" + img2}
+            src={"/" + img}
             alt="home page image"
             layout="responsive"
             width={500}
@@ -40,18 +40,42 @@ const ImageGrid2 = ({ img, img2 }) => {
         </div>
 
         {/* TEXT */}
-        <p
-          className="
-        text-s font-Helvetica leading-tight text-offwhite
-        col-start-4 col-span-1 indent-[33%]"
+        <div
+          className="space-y-8
+        text-[1.25em] font-Helvetica leading-[1.75em] text-offwhite
+        col-start-4 col-span-2 indent-[33%] m-5"
         >
-          <span className="font-SuisseWorks text-p ">The home page's </span>
-          white void is a transitory space hosting each space: Time moves
-          circularly, and when the user wants to enter a page, they enter the
-          “space between spaces” — neither here nor there, they are “in-between”
-          time, and can reside there as long as they hold the mouse. This forced
-          interaction was integral to establishing liminality in interaction.
-        </p>
+          <p>
+            The site’s architecture is the foundation to establish feelings of
+            liminality. The visual form language and interaction design would
+            suffer if the entire site’s mapping wasn’t transitory. This required
+            us to establish new terms to avoid miscommunication when discussing
+            such abstract ideas during team meetings: “Capital-L Liminal” and
+            “liminal.”
+          </p>
+
+          <ul className="indent-0 space-y-4">
+            <div className="flex space-x-[11%]">
+              <p>●</p>
+              <li>
+                “liminal” *is liminality in its form—its visual language*.
+                Visual cues such as endless tunnels, negative space, and the
+                like.
+              </li>
+            </div>
+
+            <div className="flex space-x-[11%]">
+              <p>●</p>
+              <li>
+                “Capital-L Liminal” is *literally a liminal space*—it does not
+                exist and its only purpose is to transport the user to another
+                space. The home page serves this purpose—it is a navigation hub
+                as discussed earlier where time is an infinite loop. However, it
+                is also “liminal.” visually.
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </main>
   );
