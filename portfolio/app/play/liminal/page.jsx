@@ -6,6 +6,7 @@ import Challenges from "../../_components/Challenges";
 import Callout from "../../_components/Callout";
 import Solution from "../../_components/Solution";
 import ImageGrid1 from "../../_components/ImageGrid1";
+import ImageGrid2 from "../../_components/ImageGrid2";
 
 import "../../_components/greyBGLines.css";
 
@@ -66,26 +67,27 @@ export default function Liminal() {
         text="WHAT FORM LANGUAGE CREATES A LIMINAL SPACE?"
       />
 
+      <Solution>
+        <ImageGrid1 img="IMAG0009.JPG" img2="fav-color.png" />
+      </Solution>
+
       <div className="m-5">
-        <Context
-          text1="'LIMINAL'"
-          text2="             We define Liminality as a captivating interlude, where the boundaries of reality blur and reconfigure. It is a passage where the soul's chrysalis unfurls, and the harmonious transition from the familiar to the enigmatic."
-        />
         <Challenges
           activeIndex={activeIndex}
           index={1}
           ref={componentRefs[1]}
         />
-        
+      </div>
+      <Callout className="m-0" text="LIMINALITY GOES BELOW THE SURFACE." />
+      <div className="m-5">
+        <Solution>
+          <ImageGrid2 img="IMAG0009.JPG" img2="fav-color.png" />
+        </Solution>
         <Challenges
           activeIndex={activeIndex}
           index={2}
           ref={componentRefs[2]}
         />
-        
-        <Solution>
-          <ImageGrid1 img="IMAG0009.JPG" />
-        </Solution>
       </div>
     </main>
   );
