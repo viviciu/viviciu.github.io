@@ -1,4 +1,4 @@
-import React from "react"; // IMPORTANT
+import React from "react";
 import Image from "next/image";
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.

@@ -8,8 +8,12 @@ import Solution from "../../_components/Solution";
 import ImageGrid1 from "../../_components/ImageGrid1";
 import ImageGrid2 from "../../_components/ImageGrid2";
 import ImageGrid3 from "../../_components/ImageGrid3";
+import ImageGrid4 from "../../_components/ImageGrid4";
+import ImageGrid5 from "../../_components/ImageGrid5";
+import CircleSect from "../../_components/CircleSect";
 
 import "../../_components/greyBGLines.css";
+import Footer from "../../_components/Footer";
 
 export default function Liminal() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -98,6 +102,9 @@ export default function Liminal() {
       <div className="m-5">
         <ImageGrid3 img="lg-gif-compressed.gif" />
       </div>
+      <CircleSect text="REFLECTION" />
+      <ImageGrid5 img="lg-gif-compressed.gif" img2="lg-prog-030924-1.png" bgColor="white" />
+      <Footer />
     </main>
   );
 }

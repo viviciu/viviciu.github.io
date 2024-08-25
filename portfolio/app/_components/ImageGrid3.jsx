@@ -2,16 +2,16 @@ import React from "react"; // IMPORTANT
 import Image from "next/image";
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
-const ImageGrid2 = ({ img }) => {
+const ImageGrid2 = ({ img, bgColor }) => {
   return (
-    <main className="">
+    <main className={`bg-${bgColor}`}>
       {/* DIVIDER LINE */}
       {/* in figma, the divider line height is 0.105rem */}
       <div
         className="bg-white w-full h-[1px]
       mt-[10.61rem]"
       ></div>
-      <p>LIMINALITY IN INTERACTION</p>
+      <p className={`${bgColor === "white" ? "text-black" : "text-offwhite"}`}>LIMINALITY IN INTERACTION</p>
 
       <div
         className="
@@ -41,9 +41,10 @@ const ImageGrid2 = ({ img }) => {
 
         {/* TEXT */}
         <div
-          className="space-y-8
-        text-[1.25em] font-Helvetica leading-[1.75em] text-offwhite
-        col-start-4 col-span-2 indent-[33%] m-5"
+          className={`space-y-8
+        text-[1.25em] font-Helvetica leading-[1.75em] 
+        ${bgColor === "white" ? "text-black" : "text-offwhite"}
+        col-start-4 col-span-2 indent-[33%] m-5`}
         >
           <p>
             The nature of a mouse hold is innately temporary and transitory.
