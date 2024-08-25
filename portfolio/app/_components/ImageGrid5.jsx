@@ -141,7 +141,7 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
         <div
           className={`
       pt-[3rem] pb-[8.81rem]
-      col-start-2
+      col-start-1
       col-span-2
       mx-5
       font-Helvetica leading-callout
@@ -156,7 +156,7 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
       h-fit 
       items-start"
           >
-            <li className="text-callout leading-callout">
+            <li className="text-callout leading-callout text-right">
               You have the resources to figure out anything.
             </li>
 
@@ -164,7 +164,7 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
               I’m a fast self-learner → Learned blender, discovered R3F, and
               learned how to code in React with no js experience.
             </li>
-            <li className="text-callout leading-callout">
+            <li className="text-callout leading-callout text-right">
               Notational sketching is crucial for communicating with developers
               as it visualizes abstract concepts, clarifying which tools best
               suit the task.
@@ -176,7 +176,7 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
               influenced my process collaborating in teams. → *Blender rotating
               wheel*
             </li>
-            <li className="text-callout leading-callout">
+            <li className="text-callout leading-callout text-right">
               I refined my ability to blend external inspiration with outputs
               from other creative teams, like print and motion, to achieve a
               cohesive visual language set by our creative directors.
@@ -192,6 +192,57 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
           </ul>
         </div>
       </div>
+
+
+      {/* TEXT — SUBGRIDS VERSION */}
+      {/* <div className="grid grid-cols-3 gap-[2.25rem] ">
+        <ul
+          className=" text-p leading-p 
+          grid grid-cols-subgrid grid-rows-3 col-start-2
+      gap-[2.25rem] 
+      h-fit 
+      items-start
+      text-black
+      "
+        >
+          <li className="text-callout leading-callout text-right">
+            You have the resources to figure out anything.
+          </li>
+
+          <li className="text-callout leading-callout text-right">
+            Notational sketching is crucial for communicating with developers as
+            it visualizes abstract concepts, clarifying which tools best suit
+            the task.
+          </li>
+
+          <li className="text-callout leading-callout text-right">
+            I refined my ability to blend external inspiration with outputs from
+            other creative teams, like print and motion, to achieve a cohesive
+            visual language set by our creative directors.
+          </li>
+        </ul>
+
+        <ul className="grid grid-cols-subgrid col-start-3 text-black">
+          <li>
+            I’m a fast self-learner → Learned blender, discovered R3F, and
+            learned how to code in React with no js experience.
+          </li>
+          <li>
+            - Notational sketching is crucial for communicating concepts with
+            developers, enabling us to brainstorm algorithmic approaches for
+            implementation. → Freshman year design practices heavily influenced
+            my process collaborating in teams. → *Blender rotating wheel*
+          </li>
+          <li>
+            - **I honed my ability to integrate inspiration from external
+            sources with the output of our other creative teams—such as print
+            and motion—to achieve a cohesive visual language established by our
+            creative directors.** - Interaction design facilitates subliminal
+            emotion and experiences and was at the core of making the site truly
+            feel “Liminal.”
+          </li>
+        </ul>
+      </div> */}
     </main>
   );
 };
