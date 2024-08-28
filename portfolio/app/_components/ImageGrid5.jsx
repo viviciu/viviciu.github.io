@@ -148,37 +148,41 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
       items-start"
           >
             <li className="text-callout leading-callout text-right">
-              You have the resources to figure out anything.
+              You have the resources to address any challenge.
             </li>
 
             <li>
-              I’m a fast self-learner → Learned blender, discovered R3F, and
-              learned how to code in React with no js experience.
+              Joining the team I only had some html and css background
+              self-taught during highschool—but I still wanted to be involved in
+              the building of the site after the design stage to ensure it's
+              execution follows the vision.
+              <br />
+              <br />
+              So through Blender tutorials, reading documentation, and looking
+              towards well-structured codepen examples, I learned React and
+              React Three Fiber to help build our site using 3D scenes.
             </li>
             <li className="text-callout leading-callout text-right">
-              Notational sketching is crucial for communicating with developers
-              as it visualizes abstract concepts, clarifying which tools best
-              suit the task.
+              Notational sketching aids designer-developer communication
+              significantly.
             </li>
             <li>
-              - Notational sketching is crucial for communicating concepts with
-              developers, enabling us to brainstorm algorithmic approaches for
-              implementation. → Freshman year design practices heavily
-              influenced my process collaborating in teams. → *Blender rotating
-              wheel*
+              Notational Sketching practices developed over freshman year
+              heavily influenced my process collaborating in teams. It allowed
+              me to quickly communicate to another dev a simpler approach to
+              programming the 3D infinitely rotating planes on the Home page. (
+              fig. 02 )
             </li>
             <li className="text-callout leading-callout text-right">
-              I refined my ability to blend external inspiration with outputs
-              from other creative teams, like print and motion, to achieve a
-              cohesive visual language set by our creative directors.
+              I honed my ability to integrate external inspiration with creative
+              team outputs for a cohesive visual style.
             </li>
             <li>
-              - **I honed my ability to integrate inspiration from external
-              sources with the output of our other creative teams—such as print
-              and motion—to achieve a cohesive visual language established by
-              our creative directors.** - Interaction design facilitates
-              subliminal emotion and experiences and was at the core of making
-              the site truly feel “Liminal.”
+              Creative—a team of over 40 students across different
+              subgroups—must move as one cohesive unit. The synergistic
+              influences during cross-team meetings and weekly general body
+              meetings—where each team shared their progress—made me prioritize
+              the team and theme's direction in every design decision.
             </li>
           </ul>
         </div>

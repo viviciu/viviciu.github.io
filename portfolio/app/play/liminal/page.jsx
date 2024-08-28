@@ -155,8 +155,8 @@ export default function Liminal() {
       </div>
       <CircleSect text="REFLECTION" />
       <ImageGrid5
-        img="lg-gif-compressed.gif"
-        img2="lg-prog-030924-1.png"
+        img=""
+        img2="whiteboard-notationalSketching.png"
         bgColor="white"
       />
       <Footer />
