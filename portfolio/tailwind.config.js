@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         blue: "#2997FF",
         offwhite: "#E9E9EC",
+        offwhite2: "#dbdbdb",
         gray: {
           DEFAULT: "#86868b",
           100: "#94928d",
@@ -34,6 +35,8 @@ module.exports = {
         "9xl": "3.88rem",
         h1: "var(--fs-h1)",
         p: "var(--fs-p)",
+        // h4pp == PP Neue montreal website large p text, their h4
+        h4pp: "2.1875rem",
         callout: "var(--fs-callout)",
       },
 
@@ -41,6 +44,9 @@ module.exports = {
       lineHeight: {
         h1: "var(--lh-h1)",
         p: "var(--lh-p)",
+        p2: "var(--lh-p2)",
+        // h4pp == PP Neue montreal website large p text, their h4
+        h4pp: "1",
         callout: "var(--lh-callout)",
       },
 

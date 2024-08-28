@@ -5,13 +5,20 @@ import Image from "next/image";
 const ImageGrid2 = ({ img }) => {
   return (
     <main className="">
-      {/* DIVIDER LINE */}
-      {/* in figma, the divider line height is 0.105rem */}
-      <div
-        className="bg-white w-full h-[1px]
-      mt-[10.61rem]"
-      ></div>
-      <p>SITE ARCHITECTURE</p>
+      {/* DIVIDER LINE 2 */}
+        {/* in figma, the divider line height is 0.105rem */}
+        <div
+          className="bg-white w-full h-[1px] mt-[10.61rem]
+      "
+        ></div>
+        <p
+          className={`pt-2 indent-[1.75rem] uppercase 
+            text-offwhite font-Helvetica
+          `}
+        >
+          <span className="font-sans">●</span> Site architecture
+        </p>
+        {/* END DIVIDER LINE */}
 
       <div
         className="
@@ -42,7 +49,7 @@ const ImageGrid2 = ({ img }) => {
         {/* TEXT */}
         <div
           className="space-y-8
-        text-[1.25em] font-Helvetica leading-[1.75em] text-offwhite
+        text-[1.25em] font-Helvetica font-light leading-[1.75em] text-offwhite
         col-start-4 col-span-2 indent-[33%] m-5"
         >
           <p>

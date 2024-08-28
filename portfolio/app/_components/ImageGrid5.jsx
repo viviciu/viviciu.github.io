@@ -12,12 +12,13 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
       "
       ></div>
       <p
-        className={`pt-2 indent-[1.75rem] uppercase ${
+        className={`font-Helvetica pt-2 indent-[1.75rem] uppercase ${
           bgColor === "white" ? "text-black" : "text-offwhite"
         }`}
       >
-        ● Process.
+        <span className="font-sans">● Process</span>
       </p>
+      {/* END DIVIDER LINE */}
 
       <div
         className="
@@ -110,16 +111,6 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
             </div>
           </div>
         </div>
-
-        {/* TEXT */}
-        <div
-          className={`space-y-8
-        text-[1.125rem] font-Helvetica leading-[1.7em] 
-        ${bgColor === "white" ? "text-black" : "text-offwhite"}
-        col-start-3 col-span-1 indent-[33%] m-5`}
-        >
-          <p className="uppercase">Many</p>
-        </div>
       </div>
 
       {/* DIVIDER LINE 2 */}
@@ -133,7 +124,7 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
           bgColor === "white" ? "text-black" : "text-offwhite"
         }`}
       >
-        ● PERSONAL GROWTH.
+        ● PERSONAL GROWTH
       </p>
 
       {/* TEXT */}
@@ -192,7 +183,6 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
           </ul>
         </div>
       </div>
-
 
       {/* TEXT — SUBGRIDS VERSION */}
       {/* <div className="grid grid-cols-3 gap-[2.25rem] ">

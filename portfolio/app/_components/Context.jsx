@@ -4,7 +4,7 @@ import React, { forwardRef } from 'react' // IMPORTANT
 const Context = forwardRef(({ text1, text2 }, ref) => { // NOTICE REF HERE
   return (
     // NOTICE REF IN MAIN
-    <main ref={ref}> 
+    <main ref={ref}>
       <div
         // gap-[5.06rem] !!
         className="
@@ -16,7 +16,7 @@ const Context = forwardRef(({ text1, text2 }, ref) => { // NOTICE REF HERE
       "
       >
         <h1
-          className="text-white 
+          className="text-offwhite 
             font-Helvetica
             tracking-['var(--ls-h1)']
             leading-['var(--lh-h1)]
@@ -37,10 +37,12 @@ const Context = forwardRef(({ text1, text2 }, ref) => { // NOTICE REF HERE
         col-start-3
         col-span-3
         lg:col-span-3
-        leading-callout
-        text-callout
+        leading-h4pp
+        text-h4pp
         font-Helvetica
-        font-[var(--w-callout)]"
+        font-thin
+        text-offwhite2
+        "
         >
           {text2}
         </p>

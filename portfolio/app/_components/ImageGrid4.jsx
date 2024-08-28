@@ -5,15 +5,20 @@ import Image from "next/image";
 const ImageGrid2 = ({ img, bgColor }) => {
   return (
     <main className={`bg-${bgColor} pl-5`}>
-      {/* DIVIDER LINE */}
+      {/* DIVIDER LINE 2 */}
       {/* in figma, the divider line height is 0.105rem */}
       <div
-        className="bg-black w-full h-[1px]
+        className="bg-white w-full h-[1px]
       "
       ></div>
-      <p className={`${bgColor === "white" ? "text-black" : "text-offwhite"}`}>
-        Do i even need a header here
+      <p
+        className={`pt-2 indent-[1.75rem] uppercase 
+            text-offwhite font-Helvetica
+          `}
+      >
+        <span className="font-sans">●</span> CONTENT HEADER
       </p>
+      {/* END DIVIDER LINE */}
 
       <div
         className="
@@ -85,15 +90,15 @@ const ImageGrid2 = ({ img, bgColor }) => {
             col-start-1"
         >
           <div className="flex gap-[2.06rem] ">
-              <Image
-                src={"/" + img}
-                alt="home page image"
-                layout="responsive"
-                width={500}
-                height={500}
-                className="rounded-xl"
-              />
-              {/* <p className="text-black">fig 02</p> */}
+            <Image
+              src={"/" + img}
+              alt="home page image"
+              layout="responsive"
+              width={500}
+              height={500}
+              className="rounded-xl"
+            />
+            {/* <p className="text-black">fig 02</p> */}
 
             <div className="h-[50%] self-end">
               <Image

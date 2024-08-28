@@ -48,12 +48,63 @@ export default function Liminal() {
       <div className="m-5">
         <Context
           text1="A realm where the very essence of self and time finds itself in flux."
-          text2="Blurb about what lunar gala is, what web does within creative team, & what my role is within this team."
+          text2={
+            <p>
+              Lunar Gala (LG) is Pittsburgh’s largest annual fashion show. The
+              entirely student-run show harnesses the diverse creative talents
+              of CMU—including designers, models, photographers, animators, and
+              dancers. <br /> <br /> I worked amongst 7 others on designing and
+              developing the show’s website on the creative web team. It
+              documents the lines, members, ticketing all in line with the
+              year's visual identity: <i>Liminality</i>
+            </p>
+          }
         />
-        <CoverYAML />
+      </div>
+      <CoverYAML />
+      <div className="m-5">
+        {/* DIVIDER LINE 2 */}
+        {/* in figma, the divider line height is 0.105rem */}
+        <div
+          className="bg-white w-full h-[1px]
+      "
+        ></div>
+        <p
+          className={`pt-2 indent-[1.75rem] uppercase 
+            text-offwhite font-Helvetica
+          `}
+        >
+          <span className="font-sans">●</span> Defining Liminality.
+        </p>
+        {/* END DIVIDER LINE */}
         <Context
           text1="'LIMINAL'"
-          text2="We define Liminality as a captivating interlude, where the boundaries of reality blur and reconfigure. It is a passage where the soul's chrysalis unfurls, and the harmonious transition from the familiar to the enigmatic."
+          text2={
+            <p>
+              Before ideating, we had to establish constraints. How does LG{" "}
+              <i className="font-SuisseWorks text-white">interpret</i> the
+              concept of Liminality? How does that{" "}
+              <i className="font-SuisseWorks text-white">
+                translate to digital interactions?
+              </i>
+              <br />
+              <br />
+              <p>
+                We define Liminality as "neither here nor there,” a place that
+                is temporary—fleeting even. It is a transitional stage…
+                Liminality is the space between spaces. We chose to employ
+                feelings of{" "}
+                <i className="font-SuisseWorks text-white">
+                  “the space between spaces”
+                </i>{" "}
+                , where time cannot be measured. A sense of infinite space is
+                created in each “room.”{" "}
+                <i className="font-SuisseWorks text-white">The backrooms</i>,
+                one primal cultural example of liminality, was one of a few of
+                our early influences.
+              </p>
+            </p>
+          }
         />
 
         {/* Scene */}
@@ -103,7 +154,11 @@ export default function Liminal() {
         <ImageGrid3 img="lg-gif-compressed.gif" />
       </div>
       <CircleSect text="REFLECTION" />
-      <ImageGrid5 img="lg-gif-compressed.gif" img2="lg-prog-030924-1.png" bgColor="white" />
+      <ImageGrid5
+        img="lg-gif-compressed.gif"
+        img2="lg-prog-030924-1.png"
+        bgColor="white"
+      />
       <Footer />
     </main>
   );

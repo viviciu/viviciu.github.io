@@ -44,7 +44,7 @@ const ImageGrid1 = ({ img, img2 }) => {
         {/* TEXT */}
         <p
           className="
-        text-[1.25em] font-Helvetica leading-[1.75rem] text-offwhite
+        text-[1.25em] font-Helvetica font-light leading-[1.75rem] text-offwhite
         col-start-3 indent-[33%]
         ml-1"
         >
@@ -57,7 +57,7 @@ const ImageGrid1 = ({ img, img2 }) => {
         </p>
         <p
           className="
-        text-[1.25em] font-Helvetica leading-[1.75rem] text-offwhite
+        text-[1.25em] font-Helvetica font-light leading-[1.75rem] text-offwhite
         col-start-4 indent-[33%]
         ml-2"
         >
@@ -68,7 +68,7 @@ const ImageGrid1 = ({ img, img2 }) => {
         </p>
         <p
           className="
-        text-[1.25em] font-Helvetica leading-[1.75rem] text-offwhite
+        text-[1.25em] font-Helvetica font-light leading-[1.75rem] text-offwhite
         col-start-5 indent-[33%]
         ml-3"
         >
