@@ -6,19 +6,19 @@ const ImageGrid2 = ({ img }) => {
   return (
     <main className="">
       {/* DIVIDER LINE 2 */}
-        {/* in figma, the divider line height is 0.105rem */}
-        <div
-          className="bg-white w-full h-[1px] mt-[10.61rem]
+      {/* in figma, the divider line height is 0.105rem */}
+      <div
+        className="bg-white w-full h-[1px] mt-[10.61rem]
       "
-        ></div>
-        <p
-          className={`pt-2 indent-[1.75rem] uppercase 
+      ></div>
+      <p
+        className={`pt-2 indent-[1.75rem] uppercase 
             text-offwhite font-Helvetica
           `}
-        >
-          <span className="font-sans">●</span> Site architecture
-        </p>
-        {/* END DIVIDER LINE */}
+      >
+        <span className="font-sans">●</span> Site architecture
+      </p>
+      {/* END DIVIDER LINE */}
 
       <div
         className="
@@ -53,11 +53,10 @@ const ImageGrid2 = ({ img }) => {
         col-start-4 col-span-2 indent-[33%] m-5"
         >
           <p>
-            The site’s architecture is the foundation to establish feelings of
-            liminality. The visual form language and interaction design would
-            suffer if the entire site’s mapping wasn’t transitory. This required
-            us to establish new terms to avoid miscommunication when discussing
-            such abstract ideas during team meetings: “Capital-L Liminal” and
+            The visual form language and interaction design would suffer if the
+            entire site’s mapping wasn’t transitory. This required us to
+            establish new terms to avoid miscommunication when discussing such
+            abstract ideas during team meetings: “Capital-L Liminal” and
             “liminal.”
           </p>
 
@@ -65,7 +64,7 @@ const ImageGrid2 = ({ img }) => {
             <div className="flex space-x-[11%]">
               <p>●</p>
               <li>
-                “liminal” *is liminality in its form—its visual language*.
+                “liminal” <i>is liminality in its form—its visual language</i>.
                 Visual cues such as endless tunnels, negative space, and the
                 like.
               </li>
@@ -74,11 +73,11 @@ const ImageGrid2 = ({ img }) => {
             <div className="flex space-x-[11%]">
               <p>●</p>
               <li>
-                “Capital-L Liminal” is *literally a liminal space*—it does not
-                exist and its only purpose is to transport the user to another
-                space. The home page serves this purpose—it is a navigation hub
-                as discussed earlier where time is an infinite loop. However, it
-                is also “liminal.” visually.
+                “Capital-L Liminal” is <i>literally a liminal space</i>—it does
+                not exist and its only purpose is to transport the user to
+                another space. The home page serves this purpose—it is a
+                navigation hub as discussed earlier where time is an infinite
+                loop. However, it is also “liminal.” visually.
               </li>
             </div>
           </ul>

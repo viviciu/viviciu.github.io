@@ -133,7 +133,7 @@ export default function Liminal() {
       </div>
       <Callout
         className="m-0"
-        text="LIMINALITY STARTS WITH THE FOUNDATION—ITS SITE ARCHITECTURE."
+        text="LIMINALITY STARTS WITH THE FOUNDATION—SITE ARCHITECTURE."
       />
       <div className="m-5">
         <Solution>
@@ -145,10 +145,10 @@ export default function Liminal() {
           ref={componentRefs[2]}
         />
       </div>
-      {/* How might current interaction design techniques evoke feelings of temporality? */}
+      
       <Callout
         className="m-0"
-        text="HOW MIGHT CURRENT INTERACTION DESIGN TECHNIQUES EVOKE FEELINGS OF TEMPORALITY?"
+        text="HOW MIGHT INTERACTION DESIGN EVOKE FEELINGS OF TEMPORALITY?"
       />
       <div className="m-5">
         <ImageGrid3 img="lg-gif-compressed.gif" />
