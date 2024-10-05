@@ -22,7 +22,7 @@ const Navbar = () => {
           <span className="font-CMUSerif">Year </span>
           <span className="font-Helvetica-Neue font-bold">2023-2024</span>
         </div>
-        <div className="pl-1">
+        <div className="pl-1 col-span-2">
           <span className="font-CMUSerif">Role </span>
           <span className="font-Helvetica-Neue font-bold">Web Designer, Developer</span>
         </div>

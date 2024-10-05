@@ -10,6 +10,8 @@ module.exports = {
       // Adds custom colors to existing pallette. Now we don't have to type hex codes. Just say "gray" or "blue".
       colors: {
         blue: "#2997FF",
+        offwhite: "#E9E9EC",
+        offwhite2: "#dbdbdb",
         gray: {
           DEFAULT: "#86868b",
           100: "#94928d",
@@ -33,6 +35,8 @@ module.exports = {
         "9xl": "3.88rem",
         h1: "var(--fs-h1)",
         p: "var(--fs-p)",
+        // h4pp == PP Neue montreal website large p text, their h4
+        h4pp: "2.1875rem",
         callout: "var(--fs-callout)",
       },
 
@@ -40,6 +44,9 @@ module.exports = {
       lineHeight: {
         h1: "var(--lh-h1)",
         p: "var(--lh-p)",
+        p2: "var(--lh-p2)",
+        // h4pp == PP Neue montreal website large p text, their h4
+        h4pp: "1",
         callout: "var(--lh-callout)",
       },
 
@@ -54,7 +61,7 @@ module.exports = {
         Suisse: ["Suisse"],
         CMUSerif: ["CMU-Serif"],
         Helvetica: ["Helvetica-Neue"],
-        SuisseWorks: ["Suisse-Works"]
+        SuisseWorks: ["Suisse-Works"],
       },
 
       // RESPONSIVE DESIGN : SCREEN SIZES

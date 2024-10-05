@@ -32,6 +32,14 @@
     font-weight: 400;
     font-style: normal;
   }
+  /* THIN */
+  @font-face {
+    font-family: 'Helvetica-Neue';
+    src: url(../public/assets/fonts/helvetica/HelveticaNeueThin.otf) format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  /* LIGHT */
   @font-face {
     font-family: 'Helvetica-Neue';
     src: url(../public/assets/fonts/helvetica/HelveticaNeueLight.otf) format('opentype');
@@ -80,6 +88,7 @@
     
     --fs-p: 1.37294rem;
     --lh-p: 1.625rem;
+    --lh-p2: 1.5em;
 
     --fs-callout: 3.1925rem;
     --lh-callout: 3.25rem;

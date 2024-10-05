@@ -9,6 +9,8 @@ const nextConfig = {
   transpilePackages: ['three'],
 }
 
+
+
 const withMDX = createMDX({
   // Add markdown plugins here, as desired
   options: {
@@ -19,3 +21,4 @@ const withMDX = createMDX({
 
 // Merge MDX config with Next.js config
 export default withMDX(nextConfig)
+
