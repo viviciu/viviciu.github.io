@@ -154,8 +154,8 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
             <li>
               Joining the team I only had some html and css background
               self-taught during highschool—but I still wanted to be involved in
-              the building of the site after the design stage to ensure it's
-              execution follows the vision.
+              the building of the site after the design stage to ensure
+              it&apos;s execution follows the vision.
               <br />
               <br />
               So through Blender tutorials, reading documentation, and looking
@@ -182,7 +182,7 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
               subgroups—must move as one cohesive unit. The synergistic
               influences during cross-team meetings and weekly general body
               meetings—where each team shared their progress—made me prioritize
-              the team and theme's direction in every design decision.
+              the team and theme&apos;s direction in every design decision.
             </li>
           </ul>
         </div>

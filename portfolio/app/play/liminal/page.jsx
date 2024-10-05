@@ -56,7 +56,7 @@ export default function Liminal() {
               dancers. <br /> <br /> I worked amongst 7 others on designing and
               developing the show’s website on the creative web team. It
               documents the lines, members, ticketing all in line with the
-              year's visual identity: <i>Liminality</i>
+              year&apos;s visual identity: <i>Liminality</i>
             </p>
           }
         />
@@ -90,10 +90,10 @@ export default function Liminal() {
               <br />
               <br />
               <p>
-                We define Liminality as "neither here nor there,” a place that
-                is temporary—fleeting even. It is a transitional stage…
-                Liminality is the space between spaces. We chose to employ
-                feelings of{" "}
+                We define Liminality as &quot;neither here nor there,&quot; a
+                place that is temporary—fleeting even. It is a transitional
+                stage… Liminality is the space between spaces. We chose to
+                employ feelings of{" "}
                 <i className="font-SuisseWorks text-white">
                   “the space between spaces”
                 </i>{" "}
@@ -145,7 +145,7 @@ export default function Liminal() {
           ref={componentRefs[2]}
         />
       </div>
-      
+
       <Callout
         className="m-0"
         text="HOW MIGHT INTERACTION DESIGN EVOKE FEELINGS OF TEMPORALITY?"
