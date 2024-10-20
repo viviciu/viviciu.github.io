@@ -124,7 +124,7 @@ export default function Liminal() {
         <ImageGrid1
           img="imgs/peoplePage.png"
           img2="imgs/linesPage.png"
-          img3="imgs/fav-color.png"
+          img3="imgs/homeGif.gif"
           text1={
             <div>
               The people page ... fig 01 creates a sort of “infinity scroll” of
@@ -184,12 +184,20 @@ export default function Liminal() {
         text="HOW MIGHT INTERACTION DESIGN EVOKE FEELINGS OF TEMPORALITY?"
       />
       <div className="m-5">
-        <ImageGrid3 img="lg-gif-compressed.gif" />
+        <ImageGrid3
+          img="imgs/enteringPages.gif"
+          text1="The nature of a mouse hold is innately temporary and transitory.
+            Through both computer and multi-touch gestures, a mouse hold is the
+            time—the experience even—in between the beginning and end of any
+            interaction, encapsulating feelings of Liminality."
+        />
       </div>
       <CircleSect text="REFLECTION" />
       <ImageGrid5
-        img=""
+      img1="imgs/lg-process-reel.gif"
         img2="whiteboard-notationalSketching.png"
+        img3="imgs/panels-blender-render.png"
+        img4="imgs/whiteboard-peoplePage.jpg"
         bgColor="white"
       />
       <Footer />

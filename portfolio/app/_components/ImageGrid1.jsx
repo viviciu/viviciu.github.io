@@ -1,6 +1,8 @@
 import React from "react"; // IMPORTANT
 import Image from "next/image";
 
+import { Canvas } from "@react-three/fiber";
+
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
 const ImageGrid1 = ({ img, img2, img3, text1, text2, text3 }) => {
   return (
@@ -74,14 +76,18 @@ const ImageGrid1 = ({ img, img2, img3, text1, text2, text3 }) => {
       
        h-fit w-full"
       >
-        {/* height will be auto and width will be full width of the parent */}
-        <Image
+      {/* height will be auto and width will be full width of the parent */}
+
+      <Image
           src={"/" + img3}
           alt="home page image"
           layout="responsive"
           width={500}
           height={500}
         />
+
+
+
       </div>
     </main>
   );
