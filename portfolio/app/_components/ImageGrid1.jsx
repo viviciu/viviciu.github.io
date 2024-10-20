@@ -2,7 +2,7 @@ import React from "react"; // IMPORTANT
 import Image from "next/image";
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
-const ImageGrid1 = ({ img, img2 }) => {
+const ImageGrid1 = ({ img, img2, img3, text1, text2, text3 }) => {
   return (
     <main className="">
       <div
@@ -33,7 +33,7 @@ const ImageGrid1 = ({ img, img2 }) => {
         </div>
         <div className="col-span-2 self-end">
           <Image
-            src={"/" + img}
+            src={"/" + img2}
             alt="home page image"
             layout="responsive"
             width={500}
@@ -42,44 +42,30 @@ const ImageGrid1 = ({ img, img2 }) => {
           <p className="font-SuisseWorks text-s">fig 02</p>
         </div>
         {/* TEXT */}
-        <p
+        <div
           className="
         text-[1.25em] font-Helvetica font-light leading-[1.75rem] text-offwhite
         col-start-3 indent-[33%]
         ml-1"
         >
-          The lines page ... fig 01 translates the physicality of the liminality
-          within spaces by emulating an infinitely long fashion runway in 3D.
-          Instead of flipping magazine-like pages, we transformed the
-          interaction by creating depth a user must walk{" "}
-          <i className="font-SuisseWorks">through</i> using mouse position. The
-          endless nature of the runway is innately liminal.
-        </p>
-        <p
+          {text1}
+        </div>
+        <div
           className="
         text-[1.25em] font-Helvetica font-light leading-[1.75rem] text-offwhite
         col-start-4 indent-[33%]
         ml-2"
         >
-          The people page ... fig 02 creates a sort of “infinity scroll” of
-          cards representing each LG member. This emphasizes liminality and at
-          the same time emphasizes the great mass of talents a part of making
-          the show possible.
-        </p>
-        <p
+          {text2}
+        </div>
+        <div
           className="
         text-[1.25em] font-Helvetica font-light leading-[1.75rem] text-offwhite
         col-start-5 indent-[33%]
         ml-3"
         >
-          The home page ... fig 03 is a transitory white void hosting each
-          space: Time moves in an infinite loop, and when the user wants to
-          enter a page, they enter the “space between spaces” — neither here nor
-          there, they are “in-between” time, and can reside in that page as long
-          as they hold the mouse. This forced interaction was integral to
-          evoking the feeling of temporality established in our initial
-          definition.
-        </p>
+          {text3}
+        </div>
       </div>
       {/* BELOW IMAGE */}
       <p className="font-SuisseWorks text-s ml-5">fig 03</p>
@@ -90,7 +76,7 @@ const ImageGrid1 = ({ img, img2 }) => {
       >
         {/* height will be auto and width will be full width of the parent */}
         <Image
-          src={"/" + img2}
+          src={"/" + img3}
           alt="home page image"
           layout="responsive"
           width={500}

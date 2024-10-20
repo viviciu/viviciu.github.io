@@ -28,7 +28,7 @@ export default function App() {
       <group position={[-0, -1, 0]}>
 
         {/* physics applies */}
-      <Physics debug timeStep="vary" gravity={[0, -9.81, 0]}>
+      <Physics /*debug*/ timeStep="vary" gravity={[0, -9.81, 0]}>
         {/* Auto-instanced sketchfab model */}
         {/* wrap the <Instances> in a <RigidBody> if you want to make it solid. */}
         <Instances>
