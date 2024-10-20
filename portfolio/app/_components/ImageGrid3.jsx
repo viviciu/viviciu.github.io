@@ -2,7 +2,7 @@ import React from "react"; // IMPORTANT
 import Image from "next/image";
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
-const ImageGrid2 = ({ img, bgColor }) => {
+const ImageGrid2 = ({ text1, img, bgColor }) => {
   return (
     <main className={`bg-${bgColor}`}>
       {/* DIVIDER LINE 2 */}
@@ -53,15 +53,7 @@ const ImageGrid2 = ({ img, bgColor }) => {
         ${bgColor === "white" ? "text-black" : "text-offwhite"}
         col-start-4 col-span-2 indent-[33%] m-5`}
         >
-          <p>
-            The nature of a mouse hold is innately temporary and transitory.
-            Through both computer and multi-touch gestures, a mouse hold is the
-            time—the experience even—in between the beginning and end of any
-            interaction: For example drawing rectangle in Figma—the press
-            defines one corner of the rectangle, the release another. Thus, the
-            forced mouse hold to enter a page perfectly encapsulates feelings of
-            Liminality.
-          </p>
+          {text1}
         </div>
       </div>
     </main>

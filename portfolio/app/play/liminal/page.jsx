@@ -49,7 +49,7 @@ export default function Liminal() {
         <Context
           text1="A realm where the very essence of self and time finds itself in flux."
           text2={
-            <p>
+            <div>
               Lunar Gala (LG) is Pittsburgh’s largest annual fashion show. The
               entirely student-run show harnesses the diverse creative talents
               of CMU—including designers, models, photographers, animators, and
@@ -57,7 +57,7 @@ export default function Liminal() {
               developing the show’s website on the creative web team. It
               documents the lines, members, ticketing all in line with the
               year&apos;s visual identity: <i>Liminality</i>
-            </p>
+            </div>
           }
         />
       </div>
@@ -80,7 +80,7 @@ export default function Liminal() {
         <Context
           text1="'LIMINAL'"
           text2={
-            <p>
+            <div>
               Before ideating, we had to establish constraints. How does LG{" "}
               <i className="font-SuisseWorks text-white">interpret</i> the
               concept of Liminality? How does that{" "}
@@ -89,7 +89,7 @@ export default function Liminal() {
               </i>
               <br />
               <br />
-              <p>
+              <div>
                 We define Liminality as &quot;neither here nor there,&quot; a
                 place that is temporary—fleeting even. It is a transitional
                 stage… Liminality is the space between spaces. We chose to
@@ -102,8 +102,8 @@ export default function Liminal() {
                 <i className="font-SuisseWorks text-white">The backrooms</i>,
                 one primal cultural example of liminality, was one of a few of
                 our early influences.
-              </p>
-            </p>
+              </div>
+            </div>
           }
         />
 
@@ -121,7 +121,40 @@ export default function Liminal() {
       />
 
       <Solution>
-        <ImageGrid1 img="IMAG0009.JPG" img2="fav-color.png" />
+        <ImageGrid1
+          img="imgs/peoplePage.png"
+          img2="imgs/linesPage.png"
+          img3="imgs/homeGif.gif"
+          text1={
+            <div>
+              The people page ... fig 01 creates a sort of “infinity scroll” of
+              cards representing each LG member. This emphasizes liminality and
+              at the same time emphasizes the great mass of talents a part of
+              making the show possible.
+            </div>
+          }
+          text2={
+            <div>
+              The lines page ... fig 02 translates the physicality of the
+              liminality within spaces by emulating an infinitely long fashion
+              runway in 3D. Instead of flipping magazine-like pages, we
+              transformed the interaction by creating depth a user must walk{" "}
+              <i className="font-SuisseWorks">through</i> using mouse position.
+              The endless nature of the runway is innately liminal.
+            </div>
+          }
+          text3={
+            <div>
+              The home page ... fig 03 is a transitory white void hosting each
+              space: Time moves in an infinite loop, and when the user wants to
+              enter a page, they enter the “space between spaces” — neither here
+              nor there, they are “in-between” time, and can reside in that page
+              as long as they hold the mouse. This forced interaction was
+              integral to evoking the feeling of temporality established in our
+              initial definition.
+            </div>
+          }
+        />
       </Solution>
 
       <div className="m-5">
@@ -151,12 +184,20 @@ export default function Liminal() {
         text="HOW MIGHT INTERACTION DESIGN EVOKE FEELINGS OF TEMPORALITY?"
       />
       <div className="m-5">
-        <ImageGrid3 img="lg-gif-compressed.gif" />
+        <ImageGrid3
+          img="imgs/enteringPages.gif"
+          text1="The nature of a mouse hold is innately temporary and transitory.
+            Through both computer and multi-touch gestures, a mouse hold is the
+            time—the experience even—in between the beginning and end of any
+            interaction, encapsulating feelings of Liminality."
+        />
       </div>
       <CircleSect text="REFLECTION" />
       <ImageGrid5
-        img=""
+      img1="imgs/lg-process-reel.gif"
         img2="whiteboard-notationalSketching.png"
+        img3="imgs/panels-blender-render.png"
+        img4="imgs/whiteboard-peoplePage.jpg"
         bgColor="white"
       />
       <Footer />

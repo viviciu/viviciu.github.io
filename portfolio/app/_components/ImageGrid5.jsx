@@ -2,7 +2,7 @@ import React from "react"; // IMPORTANT
 import Image from "next/image";
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
-const ImageGrid2 = ({ img, img2, bgColor }) => {
+const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
   return (
     <main className={`bg-${bgColor} pl-5`}>
       {/* DIVIDER LINE */}
@@ -59,7 +59,7 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
             col-start-1"
         >
           <Image
-            src={"/" + img}
+            src={"/" + img1}
             alt="home page image"
             layout="responsive"
             width={500}
@@ -70,7 +70,7 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
 
         <div className="col-span-1 self-end">
           <Image
-            src={"/" + img}
+            src={"/" + img2}
             alt="home page image"
             layout="responsive"
             width={500}
@@ -78,38 +78,36 @@ const ImageGrid2 = ({ img, img2, bgColor }) => {
             className="rounded-xl"
           />
           <p className="font-SuisseWorks text-s text-black">
-            fig. 02 Using notational sketching to communicate to other devs.
+            Notational sketching to communicate to other devs.
           </p>
         </div>
 
         {/* BOTTOM 2 IMAGES */}
-        <div
-          className="col-span-2
-            col-start-1"
-        >
-          <div className="flex gap-[1.25rem] ">
-            <Image
-              src={"/" + img}
-              alt="home page image"
-              layout="responsive"
-              width={500}
-              height={500}
-              className="rounded-xl"
-            />
-            {/* <p className="text-black">fig 02</p> */}
 
-            <div className=" self-end">
-              <Image
-                src={"/" + img2}
-                alt="home page image"
-                layout="responsive"
-                width={500}
-                height={500}
-                className="rounded-xl"
-              />
-              <p className="text-black">fig 02</p>
-            </div>
-          </div>
+        <div className="col-span-2  ">
+          <Image
+            src={"/" + img3}
+            alt="home page image"
+            layout="responsive"
+            width={500}
+            height={500}
+            className="rounded-xl"
+          />
+          <p className="font-SuisseWorks text-s text-black">
+            3D rendered mockups
+          </p>
+        </div>
+        {/* <p className="text-black">fig 02</p> */}
+
+        <div className="col-span-1 self-end">
+          <Image
+            src={"/" + img4}
+            alt="home page image"
+            layout="responsive"
+            width={500}
+            height={500}
+            className="rounded-xl"
+          />
         </div>
       </div>
 
