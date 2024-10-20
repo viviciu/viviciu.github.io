@@ -1,5 +1,6 @@
 import React from "react"; // IMPORTANT
 import Image from "next/image";
+import ImageGrid3 from "./ImageGrid3";
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
 const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
@@ -169,7 +170,8 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
               heavily influenced my process collaborating in teams. It allowed
               me to quickly communicate to another dev a simpler approach to
               programming the 3D infinitely rotating planes on the Home page. (
-              fig. 02 )
+              fig. 02 ) I took on programming and styling the texture of the
+              Home page and frosted cursor.
             </li>
             <li className="text-callout leading-callout text-right">
               I honed my ability to integrate external inspiration with creative
@@ -185,6 +187,12 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
           </ul>
         </div>
       </div>
+      
+      <ImageGrid3 bgColor="white" dividerLineText="CHALLENGES: POOR OPTIMIZATION & USABILITY" 
+      img="imgs/live-home.png"
+      text1="
+      Unfortunately, since the 3.js textures of the glass panels of the home page were extremely heavy, we had to settle for a more optimized version—still to which had performance issues. I learned it's key to test assets to production-grade fidelity live as early as the design stages, to see if a concept can be well executed by the devs far ahead of launch date. This also calls for transparency between devs and designers as to what truly can be done in our timeline. The navigation UX had also become an issue: We gave no affordances on how to really enter the site or what was clickable // hoverable. This served the artistic theme well, but not the users. If we stray too far from familiarity and usability becomes lost, the artistic concept of the work becomes lost along with it.
+      " />
 
       {/* TEXT — SUBGRIDS VERSION */}
       {/* <div className="grid grid-cols-3 gap-[2.25rem] ">

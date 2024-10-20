@@ -2,21 +2,28 @@ import React from "react"; // IMPORTANT
 import Image from "next/image";
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
-const ImageGrid2 = ({ text1, img, bgColor }) => {
+const ImageGrid2 = ({ text1, dividerLineText, img, bgColor, txtColor }) => {
   return (
     <main className={`bg-${bgColor}`}>
       {/* DIVIDER LINE 2 */}
       {/* in figma, the divider line height is 0.105rem */}
       <div
-        className="bg-white w-full h-[1px]
-      "
+        className={`w-full h-[1px]
+          ${bgColor === "white" ? "bg-black" : "bg-offwhite"}`}
       ></div>
       <p
         className={`pt-2 indent-[1.75rem] uppercase 
-            text-offwhite font-Helvetica
+             font-Helvetica
+             ${bgColor === "white" ? "text-black" : "text-offwhite"}
           `}
       >
-        <span className="font-sans">●</span> Liminality in interaction
+        <span
+          className={`
+            font-sans`}
+        >
+          ●
+        </span>{" "}
+        {dividerLineText}
       </p>
       {/* END DIVIDER LINE */}
 

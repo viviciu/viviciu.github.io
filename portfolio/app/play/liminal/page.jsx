@@ -53,7 +53,7 @@ export default function Liminal() {
               Lunar Gala (LG) is Pittsburgh’s largest annual fashion show. The
               entirely student-run show harnesses the diverse creative talents
               of CMU—including designers, models, photographers, animators, and
-              dancers. <br /> <br /> I worked amongst 7 others on designing and
+              dancers. <br /> <br /> I worked amongst 7 others both designing and
               developing the show’s website on the creative web team. It
               documents the lines, members, ticketing all in line with the
               year&apos;s visual identity: <i>Liminality</i>
@@ -186,15 +186,16 @@ export default function Liminal() {
       <div className="m-5">
         <ImageGrid3
           img="imgs/enteringPages.gif"
-          text1="The nature of a mouse hold is innately temporary and transitory.
+          text1="To enter the site, you must click and hold a panel. The nature of a mouse hold is innately temporary and transitory.
             Through both computer and multi-touch gestures, a mouse hold is the
             time—the experience even—in between the beginning and end of any
             interaction, encapsulating feelings of Liminality."
+          dividerLineText="Liminality in interaction"
         />
       </div>
       <CircleSect text="REFLECTION" />
       <ImageGrid5
-      img1="imgs/lg-process-reel.gif"
+        img1="imgs/lg-process-reel.gif"
         img2="whiteboard-notationalSketching.png"
         img3="imgs/panels-blender-render.png"
         img4="imgs/whiteboard-peoplePage.jpg"
