@@ -65,7 +65,15 @@ export default function App() {
               color="#202020"
               metalness={0.8}
             />
-          </Backdrop> */}
+          </Backdrop>
+          <rectAreaLight
+            args={["white", 3]}
+            width={5}
+            height={5}
+            position={[-3, 4, 1]}
+            target={[0, 0, 0]}
+            visible={false}
+          /> */}
 
           {/* Plane reflections + distance blur */}
           {/* <RigidBody>

@@ -33,7 +33,7 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
       resolution: 2048,
       transmission: 1.0,
       roughness: 0.19,
-      thickness: 0.95,
+      thickness: 1.95,
       ior: 1.15,
       chromaticAberration: 0.39,
       anisotropy: 0.03,
