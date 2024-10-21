@@ -26,27 +26,27 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
     const mesh = useRef()
 
     const config = {
-        meshPhysicalMaterial: false,
-        transmissionSampler: false,
-        backside: true,
-        samples: 16,
-        resolution: 2048,
-        transmission: 1.0,
-        roughness: 0.19,
-        thickness: 5.95,
-        ior: 1.15,
-        chromaticAberration: 0.39,
-        anisotropy: 0.03 ,
-        anisotropicBlur: 0.88,
-        distortion: 0.18,
-        distortionScale: 0.4,
-        temporalDistortion: 0.1 ,
-        clearcoat: 0.26 ,
-        attenuationDistance: 1.6 ,
-        attenuationColor: "#ffffff",
-        color: "#8f8f8f",
-        bg: "#ffffff", 
-      };
+      meshPhysicalMaterial: false,
+      transmissionSampler: false,
+      backside: true,
+      samples: 16,
+      resolution: 2048,
+      transmission: 1.0,
+      roughness: 0.19,
+      thickness: 0.95,
+      ior: 1.15,
+      chromaticAberration: 0.39,
+      anisotropy: 0.03,
+      anisotropicBlur: 0.88,
+      distortion: 0.18,
+      distortionScale: 0.4,
+      temporalDistortion: 0.1,
+      clearcoat: 0.26,
+      attenuationDistance: 1.6,
+      attenuationColor: "#ffffff",
+      color: "#ffffff",
+      bg: "#ffffff",
+    };
 
       // LEVA CONFIG WITH STEPS AND MIN AND MAX
       // const config = {

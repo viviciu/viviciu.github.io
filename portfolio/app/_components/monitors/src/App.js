@@ -25,7 +25,7 @@ export default function App() {
       camera={{ position: [-1.5, 1, 5.5], fov: 45, near: 1, far: 20 }}
     >
       {/* Lights */}
-      {/* <color attach="background" args={["#f0f0f0"]} /> */}
+      <color attach="background" args={["#f0f0f0"]} />
       {/* <hemisphereLight intensity={0.15} groundColor="white" />
       <spotLight
         decay={0}
