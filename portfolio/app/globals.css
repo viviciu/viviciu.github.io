@@ -108,7 +108,8 @@
 body {
   /* color is the font color */
   /* see some tailwind preset colors: https://tailwindcss.com/docs/customizing-colors */
-  color: #F5F5F5; 
+  /* color: #F5F5F5;  */
+  color: black;
   width: 100dvw;
   overflow: hidden; /* hides both x and y direction scrollbars -> see https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   height: 100%;
