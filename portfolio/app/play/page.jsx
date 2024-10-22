@@ -22,18 +22,16 @@ export default function Projects() {
       <div key={item.id} className="item space-y-2">
         {/* PARENT GROUP */}
         <Link href={"/play/" + item.id}>
-          <div
-            className="flex flex-col justify-center relative group"
-          >
-            <p className="font-AdobeTextPro">{item.name}</p>
+          <div className="flex flex-col justify-center relative group text-cap">
+            <p className="font-SuisseWorks">{item.name}</p>
             <p
               className="
-              font-AdobeTextPro
+              font-SuisseWorks
               opacity-0
               transition
               group-hover:opacity-100"
             >
-              ::081124
+              {item.categorySpecific}
             </p>
             <img
               src={item.url}

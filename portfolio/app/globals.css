@@ -211,10 +211,10 @@ html{
 }
 
 .checkbox-label-checked {
-  color: #d4d4d4;
+  color: #d4d4d4; /* aka mwsGrey in tailwind.config */
   transition: color 0.5s ease;
 }
 
 .checkbox-label-checked:hover {
-  color: white;
+  color: #333333; /* Aka offblack in tailwind.config */
 }
