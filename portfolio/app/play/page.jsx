@@ -23,8 +23,7 @@ export default function Projects() {
         {/* PARENT GROUP */}
         <Link href={"/play/" + item.id}>
           <div
-            className="flex flex-col justify-center relative group cursor-pointer
-          "
+            className="flex flex-col justify-center relative group"
           >
             <p className="font-AdobeTextPro">{item.name}</p>
             <p
@@ -71,8 +70,6 @@ export default function Projects() {
             />
             <label
               className={`
-                
-                  cursor-pointer
                   checkbox-label-checked
                   ${selectedLabel === null ? "clicked" : ""}
                 `}
@@ -92,7 +89,7 @@ export default function Projects() {
             />
             <label
               className={`
-                cursor-pointer
+                cursor-none
                 checkbox-label-checked
                 ${selectedLabel === "code" ? "clicked" : ""}`} // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
               htmlFor="code"
@@ -111,7 +108,6 @@ export default function Projects() {
             />
             <label
               className={`
-                cursor-pointer
                 checkbox-label-checked
                 ${selectedLabel === "photo" ? "clicked" : ""}`}
               htmlFor="photo"
@@ -130,7 +126,6 @@ export default function Projects() {
             />
             <label
               className={`
-                cursor-pointer
                 checkbox-label-checked
                 ${selectedLabel === "video" ? "clicked" : ""}`}
               htmlFor="video" // this must be changed if category changes.

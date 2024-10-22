@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react";
 import Context from "../../_components/Context";
+import Context2 from "../../_components/Context2";
 import CoverYAML from "../../_components/CoverYAML";
 import Challenges from "../../_components/Challenges";
 import Callout from "../../_components/Callout";
@@ -11,6 +12,8 @@ import ImageGrid3 from "../../_components/ImageGrid3";
 import ImageGrid4 from "../../_components/ImageGrid4";
 import ImageGrid5 from "../../_components/ImageGrid5";
 import CircleSect from "../../_components/CircleSect";
+import YAMLBar from "../../_components/YAMLBar";
+import DividerLine from "../../_components/DividerLine";
 
 import "../../_components/greyBGLines.css";
 import Footer from "../../_components/Footer";
@@ -30,7 +33,6 @@ export default function Liminal() {
           scrollPosition < offsetTop + offsetHeight
         ) {
           setActiveIndex(index);
-          
         }
       }
     });
@@ -42,41 +44,36 @@ export default function Liminal() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+  // A realm where the very essence of self and time finds itself in flux.
   return (
-    <main className=" h-fit block grid-background">
-      <div className="m-5">
+    <main className=" h-fit block grid-background px-4">
         <Context
-          text1="A realm where the very essence of self and time finds itself in flux."
-          text2={
+          text1={
             <div>
-              Lunar Gala (LG) is Pittsburgh’s largest annual fashion show. The
-              entirely student-run show harnesses the diverse creative talents
-              of CMU—including designers, models, photographers, animators, and
-              dancers. <br /> <br /> I worked amongst 7 others both designing and
-              developing the show’s website on the creative web team. It
-              documents the lines, members, ticketing all in line with the
-              year&apos;s visual identity: <i>Liminality</i>
+              LIMINAL, <br /> A realm where the very essence of self and time
+              finds itself in flux.
             </div>
           }
+          
         />
-      </div>
+
+      <YAMLBar />
       <CoverYAML />
+      <Context2
+        text={
+          <div>
+            Lunar Gala (LG) is Pittsburgh’s largest annual fashion show. The
+            entirely student-run show harnesses the diverse creative talents of
+            CMU—including designers, models, photographers, animators, and
+            dancers. <br /> <br /> I worked amongst 7 others both designing and
+            developing the show’s website on the creative web team. It documents
+            the lines, members, ticketing all in line with the year&apos;s
+            visual identity: <i>Liminality</i>
+          </div>
+        }
+      />
+      <DividerLine text="Defining Liminality" />
       <div className="m-5">
-        {/* DIVIDER LINE 2 */}
-        {/* in figma, the divider line height is 0.105rem */}
-        <div
-          className="bg-white w-full h-[1px]
-      "
-        ></div>
-        <p
-          className={`pt-2 indent-[1.75rem] uppercase 
-            text-offwhite font-Helvetica
-          `}
-        >
-          <span className="font-sans">●</span> Defining Liminality.
-        </p>
-        {/* END DIVIDER LINE */}
         <Context
           text1="'LIMINAL'"
           text2={

@@ -19,10 +19,28 @@ module.exports = {
           300: "#42424570",
           400: "#E8EAEC",
         },
+        mwsGrey: "#d4d4d4",
+        offBlack: "#333333",
+        offBlack2: "#515151",
         zinc: "#101010",
         threejsBlue: "hsl(0, 95, 70)",
         "blog-headerBlock": "rgba(217, 217, 217, 0.14)",
       },
+      // OLD TYPE ::102124
+      // fontSize: {
+      //   xxs: "0.5rem",
+      //   xs: "0.75rem",
+      //   sm: "0.8rem",
+      //   base: "1rem",
+      //   lg: "1.375rem", // This is the 'entry' text in styleguide!
+      //   xl: "1.75rem",
+      //   "9xl": "3.88rem",
+      //   h1: "var(--fs-h1)",
+      //   p: "var(--fs-p)",
+      //   // h4pp == PP Neue montreal website large p text, their h4
+      //   h4pp: "2.1875rem",
+      //   callout: "var(--fs-callout)",
+      // },
 
       // Typography
       fontSize: {
@@ -34,6 +52,7 @@ module.exports = {
         xl: "1.75rem",
         "9xl": "3.88rem",
         h1: "var(--fs-h1)",
+        cap: "var(--fs-cap)",
         p: "var(--fs-p)",
         // h4pp == PP Neue montreal website large p text, their h4
         h4pp: "2.1875rem",
@@ -44,7 +63,8 @@ module.exports = {
       lineHeight: {
         h1: "var(--lh-h1)",
         p: "var(--lh-p)",
-        p2: "var(--lh-p2)",
+        pMobile: "var(--lh-pMobile)",
+        p3: "var(--lh-p3)",
         // h4pp == PP Neue montreal website large p text, their h4
         h4pp: "1",
         callout: "var(--lh-callout)",
@@ -61,7 +81,7 @@ module.exports = {
         Suisse: ["Suisse"],
         CMUSerif: ["CMU-Serif"],
         Helvetica: ["Helvetica-Neue"],
-        SuisseWorks: ["Suisse-Works"],
+        SuisseWorks: ["SuisseWorks"],
       },
 
       // RESPONSIVE DESIGN : SCREEN SIZES

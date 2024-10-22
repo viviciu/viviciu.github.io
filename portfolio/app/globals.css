@@ -15,13 +15,13 @@
     src: url(../public/assets/fonts/AdobeTextPro-Regular.woff) format('woff'); 
     }
   @font-face {
-    font-family: 'Suisse-Works';
+    font-family: 'SuisseWorks';
     src: url(../public/assets/fonts/suisseWorks/SuisseWorks-Regular-WebTrial.woff2) format('woff');
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Suisse-Works';
+    font-family: 'SuisseWorks';
     src: url(../public/assets/fonts/suisseWorks/SuisseWorks-RegularItalic-WebTrial.woff2) format('woff');
     font-weight: 400;
     font-style: italic;
@@ -30,6 +30,24 @@
     font-family: 'Suisse';
     src: url(../public/assets/fonts/Suiss/SuisseIntlTrial-Book.otf) format('opentype');
     font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Suisse';
+    src: url(../public/assets/fonts/Suiss/SuisseIntlTrial-Medium.otf) format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Suisse';
+    src: url(../public/assets/fonts/Suiss/SuisseIntlTrial-SemiBold.otf) format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Suisse';
+    src: url(../public/assets/fonts/Suiss/SuisseIntlTrial-Bold.otf) format('opentype');
+    font-weight: 700;
     font-style: normal;
   }
   /* THIN */
@@ -73,20 +91,52 @@
     font-weight: 900;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'SFProDisplay';
+    src: url(../public/assets/fonts/SFProDisplay/SF-Pro-Display-Black.otf) format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+    @font-face {
+      font-family: 'SFProDisplay';
+      src: url(../public/assets/fonts/SFProDisplay/SF-Pro-Display-Bold.otf) format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'SFProDisplay';
+      src: url(../public/assets/fonts/SFProDisplay/SF-Pro-Display-Medium.otf) format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'SFProDisplay';
+      src: url(../public/assets/fonts/SFProDisplay/SF-Pro-Display-Regular.otf) format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'SFProDisplay';
+      src: url(../public/assets/fonts/SFProDisplay/SF-Pro-Display-Light.otf) format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
 
   a {
-    @apply hover:underline hover:text-white
+    @apply hover:text-mwsGrey;
+    cursor: none
   }
 
+  /* OLD FONTS
   :root{
-    /* FONTS */
+    
     --font-h1: "Helvetica-Neue";
     --fs-h1: 3.875rem;
     --lh-h1: 1.625rem;
     --ls-h1: -0.13019rem;
 
     
-    --fs-p: 1.37294rem;
+    --fs-p: 0.8rem; 
     --lh-p: 1.625rem;
     --lh-p2: 1.5em;
 
@@ -94,7 +144,26 @@
     --lh-callout: 3.25rem;
     --w-callout: 300;
   }
+  */
 
+:root {
+  /* FONTS */
+  --font-h1: "SFPRoDisplay";
+  --fs-h1: 3.875rem;
+  --lh-h1: 1.625rem;
+  --ls-h1: -0.13019rem;
+
+  --fs-cap: 0.8rem; /* captions */
+  --fs-p: 1.2rem;
+  /* prev 1.37294rem */
+  --lh-p: 1.625rem;
+  --lh-pMobile: 1.7rem;
+  --lh-p3: 1.3rem;
+
+  --fs-callout: 3.1925rem;
+  --lh-callout: 3.25rem;
+  --w-callout: 300;
+}
 }
 
 
@@ -109,13 +178,14 @@ body {
   /* color is the font color */
   /* see some tailwind preset colors: https://tailwindcss.com/docs/customizing-colors */
   /* color: #F5F5F5;  */
-  color: black;
+  color: #333333;
   width: 100dvw;
   overflow: hidden; /* hides both x and y direction scrollbars -> see https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   height: 100%;
-  background: #080808; /* bg used to be #151515 */
+  background: #fafafa; /* bg used to be #151515, #080808 */
   border-color: #3b3b3b;
   user-select: none;
+  cursor: none;
 }
   
 
@@ -141,7 +211,7 @@ html{
 }
 
 .checkbox-label-checked {
-  color: grey;
+  color: #d4d4d4;
   transition: color 0.5s ease;
 }
 

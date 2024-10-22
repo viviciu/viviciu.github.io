@@ -5,7 +5,7 @@ export default function PlayLayout({ children }) {
   // Create any shared layout or styles here
   return (
     <section>
-      <Navbar />
+      {/* <Navbar /> */}
       {children}
       {/* <Footer /> */}
     </section>

@@ -95,11 +95,12 @@ export default function Model(props, position, vec = new THREE.Vector3(), r = TH
         onClick={handleClick}
         onPointerOver={() => {
           setHovered(true);
-          document.body.style.cursor = 'pointer';
+          // document.body.style.cursor = 'pointer';
         }}
         onPointerOut={() => {
           setHovered(false);
-          document.body.style.cursor = 'default';
+          // document.body.style.cursor = 'default';
+          // REMOVED DUE TO HAVIGN CUSTOM CURSOR
         }} >
         <boxGeometry args={[1, 1, 1]} />
         <MeshTransmissionMaterial {...config} />
