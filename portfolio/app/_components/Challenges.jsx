@@ -14,7 +14,7 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
         w-full h-fit 
         items-start"
       >
-        <h1 className="text-h1 leading-h1 tracking-h1">Challenges</h1>
+        <h1 className="font-SFProDisplay  text-h1 leading-h1 tracking-h1">Challenges</h1>
 
         <div className="flex col-start-3 lg:py-0 pt-[3rem]">
           <p
