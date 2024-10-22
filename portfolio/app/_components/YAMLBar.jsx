@@ -1,6 +1,6 @@
 import React from 'react';
 
-const YAMLBar = () => {
+const YAMLBar = ({client, year, role}) => {
     return (
       <div
         className="
@@ -14,16 +14,16 @@ const YAMLBar = () => {
         {/* gap-[1.31rem]!! */}
         <div className="pl-1 lg:flex lg:gap-1">
           <div className="font-CMUSerif">Client </div>
-          <div className="font-Helvetica-Neue font-bold">Lunar Gala</div>
+          <div className="font-Helvetica-Neue font-bold">{client}</div>
         </div>
         <div className="lg:justify-self-end lg:flex lg:gap-1">
           <div className="font-CMUSerif">Year </div>
-          <div className="font-Helvetica-Neue font-bold">2023-2024</div>
+          <div className="font-Helvetica-Neue font-bold">{year}</div>
         </div>
         <div className="pl-1 col-start-1 col-span-2 lg:col-start-3 lg:flex lg:gap-1">
           <div className="font-CMUSerif">Role </div>
           <div className="font-Helvetica-Neue font-bold">
-            Web Designer, Developer
+            {role}
           </div>
         </div>
       </div>

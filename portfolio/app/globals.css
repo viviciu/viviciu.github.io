@@ -157,8 +157,9 @@
   --fs-p: 1.2rem;
   /* prev 1.37294rem */
   --lh-p: 1.625rem;
+  --lh-cap:0.9rem;
   --lh-pMobile: 1.7rem;
-  --lh-p3: 1.3rem;
+  --lh-p3: 1.5rem; /* leading for serif paragraph text */
 
   --fs-callout: 3.1925rem;
   --lh-callout: 3.25rem;
@@ -187,6 +188,8 @@ body {
   user-select: none;
   cursor: none;
 }
+
+
   
 
 canvas {

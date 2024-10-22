@@ -21,6 +21,7 @@ module.exports = {
         },
         mwsGrey: "#d4d4d4",
         offBlack: "#333333",
+        offBlack1: "#373737",
         offBlack2: "#515151",
         zinc: "#101010",
         threejsBlue: "hsl(0, 95, 70)",
@@ -62,6 +63,7 @@ module.exports = {
       // LINE HEIGHT
       lineHeight: {
         h1: "var(--lh-h1)",
+        cap:"var(--lh-cap)",
         p: "var(--lh-p)",
         pMobile: "var(--lh-pMobile)",
         p3: "var(--lh-p3)",
@@ -82,6 +84,7 @@ module.exports = {
         CMUSerif: ["CMU-Serif"],
         Helvetica: ["Helvetica-Neue"],
         SuisseWorks: ["SuisseWorks"],
+        SFProDisplay: ["SFProDisplay"]
       },
 
       // RESPONSIVE DESIGN : SCREEN SIZES

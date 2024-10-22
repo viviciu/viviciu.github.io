@@ -5,7 +5,8 @@ export const items = [
     name: "Lunar Gala",
     url: "/imgs/homeGif.gif",
     category: "code",
-    categorySpecific: "Web & Mobile UI UX, Concept, Design Systems",
+    categorySpecific:
+      "Interaction Design, 3D Web Development, Creative Direction",
   },
   {
     id: "item-02",

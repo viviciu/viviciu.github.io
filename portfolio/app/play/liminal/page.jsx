@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react";
+import Title from "../../_components/Title"
 import Context from "../../_components/Context";
 import Context2 from "../../_components/Context2";
 import CoverYAML from "../../_components/CoverYAML";
@@ -19,6 +20,24 @@ import "../../_components/greyBGLines.css";
 import Footer from "../../_components/Footer";
 
 export default function Liminal() {
+  const members = [
+    "Yon Maor",
+    "Stacy Chen",
+    "Chris Song",
+    "Ayden Xu",
+    "Ervin Song",
+    "Eric Lin",
+    "Minsung Kang",
+  ];
+  const tools = [
+    "Three.js",
+    "React Three Fiber",
+    "Figma",
+    "Blender"
+  ]
+  const myRole = "Creative Direction, Digital Design & Development";
+
+
   const [activeIndex, setActiveIndex] = useState(0);
   const componentRefs = [useRef(null), useRef(null), useRef(null)];
 
@@ -47,20 +66,24 @@ export default function Liminal() {
   // A realm where the very essence of self and time finds itself in flux.
   return (
     <main className=" h-fit block grid-background px-4">
-        <Context
-          text1={
-            <div>
-              LIMINAL, <br /> A realm where the very essence of self and time
-              finds itself in flux.
-            </div>
-          }
-          
-        />
+      <Title
+        text1={
+          <div>
+            LIMINAL, <br /> A realm where the very essence of self and time
+            finds itself in flux.
+          </div>
+        }
+      />
 
-      <YAMLBar />
+      {/* Role: Interaction Design, 3D Web Development, UI/UX Immersive Experiences" ? */}
+      <YAMLBar
+        client="Lunar Gala"
+        year="2023—2024"
+        role="Interaction Design, 3D Web Development, Creative Direction"
+      />
       <CoverYAML />
       <Context2
-        text={
+        context={
           <div>
             Lunar Gala (LG) is Pittsburgh’s largest annual fashion show. The
             entirely student-run show harnesses the diverse creative talents of
@@ -71,32 +94,34 @@ export default function Liminal() {
             visual identity: <i>Liminality</i>
           </div>
         }
+        myRole={myRole}
+        members={members}
+        tools={tools}
       />
-      <DividerLine text="Defining Liminality" />
-      <div className="m-5">
+      <DividerLine text="Defining the Problem" />
         <Context
           text1="'LIMINAL'"
           text2={
             <div>
               Before ideating, we had to establish constraints. How does LG{" "}
-              <i className="font-SuisseWorks text-white">interpret</i> the
+              <i className="font-SuisseWorks text-offBlack">interpret</i> the
               concept of Liminality? How does that{" "}
-              <i className="font-SuisseWorks text-white">
+              <i className="font-SuisseWorks text-offBlack">
                 translate to digital interactions?
               </i>
               <br />
               <br />
-              <div>
+              <div className="text-offBlack">
                 We define Liminality as &quot;neither here nor there,&quot; a
                 place that is temporary—fleeting even. It is a transitional
                 stage… Liminality is the space between spaces. We chose to
                 employ feelings of{" "}
-                <i className="font-SuisseWorks text-white">
+                <i className="font-SuisseWorks text-offBlack">
                   “the space between spaces”
                 </i>{" "}
                 , where time cannot be measured. A sense of infinite space is
                 created in each “room.”{" "}
-                <i className="font-SuisseWorks text-white">The backrooms</i>,
+                <i className="font-SuisseWorks text-offBlack">The backrooms</i>,
                 one primal cultural example of liminality, was one of a few of
                 our early influences.
               </div>
@@ -104,13 +129,14 @@ export default function Liminal() {
           }
         />
 
+        {/* <DividerLine text={"CHALLENGES"} />  */}
         {/* Scene */}
         <Challenges
           activeIndex={activeIndex}
           index={0}
           ref={componentRefs[0]}
         />
-      </div>
+
       {/* CALLOUT HAS MARGIN 0, others use a wrapper div with m-5 */}
       <Callout
         className="m-0"
@@ -198,7 +224,6 @@ export default function Liminal() {
         img4="imgs/whiteboard-peoplePage.jpg"
         bgColor="white"
       />
-      <Footer />
     </main>
   );
 }

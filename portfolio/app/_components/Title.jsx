@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { forwardRef } from 'react' // IMPORTANT
 
-const Context = forwardRef(({ text1, text2 }, ref) => { // NOTICE REF HERE
+const Title = forwardRef(({ text1 }, ref) => { // NOTICE REF HERE
   return (
     // NOTICE REF IN MAIN
     <main ref={ref}>
@@ -24,27 +24,17 @@ const Context = forwardRef(({ text1, text2 }, ref) => { // NOTICE REF HERE
             leading-pMobile
             lg:text-6xl
             text-xl
-            lg:col-span-2
+            lg:col-span-4
             lg:col-start-1
             mb-24
             "
         >
           {text1}
         </div>
-        <div
-          className="col-span-3
-        leading-p3
-        lg:text-p
-        text
-        font-SuisseWorks
-        font-regular
-        text-offBlack2"
-        >
-          {text2}
-        </div>
+        
       </div>
     </main>
   );
 });
 
-export default Context
+export default Title
