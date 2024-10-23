@@ -21,7 +21,7 @@ export const Context2 = ({context, members, tools, myRole}) => {
         <div
           className="
         leading-p3
-        lg:text-p
+        text-p
         text
         font-SuisseWorks
         font-regular

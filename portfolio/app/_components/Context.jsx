@@ -8,7 +8,7 @@ const Context = forwardRef(({ text1, text2 }, ref) => { // NOTICE REF HERE
       <div
         // gap-[5.06rem] !!
         className="
-      pt-[2.9375rem] lg:pb-[5.06rem] mt-[3.5rem]
+      pt-[2.9375rem] lg:pb-[5.06rem] mt-[3.5rem] mb-[5rem]
       lg:grid lg:grid-cols-5 grid-cols-3
       gap-[5.06rem] 
       w-full h-fit 

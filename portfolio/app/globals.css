@@ -164,6 +164,13 @@
   --fs-callout: 3.1925rem;
   --lh-callout: 3.25rem;
   --w-callout: 300;
+
+
+  /* COLORS */
+  --mwsGrey: #d4d4d4;
+  --offBlack: #333333;
+  --offBlack1: #373737;
+  --offBlack2: #515151;
 }
 }
 

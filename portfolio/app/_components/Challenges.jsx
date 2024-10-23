@@ -14,14 +14,16 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
         w-full h-fit 
         items-start"
       >
-        <h1 className="font-SFProDisplay  text-h1 leading-h1 tracking-h1">Challenges</h1>
+        <h1 className="font-SFProDisplay  text-h1 leading-h1 tracking-h1">
+          Challenges
+        </h1>
 
         <div className="flex col-start-3 lg:py-0 pt-[3rem]">
           <p
             className={`${
               index === 0 && activeIndex === index
                 ? "text-offBlack"
-                : "text-gray-100"
+                : "text-[#c4c4c4]"
             }`}
           >
             ●
@@ -30,7 +32,7 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
             className={`indent-[11%] font-SuisseWorks ${
               index === 0 && activeIndex === index
                 ? "text-offBlack"
-                : "text-gray-100"
+                : "text-[#c4c4c4]"
             }`}
           >
             Liminality in <span className="italic">form</span>
@@ -41,7 +43,7 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
             className={`${
               index === 1 && activeIndex === index
                 ? "text-offBlack"
-                : "text-gray-100"
+                : "text-[#c4c4c4]"
             }`}
           >
             ●
@@ -50,7 +52,7 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
             className={`indent-[11%] font-SuisseWorks ${
               index === 1 && activeIndex === index
                 ? "text-offBlack"
-                : "text-gray-100"
+                : "text-[#c4c4c4]"
             }`}
           >
             Liminality in <span className="italic">function</span>
@@ -61,7 +63,7 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
             className={`${
               index === 2 && activeIndex === index
                 ? "text-offBlack"
-                : "text-gray-100"
+                : "text-[#c4c4c4]"
             }`}
           >
             ●
@@ -70,7 +72,7 @@ const Challenges = forwardRef(({ activeIndex, index }, ref) => {
             className={`indent-[11%] font-SuisseWorks ${
               index === 2 && activeIndex === index
                 ? "text-offBlack"
-                : "text-gray-100"
+                : "text-[#c4c4c4]"
             }`}
           >
             Liminality in <span className="italic">interaction</span>

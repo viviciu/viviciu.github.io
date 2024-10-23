@@ -65,7 +65,7 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
             layout="responsive"
             width={500}
             height={500}
-            className="rounded-xl"
+
           />
         </div>
 
@@ -76,7 +76,7 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
             layout="responsive"
             width={500}
             height={500}
-            className="rounded-xl"
+
           />
           <p className="font-SuisseWorks text-s text-black">
             Notational sketching to communicate to other devs.
@@ -92,7 +92,7 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
             layout="responsive"
             width={500}
             height={500}
-            className="rounded-xl"
+
           />
           <p className="font-SuisseWorks text-s text-black">
             3D rendered mockups
@@ -107,7 +107,7 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
             layout="responsive"
             width={500}
             height={500}
-            className="rounded-xl"
+
           />
         </div>
       </div>

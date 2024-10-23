@@ -2,30 +2,20 @@ import React, { forwardRef } from "react"; // IMPORTANT
 
 const Callout = ({ text }) => {
   return (
-    <main className="bg-white">
+    <main className="bg-black mx-[-1rem]">
       <div
         // gap-[5.06rem] !!
         className="
       pt-[10.61rem] pb-[8.81rem]
       grid lg:grid-cols-5 grid-cols-3
       gap-[5.06rem] 
-      w-full h-fit 
+      h-fit 
       items-start
       mx-5
       "
       >
-        {/* weird line */}
-        <div style={{width: '100%', 
-            height:'100%', 
-            transform: 'rotate(90deg)', 
-            transformOrigin:'0 0',
-            opacity: '0.36', 
-            border:'0.68px #151515 dotted',
-            position:'absolute',
-            left:'50%',
-            }}></div>
         <h1
-          className="text-black 
+          className="text-offwhite 
             font-Helvetica
             text-500
             tracking-['var(--ls-h1)']
