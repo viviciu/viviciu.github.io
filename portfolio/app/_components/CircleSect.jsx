@@ -37,7 +37,7 @@ const CircleSect = ({ text }) => {
   return (
     <main id="circle__section" ref={circleSectionRef}>
       <div className="circle__sticky">
-        <h1 className="lg:text-[10rem] text-[#fafafa] z-10">{text}</h1>
+        <h1 className="lg:text-[10rem] text-[#fafafa] font-SFProDisplay font-regular tracking-tight z-10">{text}</h1>
         <div className="circle__container z-0">
           <div className="circle" ref={circleRef}></div>
         </div>

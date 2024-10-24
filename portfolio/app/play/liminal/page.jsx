@@ -278,10 +278,40 @@ export default function Liminal() {
         <CircleSect text="REFLECTION" />
         <ImageGrid5
           img1="imgs/lg-process-reel.gif"
-          img2="whiteboard-notationalSketching.png"
+          img2="imgs/whiteboard-peoplePage.jpg"
           img3="imgs/panels-blender-render.png"
-          img4="imgs/whiteboard-peoplePage.jpg"
-          bgColor="offBlack"
+          bgColor="#121212"
+          text3={
+            <div className="flex flex-col space-y-4">
+              <p>
+                The visual language and interaction design would suffer if the
+                entire site’s mapping wasn’t transitory. This required us to
+                establish new terms to avoid miscommunication when discussing
+                such abstract ideas during team meetings: “Capital-L Liminal”
+                and “liminal.”
+              </p>
+              <p>
+                “liminal”—zone C—{" "}
+                <i>is liminality in its form—its visual language</i>. Visual
+                cues such as endless tunnels, negative space, and the like.
+              </p>
+              <p>
+                “Capital-L Liminal”—zone B—is <i>literally a liminal space</i>
+                —it does not exist and its only purpose is to transport the user
+                to another space. The home page serves this purpose—it is a
+                navigation hub as discussed earlier where time is an infinite
+                loop. However, it is also “liminal” visually.
+              </p>
+            </div>
+          }
+        />
+        <ImageGrid3
+          bgColor="white"
+          dividerLineText="CHALLENGES: POOR OPTIMIZATION & USABILITY"
+          img="imgs/live-home.png"
+          text1="
+      Unfortunately, since the 3.js textures of the glass panels of the home page were extremely heavy, we had to settle for a more optimized version—still to which had performance issues. I learned it's key to test assets to production-grade fidelity live as early as the design stages, to see if a concept can be well executed by the devs far ahead of launch date. This also calls for transparency between devs and designers as to what truly can be done in our timeline. The navigation UX had also become an issue: We gave no affordances on how to really enter the site or what was clickable // hoverable. This served the artistic theme well, but not the users. If we stray too far from familiarity and usability becomes lost, the artistic concept of the work becomes lost along with it.
+      "
         />
       </div>
     </main>

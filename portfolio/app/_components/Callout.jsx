@@ -16,13 +16,14 @@ const Callout = ({ text }) => {
       >
         <h1
           className="text-offwhite 
-            font-Helvetica
-            text-500
+            font-SFProDisplay
+            text-regular
             tracking-['var(--ls-h1)']
             leading-['var(--lh-h1)]
             lg:text-h1
             md:text-h1
-            xs:text-6xl
+            leading-callout
+            text-4xl
             col-span-4
             lg:col-span-4
             col-start-1
