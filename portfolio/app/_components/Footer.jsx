@@ -3,15 +3,15 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <main className="lg:m-4 m-2">
-      <h2 className="lg:text-5xl text-xl text-display ">
-        see the{" "}
-        <Link className="underline" href="/play">
+    <main className=" m-2">
+      <h2 className="lg:text-5xl text-xl text-display z-10">
+        see the{"  "}
+        <Link className="underline relative" href="/play">
           archive
         </Link>
         —
       </h2>
-      <h1 className="block uppercase lg:text-[26vw] text-[26vw] tracking-tighter font-bold m-0 leading-none max-h-[45rem]">
+      <h1 className="block uppercase lg:text-[26vw] text-[26vw] tracking-tighter font-SFProDisplay font-bold m-0 leading-none max-h-[45rem]">
         staicu
       </h1>
       {/* Feldorean */}

@@ -4,13 +4,13 @@ import ImageGrid3 from "./ImageGrid3";
 import ReflectionPoints from "./ReflectionPoints.jsx"
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
-const ImageGrid2 = ({ img1, img2, img3, img4, text3, bgColor }) => {
+const ImageGrid5 = ({ img1, img2, img3, img4, text3, bgColor }) => {
   return (
     <main className={`bg-[${bgColor}] pl-5`}>
       {/* DIVIDER LINE */}
       {/* in figma, the divider line height is 0.105rem */}
       <div
-        className="bg-[${bgColor}] w-full h-[1px]
+        className="bg-[${bgColor}]  w-full h-[1px]
       "
       ></div>
       <p
@@ -104,57 +104,8 @@ const ImageGrid2 = ({ img1, img2, img3, img4, text3, bgColor }) => {
       </div>
       <ReflectionPoints bgColor="black" text3={text3} />
 
-      {/* TEXT — SUBGRIDS VERSION */}
-      {/* <div className="grid grid-cols-3 gap-[2.25rem] ">
-        <ul
-          className=" text-p leading-p 
-          grid grid-cols-subgrid grid-rows-3 col-start-2
-      gap-[2.25rem] 
-      h-fit 
-      items-start
-      text-black
-      "
-        >
-          <li className="text-callout leading-callout text-right">
-            You have the resources to figure out anything.
-          </li>
-
-          <li className="text-callout leading-callout text-right">
-            Notational sketching is crucial for communicating with developers as
-            it visualizes abstract concepts, clarifying which tools best suit
-            the task.
-          </li>
-
-          <li className="text-callout leading-callout text-right">
-            I refined my ability to blend external inspiration with outputs from
-            other creative teams, like print and motion, to achieve a cohesive
-            visual language set by our creative directors.
-          </li>
-        </ul>
-
-        <ul className="grid grid-cols-subgrid col-start-3 text-black">
-          <li>
-            I’m a fast self-learner → Learned blender, discovered R3F, and
-            learned how to code in React with no js experience.
-          </li>
-          <li>
-            - Notational sketching is crucial for communicating concepts with
-            developers, enabling us to brainstorm algorithmic approaches for
-            implementation. → Freshman year design practices heavily influenced
-            my process collaborating in teams. → *Blender rotating wheel*
-          </li>
-          <li>
-            - **I honed my ability to integrate inspiration from external
-            sources with the output of our other creative teams—such as print
-            and motion—to achieve a cohesive visual language established by our
-            creative directors.** - Interaction design facilitates subliminal
-            emotion and experiences and was at the core of making the site truly
-            feel “Liminal.”
-          </li>
-        </ul>
-      </div> */}
     </main>
   );
 };
 
-export default ImageGrid2;
+export default ImageGrid5

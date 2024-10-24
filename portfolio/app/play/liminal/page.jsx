@@ -66,7 +66,7 @@ export default function Liminal() {
   }, []);
   // A realm where the very essence of self and time finds itself in flux.
   return (
-    <main className=" h-fit block grid-background px-4">
+    <main className=" block px-4">
       <Title
         text1={
           <div>
@@ -305,14 +305,7 @@ export default function Liminal() {
             </div>
           }
         />
-        <ImageGrid3
-          bgColor="white"
-          dividerLineText="CHALLENGES: POOR OPTIMIZATION & USABILITY"
-          img="imgs/live-home.png"
-          text1="
-      Unfortunately, since the 3.js textures of the glass panels of the home page were extremely heavy, we had to settle for a more optimized version—still to which had performance issues. I learned it's key to test assets to production-grade fidelity live as early as the design stages, to see if a concept can be well executed by the devs far ahead of launch date. This also calls for transparency between devs and designers as to what truly can be done in our timeline. The navigation UX had also become an issue: We gave no affordances on how to really enter the site or what was clickable // hoverable. This served the artistic theme well, but not the users. If we stray too far from familiarity and usability becomes lost, the artistic concept of the work becomes lost along with it.
-      "
-        />
+        
       </div>
     </main>
   );
