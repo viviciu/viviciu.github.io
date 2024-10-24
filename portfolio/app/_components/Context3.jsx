@@ -8,7 +8,7 @@ const Context = forwardRef(({ text1, text2, bgColor }, ref) => { // NOTICE REF H
       <div
         // gap-[5.06rem] !!
         className={`pt-2 indent-[1.75rem] ${
-          bgColor === "white" ? "text-black" : "text-offwhite"
+          bgColor === "white" ? "text-offBlack2" : "text-offwhite"
         } my-[6rem] 
       lg:grid lg:grid-cols-5
       lg:gap-[5.06rem] 

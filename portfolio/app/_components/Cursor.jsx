@@ -153,7 +153,7 @@ const Cursor = () => {
     return () => {
       window.removeEventListener("mousemove", manageMouseMove);
     };
-  }, []);
+  }, [animate]); // Include animate in the dependency array
 
   return (
     <div>
