@@ -1,20 +1,13 @@
-import Navbar from './_components/Navbar.jsx';
-import Footer from './_components/Footer';
-import HorizontalScrollCarousel from './_components/HorizontalScrollCarousel';
-import App from './_components/monitors/src/App.js'
-import dynamic from "next/dynamic"
-
-// const Scene = dynamic(() => import("./_components/_unusedComponents/Scene.jsx"), { ssr: false })
-
+"use client";
+import App from "./_components/monitors/src/App.js";
+import HomeData from "./_components/HomeData.jsx"
+import { React, useState, useEffect } from "react";
 
 export default function Home() {
   return (
     <main className="relative h-screen">
-      {/* <Navbar className='z-10' /> */}
-      {/* <Scene /> */}
       <App />
-      <Footer />
+      <HomeData />
     </main>
   );
 }
-

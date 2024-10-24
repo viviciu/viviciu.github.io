@@ -2,6 +2,7 @@
 import "./globals.css";
 import SmoothScrolling from "./_components/SmoothScrolling.jsx";
 import Navbar from "./_components/Navbar";
+import Cursor from "./_components/Cursor";
 import Head from "next/head"
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -29,8 +30,10 @@ export default function RootLayout({ children }) {
         {/* <title>viviana staicu design</title> */}
       </head>
       <body className="">
+        <Cursor />
         <SmoothScrolling>
           <Navbar />
+          
           {children}
         </SmoothScrolling>
       </body>

@@ -1,15 +1,16 @@
 import React from "react"; // IMPORTANT
 import Image from "next/image";
 import ImageGrid3 from "./ImageGrid3";
+import ReflectionPoints from "./ReflectionPoints.jsx"
 
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
-const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
+const ImageGrid5 = ({ img1, img2, img3, img4, text3, bgColor }) => {
   return (
-    <main className={`bg-${bgColor} pl-5`}>
+    <main className={`bg-[${bgColor}] pl-5`}>
       {/* DIVIDER LINE */}
       {/* in figma, the divider line height is 0.105rem */}
       <div
-        className="bg-black w-full h-[1px]
+        className="bg-[${bgColor}]  w-full h-[1px]
       "
       ></div>
       <p
@@ -24,8 +25,8 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
       <div
         className="
        pt-[3rem] pb-[8.81rem]
-      grid lg:grid-cols-3 grid-cols-3
-      gap-[1.25rem] 
+      
+      gap-[1rem] 
        h-fit 
       items-start
       mx-5
@@ -33,26 +34,57 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
       "
       >
         {/* TEXT */}
-        <div
-          className={`space-y-8
-        text-[1.25em] font-Helvetica leading-callout
+        <div className="lg:grid grid-cols-5">
+          <div
+            className={`space-y-8  col-start-3 col-span-3
+        text-[1.25em] font-SFProDisplay leading-callout
         ${bgColor === "white" ? "text-black" : "text-offwhite"}
         col-start-2 col-span-2 indent-[33%] m-5`}
-        >
-          <p className="uppercase text-callout">
-            Many, many iterations considered
-            <span className="text-[3.5rem]"> ● </span>
-            setbacks
-            <span className="text-[3.5rem]"> ● </span>
-            R&D
-            <span className="text-[3.5rem]"> ● </span>
-            design rotations
-            <span className="text-[3.5rem]"> ● </span>
-            ... and a pivot from designer to developer.
-          </p>
+          >
+            <p className="uppercase text-callout">
+              Many, many iterations considered
+              <span className="text-[2.5rem]"> ● </span>
+              setbacks
+              <span className="text-[2.5rem]"> ● </span>
+              R&D
+              <span className="text-[2.5rem]"> ● </span>
+              design rotations
+              <span className="text-[2.5rem]"> ● </span>
+              ... and a pivot from designer to developer.
+            </p>
+          </div>
         </div>
 
-        {/* IMAGE */}
+        {/* sidebyside 2 IMAGES */}
+
+        <div className="pt-[3.5rem] pb-[1rem] lg:flex lg:mx-0 mx-[-1rem] gap-[1rem] h-fit items-start">
+          {img2 && (
+            <div className="col-span-2 col-start-1">
+              <Image
+                src={"/" + img2}
+                alt="home page image"
+                layout="responsive"
+                width={500}
+                height={500}
+              />
+              {/* <p className="font-SuisseWorks text-cap ml-2 mt-2">{caption2}</p> */}
+            </div>
+          )}
+          {img3 && (
+            <div className="col-span-2 self-end">
+              <Image
+                src={"/" + img3}
+                alt="home page image"
+                layout="responsive"
+                width={500}
+                height={500}
+              />
+              {/* <p className="font-SuisseWorks text-cap ml-2 mt-2">{caption3}</p> */}
+            </div>
+          )}
+        </div>
+
+        {/* BIG IMAGE */}
         {/* grid grid-cols-2 gap-4 */}
         {/* height will be auto and width will be full width of the parent */}
         <div
@@ -65,186 +97,15 @@ const ImageGrid2 = ({ img1, img2, img3, img4, bgColor }) => {
             layout="responsive"
             width={500}
             height={500}
-            className="rounded-xl"
           />
         </div>
 
-        <div className="col-span-1 self-end">
-          <Image
-            src={"/" + img2}
-            alt="home page image"
-            layout="responsive"
-            width={500}
-            height={500}
-            className="rounded-xl"
-          />
-          <p className="font-SuisseWorks text-s text-black">
-            Notational sketching to communicate to other devs.
-          </p>
-        </div>
-
-        {/* BOTTOM 2 IMAGES */}
-
-        <div className="col-span-2  ">
-          <Image
-            src={"/" + img3}
-            alt="home page image"
-            layout="responsive"
-            width={500}
-            height={500}
-            className="rounded-xl"
-          />
-          <p className="font-SuisseWorks text-s text-black">
-            3D rendered mockups
-          </p>
-        </div>
-        {/* <p className="text-black">fig 02</p> */}
-
-        <div className="col-span-1 self-end">
-          <Image
-            src={"/" + img4}
-            alt="home page image"
-            layout="responsive"
-            width={500}
-            height={500}
-            className="rounded-xl"
-          />
-        </div>
+        {/* Notational sketching to communicate to other devs. */}
       </div>
+      <ReflectionPoints bgColor="black" text3={text3} />
 
-      {/* DIVIDER LINE 2 */}
-      {/* in figma, the divider line height is 0.105rem */}
-      <div
-        className="bg-black w-full h-[1px]
-      "
-      ></div>
-      <p
-        className={`pt-2 indent-[1.75rem] uppercase ${
-          bgColor === "white" ? "text-black" : "text-offwhite"
-        }`}
-      >
-        ● PERSONAL GROWTH
-      </p>
-
-      {/* TEXT */}
-      <div className="grid grid-cols-3">
-        <div
-          className={`
-      pt-[3rem] pb-[8.81rem]
-      col-start-1
-      col-span-2
-      mx-5
-      font-Helvetica leading-callout
-      ${bgColor === "white" ? "text-black" : "text-offwhite"}
-      m-5`}
-        >
-          <ul
-            className=" text-p leading-p 
-          grid lg:grid-cols-2 grid-cols-2
-      grid-rows-3
-      gap-[2.25rem] 
-      h-fit 
-      items-start"
-          >
-            <li className="text-callout leading-callout text-right">
-              You have the resources to address any challenge.
-            </li>
-
-            <li>
-              Joining the team I only had some html and css background
-              self-taught during highschool—but I still wanted to be involved in
-              the building of the site after the design stage to ensure
-              it&apos;s execution follows the vision.
-              <br />
-              <br />
-              So through Blender tutorials, reading documentation, and looking
-              towards well-structured codepen examples, I learned React and
-              React Three Fiber to help build our site using 3D scenes.
-            </li>
-            <li className="text-callout leading-callout text-right">
-              Notational sketching aids designer-developer communication
-              significantly.
-            </li>
-            <li>
-              Notational Sketching practices developed over freshman year
-              heavily influenced my process collaborating in teams. It allowed
-              me to quickly communicate to another dev a simpler approach to
-              programming the 3D infinitely rotating planes on the Home page. (
-              fig. 02 ) I took on programming and styling the texture of the
-              Home page and frosted cursor.
-            </li>
-            <li className="text-callout leading-callout text-right">
-              I honed my ability to integrate external inspiration with creative
-              team outputs for a cohesive visual style.
-            </li>
-            <li>
-              Creative—a team of over 40 students across different
-              subgroups—must move as one cohesive unit. The synergistic
-              influences during cross-team meetings and weekly general body
-              meetings—where each team shared their progress—made me prioritize
-              the team and theme&apos;s direction in every design decision.
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <ImageGrid3 bgColor="white" dividerLineText="CHALLENGES: POOR OPTIMIZATION & USABILITY" 
-      img="imgs/live-home.png"
-      text1="
-      Unfortunately, since the 3.js textures of the glass panels of the home page were extremely heavy, we had to settle for a more optimized version—still to which had performance issues. I learned it's key to test assets to production-grade fidelity live as early as the design stages, to see if a concept can be well executed by the devs far ahead of launch date. This also calls for transparency between devs and designers as to what truly can be done in our timeline. The navigation UX had also become an issue: We gave no affordances on how to really enter the site or what was clickable // hoverable. This served the artistic theme well, but not the users. If we stray too far from familiarity and usability becomes lost, the artistic concept of the work becomes lost along with it.
-      " />
-
-      {/* TEXT — SUBGRIDS VERSION */}
-      {/* <div className="grid grid-cols-3 gap-[2.25rem] ">
-        <ul
-          className=" text-p leading-p 
-          grid grid-cols-subgrid grid-rows-3 col-start-2
-      gap-[2.25rem] 
-      h-fit 
-      items-start
-      text-black
-      "
-        >
-          <li className="text-callout leading-callout text-right">
-            You have the resources to figure out anything.
-          </li>
-
-          <li className="text-callout leading-callout text-right">
-            Notational sketching is crucial for communicating with developers as
-            it visualizes abstract concepts, clarifying which tools best suit
-            the task.
-          </li>
-
-          <li className="text-callout leading-callout text-right">
-            I refined my ability to blend external inspiration with outputs from
-            other creative teams, like print and motion, to achieve a cohesive
-            visual language set by our creative directors.
-          </li>
-        </ul>
-
-        <ul className="grid grid-cols-subgrid col-start-3 text-black">
-          <li>
-            I’m a fast self-learner → Learned blender, discovered R3F, and
-            learned how to code in React with no js experience.
-          </li>
-          <li>
-            - Notational sketching is crucial for communicating concepts with
-            developers, enabling us to brainstorm algorithmic approaches for
-            implementation. → Freshman year design practices heavily influenced
-            my process collaborating in teams. → *Blender rotating wheel*
-          </li>
-          <li>
-            - **I honed my ability to integrate inspiration from external
-            sources with the output of our other creative teams—such as print
-            and motion—to achieve a cohesive visual language established by our
-            creative directors.** - Interaction design facilitates subliminal
-            emotion and experiences and was at the core of making the site truly
-            feel “Liminal.”
-          </li>
-        </ul>
-      </div> */}
     </main>
   );
 };
 
-export default ImageGrid2;
+export default ImageGrid5

@@ -22,19 +22,16 @@ export default function Projects() {
       <div key={item.id} className="item space-y-2">
         {/* PARENT GROUP */}
         <Link href={"/play/" + item.id}>
-          <div
-            className="flex flex-col justify-center relative group cursor-pointer
-          "
-          >
-            <p className="font-AdobeTextPro">{item.name}</p>
+          <div className="flex flex-col justify-center relative group text-cap">
+            <p className="font-SuisseWorks">{item.name}</p>
             <p
               className="
-              font-AdobeTextPro
+              font-SuisseWorks
               opacity-0
               transition
               group-hover:opacity-100"
             >
-              ::081124
+              {item.categorySpecific}
             </p>
             <img
               src={item.url}
@@ -71,8 +68,6 @@ export default function Projects() {
             />
             <label
               className={`
-                
-                  cursor-pointer
                   checkbox-label-checked
                   ${selectedLabel === null ? "clicked" : ""}
                 `}
@@ -92,7 +87,7 @@ export default function Projects() {
             />
             <label
               className={`
-                cursor-pointer
+                cursor-none
                 checkbox-label-checked
                 ${selectedLabel === "code" ? "clicked" : ""}`} // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
               htmlFor="code"
@@ -111,7 +106,6 @@ export default function Projects() {
             />
             <label
               className={`
-                cursor-pointer
                 checkbox-label-checked
                 ${selectedLabel === "photo" ? "clicked" : ""}`}
               htmlFor="photo"
@@ -130,7 +124,6 @@ export default function Projects() {
             />
             <label
               className={`
-                cursor-pointer
                 checkbox-label-checked
                 ${selectedLabel === "video" ? "clicked" : ""}`}
               htmlFor="video" // this must be changed if category changes.

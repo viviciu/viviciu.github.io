@@ -1,66 +1,78 @@
 import React, { forwardRef } from "react";// IMPORTANT
+import DividerLine from "./DividerLine";
 
 const Challenges = forwardRef(({ activeIndex, index }, ref) => {
   // IMPORTANT
   return (
     <main>
-      {/* DIVIDER LINE */}
-      {/* in figma, the divider line height is 0.105rem */}
-      <div className="bg-white w-full h-[1px]"></div>
       <div
         ref={ref} // NOTICE REF HERE
         className="
-        pt-[2.87rem]
-        grid lg:grid-cols-5 grid-cols-3
-        gap-[5.06rem] 
+        py-[2.87rem]
+        lg:grid lg:grid-cols-5
+        lg:gap-[5.06rem]
         w-full h-fit 
         items-start"
       >
-        <h1 className="text-h1 leading-h1 tracking-h1">Challenges</h1>
+        <h1 className="font-SFProDisplay  text-h1 leading-h1 tracking-h1">
+          Challenges
+        </h1>
 
-        <div className="flex col-start-3">
-          <p className={`${
+        <div className="flex col-start-3 lg:py-0 pt-[3rem]">
+          <p
+            className={`${
               index === 0 && activeIndex === index
-                ? "text-white"
-                : "text-gray-500"
-            }`}>●</p>
+                ? "text-offBlack"
+                : "text-[#c4c4c4]"
+            }`}
+          >
+            ●
+          </p>
           <p
             className={`indent-[11%] font-SuisseWorks ${
               index === 0 && activeIndex === index
-                ? "text-white"
-                : "text-gray-500"
+                ? "text-offBlack"
+                : "text-[#c4c4c4]"
             }`}
           >
             Liminality in <span className="italic">form</span>
           </p>
         </div>
-        <div className="flex">
-          <p className={`${
+        <div className="flex lg:py-0 pt-[1rem]">
+          <p
+            className={`${
               index === 1 && activeIndex === index
-                ? "text-white"
-                : "text-gray-500"
-            }`}>●</p>
+                ? "text-offBlack"
+                : "text-[#c4c4c4]"
+            }`}
+          >
+            ●
+          </p>
           <p
             className={`indent-[11%] font-SuisseWorks ${
               index === 1 && activeIndex === index
-                ? "text-white"
-                : "text-gray-500"
+                ? "text-offBlack"
+                : "text-[#c4c4c4]"
             }`}
           >
             Liminality in <span className="italic">function</span>
           </p>
         </div>
-        <div className="flex">
-          <p className={`${
+        <div className="flex lg:py-0 pt-[1rem]">
+          <p
+            className={`${
               index === 2 && activeIndex === index
-                ? "text-white"
-                : "text-gray-500"
-            }`}>●</p>
+                ? "text-offBlack"
+                : "text-[#c4c4c4]"
+            }`}
+          >
+            ●
+          </p>
           <p
             className={`indent-[11%] font-SuisseWorks ${
               index === 2 && activeIndex === index
-                ? "text-white"
-                : "text-gray-500"
+                ? "text-offBlack"
+                : "text-[#c4c4c4]"
             }`}
           >
             Liminality in <span className="italic">interaction</span>
