@@ -7,20 +7,20 @@ const Navbar = () => {
   return (
     // doing height 0 allows the nav to be sticky and not take up space.. so it overlays the canvas as if the position was absolute.
     <div
-      className="lg:px-0 lg:mt-0 mx-4 mt-[0.5rem] sticky lg:top-[0.5rem] z-10 w-full h-0 lg:leading-normal leading-[0.75rem]
+      className="lg:px-0  lg:mx-4 mx-2 sticky z-10 w-full h-0 lg:leading-normal leading-[0.75rem]
     lg:text-base
     text-cap
     font-semibold"
     >
+      {/* TO EDIT TOP PADDING OF NAVBAR: CHANGE pt-[_rem], DO NOT ADD MARGIN/PADDING TO TOP LEVEL PARENT DIV. */}
       <nav
-        className="grid 
+        className="grid lg:pt-[0.5rem] pt-[1rem]
       lg:grid-cols-5
       gap-5 w-full
       grid-cols-2 h-fit"
-      >
+      > 
         <div className="col-start-1  uppercase hover:text-mwsGrey">
-          {/* Apple logo if you wanted to throw in a logo i guess */}
-          {/* <Image src={appleImg} /> */}
+          
           <Link href="/">staicu, viviana</Link>
         </div>
 

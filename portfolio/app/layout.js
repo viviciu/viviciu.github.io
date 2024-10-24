@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
         <Cursor />
         <SmoothScrolling>
           <Navbar />
+          
           {children}
         </SmoothScrolling>
       </body>
