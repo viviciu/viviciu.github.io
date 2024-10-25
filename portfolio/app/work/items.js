@@ -23,4 +23,18 @@ export const items = [
     category: "design",
     categorySpecific: "a synergy of language, form, and context.",
   },
+  {
+    id: "socraticTextbooks",
+    name: "Socratic Textbooks, 🔒",
+    url: "/imgs/aiTextbookThumbnail.png",
+    category: "design",
+    categorySpecific: "enabling professors to craft personalized AI education.",
+  },
+  {
+    id: "summerSketchbookTour",
+    name: "Summer Sketchbook Tour,",
+    url: "/imgs/thumb5_162-edit.jpg",
+    category: "design",
+    categorySpecific: "a peek at my brain.",
+  },
 ];

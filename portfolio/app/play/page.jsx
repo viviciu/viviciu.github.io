@@ -19,11 +19,10 @@ export default function Projects() {
     .filter((item) => !selectedLabel || selectedLabel === item.category)
 
     .map((item) => (
-      <div key={item.id} className="item space-y-2">
+      <div key={item.id} className="item ">
         {/* PARENT GROUP */}
         <Link href={"/play/" + item.id}>
-          <div className="flex flex-col justify-center relative group text-cap">
-            <p className="font-SuisseWorks">{item.name}</p>
+          <div className="justify-center relative group text-cap">
             <p
               className="
               font-SuisseWorks
@@ -48,7 +47,7 @@ export default function Projects() {
 
   return (
     <main className="m-1">
-      <section className="flex flex-col md:flex-col mx-4 container max-w-6xl">
+      <section className="flex flex-col  mx-4 ">
         {/* SELECTION BAR */}
         <article
           className="
@@ -134,7 +133,7 @@ export default function Projects() {
           </div>
         </article>
         {/* ITEMS */}
-        <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-content-center p-2">
+        <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-7 gap-[5rem] place-content-center p-2">
           {displayedItems}
         </article>
       </section>

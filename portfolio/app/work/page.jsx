@@ -35,7 +35,7 @@ export default function Projects() {
             "
             />
             {/* Renders line breaks: Include \n in the name prop in items.js */}
-            <p className="w-[60%]">
+            <p className="w-[70%]">
               {item.name.split("\n").map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
