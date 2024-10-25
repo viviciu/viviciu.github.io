@@ -7,9 +7,9 @@ const Context = forwardRef(({ text1, text2, bgColor }, ref) => { // NOTICE REF H
     <main ref={ref} >
       <div
         // gap-[5.06rem] !!
-        className={`pt-2 indent-[1.75rem] ${
-          bgColor === "white" ? "text-offBlack2" : "text-offwhite"
-        } my-[6rem] 
+        className={` ${
+          bgColor === "white" ? "text-offBlack2" : "text-gray-200"
+        } lg:my-[3rem] my-[3rem] 
       lg:grid lg:grid-cols-5
       lg:gap-[5.06rem] 
       flex
@@ -28,14 +28,14 @@ const Context = forwardRef(({ text1, text2, bgColor }, ref) => { // NOTICE REF H
             text-xl
             lg:col-span-2
             lg:col-start-1
-            lg:mb-24
+
             "
         >
           {text1}
         </div>
         <div
           className={`
-          ${bgColor === "white" ? "text-offBlack2" : "text-offwhite"}
+          ${bgColor === "white" ? "text-offBlack2" : "text-gray-200"}
           col-span-3
         leading-p3
         lg:text-p

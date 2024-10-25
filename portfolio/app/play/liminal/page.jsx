@@ -230,20 +230,24 @@ export default function Liminal() {
         <Solution>
           <ImageGrid1
             img1="imgs/lg-site-diagram-offwhite.png"
+            text1={
+              <p>
+                The visual language and interaction design would suffer if the
+                entire site’s mapping wasn’t transitory. This required us to
+                establish new terms to avoid miscommunication when discussing
+                such abstract ideas during team meetings: “Capital-L Liminal”
+                and “liminal.”
+              </p>
+            }
+            text2={
+              <p>
+                “liminal”—zone C—{" "}
+                <i>is liminality in its form—its visual language</i>. Visual
+                cues such as endless tunnels, negative space, and the like.
+              </p>
+            }
             text3={
               <div className="flex flex-col space-y-4">
-                <p>
-                  The visual language and interaction design would suffer if the
-                  entire site’s mapping wasn’t transitory. This required us to
-                  establish new terms to avoid miscommunication when discussing
-                  such abstract ideas during team meetings: “Capital-L Liminal”
-                  and “liminal.”
-                </p>
-                <p>
-                  “liminal”—zone C—{" "}
-                  <i>is liminality in its form—its visual language</i>. Visual
-                  cues such as endless tunnels, negative space, and the like.
-                </p>
                 <p>
                   “Capital-L Liminal”—zone B—is <i>literally a liminal space</i>
                   —it does not exist and its only purpose is to transport the
@@ -275,12 +279,12 @@ export default function Liminal() {
       />
 
       <div className="mx-[-1rem]">
-        <CircleSect text="REFLECTION" />
+        <CircleSect text="PROCESS" />
         <ImageGrid5
           img1="imgs/lg-process-reel.gif"
           img2="imgs/whiteboard-peoplePage.jpg"
           img3="imgs/panels-blender-render.png"
-          bgColor="#121212"
+          bgColor="offBlack2"
           text3={
             <div className="flex flex-col space-y-4">
               <p>
@@ -305,7 +309,6 @@ export default function Liminal() {
             </div>
           }
         />
-        
       </div>
     </main>
   );

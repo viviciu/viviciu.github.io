@@ -181,6 +181,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+  touch-action: auto;
+}
 
 body {
   /* color is the font color */
@@ -188,24 +192,29 @@ body {
   /* color: #F5F5F5;  */
   color: #333333;
   width: 100dvw;
-  overflow: hidden; /* hides both x and y direction scrollbars -> see https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+  
   height: 100%;
   background: #fafafa; /* bg used to be #151515, #080808 */
   border-color: #3b3b3b;
   user-select: none;
   cursor: none;
+  touch-action: auto;
 }
 
 
-  
 
-canvas {
-  touch-action: none;
+/* Hide scrollbar for WebKit browsers */
+body::-webkit-scrollbar {
+  display: none;
 }
 
-html{
-  font-size: 16px;
+/* Hide scrollbar for Firefox */
+body {
+  scrollbar-width: none;
+  /* Firefox */
 }
+
+
 
 .scrim-max-width {
   margin-inline-start: auto;

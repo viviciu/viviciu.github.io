@@ -14,8 +14,8 @@ module.exports = {
         offwhite2: "#dbdbdb",
         gray: {
           DEFAULT: "#86868b",
-          100: "#94928d",
-          200: "#afafaf",
+          100: "#ededed",
+          200: "#dbdbdb",
           300: "#42424570",
           400: "#E8EAEC",
         },
@@ -63,7 +63,7 @@ module.exports = {
       // LINE HEIGHT
       lineHeight: {
         h1: "var(--lh-h1)",
-        cap:"var(--lh-cap)",
+        cap: "var(--lh-cap)",
         p: "var(--lh-p)",
         pMobile: "var(--lh-pMobile)",
         p3: "var(--lh-p3)",
@@ -84,7 +84,7 @@ module.exports = {
         CMUSerif: ["CMU-Serif"],
         Helvetica: ["Helvetica-Neue"],
         SuisseWorks: ["SuisseWorks"],
-        SFProDisplay: ["SFProDisplay"]
+        SFProDisplay: ["SFProDisplay"],
       },
 
       // RESPONSIVE DESIGN : SCREEN SIZES
