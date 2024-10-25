@@ -6,22 +6,8 @@ import ReflectionPoints from "./ReflectionPoints.jsx"
 // `img` param is the name of the image, located at the top file level of /pubic. Formatted as `myImage.jpg` without a slash.
 const ImageGrid5 = ({ img1, img2, img3, img4, text3, bgColor }) => {
   return (
-    <main className={`bg-[${bgColor}] pl-5`}>
-      {/* DIVIDER LINE */}
-      {/* in figma, the divider line height is 0.105rem */}
-      <div
-        className="bg-[${bgColor}]  w-full h-[1px]
-      "
-      ></div>
-      <p
-        className={`font-Helvetica pt-2 indent-[1.75rem] uppercase ${
-          bgColor === "white" ? "text-black" : "text-offwhite"
-        }`}
-      >
-        <span className="font-sans">● Process</span>
-      </p>
-      {/* END DIVIDER LINE */}
-
+    <main className={`bg-[#121212] pl-5`}>
+     
       <div
         className="
        pt-[3rem] pb-[8.81rem]
@@ -103,7 +89,6 @@ const ImageGrid5 = ({ img1, img2, img3, img4, text3, bgColor }) => {
         {/* Notational sketching to communicate to other devs. */}
       </div>
       <ReflectionPoints bgColor="black" text3={text3} />
-
     </main>
   );
 };

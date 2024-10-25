@@ -97,7 +97,7 @@ export default function App() {
           {/* floating magic cube */}
 
           <Pointer />
-          <Model scale={0.4} position={[0, 1, 0.5]} route="/play" />
+          <Model scale={0.4} position={[0, 1, 0.5]} route="/work" />
           {/* <SpinningBox scale={0.4} position={[0, 1, 0.5]} route='/blogs' /> */}
         </Physics>
         <pointLight
