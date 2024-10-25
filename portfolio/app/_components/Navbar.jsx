@@ -2,6 +2,8 @@ import { appleImg } from '../../public/utils';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { MdOutlineArrowOutward } from "react-icons/md";
+
 
 const Navbar = () => {
   return (
@@ -18,14 +20,13 @@ const Navbar = () => {
       lg:grid-cols-5
       gap-5 w-full
       grid-cols-2 h-fit"
-      > 
+      >
         <div className="col-start-1  uppercase hover:text-mwsGrey">
-          
           <Link href="/">staicu, viviana</Link>
         </div>
 
-        <div className="lg:col-start-4 col-start-2">
-          {["play", "theSketchbook", "blogs"].map((item, index, array) => (
+        <div className="lg:col-start-4 col-start-2 inline col-span-3">
+          {["play", "theSketchbook", "about"].map((item, index, array) => (
             // The React.Fragment is used to group the elements together without adding an extra node to the DOM. The key prop is moved to the React.Fragment because keys should be on the outermost element returned by map.
             <React.Fragment key={item}>
               <Link
@@ -37,6 +38,16 @@ const Navbar = () => {
               {index < array.length - 1 && ", "}
             </React.Fragment>
           ))}
+
+          <Link
+            href={"https://medium.com/@vivianastaicu05"}
+            className="hover:text-mwsGrey relative group"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {", "}blogs
+            <MdOutlineArrowOutward className="inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-00" />
+          </Link>
         </div>
       </nav>
     </div>

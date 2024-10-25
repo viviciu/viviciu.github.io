@@ -1,7 +1,7 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
   {
-    id: "liminal",
+    id: "liminal", // id should be the title of the project folder, stored under ./play
     name: "Lunar Gala",
     url: "/imgs/homeGif.gif",
     category: "code",
@@ -9,11 +9,11 @@ export const items = [
       "Interaction Design, 3D Web Development, Creative Direction",
   },
   {
-    id: "item-02",
-    name: "Item 2",
+    id: "15-112",
+    name: "The Golden Contact Sheet, 15-112 Term Project",
     url: "/IMAG0009.JPG",
-    category: "sketch",
-    categorySpecific: "",
+    category: "code",
+    categorySpecific: "Python",
   },
   {
     id: "item-03",
