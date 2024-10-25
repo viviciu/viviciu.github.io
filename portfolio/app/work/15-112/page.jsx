@@ -61,7 +61,8 @@ export default function Liminal() {
       <Title
         text1={
           <div>
-            The Golden Contact Sheet, <br /> A tool
+            Golden Contact, <br /> a prototyping tool crafted to the golden
+            ratio.
           </div>
         }
       />
@@ -74,7 +75,7 @@ export default function Liminal() {
       />
       <CoverYAMLVideo />
       <Context2
-        context={<div>15-112 Project Desc.</div>}
+        context={<div>Did this in a week. 15-112 Project Desc.</div>}
         myRole={myRole}
         members={members}
         tools={tools}

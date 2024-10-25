@@ -10,7 +10,7 @@ export const Context2 = ({context, members, tools, myRole}) => {
       <div
         // gap-[5.06rem] !!
         className="
-       lg:pb-[5rem] lg:mt-[3.5rem]
+       lg:pb-[5rem] lg:mt-[3.5rem] mt-[2rem]
       mb-[3.06rem]
       
       w-full h-fit 
