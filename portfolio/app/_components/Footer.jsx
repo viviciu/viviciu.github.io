@@ -6,7 +6,7 @@ const Footer = () => {
     <main className=" m-2">
       <h2 className="lg:text-5xl text-xl text-display z-10">
         see the{"  "}
-        <Link className="underline relative" href="/play">
+        <Link className="hover:text-mwsGrey underline relative" href="/play">
           archive
         </Link>
         —

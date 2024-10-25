@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
 
         <div className="lg:col-start-4 col-start-2 inline col-span-3">
-          {["play", "theSketchbook", "about"].map((item, index, array) => (
+          {["work","play", "about"].map((item, index, array) => (
             // The React.Fragment is used to group the elements together without adding an extra node to the DOM. The key prop is moved to the React.Fragment because keys should be on the outermost element returned by map.
             <React.Fragment key={item}>
               <Link

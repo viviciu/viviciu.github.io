@@ -123,7 +123,7 @@
     }
 
   a {
-    @apply hover:text-mwsGrey;
+    /* @apply hover:text-mwsGrey; */
     cursor: none
   }
 
