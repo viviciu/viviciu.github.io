@@ -12,7 +12,7 @@ export const items = [
   {
     id: "15-112",
     name: "Golden Contact,",
-    url: "/IMAG0009.JPG",
+    url: "/imgs/goldenContactSheetThumbnail.png",
     category: "code",
     categorySpecific: "a prototyping tool crafted to the golden ratio.",
   },
@@ -32,7 +32,7 @@ export const items = [
   },
   {
     id: "summerSketchbookTour",
-    name: "Summer Sketchbook Tour,",
+    name: "Sketchbook Sessions,",
     url: "/imgs/thumb5_162-edit.jpg",
     category: "design",
     categorySpecific: "a peek at my brain.",

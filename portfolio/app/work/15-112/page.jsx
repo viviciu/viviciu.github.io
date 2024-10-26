@@ -73,7 +73,7 @@ export default function Liminal() {
         year="2024"
         role="Development, Interaction Design"
       />
-      <CoverYAMLVideo />
+      <CoverYAMLVideo url={"https://www.youtube.com/embed/n7lI6HM4wjc?si=BHsnvu883ixvxeA5"} />
       <Context2
         context={<div>Did this in a week. 15-112 Project Desc.</div>}
         myRole={myRole}

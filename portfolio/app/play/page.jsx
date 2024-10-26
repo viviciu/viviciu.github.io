@@ -93,6 +93,24 @@ export default function Projects() {
           <div className="">
             <input
               type="radio"
+              id="product"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("product")}
+            />
+            <label
+              className={`
+                cursor-none
+                checkbox-label-checked
+                ${selectedLabel === "product" ? "clicked" : ""}`}
+              htmlFor="product"
+              onClick={() => handleClick("product")}
+            >
+              Product,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
               id="photo"
               className="mr-1 appearance-none"
               onChange={() => handleClick("photo")}
@@ -144,6 +162,23 @@ export default function Projects() {
           <div className="">
             <input
               type="radio"
+              id="3d"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("3d")}
+            />
+            <label
+              className={`
+                checkbox-label-checked
+                ${selectedLabel === "3d" ? "clicked" : ""}`}
+              htmlFor="3d"
+              onClick={() => handleClick("3d")}
+            >
+              3D,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
               id="motion"
               className="mr-1 appearance-none"
               onChange={() => handleClick("motion")}
@@ -158,15 +193,32 @@ export default function Projects() {
               Motion,
             </label>
           </div>
+          <div className="">
+            <input
+              type="radio"
+              id="motion"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("sketch")}
+            />
+            <label
+              className={`
+                checkbox-label-checked
+                ${selectedLabel === "sketch" ? "clicked" : ""}`}
+              htmlFor="sketch"
+              onClick={() => handleClick("sketch")}
+            >
+              Sketch
+            </label>
+          </div>
         </article>
-        <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-7 gap-[5rem] place-content-center">
+        <article className="w-full mx-auto grid grid-cols-2 gap-[2rem] sm:gap-[5rem]sm:grid-cols-5 lg:grid-cols-7  place-content-center">
           {displayedItems}
         </article>
       </section>
 
       {clickedImg && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex justify-start items-start z-50"
+          className="fixed inset-0 bg-white bg-opacity-85 flex justify-start items-start z-50"
           onClick={handleCloseModal}
         >
           <div
