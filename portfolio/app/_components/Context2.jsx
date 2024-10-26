@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Context2 = ({ context, members = [], tools = [], myRole }) => {
+export const Context2 = ({ context, members = [], tools = [], myRole, timeline = "Viviana Staicu" }) => {
   return (
     <main
       className="lg:grid lg:grid-cols-5 grid-cols-3
@@ -42,7 +42,7 @@ export const Context2 = ({ context, members = [], tools = [], myRole }) => {
                 href="instagram or linkedin of credited member here"
                 className="font-SFProDisplay font-bold"
               >
-                Viviana Staicu
+                {timeline}
               </a>
             </li>
           )}
