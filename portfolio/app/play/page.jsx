@@ -12,7 +12,7 @@ export default function Projects() {
     setSelectedLabel(label);
   };
 
-  const handleImageClick = (url) => {
+  const handleImageClick = (url, index) => {
     setClickedImg(url);
     setCurrentIndex(index);
   };
@@ -87,7 +87,7 @@ export default function Projects() {
               htmlFor="code"
               onClick={() => handleClick("code")}
             >
-              Creative Direction,
+              Digital,
             </label>
           </div>
           <div className="">
@@ -104,7 +104,7 @@ export default function Projects() {
               htmlFor="photo"
               onClick={() => handleClick("photo")}
             >
-              Graphic Identity,
+              Photo,
             </label>
           </div>
           <div className="">
@@ -121,7 +121,7 @@ export default function Projects() {
               htmlFor="video"
               onClick={() => handleClick("video")}
             >
-              Digital,
+              Cinematography,
             </label>
           </div>
           <div className="">
@@ -144,18 +144,18 @@ export default function Projects() {
           <div className="">
             <input
               type="radio"
-              id="strategy"
+              id="motion"
               className="mr-1 appearance-none"
-              onChange={() => handleClick("strategy")}
+              onChange={() => handleClick("motion")}
             />
             <label
               className={`
                 checkbox-label-checked
-                ${selectedLabel === "strategy" ? "clicked" : ""}`}
-              htmlFor="strategy"
-              onClick={() => handleClick("strategy")}
+                ${selectedLabel === "motion" ? "clicked" : ""}`}
+              htmlFor="motion"
+              onClick={() => handleClick("motion")}
             >
-              Strategy,
+              Motion,
             </label>
           </div>
         </article>
@@ -173,12 +173,6 @@ export default function Projects() {
             className="relative m-[0.6rem]" // m-2 adds the little margin around img
             onClick={(e) => e.stopPropagation()} // Stop propagation on the modal content
           >
-            <button
-              className="absolute top-0 right-0 m-4 text-white text-2xl"
-              onClick={handleCloseModal}
-            >
-              &times;
-            </button>
             <img
               src={clickedImg}
               alt="Modal Image"
@@ -187,7 +181,7 @@ export default function Projects() {
                 e.stopPropagation();
                 handleNextImage();
               }} // Stop propagation and handle next image
-              style={{ cursor: "url(/path/to/arrow-icon.png), auto" }} // Change cursor to arrow
+              style={{ cursor: "e-resize" }} // Change cursor to arrow
             />
           </div>
         </div>
