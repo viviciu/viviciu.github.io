@@ -73,15 +73,42 @@ export default function Liminal() {
         year="2024"
         role="Development, Interaction Design"
       />
-      <CoverYAMLVideo />
+      <CoverYAMLVideo
+        url={"https://www.youtube.com/embed/n7lI6HM4wjc?si=BHsnvu883ixvxeA5"}
+      />
       <Context2
-        context={<div>Did this in a week. 15-112 Project Desc.</div>}
+        context={
+          <div>
+            Timeline: 1 week
+            <br />{" "}
+            <Link
+              href="https://www.cs.cmu.edu/~112-n24/notes/tp-assignment.html#Project%20Options"
+              className="relative group underline"
+            >
+              Project brief.
+              <MdOutlineArrowOutward
+                className="inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-00 leading-p3
+        lg:text-p
+        text
+        font-SuisseWorks
+        font-regular
+    "
+              />
+            </Link>
+            <br />
+            <br />
+            Process to be added.
+            <br />
+            Last update:{" "}
+            <span className="font-Suisse font-semibold"> 26 October 2024 </span>
+          </div>
+        }
         myRole={myRole}
         members={members}
         tools={tools}
       />
-      <DividerLine text="Project Brief" />
-      <Context
+      {/* <DividerLine text="Project Brief" /> */}
+      {/* <Context
         text1="Link"
         text2={
           <div>
@@ -101,7 +128,7 @@ export default function Liminal() {
             </Link>
           </div>
         }
-      />
+      /> */}
     </main>
   );
 }

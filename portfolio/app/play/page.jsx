@@ -1,64 +1,59 @@
-// NOTES
-// If changing category names in ./items.js or in this file, make sure to change category names EVERYWHERE. I have noted this in a comment called "// this must be changed if category changes." Note this is for EACH div containing a label.
-
 "use client";
 import { useState } from "react";
 import { items } from "./items.js";
 import Link from "next/link.js";
 
 export default function Projects() {
-  // RADIO BUTTONS: https://www.w3schools.com/tags/att_input_type_radio.asp
   const [selectedLabel, setSelectedLabel] = useState(null);
+  const [clickedImg, setClickedImg] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleClick = (label) => {
     setSelectedLabel(label);
   };
 
-  const displayedItems = items
-    // important
-    .filter((item) => !selectedLabel || selectedLabel === item.category)
+  const handleImageClick = (url, index) => {
+    setClickedImg(url);
+    setCurrentIndex(index);
+  };
 
-    .map((item) => (
-      <div key={item.id} className="item space-y-2">
-        {/* PARENT GROUP */}
-        <Link href={"/play/" + item.id}>
-          <div className="flex flex-col justify-center relative group text-cap">
-            <p className="font-SuisseWorks">{item.name}</p>
-            <p
-              className="
-              font-SuisseWorks
-              opacity-0
-              transition
-              group-hover:opacity-100"
-            >
-              {item.categorySpecific}
-            </p>
-            <img
-              src={item.url}
-              alt={item.name}
-              className="w-full h-full object-cover 
-            translate-y-0 transition group-hover:translate-y-2"
-            />
-          </div>
-        </Link>
-        {/* CARD CATEGORY LABEL */}
-        {/* <pre>{item.category}</pre> */}
+  const handleCloseModal = () => {
+    setClickedImg(null);
+  };
+
+  const handleNextImage = () => {
+    const nextIndex = (currentIndex + 1) % items.length;
+    setCurrentIndex(nextIndex);
+    setClickedImg(items[nextIndex].url);
+  };
+
+  const displayedItems = items
+    .filter((item) => !selectedLabel || selectedLabel === item.category)
+    .map((item, index) => (
+      <div key={item.id} className="item">
+        <div className="justify-center relative group text-cap">
+          <img
+            src={item.url}
+            alt={item.name}
+            className="w-full h-full object-cover translate-y-0 transition group-hover:translate-y-2 cursor-pointer"
+            onClick={() => handleImageClick(item.url, index)}
+          />
+        </div>
       </div>
     ));
 
   return (
     <main className="m-1">
-      <section className="flex flex-col md:flex-col mx-4 container max-w-6xl">
-        {/* SELECTION BAR */}
+      <section className="flex flex-col mx-4">
         <article
           className="
-          mb-[11vh] mt-[11vh] 
+          lg:mb-[11vh] mb-[2.5rem] mt-[11vh] 
           flex flex-wrap sm:flex-row 
-          md:text-h1 text-3xl
-          leading-h1 
+          lg:text-h1  md:text-[2.75rem] text-[1.6rem] tracking-tight
+          lg:leading-[3.7rem]
+          leading-[1.6rem]
           font-h1 font-medium"
         >
-          {/* SHOW ALL ITEMS */}
           <div className="">
             <input
               type="radio"
@@ -81,28 +76,44 @@ export default function Projects() {
             <input
               type="radio"
               id="code"
-              className="mr-1
-                appearance-none"
+              className="mr-1 appearance-none"
               onChange={() => handleClick("code")}
             />
             <label
               className={`
                 cursor-none
                 checkbox-label-checked
-                ${selectedLabel === "code" ? "clicked" : ""}`} // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
+                ${selectedLabel === "code" ? "clicked" : ""}`}
               htmlFor="code"
               onClick={() => handleClick("code")}
             >
-              code,
+              Digital,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="product"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("product")}
+            />
+            <label
+              className={`
+                cursor-none
+                checkbox-label-checked
+                ${selectedLabel === "product" ? "clicked" : ""}`}
+              htmlFor="product"
+              onClick={() => handleClick("product")}
+            >
+              Product,
             </label>
           </div>
           <div className="">
             <input
               type="radio"
               id="photo"
-              className="mr-1 
-                appearance-none"
-              onChange={() => handleClick("code")}
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("photo")}
             />
             <label
               className={`
@@ -111,33 +122,122 @@ export default function Projects() {
               htmlFor="photo"
               onClick={() => handleClick("photo")}
             >
-              photo,
+              Photo,
             </label>
           </div>
           <div className="">
             <input
               type="radio"
-              id="video" // this must be changed if category changes.
-              className="mr-1
-                appearance-none"
-              onChange={() => handleClick("code")}
+              id="video"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("video")}
             />
             <label
               className={`
                 checkbox-label-checked
                 ${selectedLabel === "video" ? "clicked" : ""}`}
-              htmlFor="video" // this must be changed if category changes.
+              htmlFor="video"
               onClick={() => handleClick("video")}
             >
-              video,
+              Cinematography,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="print"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("print")}
+            />
+            <label
+              className={`
+                checkbox-label-checked
+                ${selectedLabel === "print" ? "clicked" : ""}`}
+              htmlFor="print"
+              onClick={() => handleClick("print")}
+            >
+              Print,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="3d"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("3d")}
+            />
+            <label
+              className={`
+                checkbox-label-checked
+                ${selectedLabel === "3d" ? "clicked" : ""}`}
+              htmlFor="3d"
+              onClick={() => handleClick("3d")}
+            >
+              3D,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="motion"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("motion")}
+            />
+            <label
+              className={`
+                checkbox-label-checked
+                ${selectedLabel === "motion" ? "clicked" : ""}`}
+              htmlFor="motion"
+              onClick={() => handleClick("motion")}
+            >
+              Motion,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="motion"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("sketch")}
+            />
+            <label
+              className={`
+                checkbox-label-checked
+                ${selectedLabel === "sketch" ? "clicked" : ""}`}
+              htmlFor="sketch"
+              onClick={() => handleClick("sketch")}
+            >
+              Sketch
             </label>
           </div>
         </article>
-        {/* ITEMS */}
-        <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-content-center p-2">
+        <article className="w-full mx-auto grid grid-cols-2 gap-[2rem] sm:gap-[5rem]sm:grid-cols-5 lg:grid-cols-7  place-content-center">
           {displayedItems}
         </article>
       </section>
+
+      {clickedImg && (
+        <div
+          className="fixed inset-0 bg-white bg-opacity-85 flex justify-start items-start z-50"
+          onClick={handleCloseModal}
+        >
+          <div
+            className="relative m-[0.6rem]" // m-2 adds the little margin around img
+            onClick={(e) => e.stopPropagation()} // Stop propagation on the modal content
+          >
+            <img
+              src={clickedImg}
+              alt="Modal Image"
+              className=" max-h-[84vh] cursor-pointer"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNextImage();
+              }} // Stop propagation and handle next image
+              style={{ cursor: "e-resize" }} // Change cursor to arrow
+            />
+          </div>
+        </div>
+      )}
     </main>
   );
 }

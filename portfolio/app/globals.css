@@ -181,6 +181,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* PREVENTS HORIZONTAL SCROLLING ISSUE ON MOBILE (/play modal) */
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+  
+}
+
+
 html {
   font-size: 16px;
   touch-action: auto;

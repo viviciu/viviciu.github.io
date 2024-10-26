@@ -35,7 +35,7 @@ export default function Projects() {
             "
             />
             {/* Renders line breaks: Include \n in the name prop in items.js */}
-            <p className="w-[60%]">
+            <p className="w-[70%]">
               {item.name.split("\n").map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
@@ -67,7 +67,7 @@ export default function Projects() {
 
 
         {/* ITEMS */}
-        <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 place-content-center p-2">
+        <article className="w-full mx-auto grid grid-cols-2 md:grid-cols-3 gap-[2rem] md:gap-12 place-content-center ">
           {displayedItems}
         </article>
 
