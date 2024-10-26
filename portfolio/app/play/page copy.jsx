@@ -1,50 +1,54 @@
+// NOTES
+// If changing category names in ./items.js or in this file, make sure to change category names EVERYWHERE. I have noted this in a comment called "// this must be changed if category changes." Note this is for EACH div containing a label.
+
 "use client";
 import { useState } from "react";
 import { items } from "./items.js";
 import Link from "next/link.js";
 
 export default function Projects() {
+  // RADIO BUTTONS: https://www.w3schools.com/tags/att_input_type_radio.asp
   const [selectedLabel, setSelectedLabel] = useState(null);
-  const [clickedImg, setClickedImg] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleClick = (label) => {
     setSelectedLabel(label);
   };
 
-  const handleImageClick = (url) => {
-    setClickedImg(url);
-    setCurrentIndex(index);
-  };
-
-  const handleCloseModal = () => {
-    setClickedImg(null);
-  };
-
-  const handleNextImage = () => {
-    const nextIndex = (currentIndex + 1) % items.length;
-    setCurrentIndex(nextIndex);
-    setClickedImg(items[nextIndex].url);
-  };
-
   const displayedItems = items
+    // important
     .filter((item) => !selectedLabel || selectedLabel === item.category)
-    .map((item, index) => (
-      <div key={item.id} className="item">
-        <div className="justify-center relative group text-cap">
-          <img
-            src={item.url}
-            alt={item.name}
-            className="w-full h-full object-cover translate-y-0 transition group-hover:translate-y-2 cursor-pointer"
-            onClick={() => handleImageClick(item.url, index)}
-          />
-        </div>
+
+    .map((item) => (
+      <div key={item.id} className="item ">
+        {/* PARENT GROUP */}
+        <Link href={"/play/" + item.id}>
+          <div className="justify-center relative group text-cap">
+            {/* <p
+              className="
+              font-SuisseWorks
+              opacity-0
+              transition
+              group-hover:opacity-100"
+            >
+              {item.categorySpecific}
+            </p> */}
+            <img
+              src={item.url}
+              alt={item.name}
+              className="w-full h-full object-cover 
+            translate-y-0 transition group-hover:translate-y-2"
+            />
+          </div>
+        </Link>
+        {/* CARD CATEGORY LABEL */}
+        {/* <pre>{item.category}</pre> */}
       </div>
     ));
 
   return (
     <main className="m-1">
-      <section className="flex flex-col mx-4">
+      <section className="flex flex-col  mx-4 ">
+        {/* SELECTION BAR */}
         <article
           className="
           lg:mb-[11vh] mb-[2.5rem] mt-[11vh] 
@@ -52,8 +56,10 @@ export default function Projects() {
           lg:text-h1  md:text-[2.75rem] text-[1.6rem] tracking-tight
           lg:leading-[3.7rem]
           leading-[1.6rem]
+           
           font-h1 font-medium"
         >
+          {/* SHOW ALL ITEMS */}
           <div className="">
             <input
               type="radio"
@@ -76,14 +82,15 @@ export default function Projects() {
             <input
               type="radio"
               id="code"
-              className="mr-1 appearance-none"
+              className="mr-1
+                appearance-none"
               onChange={() => handleClick("code")}
             />
             <label
               className={`
                 cursor-none
                 checkbox-label-checked
-                ${selectedLabel === "code" ? "clicked" : ""}`}
+                ${selectedLabel === "code" ? "clicked" : ""}`} // custom class in tailwind.config under plugins called ".checkbox-label-checked" where you can alter this color.
               htmlFor="code"
               onClick={() => handleClick("code")}
             >
@@ -94,8 +101,9 @@ export default function Projects() {
             <input
               type="radio"
               id="photo"
-              className="mr-1 appearance-none"
-              onChange={() => handleClick("photo")}
+              className="mr-1 
+                appearance-none"
+              onChange={() => handleClick("code")}
             />
             <label
               className={`
@@ -110,15 +118,16 @@ export default function Projects() {
           <div className="">
             <input
               type="radio"
-              id="video"
-              className="mr-1 appearance-none"
-              onChange={() => handleClick("video")}
+              id="video" // this must be changed if category changes.
+              className="mr-1
+                appearance-none"
+              onChange={() => handleClick("code")}
             />
             <label
               className={`
                 checkbox-label-checked
                 ${selectedLabel === "video" ? "clicked" : ""}`}
-              htmlFor="video"
+              htmlFor="video" // this must be changed if category changes.
               onClick={() => handleClick("video")}
             >
               Digital,
@@ -127,16 +136,17 @@ export default function Projects() {
           <div className="">
             <input
               type="radio"
-              id="print"
-              className="mr-1 appearance-none"
-              onChange={() => handleClick("print")}
+              id="video" // this must be changed if category changes.
+              className="mr-1
+                appearance-none"
+              onChange={() => handleClick("code")}
             />
             <label
               className={`
                 checkbox-label-checked
-                ${selectedLabel === "print" ? "clicked" : ""}`}
-              htmlFor="print"
-              onClick={() => handleClick("print")}
+                ${selectedLabel === "video" ? "clicked" : ""}`}
+              htmlFor="video" // this must be changed if category changes.
+              onClick={() => handleClick("video")}
             >
               Print,
             </label>
@@ -144,54 +154,30 @@ export default function Projects() {
           <div className="">
             <input
               type="radio"
-              id="strategy"
-              className="mr-1 appearance-none"
-              onChange={() => handleClick("strategy")}
+              id="video" // this must be changed if category changes.
+              className="mr-1
+                appearance-none"
+              onChange={() => handleClick("code")}
             />
             <label
               className={`
                 checkbox-label-checked
-                ${selectedLabel === "strategy" ? "clicked" : ""}`}
-              htmlFor="strategy"
-              onClick={() => handleClick("strategy")}
+                ${selectedLabel === "video" ? "clicked" : ""}`}
+              htmlFor="video" // this must be changed if category changes.
+              onClick={() => handleClick("video")}
             >
               Strategy,
             </label>
           </div>
         </article>
-        <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-7 gap-[5rem] place-content-center">
+        {/* ITEMS */}
+        <article
+          className="w-full mx-auto 
+        grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-7 gap-[5rem] place-content-center"
+        >
           {displayedItems}
         </article>
       </section>
-
-      {clickedImg && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex justify-start items-start z-50"
-          onClick={handleCloseModal}
-        >
-          <div
-            className="relative m-[0.6rem]" // m-2 adds the little margin around img
-            onClick={(e) => e.stopPropagation()} // Stop propagation on the modal content
-          >
-            <button
-              className="absolute top-0 right-0 m-4 text-white text-2xl"
-              onClick={handleCloseModal}
-            >
-              &times;
-            </button>
-            <img
-              src={clickedImg}
-              alt="Modal Image"
-              className=" max-h-[84vh] cursor-pointer"
-              onClick={(e) => {
-                e.stopPropagation();
-                handleNextImage();
-              }} // Stop propagation and handle next image
-              style={{ cursor: "url(/path/to/arrow-icon.png), auto" }} // Change cursor to arrow
-            />
-          </div>
-        </div>
-      )}
     </main>
   );
 }
