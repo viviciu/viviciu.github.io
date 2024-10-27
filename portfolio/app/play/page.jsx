@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { items } from "./items.js";
 import Link from "next/link.js";
+import Image from "next/image.js";
 
 export default function Projects() {
   const [selectedLabel, setSelectedLabel] = useState(null);
@@ -32,10 +33,13 @@ export default function Projects() {
     .map((item, index) => (
       <div key={item.id} className="item">
         <div className="justify-center relative group text-cap">
-          <img
+          <Image
             src={item.url}
             alt={item.name}
             className="w-full h-full object-cover translate-y-0 transition group-hover:translate-y-2 cursor-pointer"
+            unoptimized={item.url.endsWith(".gif")} // Add unoptimized property for GIFs
+            width={500} // Example width, adjust as needed
+            height={500} // Example height, adjust as needed
             onClick={() => handleImageClick(item.url, index)}
           />
         </div>

@@ -6,6 +6,7 @@ import { useState } from "react";
 import { items } from "./items.js";
 import Link from "next/link.js";
 import React from "react";
+import Image from "next/image";
 
 export default function Projects() {
   // RADIO BUTTONS: https://www.w3schools.com/tags/att_input_type_radio.asp
@@ -28,11 +29,13 @@ export default function Projects() {
             pb-[1rem]
           text-[1.55rem] leading-[1.55rem] font-Suisse translate-y-0 "
           >
-            <img
+            <Image
               src={item.url}
               alt={item.name}
-              className="w-full h-full object-cover pb-[1rem]
-            "
+              className="w-full h-full object-cover pb-[1rem]"
+              unoptimized={item.url.endsWith(".gif")} // Add unoptimized property for GIFs
+              width={500} // Example width, adjust as needed
+              height={500} // Example height, adjust as needed
             />
             {/* Renders line breaks: Include \n in the name prop in items.js */}
             <p className="w-[70%]">

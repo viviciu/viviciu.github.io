@@ -8,14 +8,14 @@ export const items = [
     categorySpecific: "",
   },
   {
-    id: "09",
+    id: "01",
     name: "pmini01",
     url: "/imgs/play/DSC04956.JPG",
     category: "product",
     categorySpecific: "",
   },
   {
-    id: "10",
+    id: "02",
     name: "Item 3",
     url: "/imgs/play/DSC04957.JPG",
     category: "product",
@@ -29,7 +29,13 @@ export const items = [
     category: "product",
     categorySpecific: "",
   },
-
+  {
+    id: "13",
+    name: "Item 3",
+    url: "/imgs/play/old-portfolio-home.png",
+    category: "code",
+    categorySpecific: "",
+  },
   {
     id: "scifirender", // id should be the title of the project folder, stored under ./play
     name: "",
@@ -39,14 +45,14 @@ export const items = [
   },
 
   {
-    id: "item-03",
+    id: "03",
     name: "Item 3",
     url: "/refrigerator-lut_1.2.1.jpg",
     category: "video", // this must be changed if category changes in html
     categorySpecific: "",
   },
   {
-    id: "item-04",
+    id: "04",
     name: "Item 3",
     url: "/lucy-2-prada.jpg",
     category: "photo",
@@ -60,41 +66,34 @@ export const items = [
     categorySpecific: "",
   },
   {
-    id: "05",
+    id: "06",
     name: "Item 3",
     url: "/imgs/play/wipedClean_nonOptimized.gif",
     category: "video",
     categorySpecific: "",
   },
   {
-    id: "06", // id should be the title of the project folder, stored under ./play
+    id: "07",
     name: "envScene",
     url: "/imgs/play/envSceneRender.jpg",
     category: "3d",
     categorySpecific: "",
   },
   {
-    id: "07",
+    id: "08",
     name: "vhs",
     url: "/imgs/play/vhs-gif.gif",
     category: "3d",
     categorySpecific: "",
   },
   {
-    id: "08",
+    id: "09",
     name: "xr-01",
     url: "/imgs/play/ceiling-blockout03.png",
     category: "3d",
     categorySpecific: "",
   },
 
-  {
-    id: "13",
-    name: "Item 3",
-    url: "/imgs/play/old-portfolio-home.png",
-    category: "code",
-    categorySpecific: "",
-  },
   {
     id: "14",
     name: "Item 3",
@@ -103,7 +102,7 @@ export const items = [
     categorySpecific: "",
   },
   {
-    id: "14",
+    id: "10",
     name: "Item 3",
     url: "/imgs/play/headEmptyCharcoal.jpg",
     category: "sketch",
