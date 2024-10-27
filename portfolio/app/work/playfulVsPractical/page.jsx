@@ -14,7 +14,7 @@ export default function Liminal() {
   const members = [
     
   ];
-  const tools = ["my hands"];
+  const tools = ["Rapid Prototyping", "Desktop Modelmaking"];
   const myRole = "Timeline";
 
   const [activeIndex, setActiveIndex] = useState(0);
