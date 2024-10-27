@@ -19,7 +19,7 @@ export const items = [
   {
     id: "playfulVsPractical",
     name: "Playful vs. Practical,",
-    url: "/imgs/DSC05668-thumbnail.JPG",
+    url: "/imgs/DSC05668-thumbnail.jpg",
     category: "design",
     categorySpecific: "a synergy of language, form, and context.",
   },
