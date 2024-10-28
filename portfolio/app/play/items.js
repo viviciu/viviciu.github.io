@@ -23,14 +23,14 @@ export const items = [
   },
 
   {
-    id: "11",
+    id: "d",
     name: "Item 3",
     url: "/imgs/play/DSC05496.JPG",
     category: "product",
     categorySpecific: "",
   },
   {
-    id: "13",
+    id: "l",
     name: "Item 3",
     url: "/imgs/play/old-portfolio-home.png",
     category: "code",
@@ -65,6 +65,7 @@ export const items = [
     category: "video",
     categorySpecific: "",
   },
+
   {
     id: "06",
     name: "Item 3",
@@ -73,7 +74,7 @@ export const items = [
     categorySpecific: "",
   },
   {
-    id: "07",
+    id: "asasasas",
     name: "envScene",
     url: "/imgs/play/envSceneRender.jpg",
     category: "3d",
@@ -95,21 +96,21 @@ export const items = [
   },
 
   {
-    id: "14",
+    id: "c",
     name: "Item 3",
     url: "/imgs/play/C0336-toss-cyllinder-in-air.gif",
     category: "product",
     categorySpecific: "",
   },
   {
-    id: "10",
+    id: "b",
     name: "Item 3",
     url: "/imgs/play/headEmptyCharcoal.jpg",
     category: "sketch",
     categorySpecific: "",
   },
   {
-    id: "15",
+    id: "a",
     name: "Item 3",
     url: "/imgs/play/thumb4_161-crop.jpg",
     category: "sketch",
@@ -120,6 +121,189 @@ export const items = [
     name: "backpack",
     url: "/IMAG0009.JPG",
     category: "sketch",
+    categorySpecific: "",
+  },
+
+  {
+    id: "25",
+    name: "getty-scene-awesome",
+    url: "/imgs/play/getty-scene-awesome.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "13",
+    name: "getty03",
+    url: "/imgs/play/edit-03827.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "14",
+    name: "getty02",
+    url: "/imgs/play/edit-03830.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "11",
+    name: "aphi-blue",
+    url: "/imgs/play/edit-02084.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "7",
+    name: "aphi-linkedin-4x5-instaFrame",
+    url: "/imgs/play/aphi-linkedin-4x5-instaFrame.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "17",
+    name: "sanJose-01",
+    url: "/imgs/play/edit-05805.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "18",
+    name: "sanJose-02",
+    url: "/imgs/play/edit-05879.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "19",
+    name: "sanJose-03",
+    url: "/imgs/play/edit-05882.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "20",
+    name: "sanJose-04",
+    url: "/imgs/play/edit-05888.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "22",
+    name: "edit-06253",
+    url: "/imgs/play/edit-06253.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "21",
+    name: "edit-061",
+    url: "/imgs/play/edit-061.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "sdsd",
+    name: "edit-606",
+    url: "/imgs/play/edit-606.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "24",
+    name: "edit-highGrain-03897",
+    url: "/imgs/play/edit-highGrain-03897.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "6",
+    name: "SDTorreyPines-car-cropped",
+    url: "/imgs/play/SDTorreyPines-car-cropped.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "8",
+    name: "edit-00153",
+    url: "/imgs/play/edit-00153.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "9",
+    name: "edit-00235",
+    url: "/imgs/play/edit-00235.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "10",
+    name: "edit-01410",
+    url: "/imgs/play/edit-01410.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "12",
+    name: "edit-02209",
+    url: "/imgs/play/edit-02209.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "15",
+    name: "soulStylz-01",
+    url: "/imgs/play/edit-05266.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "16",
+    name: "soulStylz-02",
+    url: "/imgs/play/edit-05306.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "1",
+    name: "11-vivianaFilm017",
+    url: "/imgs/play/11-vivianaFilm017.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "2",
+    name: "12-vivianaFilm010",
+    url: "/imgs/play/12-vivianaFilm010.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "3",
+    name: "3-vivianaFilm008",
+    url: "/imgs/play/3-vivianaFilm008.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "4",
+    name: "B-edited-00352",
+    url: "/imgs/play/B-edited-00352.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "5",
+    name: "G-edited-00356",
+    url: "/imgs/play/G-edited-00356.jpg",
+    category: "photo",
     categorySpecific: "",
   },
 ];
