@@ -77,17 +77,17 @@ const Footer = () => {
         >
           e.
         </p> */}
-        <p
+        <div
           className="lg:col-start-5 col-start-3 
           leading-cap 
         justify-self-end self-end flex gap-3"
         >
-          <p
+          <div
             className="lg:col-start-5 
         font-SuisseWorks justify-self-end self-end ml-auto"
           >
             e.
-          </p>
+          </div>
           <Link
             href={"mailto:vstaicu@andrew.cmu.edu"}
             target="_blank"
@@ -96,7 +96,7 @@ const Footer = () => {
           >
             vstaicu@andrew.cmu.edu
           </Link>
-        </p>
+        </div>
       </div>
     </main>
   );
