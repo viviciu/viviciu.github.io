@@ -16,6 +16,7 @@ import ImageGrid5 from "../../_components/ImageGrid5";
 import CircleSect from "../../_components/CircleSect";
 import YAMLBar from "../../_components/YAMLBar";
 import DividerLine from "../../_components/DividerLine";
+import Image from "next/image";
 
 import "../../_components/greyBGLines.css";
 import Footer from "../../_components/Footer";
@@ -101,12 +102,12 @@ export default function Liminal() {
       />
       <DividerLine text="Defining the Problem" />
       <Context
-        text1="'LIMINAL'"
+        text1="Problem Space"
         text2={
-          <div>
+          <div className="">
             Before ideating, we had to establish constraints. How does LG{" "}
-            <i className="font-SuisseWorks text-offBlack">interpret</i> the
-            concept of Liminality? How does that{" "}
+            <i className=" text-offBlack">interpret</i> the concept of
+            Liminality? How does that{" "}
             <i className="font-SuisseWorks text-offBlack">
               translate to digital interactions?
             </i>
@@ -124,19 +125,61 @@ export default function Liminal() {
               created in each “room.” The Backrooms, one primal cultural example
               of liminality, was one of a few of our early influences.
             </div>
+            <br />
+            <div className="text-offBlack">
+              Our challenge was to achieve Liminality through the form,
+              function, and interaction of the website.
+            </div>
           </div>
         }
       />
 
       {/* <DividerLine text={"CHALLENGES"} />  */}
-      {/* Scene */}
-      <Challenges activeIndex={activeIndex} index={0} ref={componentRefs[0]} />
 
-      {/* CALLOUT HAS MARGIN 0, others use a wrapper div with m-5 */}
-      <Callout
-        className="m-0"
-        text="WHAT FORM LANGUAGE CREATES A LIMINAL SPACE?"
-      />
+      <div
+        className="flex pt-[2.9375rem] lg:pb-[5.06rem] mt-[3.5rem] mb-[5rem]
+      lg:grid lg:grid-cols-5 grid-cols-3
+      gap-[5.06rem] 
+      w-full h-fit 
+      items-start"
+      >
+        <div className="col-span-2 font-Suisse font-regular">
+          What form language creates a liminal space?
+          <br />
+          <br />
+          The home page is a transitory white void hosting each space: Time
+          moves in an infinite loop, and when the user wants to enter a page,
+          they enter the “space between spaces” — neither here nor there, they
+          are “in-between” time, and can reside in that page as long as they
+          hold the mouse. This forced interaction was integral to evoking the
+          feeling of temporality established in our initial definition.
+          <br />
+          <br />
+          The people page creates a sort of “infinity scroll” of cards
+          representing each LG member. This emphasizes liminality and at the
+          same time emphasizes the great mass of talents a part of making the
+          show possible.
+          <br />
+          <br />
+          The lines page translates the physicality of the liminality within
+          spaces by emulating an infinitely long fashion runway in 3D. Instead
+          of flipping magazine-like pages, we transformed the interaction by
+          creating depth a user must walk <i>through</i> using mouse position.
+          The endless nature of the runway is innately liminal.
+        </div>
+        <div className="col-start-4 col-span-2">
+          <div className=" col-start-1">
+            <Image
+              src={"/lg-gif-compressed.gif"}
+              alt="home page image"
+              layout="responsive"
+              width={500}
+              height={500}
+            />
+            <p className="font-SuisseWorks text-cap ml-2 mt-2">home</p>
+          </div>
+        </div>
+      </div>
 
       <Solution>
         <ImageGrid1
