@@ -124,7 +124,7 @@
 
   a {
     /* @apply hover:text-mwsGrey; */
-    cursor: none
+    cursor: none;
   }
 
   /* OLD FONTS
@@ -208,6 +208,7 @@ body {
   border-color: #3b3b3b;
   user-select: none;
   cursor: none;
+  
   touch-action: auto;
 }
 

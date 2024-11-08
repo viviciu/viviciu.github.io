@@ -5,6 +5,7 @@ import Context from "../../_components/Context";
 import Context2 from "../../_components/Context2";
 import CoverYAML from "../../_components/CoverYAML";
 import Challenges from "../../_components/Challenges";
+import Header from "../../_components/Header";
 import Callout from "../../_components/Callout";
 import Solution from "../../_components/Solution";
 import ImageGrid1 from "../../_components/ImageGrid1";
@@ -16,10 +17,12 @@ import ImageGrid5 from "../../_components/ImageGrid5";
 import CircleSect from "../../_components/CircleSect";
 import YAMLBar from "../../_components/YAMLBar";
 import DividerLine from "../../_components/DividerLine";
+import New from "../../_components/New";
 import Image from "next/image";
 
 import "../../_components/greyBGLines.css";
 import Footer from "../../_components/Footer";
+import Head from "next/head";
 
 export default function Liminal() {
   const members = [
@@ -136,50 +139,34 @@ export default function Liminal() {
 
       {/* <DividerLine text={"CHALLENGES"} />  */}
 
-      <div
-        className="flex pt-[2.9375rem] lg:pb-[5.06rem] mt-[3.5rem] mb-[5rem]
-      lg:grid lg:grid-cols-5 grid-cols-3
-      gap-[5.06rem] 
-      w-full h-fit 
-      items-start"
-      >
-        <div className="col-span-2 font-Suisse font-regular">
-          What form language creates a liminal space?
-          <br />
-          <br />
-          The home page is a transitory white void hosting each space: Time
-          moves in an infinite loop, and when the user wants to enter a page,
-          they enter the “space between spaces” — neither here nor there, they
-          are “in-between” time, and can reside in that page as long as they
-          hold the mouse. This forced interaction was integral to evoking the
-          feeling of temporality established in our initial definition.
-          <br />
-          <br />
-          The people page creates a sort of “infinity scroll” of cards
-          representing each LG member. This emphasizes liminality and at the
-          same time emphasizes the great mass of talents a part of making the
-          show possible.
-          <br />
-          <br />
-          The lines page translates the physicality of the liminality within
-          spaces by emulating an infinitely long fashion runway in 3D. Instead
-          of flipping magazine-like pages, we transformed the interaction by
-          creating depth a user must walk <i>through</i> using mouse position.
-          The endless nature of the runway is innately liminal.
-        </div>
-        <div className="col-start-4 col-span-2">
-          <div className=" col-start-1">
-            <Image
-              src={"/lg-gif-compressed.gif"}
-              alt="home page image"
-              layout="responsive"
-              width={500}
-              height={500}
-            />
-            <p className="font-SuisseWorks text-cap ml-2 mt-2">home</p>
-          </div>
-        </div>
-      </div>
+      <Header text={"What form language creates a liminal space?"} />
+
+      <New
+        img1={"/imgs/homeGif.gif"}
+        text1={
+          "The home page is a transitory white void hosting each space: Time moves in an infinite loop, and when the user wants to enter a page, they enter the “space between spaces” — neither here nor there, they are “in-between” time, and can reside in that page as long as they hold the mouse. This forced interaction was integral to evoking the feeling of temporality established in our initial definition."
+        }
+      />
+      <New
+        img1={"/imgs/peoplePage.png"}
+        text1={
+          "The people page creates a sort of “infinity scroll” of cards representing each LG member. This emphasizes liminality and at the same time emphasizes the great mass of talents a part of making the show possible."
+        }
+      />
+      <New
+        img1={"/imgs/linesPage.png"}
+        text1={
+          "The lines page translates the physicality of the liminality within spaces by emulating an infinitely long fashion runway in 3D. Instead of flipping magazine-like pages, we transformed the interaction by creating depth a user must walk through using mouse position. The endless nature of the runway is innately liminal."
+        }
+      />
+
+      <Header text={"A transitory site architecture."} />
+      <New
+        img1={"/imgs/lg-site-diagram-offwhite.png"}
+        text1={
+          "The visual language and interaction design would suffer if the entire site’s mapping wasn’t transitory. This required us to establish new terms to avoid miscommunication when discussing such abstract ideas during team meetings: “Capital-L Liminal” and “liminal“liminal”—zone C—is liminality in its form—its visual language. Visual cues such as endless tunnels, negative space, and the like. “Capital-L Liminal”—zone B—is literally a liminal space—it does not exist and its only purpose is to transport the user to another space. The home page serves this purpose—it is a navigation hub as discussed earlier where time is an infinite loop. However, it is also “liminal” visually."
+        }
+      />
 
       <Solution>
         <ImageGrid1
