@@ -2,7 +2,7 @@ import UnderDevelopment from "../../_components/UnderDevelopment"
 
 import React from 'react'
 
-const UnderDevelopmen = () => {
+const SocraticTextbooks = () => {
   return (
     <div>
         <UnderDevelopment />
@@ -10,4 +10,4 @@ const UnderDevelopmen = () => {
   )
 }
 
-export default UnderDevelopment
+export default SocraticTextbooks;

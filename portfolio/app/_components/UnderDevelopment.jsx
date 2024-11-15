@@ -10,10 +10,10 @@ export default function UnderDevelopment({ text }) {
 
 // Set default props
 UnderDevelopment.defaultProps = {
-  text: "under development",
+  text: <p>under development</p>,
 };
 
 // Define prop types
 UnderDevelopment.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.node,
 };
