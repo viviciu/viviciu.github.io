@@ -1,5 +1,35 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
+  
+  {
+    id: "gradientStudies",
+    name: "gradientStudies",
+    url: "/imgs/play/gradientStudies.jpg",
+    category: "print",
+    categorySpecific: "",
+  },
+  {
+    id: "hierarchy_poster",
+    name: "hierarchy_poster",
+    url: "/imgs/play/Staicu_Viviana_finalDirtyDozen.jpg",
+    category: "print",
+    categorySpecific: "",
+  },
+  {
+    id: "UXA_CPW_poster",
+    name: "UXA_CPW_poster",
+    url: "/imgs/play/CPW_poster.jpg",
+    category: "print",
+    categorySpecific: "",
+  },
+  {
+    id: "UXA_CPW",
+    name: "UXA_CPW",
+    url: "/imgs/play/CPW_banner.jpg",
+    category: "print",
+    categorySpecific: "",
+  },
+
   {
     id: "pminiProjII",
     name: "pminiProjII",

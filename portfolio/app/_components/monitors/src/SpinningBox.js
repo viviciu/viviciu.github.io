@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { useCursor } from '@react-three/drei'
+import './SpinningBox.css'
 
 export function SpinningBox({ scale, ...props }) {
   // This reference gives us direct access to the THREE.Mesh object
@@ -19,9 +20,12 @@ export function SpinningBox({ scale, ...props }) {
       scale={clicked ? scale * 1.4 : scale * 1.2}
       onClick={(event) => click(!clicked)}
       onPointerOver={(event) => hover(true)}
-      onPointerOut={(event) => hover(false)}>
+      onPointerOut={(event) => hover(false)}
+      className={hovered ? "custom-cursor" : ""} // Apply custom cursor class on hover
+      style={{ cursor: hovered ? "url(/peek2.png), auto" : "auto" }} // Apply custom cursor inline
+    >
       <boxGeometry />
-      <meshStandardMaterial color={hovered ? 'hotpink' : 'indianred'} />
+      <meshStandardMaterial color={hovered ? "hotpink" : "indianred"} />
     </mesh>
-  )
+  );
 }
