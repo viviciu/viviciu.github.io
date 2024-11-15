@@ -1,6 +1,5 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
-  
   {
     id: "gradientStudies",
     name: "gradientStudies",
@@ -66,6 +65,7 @@ export const items = [
     category: "code",
     categorySpecific: "",
   },
+
   {
     id: "scifirender", // id should be the title of the project folder, stored under ./play
     name: "",
@@ -133,26 +133,43 @@ export const items = [
     categorySpecific: "",
   },
   {
-    id: "b",
-    name: "Item 3",
+    id: "charcoalPortrait-me",
+    name: "charcoalPortrait-me",
     url: "/imgs/play/headEmptyCharcoal.jpg",
     category: "sketch",
     categorySpecific: "",
   },
   {
-    id: "a",
-    name: "Item 3",
-    url: "/imgs/play/thumb4_161-crop.jpg",
+    id: "expression",
+    name: "expression",
+    url: "/imgs/play/expression-charcoal-minis.jpeg",
     category: "sketch",
     categorySpecific: "",
   },
   {
-    id: "backpack",
-    name: "backpack",
-    url: "/IMAG0009.JPG",
+    id: "skullMountains",
+    name: "skullMountains",
+    url: "/imgs/play/thumb4_161-crop.jpg",
     category: "sketch",
     categorySpecific: "",
   },
+
+  {
+    id: "freshman_vis_05",
+    name: "freshman_vis_05",
+    url: "/imgs/play/visspreads0005.jpg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+
+  {
+    id: "freshman_vis_07",
+    name: "freshman_vis_07",
+    url: "/imgs/play/visspreads0007.jpg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+ 
 
   {
     id: "25",
@@ -334,6 +351,20 @@ export const items = [
     name: "G-edited-00356",
     url: "/imgs/play/G-edited-00356.jpg",
     category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "freshman_vis_06",
+    name: "freshman_vis_06",
+    url: "/imgs/play/visspreads0006.jpg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+  {
+    id: "freshman_vis_02",
+    name: "freshman_vis_02",
+    url: "/imgs/play/visspreads0002.jpg",
+    category: "sketch",
     categorySpecific: "",
   },
 ];
