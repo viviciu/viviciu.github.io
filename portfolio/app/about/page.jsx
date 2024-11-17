@@ -4,21 +4,22 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <main className="px-4 mt-20 h-full lg:grid lg:grid-cols-5">
+    <main className="px-4 mt-[20vh] h-full lg:grid lg:grid-cols-10 gap-x-6">
       {/* flex justify-center items-center */}
       <div
         className="
-       items-start col-span-2 max-h-dvh"
+       items-start col-span-4"
       >
+        {/* Add layout="responsive" to remove margin */}
         <Image
           src={"/imgs/AA009-crop1.jpg"}
           alt="home page image"
-          width={400}
+          width={450}
           height={500}
         />
       </div>
 
-      <p className="col-start-3 text-cap">
+      <p className="col-start-5 col-span-2 text-[0.9rem]">
         <span className="text-black font-semibold">
           Viviana Staicu (b.2005)
         </span>{" "}
