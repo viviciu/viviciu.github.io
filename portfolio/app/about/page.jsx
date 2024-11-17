@@ -36,7 +36,7 @@ export default function About() {
         <span className="text-black font-semibold">
           Carnegie Mellon University.
         </span>{" "}
-        Feel free to shoot her an email with any inquiries or if you've got an
+        Feel free to shoot her an email with any inquiries or if you&apos;ve got an
         idea—lets talk!
         <br />
         <br />
