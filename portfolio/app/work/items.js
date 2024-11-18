@@ -42,6 +42,15 @@ export const items = [
     name: "Portfolio Website, 🔒",
     url: "/imgs/102624_homePage.png",
     category: "code",
-    categorySpecific: "a documentation self-learning React, Tailwind CSS, and Three.js.",
+    categorySpecific:
+      "a documentation self-learning React, Tailwind CSS, and Three.js.",
+  },
+  {
+    id: "allTimely",
+    name: "All Timely,",
+    url: "/imgs/102624_homePage.png",
+    category: "UI/UX",
+    categorySpecific: "AllTimely_Heroimg UI/UX.",
+    
   },
 ];
