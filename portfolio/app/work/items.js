@@ -45,12 +45,12 @@ export const items = [
     categorySpecific:
       "a documentation self-learning React, Tailwind CSS, and Three.js.",
   },
-  {
-    id: "allTimely",
-    name: "All Timely,",
-    url: "/imgs/102624_homePage.png",
-    category: "UI/UX",
-    categorySpecific: "AllTimely_Heroimg UI/UX.",
+  // {
+  //   id: "allTimely",
+  //   name: "All Timely,",
+  //   url: "/imgs/102624_homePage.png",
+  //   category: "UI/UX",
+  //   categorySpecific: "AllTimely_Heroimg UI/UX.",
     
-  },
+  // },
 ];
