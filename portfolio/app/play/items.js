@@ -1,6 +1,20 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
   {
+    id: "bannanaTouchDesigner",
+    name: "bannanaTouchDesigner",
+    url: "/imgs/play/BannanaVHS-optimize.gif",
+    category: "motion",
+    categorySpecific: "",
+  },
+  {
+    id: "tourusTouchDesigner",
+    name: "tourusTouchDesigner",
+    url: "/imgs/play/111524_firstTouchdesignerTourus.gif",
+    category: "motion",
+    categorySpecific: "",
+  },
+  {
     id: "gradientStudies",
     name: "gradientStudies",
     url: "/imgs/play/gradientStudies.jpg",
@@ -169,7 +183,6 @@ export const items = [
     category: "sketch",
     categorySpecific: "",
   },
- 
 
   {
     id: "25",
