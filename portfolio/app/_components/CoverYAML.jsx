@@ -13,7 +13,7 @@ const Navbar = () => {
       >
         {/* height will be auto and width will be full width of the parent */}
         <Image
-          src="/imgs/homegif.gif"
+          src="/imgs/homeGif.gif"
           alt="home page image"
           layout="responsive"
           width={500}
