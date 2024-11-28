@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Context2 = ({ context, members = [], tools = [], myRole, timeline = "Viviana Staicu" }) => {
+export const Context2 = ({ context, members = [], tools = [], myRole, timeline }) => {
   return (
     <main
       className="lg:grid lg:grid-cols-5 grid-cols-3
@@ -35,19 +35,62 @@ export const Context2 = ({ context, members = [], tools = [], myRole, timeline =
       col-start-4 col-span-2"
       >
         <ul>
-          {myRole && (
+          <li className="grid grid-cols-2 gap-[1rem]">
+            <div className="font-SuisseWorks">Timeline</div>
+            <a
+              href="instagram or linkedin of credited member here"
+              className="font-SFProDisplay font-bold"
+            >
+              {timeline}
+            </a>
+          </li>
+
+          {myRole && <li className="h-4">{/* FILLER GAP */}</li>}
+          {/* {myRole && (
             <li className="grid grid-cols-2 gap-[1rem]">
               <div className="font-SuisseWorks">{myRole}</div>
               <a
                 href="instagram or linkedin of credited member here"
                 className="font-SFProDisplay font-bold"
               >
-                {timeline}
+                Viviana Staicu
+              </a>
+            </li>
+          )} */}
+          {myRole && (
+            <li className="grid grid-cols-2 gap-[1rem]">
+              <div className="font-SuisseWorks">Role</div>
+              <a
+                href="instagram or linkedin of credited member here"
+                className="font-SFProDisplay font-bold"
+              >
+                {myRole}
               </a>
             </li>
           )}
 
           {myRole && <li className="h-4">{/* FILLER GAP */}</li>}
+
+          {/* TOOLS */}
+          {tools.length > 0 && (
+            <>
+              {tools.map((tool, index) => (
+                <li key={index} className="grid grid-cols-2 gap-[1rem]">
+                  <div
+                    className={`font-SuisseWorks ${
+                      index === 0 ? "" : "opacity-0"
+                    }`}
+                  >
+                    {index === 0 ? "Tools" : ""}
+                  </div>
+                  <div className="font-SFProDisplay font-bold text-offBlack">
+                    {tool}
+                  </div>
+                </li>
+              ))}
+            </>
+          )}
+          <li className="h-4">{/* FILLER GAP */}</li>
 
           {/* MAPPING EACH MEMBER IN */}
           {members.length > 0 && (
@@ -67,26 +110,6 @@ export const Context2 = ({ context, members = [], tools = [], myRole, timeline =
                 </li>
               ))}
               <li className="h-4">{/* FILLER GAP */}</li>
-            </>
-          )}
-
-          {/* TOOLS */}
-          {tools.length > 0 && (
-            <>
-              {tools.map((tool, index) => (
-                <li key={index} className="grid grid-cols-2 gap-[1rem]">
-                  <div
-                    className={`font-SuisseWorks ${
-                      index === 0 ? "" : "opacity-0"
-                    }`}
-                  >
-                    {index === 0 ? "Tools" : ""}
-                  </div>
-                  <div className="font-SFProDisplay font-bold text-offBlack">
-                    {tool}
-                  </div>
-                </li>
-              ))}
             </>
           )}
         </ul>
