@@ -132,8 +132,8 @@ export default function Liminal() {
         >
           {/* TEXT1 */}
           <div className="text-offBlack">
-            After recieving the Creative Director's theme, Liminal, we had to
-            establish constraints. How does LG{" "}
+            After recieving the Creative Director&apos;s theme, Liminal, we had
+            to establish constraints. How does LG{" "}
             <i className=" text-offBlack">interpret</i> the concept of
             Liminality? How does that{" "}
             <i className=" text-offBlack">translate to digital interactions?</i>
@@ -320,17 +320,21 @@ export default function Liminal() {
         </div>
       </div>
 
-
-
       <New3
         text1={
           <div>
             <b className="text-black">
-              Transitioning from designer to dev gave me eyes on both sides of the process, preparing me to lead the team next semester.
+              Transitioning from designer to dev gave me eyes on both sides of
+              the process, preparing me to lead the team next semester.
             </b>{" "}
-            Joining the team I only had some html and css background self-taught during highschool-but I still wanted to be involved in the building of the site after the design stage to ensure it's execution follows the vision. So through Blender tutorials, reading documentation, and looking towards well-structured codepen examples, I learned React and React Three Fiber to help build our site using 3D scenes.
+            Joining the team I only had some html and css background self-taught
+            during highschool-but I still wanted to be involved in the building
+            of the site after the design stage to ensure it&apos;s execution
+            follows the vision. So through Blender tutorials, reading
+            documentation, and looking towards well-structured codepen examples,
+            I learned React and React Three Fiber to help build our site using
+            3D scenes.
           </div>
-          
         }
       />
       <New3
@@ -338,7 +342,7 @@ export default function Liminal() {
           <div>
             <b className="text-black">
               I honed my ability to integrate my work into a large
-              organization's brand identity.
+              organization&apos;s brand identity.
             </b>{" "}
             Creative team is over 40 students across different subgroups and
             must move as one cohesive unit. The synergistic influences during
@@ -352,8 +356,8 @@ export default function Liminal() {
         text1={
           <div>
             <b className="text-black">
-              Notational Sketching improved my cross functional
-              communciation. You can't talk with your hands.
+              Notational Sketching improved my cross functional communciation.
+              You can&apos;t talk with your hands.
             </b>{" "}
             It allowed me to quickly communicate to another dev a simpler
             approach to programming the 3D infinitely rotating planes on the
