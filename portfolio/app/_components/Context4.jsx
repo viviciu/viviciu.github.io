@@ -1,16 +1,12 @@
-import Link from "next/link";
-import React, { forwardRef } from "react"; // IMPORTANT
-
-const Context4 = forwardRef(({ text1, text2 }, ref) => {
-  // NOTICE REF HERE
+const Context4 = (({ text1, text2 }) => {
+    // BASED OFF OF CONTEXT 1. USES A 6COL GRID FOR RULE OF THIRDS.
   return (
-    // NOTICE REF IN MAIN
-    <main ref={ref}>
+    <main>
       <div
         // gap-[5.06rem] !!
         className="
       pt-[2.9375rem] lg:pb-[5.06rem] mt-[3.5rem] mb-[5rem]
-      lg:grid lg:grid-cols-5 grid-cols-3
+      lg:grid lg:grid-cols-6 flex
       gap-[5.06rem] 
       w-full h-fit 
       items-start
@@ -18,7 +14,7 @@ const Context4 = forwardRef(({ text1, text2 }, ref) => {
       >
         <div
           className="
-          col-span-3
+          col-span-2
         leading-p3
         lg:text-p
         text

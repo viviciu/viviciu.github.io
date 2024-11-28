@@ -5,7 +5,7 @@ const DividerLine = ({text}) => {
     <>
       {/* in figma, the divider line height is 0.105rem */}
       <div
-        className="bg-offBlack w-full h-[1px]"
+        className="bg-offBlack w-full h-[1px] mt-12"
       ></div>
       <p
         className={`pt-2 indent-[1.75rem] uppercase 
