@@ -44,7 +44,7 @@ export default function Liminal() {
     "Figma",
     "Blender"
   ]
-  const myRole = "Creative Direction, Digital Design & Development";
+  const myRole = "Creative Technologist";
 
 
   const [activeIndex, setActiveIndex] = useState(0);
