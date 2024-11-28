@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Title from "../../_components/Title"
 import Context from "../../_components/Context";
 import Context2 from "../../_components/Context2";
+import Context4 from "../../_components/Context4";
 import CoverYAML from "../../_components/CoverYAML";
 import Challenges from "../../_components/Challenges";
 import Header from "../../_components/Header";
@@ -137,6 +138,7 @@ export default function Liminal() {
           </div>
         }
       />
+      
 
       {/* <DividerLine text={"CHALLENGES"} />  */}
 
@@ -169,7 +171,12 @@ export default function Liminal() {
         }
       />
       <UnderDevelopment
-        text={<p>process under dev.<br /> last update      14 Nov 2024.</p>}
+        text={
+          <p>
+            process under dev.
+            <br /> last update 14 Nov 2024.
+          </p>
+        }
       />
     </main>
   );
