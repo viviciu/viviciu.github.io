@@ -45,6 +45,7 @@ export default function Liminal() {
     "Blender"
   ]
   const myRole = "Creative Technologist";
+  const timeline = "6 months"
 
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -94,18 +95,22 @@ export default function Liminal() {
       <Context2
         context={
           <div>
-            Lunar Gala (LG) is Pittsburgh’s largest annual fashion show. The
-            entirely student-run show harnesses the diverse creative talents of
-            CMU—including designers, models, photographers, animators, and
-            dancers. <br /> <br /> I worked amongst 7 others both designing and
-            developing the show’s website on the creative web team. It documents
-            the lines, members, ticketing all in line with the year&apos;s
-            visual identity: <i>Liminality</i>
+            Lunar Gala (LG) is Pittsburgh&apos;s largest annual fashion show.
+            It&apos;s website features the model lines, members, and ticketing
+            all in line with this year&apos;s visual identity: <i>Liminality</i>.
+            <br /> <br /> I designed and developed the site&apos;s home page,
+            and conceptualized the lines page. Working amongst 7 others, I
+            learned to communicate with devs, create concept renderings, and
+            program interactive prototypes for our Creative Directors using
+            React Three Fiber.
+            <br /> <br />
+            We encountered challenges with members ghosting and optimization issues, but managed to release on-time, garnering 250+ attendees for the final show.
           </div>
         }
         myRole={myRole}
         members={members}
         tools={tools}
+        timeline={timeline}
       />
       <DividerLine text="Process" />
       <Header text={"Defining Liminality."} />

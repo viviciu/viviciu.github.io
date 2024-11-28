@@ -23,9 +23,9 @@ export default function About() {
         <span className="text-black font-semibold">
           Viviana Staicu (b.2005)
         </span>{" "}
-        is an interaction designer. interactive experience prototyper. creative
-        technologist. She has created interactive 3D websites, 3D renderings,
-        UI/UX design, and interactive objects.
+        is an interaction designer. experience prototyper. creative
+        technologist. She has created immersive websites, 3D renderings,
+        UI/UX designs, and objects that delight.
         <br />
         <br />
         In her practice, she aims to reignite curiosity and play through honest,
