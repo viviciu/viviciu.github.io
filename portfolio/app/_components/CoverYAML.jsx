@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 
-const Navbar = () => {
+const Navbar = ({ img }) => {
   return (
     <main className=" pb-[5.06rem]">
       {/* IMAGE */}
@@ -12,13 +12,13 @@ const Navbar = () => {
        h-fit w-full"
       >
         {/* height will be auto and width will be full width of the parent */}
-        <Image
-          src="/imgs/homeGif.gif"
+        {img && <Image
+          src={img}
           alt="home page image"
           layout="responsive"
           width={500}
           height={500}
-        />
+        />}
 
         {/* CENTERS A HALF-SCREEN-WIDTH IMG.. parent width must be w-[50vw] and grid place-items-center — tailwind */}
         {/* <Image
