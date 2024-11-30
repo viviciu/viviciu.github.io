@@ -16,14 +16,14 @@ const Footer = () => {
       </h1>
       {/* Feldorean */}
       <div
-        className="grid lg:grid-cols-5 grid-cols-3 lg:px-0 px-8  gap-4 w-full
+        className="grid lg:grid-cols-5 grid-cols-3 px-0 lg:gap-4 w-full
        text-cap font-Suisse"
       >
-        <p className="col-start-1 self-end ">
+        <p className="lg:col-start-1 self-end hidden sm:block">
           <span className="font-SuisseWorks">© </span>
           <span className="font-semibold">2024, Three.js, Next.js, Vercel</span>
         </p>
-        <p className="col-start-2 self-end">
+        <p className="lg:col-start-2 lg:col-span-1 col-start-1 col-span-2 self-end">
           <span className="font-SuisseWorks font-regular">Socials </span>
           <Link
             href="https://www.linkedin.com/in/viviana-staicu-633aa2223/"
@@ -52,15 +52,16 @@ const Footer = () => {
             Blog{" "}
           </Link>
         </p>
+        {/* ADDRESS HIDDEN ON MOBILE */}
         <p
           className="lg:col-start-3 justify-self-end self-end
-        font-SuisseWorks"
+        font-SuisseWorks hidden sm:block"
         >
           a.
         </p>
         <p
           className="lg:col-start-4 col-start-3 
-        hover:text-mwsGrey  leading-cap flex"
+        hover:text-mwsGrey  leading-cap hidden sm:block"
         >
           <Link
             href={"https://www.design.cmu.edu"}
@@ -92,7 +93,7 @@ const Footer = () => {
             href={"mailto:vstaicu@andrew.cmu.edu"}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-mwsGrey font-semibold"
+            className="hover:text-mwsGrey font-semibold lg:mr-4"
           >
             vstaicu@andrew.cmu.edu
           </Link>

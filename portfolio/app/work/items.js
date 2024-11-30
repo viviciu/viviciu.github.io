@@ -2,7 +2,7 @@
 // include the tools you're proficient in in your about page.
 export const items = [
   {
-    id: "socraticTextbooks",
+    id: "socraticTextbooks", // id should be the title of the project folder, stored under ./work
     name: "Socratic Textbooks, 🔒",
     url: "/imgs/aiTextbookThumbnail.png",
     category: "design",
@@ -16,12 +16,19 @@ export const items = [
     categorySpecific: "a synergy of language, form, and context.",
   },
   {
-    id: "liminal", // id should be the title of the project folder, stored under ./play
+    id: "liminal",
     name: "Liminal,",
     url: "/imgs/homeGif.gif",
     category: "code",
     categorySpecific:
       "a realm where the very essence of self and time finds itself in flux.",
+  },
+  {
+    id: "cminiPoster",
+    name: "Dirty Dozen Flyer,",
+    url: "/imgs/cminiPoster/Staicu_Viviana_finalDirtyDozen.jpg",
+    category: "design",
+    categorySpecific: "an exercise in type hierarchy.",
   },
   {
     id: "summerSketchbookTour",
@@ -51,6 +58,6 @@ export const items = [
   //   url: "/imgs/102624_homePage.png",
   //   category: "UI/UX",
   //   categorySpecific: "AllTimely_Heroimg UI/UX.",
-    
+
   // },
 ];

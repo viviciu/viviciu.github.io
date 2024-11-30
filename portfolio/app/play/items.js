@@ -3,7 +3,7 @@ export const items = [
   {
     id: "bannanaTouchDesigner",
     name: "bannanaTouchDesigner",
-    url: "/imgs/play/BannanaVHS-optimize.gif",
+    url: "/imgs/play/BannanaVHS-1MB.gif",
     category: "motion",
     categorySpecific: "",
   },

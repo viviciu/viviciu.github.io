@@ -91,20 +91,23 @@ export default function Liminal() {
         year="2024"
         role="Interaction Design, 3D Web Development, Creative Direction"
       />
-      <CoverYAML />
+      <CoverYAML img={"/imgs/homeGif.gif"} />
       <Context2
         context={
           <div>
             Lunar Gala (LG) is Pittsburgh&apos;s largest annual fashion show.
             It&apos;s website features the model lines, members, and ticketing
-            all in line with this year&apos;s visual identity: <i>Liminality</i>.
+            all in line with this year&apos;s visual identity: <i>Liminality</i>
+            .
             <br /> <br /> I designed and developed the site&apos;s home page,
             and conceptualized the lines page. Working amongst 7 others, I
             learned to communicate with devs, create concept renderings, and
             program interactive prototypes for our Creative Directors using
             React Three Fiber.
             <br /> <br />
-            We encountered challenges with members ghosting and optimization issues, but managed to release on-time, garnering 250+ attendees for the final show.
+            We encountered challenges with members ghosting and optimization
+            issues, but managed to release on-time, garnering 250+ attendees for
+            the final show.
           </div>
         }
         myRole={myRole}
@@ -115,9 +118,9 @@ export default function Liminal() {
       <DividerLine text="Process" />
       <Header text={"Defining Liminality."} />
 
-      {/* HERE USED TO BE Context4 */}
+      {/* HERE USED TO BE Context4, needed to make edits for grid of 4 imgs */}
       <div
-        className="flex 
+        className=" 
       lg:grid lg:grid-cols-6
       gap-[5.06rem] 
       w-full h-fit 
@@ -162,7 +165,8 @@ export default function Liminal() {
             </div>
           </div>
         </div>
-        <div className="col-start-3 col-span-4">
+
+        <div className="lg:pt-0 pt-8 col-start-3 col-span-4">
           <div className="grid grid-cols-2 col-start-1">
             <Image
               src={"/imgs/headsInit.png"}
@@ -267,12 +271,12 @@ export default function Liminal() {
       <div
         className="
         py-[2.87rem]
-        lg:grid lg:grid-cols-6 flex
+        lg:grid lg:grid-cols-6
         lg:gap-[1rem]
         w-full h-fit 
         items-start"
       >
-        <div className="col-span-4">
+        <div className="col-span-4 lg:pb-0 pb-2">
           <Image
             src={"/imgs/lg-process-reel.gif"}
             alt="home page image"
@@ -281,7 +285,7 @@ export default function Liminal() {
             height={500}
           />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 lg:pb-0 pb-2">
           <Image
             src={"/imgs/whiteboard-peoplePage.jpg"}
             alt="home page image"
@@ -289,11 +293,11 @@ export default function Liminal() {
             width={500}
             height={500}
           />
-          <p className="font-Suisse">
+          <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
             Notational sketching improved cross functional communciation.
           </p>
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 lg:pb-0 pb-2">
           <Image
             src={"/imgs/liminalTitle.png"}
             alt="home page image"
@@ -301,11 +305,11 @@ export default function Liminal() {
             width={500}
             height={500}
           />
-          <p className="font-Suisse">
+          <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
             Blender concept renders for home page animation.
           </p>
         </div>
-        <div className="col-span-4">
+        <div className="col-span-4 lg:pb-0 pb-2">
           <Image
             src={"/imgs/panels-blender-render.png"}
             alt="home page image"
@@ -369,15 +373,6 @@ export default function Liminal() {
             Home page. I took on programming and styling the texture of the Home
             page and frosted cursor.
           </div>
-        }
-      />
-
-      <UnderDevelopment
-        text={
-          <p>
-            process under dev.
-            <br /> last update 14 Nov 2024.
-          </p>
         }
       />
     </main>

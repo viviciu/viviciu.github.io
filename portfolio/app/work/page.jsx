@@ -38,7 +38,8 @@ export default function Projects() {
               height={500} // Example height, adjust as needed
             />
             {/* Renders line breaks: Include \n in the name prop in items.js */}
-            <p className="w-[70%]">
+            {/* Mobile title sizing here */}
+            <p className="w-[70%] lg:text-[1.55rem] lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
               {item.name.split("\n").map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
@@ -46,16 +47,21 @@ export default function Projects() {
                 </React.Fragment>
               ))}
             </p>
-            <p
-              className="
-              w-[60%]
-              opacity-0
-              transition
-              group-hover:opacity-100
-              text-[1.55rem] leading-[1.55rem] font-Suisse "
-            >
-              {item.categorySpecific}
-            </p>
+            {/* Conditionally renders if the title description is there. It is not rendered on mobile, but the space is rendered on lg devices. */}
+            {item.categorySpecific && (
+              <p
+                className="
+      w-[60%]
+      opacity-0
+      transition
+      group-hover:opacity-100
+      text-[1.55rem] leading-[1.55rem] font-Suisse
+      hidden sm:block
+    "
+              >
+                {item.categorySpecific}
+              </p>
+            )}
           </div>
         </Link>
         {/* CARD CATEGORY LABEL */}
@@ -65,12 +71,12 @@ export default function Projects() {
 
   return (
     <main className="m-1">
-      <section className=" mx-4 mt-[12rem]">
+      <section className=" lg:mx-4 mx-2 mt-[12rem]">
         
 
 
         {/* ITEMS */}
-        <article className="w-full mx-auto grid grid-cols-2 md:grid-cols-3 gap-[2rem] md:gap-12 place-content-center ">
+        <article className="w-full mx-auto grid grid-cols-2 md:grid-cols-3 lg:gap-[2rem] gap-3 place-content-center ">
           {displayedItems}
         </article>
 
