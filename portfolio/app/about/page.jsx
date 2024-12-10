@@ -35,7 +35,10 @@ export default function About() {
           design in school and procedural animation and XR in her studio
           practice. <br />
           <br />
-          She currently studies Design and HCI at{" "}
+          She currently studies{" "}
+          <span className="text-black font-semibold">
+            Design and HCI
+          </span> at{" "}
           <span className="text-black font-semibold">
             Carnegie Mellon University.
           </span>{" "}

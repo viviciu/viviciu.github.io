@@ -24,6 +24,14 @@ export const items = [
       "a realm where the very essence of self and time finds itself in flux.",
   },
   {
+    id: "touchdesignerSeries",
+    name: "Touchdesigner Experiments,",
+    url: "/imgs/play/BannanaVHS-optimize.gif",
+    category: "code",
+    categorySpecific:
+      "some explorations.",
+  },
+  {
     id: "cminiPoster",
     name: "Dirty Dozen Flyer,",
     url: "/imgs/cminiPoster/Staicu_Viviana_finalDirtyDozen.jpg",
