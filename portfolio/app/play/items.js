@@ -1,19 +1,6 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
-  {
-    id: "bannanaTouchDesigner",
-    name: "bannanaTouchDesigner",
-    url: "/imgs/play/BannanaVHS-1MB.gif",
-    category: "motion",
-    categorySpecific: "",
-  },
-  {
-    id: "tourusTouchDesigner",
-    name: "tourusTouchDesigner",
-    url: "/imgs/play/111524_firstTouchdesignerTourus.gif",
-    category: "motion",
-    categorySpecific: "",
-  },
+  
   {
     id: "gradientStudies",
     name: "gradientStudies",
@@ -21,20 +8,7 @@ export const items = [
     category: "print",
     categorySpecific: "",
   },
-  {
-    id: "hierarchy_poster",
-    name: "hierarchy_poster",
-    url: "/imgs/play/Staicu_Viviana_finalDirtyDozen.jpg",
-    category: "print",
-    categorySpecific: "",
-  },
-  {
-    id: "UXA_CPW_poster",
-    name: "UXA_CPW_poster",
-    url: "/imgs/play/CPW_poster.jpg",
-    category: "print",
-    categorySpecific: "",
-  },
+  
   {
     id: "UXA_CPW",
     name: "UXA_CPW",
