@@ -21,47 +21,21 @@ export default function Projects() {
     .filter((item) => !selectedLabel || selectedLabel === item.category)
 
     .map((item) => (
-      <div key={item.id} className="item space-y-2">
+      <div key={item.id} className="basis-[32.71%]">
         {/* PARENT GROUP */}
         <Link href={"/work/" + item.id}>
           <div
-            className="flex flex-col justify-center relative group 
-            pb-[1rem]
-          text-[1.55rem] leading-[1.55rem] font-Suisse translate-y-0 "
+            className=""
           >
             <Image
               src={item.url}
               alt={item.name}
-              className="w-full h-full object-cover pb-[1rem]"
+              className="w-full h-full object-cover pb-[0.6rem]"
               unoptimized={item.url.endsWith(".gif")} // Add unoptimized property for GIFs
               width={500} // Example width, adjust as needed
               height={500} // Example height, adjust as needed
             />
-            {/* Renders line breaks: Include \n in the name prop in items.js */}
-            {/* Mobile title sizing here */}
-            <p className="w-[70%] lg:text-[1.55rem] lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
-              {item.name.split("\n").map((line, index) => (
-                <React.Fragment key={index}>
-                  {line}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
-            {/* Conditionally renders if the title description is there. It is not rendered on mobile, but the space is rendered on lg devices. */}
-            {item.categorySpecific && (
-              <p
-                className="
-      w-[60%]
-      opacity-0
-      transition
-      group-hover:opacity-100
-      text-[1.55rem] leading-[1.55rem] font-Suisse
-      hidden sm:block
-    "
-              >
-                {item.categorySpecific}
-              </p>
-            )}
+            
           </div>
         </Link>
         {/* CARD CATEGORY LABEL */}
@@ -72,17 +46,15 @@ export default function Projects() {
   return (
     <main className="m-1">
       <section className=" lg:mx-4 mx-2 mt-[12rem]">
-        
-
-
         {/* ITEMS */}
+        {/* OLD STYLING AS OF DEC 29 2024:
         <article className="w-full mx-auto grid grid-cols-2 md:grid-cols-3 lg:gap-[2rem] gap-3 place-content-center ">
+        */}
+        <article className="w-full mx-auto items-start columns-3 lg:gap-[0.6rem] gap-3  ">
           {displayedItems}
         </article>
-
-
-        
       </section>
+      
     </main>
   );
 }
