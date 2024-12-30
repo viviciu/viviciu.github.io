@@ -2,13 +2,6 @@
 // include the tools you're proficient in in your about page.
 export const items = [
   {
-    id: "socraticTextbooks", // id should be the title of the project folder, stored under ./work
-    name: "Socratic Textbooks, 🔒",
-    url: "/imgs/aiTextbookThumbnail.png",
-    category: "design",
-    categorySpecific: "enabling professors to craft personalized AI education.",
-  },
-  {
     id: "playfulVsPractical",
     name: "Playful vs. Practical,",
     url: "/imgs/DSC05668-thumbnail.jpg",
@@ -24,12 +17,19 @@ export const items = [
       "a realm where the very essence of self and time finds itself in flux.",
   },
   {
+    id: "socraticTextbooks", // id should be the title of the project folder, stored under ./work
+    name: "Socratic Textbooks, 🔒",
+    url: "/imgs/aiTextbookThumbnail.png",
+    category: "design",
+    categorySpecific: "enabling professors to craft personalized AI education.",
+  },
+
+  {
     id: "touchdesignerSeries",
     name: "Touchdesigner Experiments,",
     url: "/imgs/play/BannanaVHS-optimize.gif",
     category: "code",
-    categorySpecific:
-      "some explorations.",
+    categorySpecific: "some explorations.",
   },
   {
     id: "cminiPoster",
@@ -37,6 +37,14 @@ export const items = [
     url: "/imgs/cminiPoster/Staicu_Viviana_finalDirtyDozen.jpg",
     category: "design",
     categorySpecific: "an exercise in type hierarchy.",
+  },
+  {
+    id: "typographyAnimation",
+    name: "Kinetic type animation,",
+    url: "/imgs/typographyAnimation/THUMBNAIL.png",
+    category: "design",
+    categorySpecific:
+      "a study in time and motion narrating a typeface.",
   },
   {
     id: "summerSketchbookTour",
@@ -50,7 +58,7 @@ export const items = [
     name: "Golden Contact,",
     url: "/imgs/goldenContactSheetThumbnail.png",
     category: "code",
-    categorySpecific: "a prototyping tool crafted to the golden ratio.",
+    categorySpecific: "a python prototyping tool crafted to the golden ratio.",
   },
   {
     id: "portfolioWebsite",

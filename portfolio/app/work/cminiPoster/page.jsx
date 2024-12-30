@@ -83,6 +83,8 @@ export default function Liminal() {
         tools={tools}
         timeline={timeline}
       />
+
+      
       <DividerLine text="Process" />
       {/* <Header text={"See the medium post here."} /> */}
       <New3 />

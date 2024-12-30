@@ -32,7 +32,7 @@ export default function Projects() {
             <Image
               src={item.url}
               alt={item.name}
-              className="w-full h-full object-cover pb-[1rem]"
+              className="w-full h-full object-cover pb-[0.6rem]"
               unoptimized={item.url.endsWith(".gif")} // Add unoptimized property for GIFs
               width={500} // Example width, adjust as needed
               height={500} // Example height, adjust as needed
@@ -72,16 +72,10 @@ export default function Projects() {
   return (
     <main className="m-1">
       <section className=" lg:mx-4 mx-2 mt-[12rem]">
-        
-
-
         {/* ITEMS */}
-        <article className="w-full mx-auto grid grid-cols-2 md:grid-cols-3 lg:gap-[2rem] gap-3 place-content-center ">
+        <article className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 place-content-center ">
           {displayedItems}
         </article>
-
-
-        
       </section>
     </main>
   );
