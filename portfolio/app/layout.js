@@ -9,7 +9,7 @@ import Head from "next/head"
 
 export const metadata = {
   title: "viviana staicu",
-  description: "viviana staicu design portfolio. hi i see you hit the inspect tool :o",
+  description: "viviana staicu design portfolio. hi i see you hit the inspect tool",
   // icons: {
   //   icon: ["/favicon.ico?v-1"],
   //   apple: ["/apple-touch-icon.png?v=4"],
@@ -27,15 +27,13 @@ export default function RootLayout({ children }) {
       </Head>
       <head>
         <title>staicu, viviana</title>
-        {/* <title>viviana staicu design</title> */}
       </head>
       <body className="">
         <Cursor />
-        <SmoothScrolling>
+        {/* <SmoothScrolling> */}
           <Navbar />
-          
           {children}
-        </SmoothScrolling>
+        {/* </SmoothScrolling> */}
       </body>
     </html>
   );
