@@ -1,10 +1,9 @@
 // 6 COL GRID USED HERE. USE NEW4 FOR NO GRID.
-import Link from 'next/link'
 import { useState } from "react";
 import React, { forwardRef } from 'react' // IMPORTANT
 import Image from 'next/image';
 
-const New3 = forwardRef(({ text0, text1, text2, text3, img1, img2, img3, caption }, ref) => { // NOTICE REF HERE
+const New3 = forwardRef(({ text1, img1, caption }) => { 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleImageClick = () => {
@@ -17,7 +16,7 @@ const New3 = forwardRef(({ text0, text1, text2, text3, img1, img2, img3, caption
   
   return (
     // NOTICE REF IN MAIN
-    <main ref={ref}>
+    <main>
       <div
         className=" 
       lg:grid lg:grid-cols-6

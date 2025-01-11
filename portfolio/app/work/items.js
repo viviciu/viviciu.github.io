@@ -9,7 +9,13 @@ export const items = [
     category: "design",
     categorySpecific: "a synergy of language, form, and context.",
   },
-
+  {
+    id: "touchdesignerSeries",
+    name: "Touchdesigner Experiments,",
+    url: "/imgs/touchDesigner/duneTouchDesigner.gif",
+    category: "code",
+    categorySpecific: "some explorations.",
+  },
   {
     id: "liminal",
     name: "Liminal,",
@@ -26,13 +32,7 @@ export const items = [
     category: "design",
     categorySpecific: "enabling professors to craft personalized AI education.",
   },
-  {
-    id: "touchdesignerSeries",
-    name: "Touchdesigner Experiments,",
-    url: "/imgs/touchDesigner/duneTouchDesigner.gif",
-    category: "code",
-    categorySpecific: "some explorations.",
-  },
+
   {
     id: "typographyAnimation",
     name: "Kinetic type animation,",
@@ -55,6 +55,7 @@ export const items = [
     category: "code",
     categorySpecific: "a python prototyping tool crafted to the golden ratio.",
   },
+
   {
     id: "portfolioWebsite",
     name: "Portfolio Website, 🔒",
