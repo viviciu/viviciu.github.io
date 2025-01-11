@@ -1,6 +1,5 @@
 // import { Inter } from "next/font/google";
 import "./globals.css";
-import SmoothScrolling from "./_components/SmoothScrolling.jsx";
 import Navbar from "./_components/Navbar";
 import Cursor from "./_components/Cursor";
 import Head from "next/head"

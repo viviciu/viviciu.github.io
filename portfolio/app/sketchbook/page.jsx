@@ -56,7 +56,7 @@ export default function Projects() {
   return (
     <main className="m-1">
       {/* Sketchbook tour video */}
-      <div className="mt-[11vh] w-1/2 lg:h-[30rem] h-[14rem] sm:h-[23rem] flex items-center justify-center">
+      <div className="mx-4 mt-[11vh] w-1/2 lg:h-[30rem] h-[14rem] sm:h-[23rem] flex items-center justify-center">
         {/* DOCUMENTATION: https://www.npmjs.com/package/react-iframe */}
         <Iframe
           url={embedUrl} // Ensure the URL is in the correct embed format
