@@ -393,7 +393,7 @@ export default function PlayfulVsPractical() {
         text1={
           <div>
             From testing prototypes with my peers, I found the top styrene
-            'hood' was found uncessesary to the essence of the grip. Thus, only
+            &apos;hood&apos; was found uncessesary to the essence of the grip. Thus, only
             the tapered pointing arrows, like hands, directed the eyes towards
             the wooden paddle for the other hand to rest.
             <br />
