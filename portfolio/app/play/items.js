@@ -121,13 +121,6 @@ export const items = [
     categorySpecific: "",
   },
   {
-    id: "charcoalPortrait-me",
-    name: "charcoalPortrait-me",
-    url: "/imgs/play/headEmptyCharcoal.jpg",
-    category: "sketch",
-    categorySpecific: "",
-  },
-  {
     id: "expression",
     name: "expression",
     url: "/imgs/play/expression-charcoal-minis.jpeg",

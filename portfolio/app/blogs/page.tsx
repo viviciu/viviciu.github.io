@@ -1,7 +1,6 @@
 // Blog list page
 
 import Link from "next/link"
-import Lenis from 'lenis'
 import { getBlogs } from "./fetchers"
 import Navbar from "../_components/Navbar"
 import BlogEntry from "../_components/BlogEntry"
