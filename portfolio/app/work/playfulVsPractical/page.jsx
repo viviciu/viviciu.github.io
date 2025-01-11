@@ -2,8 +2,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Video from 'next-video'
 import sample from "/videos/get-started.mp4";
-import C0469 from "/videos/C0469.mp4";
-import C0475 from "/videos/C0475.mp4";
+import C0469 from "/videos/C0469.MP4.json";
+import C0475 from "/videos/C0475.MP4.json";
 import Link from "next/link";
 import Image from "next/image";
 import Title from "../../_components/Title";
@@ -23,31 +23,33 @@ export default function Liminal() {
   const tools = ["Rapid Prototyping", "Desktop Modelmaking"];
   const myRole = "Timeline";
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  const componentRefs = [useRef(null), useRef(null), useRef(null)];
+  // OLD LENIS SCROLL STUFF
 
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
-    componentRefs.forEach((ref, index) => {
-      if (ref.current) {
-        const { offsetTop, offsetHeight } = ref.current;
-        console.log(index);
-        if (
-          scrollPosition >= offsetTop &&
-          scrollPosition < offsetTop + offsetHeight
-        ) {
-          setActiveIndex(index);
-        }
-      }
-    });
-  };
+  // const [activeIndex, setActiveIndex] = useState(0);
+  // const componentRefs = [useRef(null), useRef(null), useRef(null)];
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // const handleScroll = () => {
+  //   const scrollPosition = window.scrollY + window.innerHeight / 2;
+  //   componentRefs.forEach((ref, index) => {
+  //     if (ref.current) {
+  //       const { offsetTop, offsetHeight } = ref.current;
+  //       console.log(index);
+  //       if (
+  //         scrollPosition >= offsetTop &&
+  //         scrollPosition < offsetTop + offsetHeight
+  //       ) {
+  //         setActiveIndex(index);
+  //       }
+  //     }
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   // A realm where the very essence of self and time finds itself in flux.
   return (
     <main className=" block px-4">
@@ -112,7 +114,9 @@ export default function Liminal() {
         </div>
         <div>
           <img src="https://image.mux.com/TKWj6nwkH0082l008G96sOHKN3X6PklbfOzrN8oaJ62hw/animated.gif?width=500" />
-          <p className="mt-1">"Isn't a flip just a 'long' spin?"</p>
+          <p className="mt-1">
+            &quot;Isn&apos;t a flip just a &apos;long&apos; spin?&quot;
+          </p>
         </div>
       </div>
 

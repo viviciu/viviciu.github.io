@@ -18,31 +18,6 @@ export default function TypographyAnimation() {
   const tools = ["After Effects"];
   const myRole = "Motion Designer";
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  const componentRefs = [useRef(null), useRef(null), useRef(null)];
-
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
-    componentRefs.forEach((ref, index) => {
-      if (ref.current) {
-        const { offsetTop, offsetHeight } = ref.current;
-        console.log(index);
-        if (
-          scrollPosition >= offsetTop &&
-          scrollPosition < offsetTop + offsetHeight
-        ) {
-          setActiveIndex(index);
-        }
-      }
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   // A realm where the very essence of self and time finds itself in flux.
   return (
     <main className=" block px-4">
