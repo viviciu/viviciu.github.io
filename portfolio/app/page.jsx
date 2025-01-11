@@ -1,7 +1,6 @@
-"use client";
 import App from "./_components/monitors/src/App.js";
 import HomeData from "./_components/HomeData.jsx"
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 
 export default function Home() {
   return (

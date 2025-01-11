@@ -4,10 +4,12 @@ export const items = [
   {
     id: "playfulVsPractical",
     name: "Playful vs. Practical,",
-    url: "/imgs/DSC05668-thumbnail.jpg",
+    url: "https://image.mux.com/qmH7T00sj1OgLjeLbr026XpXNSPQ8eMnB4LLIwpel17zk/animated.gif?width=320",
+    // url: "/imgs/DSC05668-thumbnail.jpg",
     category: "design",
     categorySpecific: "a synergy of language, form, and context.",
   },
+
   {
     id: "liminal",
     name: "Liminal,",
@@ -16,6 +18,7 @@ export const items = [
     categorySpecific:
       "a realm where the very essence of self and time finds itself in flux.",
   },
+
   {
     id: "socraticTextbooks", // id should be the title of the project folder, stored under ./work
     name: "Socratic Textbooks, 🔒",
@@ -23,28 +26,19 @@ export const items = [
     category: "design",
     categorySpecific: "enabling professors to craft personalized AI education.",
   },
-
   {
     id: "touchdesignerSeries",
     name: "Touchdesigner Experiments,",
-    url: "/imgs/play/BannanaVHS-optimize.gif",
+    url: "/imgs/touchDesigner/duneTouchDesigner.gif",
     category: "code",
     categorySpecific: "some explorations.",
-  },
-  {
-    id: "cminiPoster",
-    name: "Dirty Dozen Flyer,",
-    url: "/imgs/cminiPoster/Staicu_Viviana_finalDirtyDozen.jpg",
-    category: "design",
-    categorySpecific: "an exercise in type hierarchy.",
   },
   {
     id: "typographyAnimation",
     name: "Kinetic type animation,",
     url: "/imgs/typographyAnimation/THUMBNAIL.png",
     category: "design",
-    categorySpecific:
-      "a study in time and motion narrating a typeface.",
+    categorySpecific: "a study in time and motion narrating a typeface.",
   },
   {
     id: "summerSketchbookTour",
@@ -53,6 +47,7 @@ export const items = [
     category: "design",
     categorySpecific: "a peek at my brain.",
   },
+
   {
     id: "15-112",
     name: "Golden Contact,",
@@ -67,6 +62,13 @@ export const items = [
     category: "code",
     categorySpecific:
       "a documentation self-learning React, Tailwind CSS, and Three.js.",
+  },
+  {
+    id: "cminiPoster",
+    name: "Dirty Dozen Flyer,",
+    url: "/imgs/cminiPoster/Staicu_Viviana_finalDirtyDozen.jpg",
+    category: "design",
+    categorySpecific: "an exercise in type hierarchy.",
   },
   // {
   //   id: "allTimely",
