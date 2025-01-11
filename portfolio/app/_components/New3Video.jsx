@@ -42,9 +42,9 @@ const New3 = forwardRef(({ text1, src, caption }, ref) => { // NOTICE REF HERE
                   )}
                 </div>
                 {caption && (
-                  <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
+                  <div className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
                     {caption}
-                  </p>
+                  </div>
                 )}
     
             

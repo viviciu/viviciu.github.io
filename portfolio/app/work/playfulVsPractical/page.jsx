@@ -1,5 +1,13 @@
 "use client";
+import Video from "next-video";
 import diffGrips from "/videos/compressed_temp-differentGrips.mp4.json";
+import discoveringClink from "/videos/compressed_C0429-discoveringClink.MP4.json";
+import wristPain from "/videos/compressed_C0464-wrist-pain.MP4.json";
+import mAngled from "/videos/compressed_C0465-mAngled.MP4.json";
+import final from "/videos/compressed_C0522-cover.MP4.json";
+import clayTrimmed from "/videos/compressed_C0472-clay-trimmed.MP4.json";
+import choppedGrip from "/videos/compressed_C0518-choppedGrip.MP4.json";
+import handheldStyrene from "/videos/compressed_C0517-handheldStyrene.MP4.json";
 import Link from "next/link";
 import Image from "next/image";
 import Title from "../../_components/Title";
@@ -13,6 +21,7 @@ import New3 from "../../_components/New3"
 import New4 from "../../_components/New4"
 import New3Grid from "../../_components/New3Grid"
 import Header from "../../_components/Header"
+import Head from "next/head";
 
 
 export default function PlayfulVsPractical() {
@@ -87,15 +96,9 @@ export default function PlayfulVsPractical() {
             immediate understanding.
             <br />
             <br />
-            An object that isn’t quick to understand is something I used to
-            think was a poor design. This piece taught me that objects can act
-            as a violins: only through exploration, play, and some teaching one
-            is able to handle it with grace. Not everything is or should be
-            intuitive. This piece traces the evolution of a relationship through
-            the initial spark of curiosity, the uncertainty of trial and error,
-            and ultimate delight of learning something foreign.
-            <br />
-            <br />
+            This piece traces the evolution of a relationship through the
+            initial spark of curiosity, the uncertainty of trial and error, and
+            ultimate delight of learning something foreign.
           </div>
         }
         myRole={myRole}
@@ -129,27 +132,53 @@ export default function PlayfulVsPractical() {
         <New4
           text1={
             <div>
-              <strong className="text-black">Header</strong>
+              <strong className="text-black">
+                Never leave an idea in concept—it&apos;ll have to be made
+                eventually.
+              </strong>
               <br />
-              Desc.
+              Just do something when you don&apos;t know what. Get everything
+              out of your system on paper and start building immediately. The
+              sketchbook can be an endless hole of unrealistic concepts never
+              brought to fruition.
             </div>
           }
         />
         <New4
           text1={
             <div>
-              <strong className="text-black">Header</strong>
+              <strong className="text-black">
+                Not every aspect of form needs to bluntly communicate its
+                intended use.
+              </strong>
               <br />
-              Desc.
+              An object that isn&apos;t quick to understand is something I used
+              to think was a poor design. This piece taught me that objects can
+              act as a violins: only through exploration, play, and some
+              teaching one is able to handle it with grace. Not everything is or
+              should be intuitive. This piece traces the evolution of a
+              relationship through the initial spark of curiosity, the
+              uncertainty of trial and error, and ultimate delight of learning
+              something foreign.
             </div>
           }
         />
+
         <New4
           text1={
             <div>
-              <strong className="text-black">Header</strong>
+              <strong className="text-black">
+                Trust your intuition, and be ready to hear &quot;No.&quot;
+              </strong>
               <br />
-              Desc.
+              In the beginning, I felt every single decision had to be backed by
+              specific logic. While this is true to an extent, ignoring
+              intuition only held me back from committing to what I truly felt
+              was strong. There&apos;s incredible value to what your hands and
+              eyes can tell you without words. This project was an exercise not
+              only in taking a functional, rubber-band form into a model that
+              conveys the movement without elastic function, but a trust
+              exercise. A style exercise.
             </div>
           }
         />
@@ -183,15 +212,13 @@ export default function PlayfulVsPractical() {
         src={diffGrips}
         text1="Carrying my form around with me everywhere, listening to music on the go influenced different grips. I found myself preferring using the smaller radius paddle, sometimes the larger radius paddle, sometimes even scrubbing it like a DJ depending on the rhythm."
       />
-{/* SPACER */}
-      <div className="mt-[2rem]"></div> 
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
       {/* NEW3VIDEO GRID OF 4 GIFs */}
       <New3Grid
         caption={
           <div>
-            Top: Toying with scrap parts inspiring tabletop idea. 
-
-             Bottom: Hybrid
+            Top: Toying with scrap parts inspiring tabletop idea. Bottom: Hybrid
             tabletop-handheld model.
           </div>
         }
@@ -206,13 +233,241 @@ export default function PlayfulVsPractical() {
             to a fixed tabletop tool.
             <br />
             <br />
-            The modelmaking process sparked the idea of a hybrid ( bottom
-            gifs )—where one could use it at home, and while travelling. Though
-            not a marketable object, I gravitated more and more towards this
-            being a playful audiotechnical instrument.
+            The modelmaking process sparked the idea of a hybrid ( bottom gifs
+            )—where one could use it at home, and while travelling.{" "}
+            <strong>
+              Ideas are time sensitive—so I get a rough prototype out of my
+              system as quickly as possible using the scraps on my desk to see
+              if theres potential.{" "}
+            </strong>{" "}
+            This initial rough form gives my hands and eyes so much information
+            as to what my next step is, which lead to the bottom final form.
+            <br />
+            <br />
+            Though not a marketable object, I gravitated more towards this being
+            a playful audiotechnical instrument.
           </div>
         }
       />
+
+      {/* SPACER */}
+      <div className="mt-[8rem]"></div>
+      {/* 2 VIDEO GRID */}
+      <div
+        className=" 
+                            lg:grid lg:grid-cols-6
+                            gap-[5.06rem] 
+                            w-full h-fit 
+                            items-start
+                            pt-[0.5rem]" // important padding top here
+      >
+        <div
+          className="
+                              col-span-2
+                              leading-[1.5rem]
+                              lg:text-[1rem]
+                              tracking-[0.005em]
+                              text
+                              font-Suisse
+                              font-regular
+                              text-offBlack2"
+        >
+          The negative space from my original form brought me back to refine it.
+          Compared to the desktop model, the negative space and handheld nature
+          gave rise to a novel instrument, one which affords an opportunity to
+          explore a foreign interaction.
+          <br />
+          <br />
+          It becomes a skillfull instrument—
+          <strong>
+            bringing a user through a journey of intrigue, methodical inquiry,
+            play, and ultimately delight
+          </strong>{" "}
+          from learning something new.
+          <br />
+          <br />I angled the paddle as I noticed my wrists natrually want to
+          rotate like turning a doorknob, improving ergonomics. The concave wood
+          paddle affords a place for users to rest their fingers in.
+        </div>
+
+        <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+          <div className="grid grid-cols-2 gap-2">
+            <div className="col-start-1">
+              <Video src={wristPain} />
+            </div>
+
+            <div className="col-start-2">
+              <Video src={mAngled} />
+            </div>
+          </div>
+
+          <div className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
+            Left: Strained wrist. Right: Angled paddle improved ergonomics.
+          </div>
+        </div>
+      </div>
+      {/* SPACER */}
+      <div className="mt-[8rem]"></div>
+      {/* 2 VIDEO GRID */}
+      <div
+        className=" 
+                            lg:grid lg:grid-cols-6
+                            gap-[5.06rem] 
+                            w-full h-fit 
+                            items-start
+                            pt-[0.5rem]" // important padding top here
+      >
+        <div
+          className="
+                              col-span-2
+                              leading-[1.5rem]
+                              lg:text-[1rem]
+                              tracking-[0.005em]
+                              text
+                              font-Suisse
+                              font-regular
+                              text-offBlack2"
+        >
+          Designing the entire experience starts from before the user is aware
+          of its presence—how does one approach it? Pick it up? The moment you
+          pick up a form influences the way you might interact with it and needs
+          consideration.
+          <br />
+          <br />
+          Starting with a clay counterform to inform me of what shapes the
+          intented grip creates, I then shaved away what was not essential to
+          give just enough info of how to pick it up.
+          <br />
+          <br />
+          Widening the palm-facing side and extending subtle edges pointed
+          towards the head of the form, indicating where your other hand should
+          interact.
+        </div>
+
+        <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+          <div className="grid grid-cols-2 gap-2">
+            <div className="col-start-1">
+              <Image
+                src="/imgs/playfulPractical/C0472_ss-clay.webp"
+                alt="home page image"
+                layout="responsive"
+                width={200}
+                height={500}
+              />
+            </div>
+
+            <div className="col-start-2">
+              <Video src={choppedGrip} />
+            </div>
+            <div className="col-start-1">
+              <Image
+                src="/imgs/playfulPractical/C0517_ss-styrene.webp"
+                alt="home page image"
+                layout="responsive"
+                width={200}
+                height={500}
+              />
+            </div>
+            <div className="col-start-2">
+              <Image
+                src="/imgs/playfulPractical/chipboardGripPrototype_ss.webp"
+                alt="home page image"
+                layout="responsive"
+                width={200}
+                height={500}
+              />
+            </div>
+          </div>
+
+          <div className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
+            Picking up the form: Clay counterforms informed a precision
+            chipboard mockup.
+          </div>
+        </div>
+      </div>
+      {/* SPACER */}
+      <div className="mt-[8rem]"></div>
+      <Header text={"Final Form"} />
+      <New3Video
+        src={final}
+        text1={
+          <div>
+            From testing prototypes with my peers, I found the top styrene
+            &apos;hood&apos; was found uncessesary to the essence of the grip. Thus, only
+            the tapered pointing arrows, like hands, directed the eyes towards
+            the wooden paddle for the other hand to rest.
+            <br />
+            <br />
+            Further iterations and explorations leading to the final form are
+            found in the process video above.
+          </div>
+        }
+      />
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
+      {/* finalCoverImg_manyIterations */}
+      {/* <DividerLine text="Process" /> */}
+      {/* Experimental video grid of 3 cols */}
+      <div className="mt-10 lg:grid lg:grid-cols-3 gap-[0.6rem] flex flex-col">
+        <div className="col-span-3 col-start-1">
+          <Image
+            src="/imgs/playfulPractical/finalCoverImg_manyIterations.webp"
+            height={500}
+            width={1400}
+            layout="responsive"
+          />
+        </div>
+      </div>
+      <div className="mt-[0.6rem] mb-32 lg:columns-3 sm:columns-2 w-full place-content-center gap-[0.6rem]">
+        <div className="">
+          <Image
+            src="https://image.mux.com/TKWj6nwkH0082l008G96sOHKN3X6PklbfOzrN8oaJ62hw/animated.gif?width=500"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            className="mt-[0.6rem]"
+            src={"/imgs/playfulPractical/DSC05499.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+
+        <div>
+          <Image
+            src={"/imgs/playfulPractical/DSC04956.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            className="mt-[0.6rem]"
+            src={"/imgs/playfulPractical/DSC04934.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            className="mt-[0.6rem]"
+            src={"/imgs/playfulPractical/DSC04825.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+
+        {/* col 3 */}
+        <div>
+          <Image
+            src={"/imgs/playfulPractical/DSC04918.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+      </div>
     </main>
   );
 }
