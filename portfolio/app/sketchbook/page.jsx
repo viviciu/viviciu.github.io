@@ -56,20 +56,40 @@ export default function Projects() {
   return (
     <main className="m-1">
       {/* Sketchbook tour video */}
-      <div className="mx-4 mt-[11vh] w-1/2 lg:h-[30rem] h-[14rem] sm:h-[23rem] flex items-center justify-center">
-        {/* DOCUMENTATION: https://www.npmjs.com/package/react-iframe */}
-        <Iframe
-          url={embedUrl} // Ensure the URL is in the correct embed format
-          width="100%"
-          height="100%"
-          id=""
-          className=""
-          display="block"
-          position="relative"
-        />
-      </div>
+      <div className="mx-4">
+        <div className=" mt-[11vh] lg:w-1/2 w-full lg:h-[30rem] h-[20rem] sm:h-[23rem]">
+          {/* DOCUMENTATION: https://www.npmjs.com/package/react-iframe */}
+          <Iframe
+            url={embedUrl} // Ensure the URL is in the correct embed format
+            width="100%"
+            height="100%"
+            id=""
+            className=""
+            display="block"
+            position="relative"
+          />
+        </div>
+        {/* CODE FROM CONTEXT2 COMPONENT BELOW FOR DESC. */}
+        
+          <div
+            className="
+            pt-[1rem]
+      w-full h-fit 
+      items-start
+      col-span-3
+        leading-p3
+        text-p
+        text
+        font-SuisseWorks
+        font-regular
+        text-offBlack2
+        "
+          >
+            Sketches from freshman—sophomore year. My process, lessons learned,
+            and inspirations.
+          </div>
+        </div>
 
-      
 
       <section className="flex flex-col mx-4 mt-32">
         {/* lg:mb-[11vh] mb-[2.5rem] mt-[11vh] 
@@ -78,7 +98,7 @@ export default function Projects() {
           lg:leading-[3.7rem]
           leading-[1.6rem]
           font-h1 font-medium */}
-        <article className="w-full mx-auto grid grid-cols-2 gap-[2rem] sm:gap-[5rem]sm:grid-cols-5 lg:grid-cols-5  place-content-center">
+        <article className="w-full mx-auto grid grid-cols-2 lg:gap-[2rem] gap-[0.6rem] sm:grid-cols-5 lg:grid-cols-5  place-content-center">
           {displayedItems}
         </article>
       </section>

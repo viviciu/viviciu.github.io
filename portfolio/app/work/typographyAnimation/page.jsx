@@ -9,6 +9,8 @@ import YAMLBar from "../../_components/YAMLBar";
 import DividerLine from "../../_components/DividerLine";
 import New3 from "../../_components/New3";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Header from "../../_components/Header";
+import New3Grid from "../../_components/New3Grid";
 
 
 export default function TypographyAnimation() {
@@ -103,6 +105,12 @@ export default function TypographyAnimation() {
                 />
               </Link>
             </div>
+          }
+        />
+        <Header text={"Process"} />
+        <New3Grid
+          img1={
+            "https://image.mux.com/TMgnu7m878NnXHy02Jtk7F1gt1oiw02yJ017TO2WqigysU/animated.gif?width=600"
           }
         />
       </div>

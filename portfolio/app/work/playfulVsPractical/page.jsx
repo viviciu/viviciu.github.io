@@ -86,19 +86,29 @@ export default function PlayfulVsPractical() {
             <span className="font-Suisse font-semibold"> 11 January 2025 </span>
             <br />
             <br />
-            Playful vs. Practical, a synergy of movement and material, foreign
-            and familiar. 2024.
-            <br />
-            <br />
             Inspired by a lamp post on campus and the familiar gestures we
             conjure from hearing music, this study reflects a playful yet
             precise object. It is one that incites methodical exploration over
-            immediate understanding.
-            <br />
-            <br />
-            This piece traces the evolution of a relationship through the
+            immediate understanding. It traces the evolution of a relationship through the
             initial spark of curiosity, the uncertainty of trial and error, and
             ultimate delight of learning something foreign.
+            <br />
+            <br />
+            <br />
+            <br />
+            <strong>Breif :</strong>
+            <br />
+            Exploring the material relationships between elastic band and wood,
+            design a sensible working object that has playful or practical
+            device-like characteristics. Unite form studies to determine the appropriate look, feel, make, and performance of the device.
+            The models do not have to work, but must allow us to imagine so
+            without distraction and interruption.
+            <br />
+            <br />
+            How do the pieces of this device come together as a whole making a
+            satisfying interaction? The working nature of the device derives
+            itself from the properties, characteristics, look, and feel of
+            material.
           </div>
         }
         myRole={myRole}
@@ -208,10 +218,84 @@ export default function PlayfulVsPractical() {
       </div> */}
 
       <Header text={"Process"} />
+
+      {/* MODIFIED NEW3GRID */}
+
+      <div
+        className=" 
+                            lg:grid lg:grid-cols-6
+                            gap-[5.06rem] 
+                            w-full h-fit 
+                            items-start
+                            pt-[0.5rem]" // important padding top here
+      >
+        <div
+          className="
+                              col-span-2
+                              leading-[1.5rem]
+                              lg:text-[1rem]
+                              tracking-[0.005em]
+                              text
+                              font-Suisse
+                              font-regular
+                              text-offBlack2"
+        >
+          In the everyday, sometimes I imagine how I might interact with the
+          static forms in the world around me—as if I could bend, hinge, or
+          extrude fascinating forms. I wonder what context the form could live
+          in and who they might serve.
+          <br />
+          <br />
+          This lamp on campus inspired my initial elastic band working model. I
+          thought: What if I could put my hand on top, and methodically rotate
+          it laterally?
+        </div>
+
+        <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+          <div className="grid grid-cols-2 gap-2">
+            <div className="col-start-1">
+              <Image
+                src={"/imgs/playfulPractical/movingLampSketch.webp"}
+                alt="Imagining everyday static objects moving in my mind"
+                layout="responsive"
+                width={200}
+                height={500}
+              />
+              <Image
+                className="pt-[0.6rem]"
+                src={"/imgs/playfulPractical/constructionProcess.webp"}
+                alt="Construction Process"
+                layout="responsive"
+                width={500}
+                height={500}
+              />
+            </div>
+
+            <div className="col-start-2">
+              <Image
+                src={"/imgs/playfulPractical/sketchFirstModel.webp"}
+                alt="Sketch"
+                layout="responsive"
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
+
+          <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
+            Imagining how static forms in my everyday life could be interacted
+            with inspired my initial elastic form.
+          </p>
+        </div>
+      </div>
+
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
       <New3Video
         src={diffGrips}
         text1="Carrying my form around with me everywhere, listening to music on the go influenced different grips. I found myself preferring using the smaller radius paddle, sometimes the larger radius paddle, sometimes even scrubbing it like a DJ depending on the rhythm."
       />
+
       {/* SPACER */}
       <div className="mt-[4rem]"></div>
       {/* NEW3VIDEO GRID OF 4 GIFs */}
@@ -348,7 +432,7 @@ export default function PlayfulVsPractical() {
           <div className="grid grid-cols-2 gap-2">
             <div className="col-start-1">
               <Image
-                src="/imgs/playfulPractical/C0472_ss-clay.webp"
+                src="/imgs/playfulPractical/clay-sideView.webp"
                 alt="home page image"
                 layout="responsive"
                 width={200}
@@ -393,9 +477,9 @@ export default function PlayfulVsPractical() {
         text1={
           <div>
             From testing prototypes with my peers, I found the top styrene
-            &apos;hood&apos; was found uncessesary to the essence of the grip. Thus, only
-            the tapered pointing arrows, like hands, directed the eyes towards
-            the wooden paddle for the other hand to rest.
+            &apos;hood&apos; was found uncessesary to the essence of the grip.
+            Thus, only the tapered pointing arrows, like hands, directed the
+            eyes towards the wooden paddle for the other hand to rest.
             <br />
             <br />
             Further iterations and explorations leading to the final form are
