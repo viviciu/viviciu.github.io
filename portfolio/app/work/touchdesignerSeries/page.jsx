@@ -11,18 +11,21 @@ import DividerLine from "../../_components/DividerLine";
 import New from "../../_components/New";
 import New2 from "../../_components/New2";
 import New3 from "../../_components/New3";
+import New3Video from "../../_components/New3Video";
 import New4 from "../../_components/New4";
 import Image from "next/image";
 import Link from "next/link";
 import UnderDevelopment from "../../_components/UnderDevelopment";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Head from "next/head";
+import duneTD from "/videos/010425_dune-trimmed.mov.json"
+import duneTDProcess from "/videos/td_dune-colorChange-process.mov.json"
 
 export default function Liminal() {
   const members = [];
   const tools = ["Touchdesigner"];
   const myRole = "Procedural Animation";
-  const timeline = "2 weeks";
+  const timeline = "";
 
 
 
@@ -38,34 +41,68 @@ export default function Liminal() {
           </div>
         }
       />
-
       {/* Role: Interaction Design, 3D Web Development, UI/UX Immersive Experiences" ? */}
       <YAMLBar client="Self" year="2024" role="Procedural Animation" />
-      <CoverYAML img={"/imgs/play/BannanaVHS-optimize.gif"} />
+      <CoverYAML
+        img={
+          "https://image.mux.com/EWeOGWvhBZ79DwTqSLKtR02F19MmWBk1xQZEN01hTLny00/animated.gif?width=600"
+        }
+      />
+      {/* "/imgs/play/BannanaVHS-optimize.gif" */}
       <Context2
-        context={<div>Started exploring late Novemeber 2024.</div>}
+        context={
+          <div>Explorations into procedural animation since Novemeber 2024.</div>
+        }
         myRole={myRole}
         members={members}
         tools={tools}
         timeline={timeline}
       />
-
-
-      <New3 />
-      <div className="lg:pt-[3rem]">
-        {" "}
-        <New3
-          img1={"/imgs/play/111524_firstTouchdesignerTourus.gif"}
-          caption={"Using noise as data to displace geometry."}
-        />
-      </div>
+      <New3Video
+        src={duneTD}
+        text1={
+          <div>
+            Experiments with mapping audio waveform normals onto geometry in
+            touchdesigner, being my first time giving generative design a shot,
+            I feel like half creator half viewer in the process. it&apos;s this
+            odd give to the computer take from the computer I can&apos;t really
+            compare to anything else.
+            <br />
+            .
+            <br />
+            Audio: A Time of Quiet Between Storms, Hans Zimmer
+            <br />
+            <br />
+            January, 2025.
+          </div>
+        }
+      />
+      <New3Video
+        src={duneTDProcess}
+        caption="Procedural nodes could change color or other properties via various inputs like audio, visual, and lidar sensor data. Here, I manipulate a constant RGB value node manually instead."
+      />
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
       <New3
         img1={"/imgs/play/BannanaVHS-optimize.gif"}
-        caption={"Displacing geometry via time as data."}
+        caption={"Displacing geometry via time as a data input."}
+        text1={
+          <div>
+            Bannana experiment,
+            <br />
+            Nov 2024
+          </div>
+        }
       />
       <New3 img1={"/imgs/touchDesigner/process_bannana.png"} />
       <New3 img1={"/imgs/touchDesigner/process_bannana_02.png"} />
 
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
+      <New3
+        img1={"/imgs/play/111524_firstTouchdesignerTourus.gif"}
+        caption={"Using noise as data to displace geometry."}
+      />
 
       {/* <DividerLine text="Reflection" />
       <Header text={"New learnings"} />
@@ -120,8 +157,6 @@ export default function Liminal() {
           }
         />
       </div> */}
-
-    
     </main>
   );
 }

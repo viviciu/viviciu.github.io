@@ -84,7 +84,7 @@ export default function New3Grid({ text1, img1, img2, img3, img4, caption }) {
                   </p>
                 )}
               </div>
-            </div>
+      </div>
     </main>
   );
 };
