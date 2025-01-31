@@ -14,23 +14,7 @@ export const items = [
     name: "Touchdesigner Experiments,",
     url: "/imgs/touchDesigner/duneTouchDesigner.gif",
     category: "code",
-    categorySpecific: "some explorations.",
-  },
-  {
-    id: "liminal",
-    name: "Liminal,",
-    url: "/imgs/lg-home-cover.webp",
-    category: "code",
-    categorySpecific:
-      "a realm where the very essence of self and time finds itself in flux.",
-  },
-
-  {
-    id: "socraticTextbooks", // id should be the title of the project folder, stored under ./work
-    name: "Socratic Textbooks, 🔒",
-    url: "/imgs/aiTextbookThumbnail.png",
-    category: "design",
-    categorySpecific: "enabling professors to craft personalized AI education.",
+    categorySpecific: "some generative procedural animations.",
   },
 
   {
@@ -41,29 +25,22 @@ export const items = [
     categorySpecific: "a study in time and motion narrating a typeface.",
   },
   {
-    id: "summerSketchbookTour",
-    name: "Sketchbook Sessions,",
-    url: "/imgs/thumb5_162-edit.jpg",
-    category: "design",
-    categorySpecific: "a peek at my brain.",
-  },
-
-  {
-    id: "15-112",
-    name: "Golden Contact,",
-    url: "/imgs/goldenContactSheetThumbnail.png",
-    category: "code",
-    categorySpecific: "a python prototyping tool crafted to the golden ratio.",
-  },
-
-  {
-    id: "portfolioWebsite",
-    name: "Portfolio Website, 🔒",
-    url: "/imgs/102624_homePage.png",
+    id: "liminal",
+    name: "Liminal,",
+    url: "/imgs/lg-home-cover.webp",
     category: "code",
     categorySpecific:
-      "a documentation self-learning React, Tailwind CSS, and Three.js.",
+      "a realm where the very essence of self and time finds itself in flux.",
   },
+
+  // {
+  //   id: "15-112",
+  //   name: "Golden Contact,",
+  //   url: "/imgs/goldenContactSheetThumbnail.png",
+  //   category: "code",
+  //   categorySpecific: "a python prototyping tool crafted to the golden ratio.",
+  // },
+
   {
     id: "cminiPoster",
     name: "Dirty Dozen Flyer,",

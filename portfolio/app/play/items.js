@@ -1,6 +1,19 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
-  
+  {
+    id: "xrCube",
+    name: "XRcube",
+    url: "https://image.mux.com/jysKZgic9HN6hv3xGk9QVJsFwdrKQvTZ0101ucmtqXPp00/animated.gif?width=320",
+    category: "3d",
+    categorySpecific: "",
+  },
+  {
+    id: "xrCube",
+    name: "XRcube",
+    url: "https://image.mux.com/waB17xivBisJ48pkoUT3c1OCby00MZ9wIY3tEcJp5sCo/animated.gif",
+    category: "3d",
+    categorySpecific: "",
+  },
   {
     id: "gradientStudies",
     name: "gradientStudies",
@@ -8,7 +21,7 @@ export const items = [
     category: "print",
     categorySpecific: "",
   },
-  
+
   {
     id: "UXA_CPW",
     name: "UXA_CPW",
