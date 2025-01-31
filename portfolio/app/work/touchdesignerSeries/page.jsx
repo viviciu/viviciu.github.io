@@ -20,6 +20,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import Head from "next/head";
 import duneTD from "/videos/010425_dune-trimmed.mov.json"
 import duneTDProcess from "/videos/td_dune-colorChange-process.mov.json"
+import TDParticleDance from "/videos/pointCloudModel.mov.json"
 
 export default function Liminal() {
   const members = [];
@@ -51,7 +52,9 @@ export default function Liminal() {
       {/* "/imgs/play/BannanaVHS-optimize.gif" */}
       <Context2
         context={
-          <div>Explorations into procedural animation since Novemeber 2024.</div>
+          <div>
+            Explorations into procedural animation since Novemeber 2024.
+          </div>
         }
         myRole={myRole}
         members={members}
@@ -80,6 +83,12 @@ export default function Liminal() {
       <New3Video
         src={duneTDProcess}
         caption="Procedural nodes could change color or other properties via various inputs like audio, visual, and lidar sensor data. Here, I manipulate a constant RGB value node manually instead."
+      />
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
+      <New3Video
+        src={TDParticleDance}
+        text1="Video as input to particle pointcloud data."
       />
       {/* SPACER */}
       <div className="mt-[4rem]"></div>

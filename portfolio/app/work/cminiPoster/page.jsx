@@ -60,7 +60,49 @@ export default function Liminal() {
         timeline={timeline}
       />
 
-      
+      <Header text={"Takeaways"} />
+      <div className="lg:grid lg:grid-cols-4 gap-[4rem] lg:pb-[14rem] pb-[5rem]">
+        <New4
+          text1={
+            <div>
+              <strong className="text-black">User-Centric Research & Leaning into the visceral:</strong>{" "}
+              Writing out what my senses detected during the race helped me
+              understand the visceral emotions encapsulating it. Along with
+              interviewing spectators and racers, you cannot skip understanding
+              your audience and what you aim to communicate to them to meet a
+              specific goal.
+            </div>
+          }
+        />
+        <New4
+          text1={
+            <div>
+              <strong className="text-black">
+                Understanding hierarchy principles:
+              </strong>{" "}
+              I learned that the fundamentals of hierarchy—scale, proximity,
+              alignment, color, contrast, stroke weight, enter/exit—are
+              incredibly powerful, and should be used in moderation and with
+              careful intention. Less is more.
+            </div>
+          }
+        />
+
+        <New4
+          text1={
+            <div>
+              <div>
+                <strong className="text-black">
+                  Embracing Critical Feedback:{" "}
+                </strong>
+                I stepped out of my comfort zone by actively seeking and
+                applying critique, I&apos;ve consistently found it&apos;s the
+                one on one moments where I have the biggest breakthroughs.
+              </div>
+            </div>
+          }
+        />
+      </div>
       <DividerLine text="Process" />
       {/* <Header text={"See the medium post here."} /> */}
       <New3 />
@@ -117,59 +159,6 @@ Design Fundamentals Mastery: Deepened understanding of hierarchy principles—sc
 User-Centric Research: Conducted sensory observations and audience interviews to align project goals with user needs, emphasizing the importance of audience understanding.
 Structured Process: Leveraged a structured workflow (Familiarize, Develop, Refine) to maintain clarity and momentum throughout the project.
 Image and Grid Dynamics: Explored the interaction of image and grid in composition, focusing on preventing conflicts with typographic hierarchy and ensuring visual harmony. */}
-
-      <Header text={"New learnings"} />
-      <div className="lg:grid lg:grid-cols-4 gap-[4rem] lg:pb-[14rem] pb-[5rem]">
-        <New4
-          text1={
-            <div>
-              <div>
-                <strong className="text-black">
-                  Embracing Critical Feedback:{" "}
-                </strong>
-                I stepped out of my comfort zone by actively seeking and
-                applying critique, I&apos;ve consistently found it&apos;s the
-                one on one moments where I have the biggest breakthroughs.
-              </div>
-            </div>
-          }
-        />
-        <New4
-          text1={
-            <div>
-              <strong className="text-black">
-                Understanding hierarchy principles:
-              </strong>{" "}
-              I learned that the fundamentals of hierarchy—scale, proximity,
-              alignment, color, contrast, stroke weight, enter/exit—are
-              incredibly powerful, and should be used in moderation and with
-              careful intention. Less is more.
-            </div>
-          }
-        />
-        <New4
-          text1={
-            <div>
-              <strong className="text-black">User-Centric Research:</strong>{" "}
-              Writing out what my five senses detected during my event helped me
-              understand the visceral emotions encapsulating the race. Along
-              with interviewing spectators and racers, you cannot skip
-              understanding your audience and what you aim to communicate to
-              them to meet a specific goal.
-            </div>
-          }
-        />
-        <New4
-          text1={
-            <div>
-              <strong className="text-black">Developed my process:</strong>{" "}
-              Having structure to this project with the Familiarize, Develop,
-              Refine was incredibly helpful for me to find security in my
-              process and not go backwards.
-            </div>
-          }
-        />
-      </div>
 
       {/* <div>
             I found myself enjoying this project more than I’d expected. I got
