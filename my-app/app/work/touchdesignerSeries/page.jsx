@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Title from "../../_components/Title";
+import New3VideoCoudinary from "../../_components/New3VideoCloudinary"
 import Context from "../../_components/Context";
 import Context2 from "../../_components/Context2";
 import Context4 from "../../_components/Context4";
@@ -39,20 +40,81 @@ export default function Liminal() {
           </div>
         }
       />
-      {/* Role: Interaction Design, 3D Web Development, UI/UX Immersive Experiences" ? */}
+
       <YAMLBar client="Self" year="2024" role="Procedural Animation" />
-      <CoverYAML
-        img={
-          "https://image.mux.com/EWeOGWvhBZ79DwTqSLKtR02F19MmWBk1xQZEN01hTLny00/animated.gif?width=600"
+      {/* "https://image.mux.com/EWeOGWvhBZ79DwTqSLKtR02F19MmWBk1xQZEN01hTLny00/animated.gif?width=600" */}
+
+      {/* COVER YAML EXPANDED */}
+      <main className=" pb-[5.06rem]">
+        <div className="h-fit w-full">
+          <video className="w-full h-auto" autoPlay loop muted playsInline>
+            <source
+              src={
+                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk"
+              }
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </main>
+
+      <Context2
+        context={
+          <div>
+            Explorations into procedural animation since Novemeber 2024.
+          </div>
+        }
+        myRole={myRole}
+        members={members}
+        tools={tools}
+        timeline={timeline}
+      />
+
+      <New3VideoCoudinary
+        src={
+          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk"
+        }
+        text1={
+          <div>
+            Experiments with mapping audio waveform normals onto geometry in
+            touchdesigner, being my first time giving generative design a shot,
+            I feel like half creator half viewer in the process. it&apos;s this
+            odd give to the computer take from the computer I can&apos;t really
+            compare to anything else.
+            <br />
+            .
+            <br />
+            Audio: A Time of Quiet Between Storms, Hans Zimmer
+            <br />
+            <br />
+            January, 2025.
+          </div>
         }
       />
-      {/* "/imgs/play/BannanaVHS-optimize.gif" */}
 
       <p>BELOW: video under f_mp4 codec </p>
       <video controls>
         <source
           src={
             "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+          }
+          type="video/mp4"
+        />
+      </video>
+      <p>BELOW: video under f_mpeg </p>
+      <video controls>
+        <source
+          src={
+            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mov,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+          }
+          type="video/mp4"
+        />
+      </video>
+      <p>BELOW: video under f_mpeg LOOPED</p>
+      <video autoPlay loop muted playsInline>
+        <source
+          src={
+            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mov,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
           }
           type="video/mp4"
         />
