@@ -27,7 +27,7 @@ export const items = [
   {
     id: "liminal",
     name: "Liminal,",
-    url: "/imgs/lg-home-cover.webp",
+    url: "/imgs/lg-home-COVER.webp",
     category: "code",
     categorySpecific:
       "a realm where the very essence of self and time finds itself in flux.",
