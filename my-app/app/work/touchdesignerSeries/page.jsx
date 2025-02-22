@@ -48,15 +48,25 @@ export default function Liminal() {
       />
       {/* "/imgs/play/BannanaVHS-optimize.gif" */}
 
-      {/* video under f_mp4 codec */}
+      <p>BELOW: video under f_mp4 codec </p>
       <video controls>
-                <source
-                  src={
-                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
-                  }
-                  type="video/mp4"
-                />
-              </video>
+        <source
+          src={
+            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+          }
+          type="video/mp4"
+        />
+      </video>
+
+      <p>BELOW: video under f_mp4 codec, autoPlay loop muted playsInLine </p>
+      <video autoPlay loop muted playsInline>
+        <source
+          src={
+            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+          }
+          type="video/mp4"
+        />
+      </video>
     </main>
   );
 }

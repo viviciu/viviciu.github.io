@@ -27,8 +27,8 @@ export const items = [
   {
     id: "test-dohnut",
     name: "t1",
-    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto,q_auto/v1/play/gla0hqfer8yzhpquznw2",
-    fileType: "webm",
+    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/play/gla0hqfer8yzhpquznw2",
+    fileType: "mp4",
     category: "3d",
     categorySpecific: "",
   },
