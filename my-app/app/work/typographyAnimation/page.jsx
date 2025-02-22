@@ -35,7 +35,7 @@ export default function TypographyAnimation() {
           "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/BannanaVHS-17MB.gif"
         }
       /> */}
-      <New3Grid
+      {/* <New3Grid
         img1={
           "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/DSC03294.JPG"
         }
@@ -50,15 +50,59 @@ export default function TypographyAnimation() {
           src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz"
           type="video/webm"
         />
-
-      </video>
-      <video autoPlay loop muted controls>
+      </video> */}
+      {/* <video autoPlay loop muted controls>
         <source
           src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz"
           type="video/webm"
         />
-
       </video>
+      <video autoPlay loop muted controls>
+        <source
+          src="https://res.cloudinary.com/ddjxpkewq/video/upload/q_50/f_webm,q_auto/zrdmocuo5carvjutowxl"
+          type="video/webm"
+        />
+      </video> */}
+      {/* <div className="w-1/2">
+        <video autoPlay muted controls>
+          <source
+            src="https://res.cloudinary.com/ddjxpkewq/video/upload/q_50/f_webm/tbhvrfzlvqzu7olhwbrq"
+            type="video/webm"
+          />
+        </video>
+        <video autoPlay muted controls>
+          <source
+            src="https://res.cloudinary.com/ddjxpkewq/video/upload/q_20/f_webm/tbhvrfzlvqzu7olhwbrq"
+            type="video/webm"
+          />
+        </video>
+        <video autoPlay muted controls>
+          <source
+            src="https://res.cloudinary.com/ddjxpkewq/video/upload/c_scale,h_500/f_webm,q_auto/rpr5acf37fpxqurcxm5l"
+            type="video/webm"
+          />
+        </video> */}
+      {/* 8MB JPEG */}
+      <p className="mt-16">8MB JPEG</p>
+      <img
+        src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_webp,q_auto/ccimstmukagcltzhzgzb"
+        alt="home page image"
+        layout="responsive"
+        width={500}
+        height={500}
+      />
+      {/* 750KB WEBP */}
+      <p>750KB WEBP</p>
+      <img
+        src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_webp,q_auto/xwfcgcf0kwaufm2dscsc"
+        alt="home page image"
+        layout="responsive"
+        width={500}
+        height={500}
+      />
+      <p>LOCAL 750KB WEB</p>
+      {/* LOCAL 750KB WEBP */}
+      <img src="/compressed_edit-03512-3.webp" />
 
       {/* <video autoPlay loop muted playsInLine>
         <source src="/my-animation.webm" type="video/webm" />
@@ -81,9 +125,19 @@ export default function TypographyAnimation() {
         />
       </video> */}
       {/* NOTE: IF WEBM IS STORED LOCALLY, IT FAILS. IF IT IS A WEBM RENDERED BY CLOUDINARY, IT WORKS. */}
-      {/* <video autoPlay loop muted playsInline>
-        <source src="/my-animation.webm" type="video/webm" />
-      </video> */}
+      <img
+        src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/play/fyiw6cyrqbriysugmqgc"
+        alt="home page image"
+        layout="responsive"
+        width={500}
+        height={500}
+      />
+      <video autoPlay loop muted playsInline>
+        <source
+          src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/play/gla0hqfer8yzhpquznw2"
+          type="video/mp4"
+        />
+      </video>
     </main>
   );
 }

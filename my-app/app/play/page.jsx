@@ -13,8 +13,8 @@ export default function Projects() {
     setSelectedLabel(label);
   };
 
-  const handleImageClick = (url, index) => {
-    setClickedImg(url);
+  const handleImageClick = (item, index) => {
+    setClickedImg(item);
     setCurrentIndex(index);
   };
 
@@ -25,7 +25,13 @@ export default function Projects() {
   const handleNextImage = () => {
     const nextIndex = (currentIndex + 1) % items.length;
     setCurrentIndex(nextIndex);
-    setClickedImg(items[nextIndex].url);
+    setClickedImg(items[nextIndex]);
+  };
+
+  const handlePrevImage = () => {
+    const prevIndex = (currentIndex - 1 + items.length) % items.length;
+    setCurrentIndex(prevIndex);
+    setClickedImg(items[prevIndex]);
   };
 
   const displayedItems = items
@@ -33,15 +39,30 @@ export default function Projects() {
     .map((item, index) => (
       <div key={item.id} className="item">
         <div className="justify-center relative group text-cap">
-          <Image
-            src={item.url}
-            alt={item.name}
-            className="w-full h-full object-cover translate-y-0 transition group-hover:translate-y-2 cursor-pointer"
-            unoptimized={item.url.endsWith(".gif")} // Add unoptimized property for GIFs
-            width={500} // Example width, adjust as needed
-            height={500} // Example height, adjust as needed
-            onClick={() => handleImageClick(item.url, index)}
-          />
+          {item.fileType === "webp" ? (
+            <Image
+              src={item.url}
+              alt={`Item ${item.id}`}
+              className="w-full h-full object-cover translate-y-0 transition group-hover:translate-y-2 cursor-pointer"
+              width={500} // Example width, adjust as needed
+              height={500} // Example height, adjust as needed
+              onClick={() => handleImageClick(item, index)}
+            />
+          ) : item.fileType === "webm" ? (
+            <video
+              className="w-full h-full object-cover translate-y-0 transition group-hover:translate-y-2 cursor-pointer"
+              width={500} // Example width, adjust as needed
+              height={500} // Example height, adjust as needed
+              onClick={() => handleImageClick(item, index)}
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src={item.url} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          ) : null}
         </div>
       </div>
     ));
@@ -215,7 +236,7 @@ export default function Projects() {
             </label>
           </div>
         </article>
-        <article className="w-full mx-auto grid grid-cols-2 gap-[2rem] sm:gap-[5rem]sm:grid-cols-5 lg:grid-cols-7  place-content-center">
+        <article className="w-full mx-auto grid grid-cols-2 gap-[2rem] sm:gap-[5rem] sm:grid-cols-5 lg:grid-cols-7 place-content-center">
           {displayedItems}
         </article>
       </section>
@@ -226,19 +247,71 @@ export default function Projects() {
           onClick={handleCloseModal}
         >
           <div
-            className="relative m-[0.6rem]" // m-2 adds the little margin around img
+            className="relative m-[0.6rem] cursor-pointer"
             onClick={(e) => e.stopPropagation()} // Stop propagation on the modal content
           >
-            <img
-              src={clickedImg}
-              alt="Modal Image"
-              className=" max-h-[84vh] cursor-pointer"
-              onClick={(e) => {
-                e.stopPropagation();
-                handleNextImage();
-              }} // Stop propagation and handle next image
-              style={{ cursor: "e-resize" }} // Change cursor to arrow
-            />
+            {clickedImg.fileType === "webp" ? (
+              <img
+                src={clickedImg.url}
+                alt="Modal Image"
+                className="max-h-[84vh] cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  const clickX =
+                    e.clientX - e.target.getBoundingClientRect().left;
+                  const halfWidth = e.target.clientWidth / 2;
+                  if (clickX > halfWidth) {
+                    handleNextImage();
+                  } else {
+                    handlePrevImage();
+                  }
+                }}
+                style={{ cursor: "e-resize" }} // Change cursor to arrow
+                onMouseMove={(e) => {
+                  const clickX =
+                    e.clientX - e.target.getBoundingClientRect().left;
+                  const halfWidth = e.target.clientWidth / 2;
+                  if (clickX > halfWidth) {
+                    e.target.style.cursor = "e-resize";
+                  } else {
+                    e.target.style.cursor = "w-resize";
+                  }
+                }}
+              />
+            ) : clickedImg.fileType === "webm" ? (
+              <video
+                className="max-h-[84vh] cursor-pointer"
+                autoPlay
+                loop
+                muted
+                playsInline
+                onClick={(e) => {
+                  e.stopPropagation();
+                  const clickX =
+                    e.clientX - e.target.getBoundingClientRect().left;
+                  const halfWidth = e.target.clientWidth / 2;
+                  if (clickX > halfWidth) {
+                    handleNextImage();
+                  } else {
+                    handlePrevImage();
+                  }
+                }}
+                style={{ cursor: "e-resize" }} // Change cursor to arrow
+                onMouseMove={(e) => {
+                  const clickX =
+                    e.clientX - e.target.getBoundingClientRect().left;
+                  const halfWidth = e.target.clientWidth / 2;
+                  if (clickX > halfWidth) {
+                    e.target.style.cursor = "e-resize";
+                  } else {
+                    e.target.style.cursor = "w-resize";
+                  }
+                }}
+              >
+                <source src={clickedImg.url} type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            ) : null}
           </div>
         </div>
       )}
