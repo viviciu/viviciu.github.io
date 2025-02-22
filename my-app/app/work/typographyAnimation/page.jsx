@@ -35,17 +35,31 @@ export default function TypographyAnimation() {
           "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/BannanaVHS-17MB.gif"
         }
       /> */}
-      {/* <New3Grid
+      <New3Grid
         img1={
           "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/DSC03294.JPG"
         }
       />
-      <CldImage
-        width="500"
-        height="500"
-        src="https://res.cloudinary.com/ddjxpkewq/image/upload/v1740195093/mp9gfodkqr95ibp8kxzd.jpg"
-        alt="Description of my image"
-      /> */}
+      <New3Grid
+        img1={
+          "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/mp9gfodkqr95ibp8kxzd"
+        }
+      />
+      <video autoPlay loop muted playsInLine>
+        <source
+          src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz"
+          type="video/webm"
+        />
+
+      </video>
+      <video autoPlay loop muted controls>
+        <source
+          src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz"
+          type="video/webm"
+        />
+
+      </video>
+
       {/* <video autoPlay loop muted playsInLine>
         <source src="/my-animation.webm" type="video/webm" />
         <source src="/my-animation.mp4" type="video/mp4" />
@@ -60,19 +74,16 @@ export default function TypographyAnimation() {
       <video autoPlay loop muted playsInline>
         <source src="/C0336-toss-cyllinder-in-air.webm" type="video/webm" />
       </video> */}
-      <video autoPlay loop muted playsInline>
+      {/* <video autoPlay loop muted playsInline>
         <source
           src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/hj5ubpdzifbo5fqed9hw"
           type="video/webm"
         />
-      </video>
+      </video> */}
       {/* NOTE: IF WEBM IS STORED LOCALLY, IT FAILS. IF IT IS A WEBM RENDERED BY CLOUDINARY, IT WORKS. */}
-      <video autoPlay loop muted playsInline>
-        <source
-          src="/my-animation.webm"
-          type="video/webm"
-        />
-      </video>
+      {/* <video autoPlay loop muted playsInline>
+        <source src="/my-animation.webm" type="video/webm" />
+      </video> */}
     </main>
   );
 }
