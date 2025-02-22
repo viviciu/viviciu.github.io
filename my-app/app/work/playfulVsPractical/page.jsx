@@ -1,8 +1,7 @@
 "use client";
-
-
-
 import Image from "next/image";
+import MuxPlayer from "@mux/mux-player-react";
+
 import Title from "../../_components/Title";
 import Context2 from "../../_components/Context2";
 import CoverYAMLVideo from "../../_components/CoverYAMLVideo";
@@ -283,10 +282,9 @@ export default function PlayfulVsPractical() {
 
       {/* SPACER */}
       <div className="mt-[4rem]"></div>
+      {/* https://res.cloudinary.com/ddjxpkewq/video/upload/q_auto/v1/pmini/elqxufreseulmgvbxs1n */}
       <New3Video
-        src={
-          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto,q_auto/v1/pmini/elqxufreseulmgvbxs1n"
-        }
+        src={"lTR3OdEqMK4MRbKIIoee02cANBwt00YrJd8cUlr6qInlU"}
         text1="Carrying my form around with me everywhere, listening to music on the go influenced different grips. I found myself preferring using the smaller radius paddle, sometimes the larger radius paddle, sometimes even scrubbing it like a DJ depending on the rhythm."
       />
 
@@ -371,25 +369,27 @@ export default function PlayfulVsPractical() {
         <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
           <div className="grid grid-cols-2 gap-2">
             <div className="col-start-1">
-              <video controls>
-                <source
-                  src={
-                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/elqxufreseulmgvbxs1n"
-                  }
-                  type="video/webm"
-                />
-              </video>
+              {/* https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/elqxufreseulmgvbxs1n */}
+              <MuxPlayer
+                playbackId="S6HhGtHxXD94J5601DcYuXHX7HMq6L7W1j5n02kiLxLsg"
+                metadataVideoTitle="Placeholder (optional)"
+                metadata-viewer-user-id="Placeholder (optional)"
+                primary-color="#ffffff"
+                secondary-color="#000000"
+                accent-color="#e0e0e0"
+              />
             </div>
 
             <div className="col-start-2">
-              <video controls>
-                <source
-                  src={
-                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/gd2ae1jp8y01gvpc1ip8"
-                  }
-                  type="video/webm"
-                />
-              </video>
+              {/* "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/gd2ae1jp8y01gvpc1ip8" */}
+              <MuxPlayer
+                playbackId="zVJ9pdfRWm118c701Ne8GKv8aSQe01A6l00EMNnAmxEF8o"
+                metadataVideoTitle="Placeholder (optional)"
+                metadata-viewer-user-id="Placeholder (optional)"
+                primary-color="#ffffff"
+                secondary-color="#000000"
+                accent-color="#e0e0e0"
+              />
             </div>
           </div>
 
@@ -449,14 +449,22 @@ export default function PlayfulVsPractical() {
             </div>
 
             <div className="col-start-2">
-              <video controls>
+              {/* <video controls>
                 <source
                   src={
                     "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
                   }
                   type="video/webm"
                 />
-              </video>
+              </video> */}
+              <MuxPlayer
+                playbackId="vndVXCMoIyGDq4iOnkRuOT2o02zZkWX8pgzrJ00N0102nRE"
+                metadataVideoTitle="Placeholder (optional)"
+                metadata-viewer-user-id="Placeholder (optional)"
+                primary-color="#ffffff"
+                secondary-color="#000000"
+                accent-color="#ffffff"
+              />
             </div>
             <div className="col-start-1">
               <Image
@@ -487,10 +495,9 @@ export default function PlayfulVsPractical() {
       {/* SPACER */}
       <div className="mt-[8rem]"></div>
       <Header text={"Final Form"} />
+      {/* "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd" */}
       <New3Video
-        src={
-          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd"
-        }
+        src={"OM3C02pVXgherNuIQx7HShpMY5brM901qRVzDUobCmK0100"}
         text1={
           <div>
             From testing prototypes with my peers, I found the top styrene
@@ -522,14 +529,12 @@ export default function PlayfulVsPractical() {
       <div className="mt-[0.6rem] mb-32 lg:columns-3 sm:columns-2 w-full place-content-center gap-[0.6rem]">
         <div className="">
           {/* https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz */}
-          <video loop autoPlay>
-            <source
-              src={
-                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz"
-              }
-              type="video/webm"
-            />
-          </video>
+          <Image
+            src="https://image.mux.com/TKWj6nwkH0082l008G96sOHKN3X6PklbfOzrN8oaJ62hw/animated.gif?width=320"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
           <Image
             className="mt-[0.6rem]"
             src={"/imgs/playfulPractical/DSC05499.webp"}

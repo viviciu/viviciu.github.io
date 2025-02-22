@@ -38,20 +38,21 @@ const New3 = forwardRef(({ text1, src, caption }, ref) => { // NOTICE REF HERE
           <div className=" col-start-1">
             {src && (
               <div className="col-start-1">
-                <video controls>
+                {/* CLOUDINARY */}
+                {/* <video controls>
                   <source
                     src={src}
                     type="video/webm"
                   />
-                </video>
-                {/* <MuxPlayer
+                </video> */}
+                <MuxPlayer
                   playbackId={src}
                   metadataVideoTitle="Placeholder (optional)"
                   metadata-viewer-user-id="Placeholder (optional)"
                   primary-color="#ffffff"
                   secondary-color="#000000"
                   accent-color="#e0e0e0"
-                /> */}
+                />
                 {/* <Video src={src} /> */}
               </div>
             )}
