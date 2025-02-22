@@ -1,0 +1,363 @@
+// A separate file with items (url should contain a link for each image)
+export const items = [
+  {
+    id: "xrCube",
+    name: "XRcube",
+    url: "https://image.mux.com/jysKZgic9HN6hv3xGk9QVJsFwdrKQvTZ0101ucmtqXPp00/animated.gif?width=320",
+    category: "3d",
+    categorySpecific: "",
+  },
+  {
+    id: "xrCube",
+    name: "XRcube",
+    url: "https://image.mux.com/waB17xivBisJ48pkoUT3c1OCby00MZ9wIY3tEcJp5sCo/animated.gif",
+    category: "3d",
+    categorySpecific: "",
+  },
+  {
+    id: "gradientStudies",
+    name: "gradientStudies",
+    url: "/imgs/play/gradientStudies.jpg",
+    category: "print",
+    categorySpecific: "",
+  },
+
+  {
+    id: "UXA_CPW",
+    name: "UXA_CPW",
+    url: "/imgs/play/CPW_banner.jpg",
+    category: "print",
+    categorySpecific: "",
+  },
+
+  {
+    id: "pminiProjII",
+    name: "pminiProjII",
+    url: "/imgs/play/pminiProjII.gif",
+    category: "product",
+    categorySpecific: "",
+  },
+  {
+    id: "01",
+    name: "pmini01",
+    url: "/imgs/play/DSC04956.JPG",
+    category: "product",
+    categorySpecific: "",
+  },
+  {
+    id: "02",
+    name: "Item 3",
+    url: "/imgs/play/DSC04957.JPG",
+    category: "product",
+    categorySpecific: "",
+  },
+
+  {
+    id: "d",
+    name: "Item 3",
+    url: "/imgs/play/DSC05496.JPG",
+    category: "product",
+    categorySpecific: "",
+  },
+  {
+    id: "l",
+    name: "Item 3",
+    url: "/imgs/play/old-portfolio-home.png",
+    category: "code",
+    categorySpecific: "",
+  },
+
+  {
+    id: "scifirender", // id should be the title of the project folder, stored under ./play
+    name: "",
+    url: "/imgs/play/sci-fi-render-01.jpg",
+    category: "3d",
+    categorySpecific: "",
+  },
+
+  {
+    id: "03",
+    name: "Item 3",
+    url: "/refrigerator-lut_1.2.1.jpg",
+    category: "video", // this must be changed if category changes in html
+    categorySpecific: "",
+  },
+  {
+    id: "04",
+    name: "Item 3",
+    url: "/lucy-2-prada.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "05",
+    name: "Item 3",
+    url: "/ss-plane-slog.png",
+    category: "video",
+    categorySpecific: "",
+  },
+
+  {
+    id: "06",
+    name: "Item 3",
+    url: "/imgs/play/wipedClean_nonOptimized.gif",
+    category: "video",
+    categorySpecific: "",
+  },
+  {
+    id: "asasasas",
+    name: "envScene",
+    url: "/imgs/play/envSceneRender.jpg",
+    category: "3d",
+    categorySpecific: "",
+  },
+  {
+    id: "08",
+    name: "vhs",
+    url: "/imgs/play/vhs-gif.gif",
+    category: "3d",
+    categorySpecific: "",
+  },
+  {
+    id: "09",
+    name: "xr-01",
+    url: "/imgs/play/ceiling-blockout03.png",
+    category: "3d",
+    categorySpecific: "",
+  },
+
+  {
+    id: "c",
+    name: "Item 3",
+    url: "/imgs/play/C0336-toss-cyllinder-in-air.gif",
+    category: "product",
+    categorySpecific: "",
+  },
+  {
+    id: "expression",
+    name: "expression",
+    url: "/imgs/play/expression-charcoal-minis.jpeg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+  {
+    id: "skullMountains",
+    name: "skullMountains",
+    url: "/imgs/play/thumb4_161-crop.jpg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+
+  {
+    id: "freshman_vis_05",
+    name: "freshman_vis_05",
+    url: "/imgs/play/visspreads0005.jpg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+
+  {
+    id: "freshman_vis_07",
+    name: "freshman_vis_07",
+    url: "/imgs/play/visspreads0007.jpg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+
+  {
+    id: "25",
+    name: "getty-scene-awesome",
+    url: "/imgs/play/getty-scene-awesome.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "13",
+    name: "getty03",
+    url: "/imgs/play/edit-03827.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "14",
+    name: "getty02",
+    url: "/imgs/play/edit-03830.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "11",
+    name: "aphi-blue",
+    url: "/imgs/play/edit-02084.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "7",
+    name: "aphi-linkedin-4x5-instaFrame",
+    url: "/imgs/play/aphi-linkedin-4x5-instaFrame.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "17",
+    name: "sanJose-01",
+    url: "/imgs/play/edit-05805.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "18",
+    name: "sanJose-02",
+    url: "/imgs/play/edit-05879.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "19",
+    name: "sanJose-03",
+    url: "/imgs/play/edit-05882.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "20",
+    name: "sanJose-04",
+    url: "/imgs/play/edit-05888.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "22",
+    name: "edit-06253",
+    url: "/imgs/play/edit-06253.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "21",
+    name: "edit-061",
+    url: "/imgs/play/edit-061.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "sdsd",
+    name: "edit-606",
+    url: "/imgs/play/edit-606.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "24",
+    name: "edit-highGrain-03897",
+    url: "/imgs/play/edit-highGrain-03897.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "6",
+    name: "SDTorreyPines-car-cropped",
+    url: "/imgs/play/SDTorreyPines-car-cropped.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "8",
+    name: "edit-00153",
+    url: "/imgs/play/edit-00153.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "9",
+    name: "edit-00235",
+    url: "/imgs/play/edit-00235.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "10",
+    name: "edit-01410",
+    url: "/imgs/play/edit-01410.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "12",
+    name: "edit-02209",
+    url: "/imgs/play/edit-02209.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "15",
+    name: "soulStylz-01",
+    url: "/imgs/play/edit-05266.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "16",
+    name: "soulStylz-02",
+    url: "/imgs/play/edit-05306.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+
+  {
+    id: "1",
+    name: "11-vivianaFilm017",
+    url: "/imgs/play/11-vivianaFilm017.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "2",
+    name: "12-vivianaFilm010",
+    url: "/imgs/play/12-vivianaFilm010.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "3",
+    name: "3-vivianaFilm008",
+    url: "/imgs/play/3-vivianaFilm008.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "4",
+    name: "B-edited-00352",
+    url: "/imgs/play/B-edited-00352.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "5",
+    name: "G-edited-00356",
+    url: "/imgs/play/G-edited-00356.jpg",
+    category: "photo",
+    categorySpecific: "",
+  },
+  {
+    id: "freshman_vis_06",
+    name: "freshman_vis_06",
+    url: "/imgs/play/visspreads0006.jpg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+  {
+    id: "freshman_vis_02",
+    name: "freshman_vis_02",
+    url: "/imgs/play/visspreads0002.jpg",
+    category: "sketch",
+    categorySpecific: "",
+  },
+];

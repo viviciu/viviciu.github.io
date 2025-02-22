@@ -1,0 +1,45 @@
+/* Cirlce */
+
+#circle__section {
+    position: relative;
+    height: 200vh;
+
+}
+
+.circle__sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 150vmax;
+    height: 150vmax;
+    background-color: #121212;
+    border-radius: 50%;
+
+}
+
+.circle__sticky h2 {
+    font-size: clamp(2rem, 20cqi, 20rem);
+    color: #000000;
+    z-index: 1;
+
+}
