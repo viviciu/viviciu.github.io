@@ -1,14 +1,10 @@
 "use client";
 import Video from "next-video";
 import diffGrips from "/videos/compressed_temp-differentGrips.mp4.json";
-import discoveringClink from "/videos/compressed_C0429-discoveringClink.MP4.json";
 import wristPain from "/videos/compressed_C0464-wrist-pain.MP4.json";
 import mAngled from "/videos/compressed_C0465-mAngled.MP4.json";
 import final from "/videos/compressed_C0522-cover.MP4.json";
-import clayTrimmed from "/videos/compressed_C0472-clay-trimmed.MP4.json";
 import choppedGrip from "/videos/compressed_C0518-choppedGrip.MP4.json";
-import handheldStyrene from "/videos/compressed_C0517-handheldStyrene.MP4.json";
-import Link from "next/link";
 import Image from "next/image";
 import Title from "../../_components/Title";
 import Context2 from "../../_components/Context2";
@@ -21,7 +17,6 @@ import New3 from "../../_components/New3"
 import New4 from "../../_components/New4"
 import New3Grid from "../../_components/New3Grid"
 import Header from "../../_components/Header"
-import Head from "next/head";
 
 
 export default function PlayfulVsPractical() {
@@ -89,9 +84,9 @@ export default function PlayfulVsPractical() {
             Inspired by a lamp post on campus and the familiar gestures we
             conjure from hearing music, this study reflects a playful yet
             precise object. It is one that incites methodical exploration over
-            immediate understanding. It traces the evolution of a relationship through the
-            initial spark of curiosity, the uncertainty of trial and error, and
-            ultimate delight of learning something foreign.
+            immediate understanding. It traces the evolution of a relationship
+            through the initial spark of curiosity, the uncertainty of trial and
+            error, and ultimate delight of learning something foreign.
             <br />
             <br />
             <br />
@@ -100,9 +95,10 @@ export default function PlayfulVsPractical() {
             <br />
             Exploring the material relationships between elastic band and wood,
             design a sensible working object that has playful or practical
-            device-like characteristics. Unite form studies to determine the appropriate look, feel, make, and performance of the device.
-            The models do not have to work, but must allow us to imagine so
-            without distraction and interruption.
+            device-like characteristics. Unite form studies to determine the
+            appropriate look, feel, make, and performance of the device. The
+            models do not have to work, but must allow us to imagine so without
+            distraction and interruption.
             <br />
             <br />
             How do the pieces of this device come together as a whole making a
@@ -292,7 +288,7 @@ export default function PlayfulVsPractical() {
       {/* SPACER */}
       <div className="mt-[4rem]"></div>
       <New3Video
-        src={diffGrips}
+        src={"lTR3OdEqMK4MRbKIIoee02cANBwt00YrJd8cUlr6qInlU"}
         text1="Carrying my form around with me everywhere, listening to music on the go influenced different grips. I found myself preferring using the smaller radius paddle, sometimes the larger radius paddle, sometimes even scrubbing it like a DJ depending on the rhythm."
       />
 
@@ -551,6 +547,16 @@ export default function PlayfulVsPractical() {
             layout="responsive"
           />
         </div>
+        {/* <Image
+          className="mt-[0.6rem]"
+          src={
+            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/4x5-instaFrame-suanna-aphi.jpg"
+          }
+          height={500}
+          width={500}
+          layout="responsive"
+        /> */}
+        
       </div>
     </main>
   );

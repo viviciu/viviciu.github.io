@@ -5,6 +5,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com",
+        port: "",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
         hostname: "image.mux.com",
         port: "",
         pathname: "**",
