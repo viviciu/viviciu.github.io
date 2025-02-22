@@ -1,10 +1,7 @@
 "use client";
-import Video from "next-video";
-import diffGrips from "/videos/compressed_temp-differentGrips.mp4.json";
-import wristPain from "/videos/compressed_C0464-wrist-pain.MP4.json";
-import mAngled from "/videos/compressed_C0465-mAngled.MP4.json";
-import final from "/videos/compressed_C0522-cover.MP4.json";
-import choppedGrip from "/videos/compressed_C0518-choppedGrip.MP4.json";
+
+
+
 import Image from "next/image";
 import Title from "../../_components/Title";
 import Context2 from "../../_components/Context2";
@@ -265,6 +262,10 @@ export default function PlayfulVsPractical() {
                 width={500}
                 height={500}
               />
+              <p className="font-Suisse pt-6 lg:text-[1rem] text-[0.75rem]">
+                Imagining how static forms in my everyday life could be
+                interacted with inspired my initial elastic form.
+              </p>
             </div>
 
             <div className="col-start-2">
@@ -277,18 +278,15 @@ export default function PlayfulVsPractical() {
               />
             </div>
           </div>
-
-          <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
-            Imagining how static forms in my everyday life could be interacted
-            with inspired my initial elastic form.
-          </p>
         </div>
       </div>
 
       {/* SPACER */}
       <div className="mt-[4rem]"></div>
       <New3Video
-        src={"lTR3OdEqMK4MRbKIIoee02cANBwt00YrJd8cUlr6qInlU"}
+        src={
+          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/elqxufreseulmgvbxs1n"
+        }
         text1="Carrying my form around with me everywhere, listening to music on the go influenced different grips. I found myself preferring using the smaller radius paddle, sometimes the larger radius paddle, sometimes even scrubbing it like a DJ depending on the rhythm."
       />
 
@@ -373,11 +371,25 @@ export default function PlayfulVsPractical() {
         <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
           <div className="grid grid-cols-2 gap-2">
             <div className="col-start-1">
-              <Video src={wristPain} />
+              <video controls>
+                <source
+                  src={
+                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/elqxufreseulmgvbxs1n"
+                  }
+                  type="video/webm"
+                />
+              </video>
             </div>
 
             <div className="col-start-2">
-              <Video src={mAngled} />
+              <video controls>
+                <source
+                  src={
+                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/gd2ae1jp8y01gvpc1ip8"
+                  }
+                  type="video/webm"
+                />
+              </video>
             </div>
           </div>
 
@@ -437,7 +449,14 @@ export default function PlayfulVsPractical() {
             </div>
 
             <div className="col-start-2">
-              <Video src={choppedGrip} />
+              <video controls>
+                <source
+                  src={
+                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+                  }
+                  type="video/webm"
+                />
+              </video>
             </div>
             <div className="col-start-1">
               <Image
@@ -469,7 +488,9 @@ export default function PlayfulVsPractical() {
       <div className="mt-[8rem]"></div>
       <Header text={"Final Form"} />
       <New3Video
-        src={final}
+        src={
+          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd"
+        }
         text1={
           <div>
             From testing prototypes with my peers, I found the top styrene
@@ -500,12 +521,15 @@ export default function PlayfulVsPractical() {
       </div>
       <div className="mt-[0.6rem] mb-32 lg:columns-3 sm:columns-2 w-full place-content-center gap-[0.6rem]">
         <div className="">
-          <Image
-            src="https://image.mux.com/TKWj6nwkH0082l008G96sOHKN3X6PklbfOzrN8oaJ62hw/animated.gif?width=500"
-            height={500}
-            width={500}
-            layout="responsive"
-          />
+          {/* https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz */}
+          <video loop autoPlay>
+            <source
+              src={
+                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz"
+              }
+              type="video/webm"
+            />
+          </video>
           <Image
             className="mt-[0.6rem]"
             src={"/imgs/playfulPractical/DSC05499.webp"}
@@ -556,7 +580,6 @@ export default function PlayfulVsPractical() {
           width={500}
           layout="responsive"
         /> */}
-        
       </div>
     </main>
   );

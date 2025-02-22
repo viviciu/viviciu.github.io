@@ -20,7 +20,7 @@ export const items = [
   {
     id: "typographyAnimation",
     name: "Kinetic type animation,",
-    url: "/imgs/typographyAnimation/THUMBNAIL.png",
+    url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa",
     category: "design",
     categorySpecific: "a study in time and motion narrating a typeface.",
   },

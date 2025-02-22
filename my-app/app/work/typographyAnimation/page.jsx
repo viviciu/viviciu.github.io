@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 import Title from "../../_components/Title";
 import Context from "../../_components/Context";
@@ -14,130 +13,153 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import Header from "../../_components/Header";
 import New3Grid from "../../_components/New3Grid";
 
-
 export default function TypographyAnimation() {
-  const members = [
-    
-  ];
+  const members = [];
   const tools = ["After Effects"];
   const myRole = "Motion Designer";
 
   // A realm where the very essence of self and time finds itself in flux.
   return (
     <main className=" block px-4">
-      {/* <New3Grid
-        img1={
-          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/newtonPhysicsProcess_spedup-ezgif.com-video-to-gif-converter.gif"
+      <Title
+        text1={
+          <div>
+            Kinetic Type Animation, <br /> a study in time and motion to narrate
+            the story of a typeface.
+          </div>
         }
       />
-      <New3Grid
-        img1={
-          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/BannanaVHS-17MB.gif"
+      <YAMLBar
+        client="Communications Studio I"
+        year="2024"
+        role="Motion Design"
+      />
+      <CoverYAMLVideo url="https://www.youtube.com/watch?v=7d-jYvQeNq4" />
+      <Context2
+        context={
+          <div>
+            Full process on{" "}
+            <Link
+              href={
+                "https://medium.com/@vivianastaicu05/project-iii-animation-98899753a872"
+              }
+              className="relative group underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Medium
+              <MdOutlineArrowOutward
+                className="inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-00 leading-p3
+        lg:text-p
+        text
+        font-SuisseWorks
+        font-regular
+    "
+              />
+            </Link>
+            <br />
+            <br />
+            A 60-second video highlighting the typeface Athelas in the context
+            of its use: Making literature readable on the screen. An exercise of time and motion in visually describing and comparing
+            the various forms and attributes of the typeface.
+          </div>
         }
-      /> */}
-      {/* <New3Grid
-        img1={
-          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/DSC03294.JPG"
-        }
+        myRole={myRole}
+        timeline="Nov 2024"
+        members={members}
+        tools={tools}
       />
-      <New3Grid
-        img1={
-          "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/mp9gfodkqr95ibp8kxzd"
-        }
-      />
-      <video autoPlay loop muted playsInLine>
-        <source
-          src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz"
-          type="video/webm"
-        />
-      </video> */}
-      {/* <video autoPlay loop muted controls>
-        <source
-          src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/xij1gucxemxw0iofndvz"
-          type="video/webm"
-        />
-      </video>
-      <video autoPlay loop muted controls>
-        <source
-          src="https://res.cloudinary.com/ddjxpkewq/video/upload/q_50/f_webm,q_auto/zrdmocuo5carvjutowxl"
-          type="video/webm"
-        />
-      </video> */}
-      {/* <div className="w-1/2">
-        <video autoPlay muted controls>
-          <source
-            src="https://res.cloudinary.com/ddjxpkewq/video/upload/q_50/f_webm/tbhvrfzlvqzu7olhwbrq"
-            type="video/webm"
-          />
-        </video>
-        <video autoPlay muted controls>
-          <source
-            src="https://res.cloudinary.com/ddjxpkewq/video/upload/q_20/f_webm/tbhvrfzlvqzu7olhwbrq"
-            type="video/webm"
-          />
-        </video>
-        <video autoPlay muted controls>
-          <source
-            src="https://res.cloudinary.com/ddjxpkewq/video/upload/c_scale,h_500/f_webm,q_auto/rpr5acf37fpxqurcxm5l"
-            type="video/webm"
-          />
-        </video> */}
-      {/* 8MB JPEG */}
-      <p className="mt-16">8MB JPEG</p>
-      <img
-        src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_webp,q_auto/ccimstmukagcltzhzgzb"
-        alt="home page image"
-        layout="responsive"
-        width={500}
-        height={500}
-      />
-      {/* 750KB WEBP */}
-      <p>750KB WEBP</p>
-      <img
-        src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_webp,q_auto/xwfcgcf0kwaufm2dscsc"
-        alt="home page image"
-        layout="responsive"
-        width={500}
-        height={500}
-      />
-      <p>LOCAL 750KB WEB</p>
-      {/* LOCAL 750KB WEBP */}
-      <img src="/compressed_edit-03512-3.webp" />
 
-      {/* <video autoPlay loop muted playsInLine>
-        <source src="/my-animation.webm" type="video/webm" />
-        <source src="/my-animation.mp4" type="video/mp4" />
-      </video>
-      <Image
-        src="/imgs/play/BannanaVHS-optimize.gif"
-        alt="home page image"
-        layout="responsive"
-        width={500}
-        height={500}
+      <div className="lg:pt-[3rem]">
+        {" "}
+        <Header text={"Process"} />
+      </div>
+      {/* columns */}
+      <div className="mt-[0.6rem] mb-32 lg:columns-3 sm:columns-2 w-full place-content-center gap-[0.6rem]">
+        {/* COL 1 */}
+        <div className="h-fit">
+          <Image
+            className=""
+            src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+        {/* col 2 */}
+        <div>
+          {/* https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/wtooh4uhn4vb0jvpbuhk */}
+          <Image
+            src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/laeouzxfdkirerznklsh"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/fu04253vv0ky5vmnexam"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+
+          <Image
+            className="mt-[0.6rem]"
+            src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/dsmxcrxddfumriwed9w5"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+
+        {/* col 3 */}
+        <div>
+          <Image
+            src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/drwwf607eyddzzw457w7"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/wtooh4uhn4vb0jvpbuhk"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+        {/* <Image
+                className="mt-[0.6rem]"
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/4x5-instaFrame-suanna-aphi.jpg"
+                }
+                height={500}
+                width={500}
+                layout="responsive"
+              /> */}
+      </div>
+      <New3
+        img1={"/imgs/typographyAnimation/FINALSPREAD.jpeg"}
+        text1={
+          <div>
+            Final magazine spread for my typeface, <i>Athelas</i>.
+            <br />
+            Spread process on{" "}
+            <Link
+              href="https://medium.com/@vivianastaicu05/project-1-0d94c96c3675"
+              className="relative group underline"
+            >
+              Medium.
+              <MdOutlineArrowOutward
+                className="inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-00 leading-p3
+        lg:text-p
+        text
+        font-SuisseWorks
+        font-regular
+    "
+              />
+            </Link>
+          </div>
+        }
       />
-      <video autoPlay loop muted playsInline>
-        <source src="/C0336-toss-cyllinder-in-air.webm" type="video/webm" />
-      </video> */}
-      {/* <video autoPlay loop muted playsInline>
-        <source
-          src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/hj5ubpdzifbo5fqed9hw"
-          type="video/webm"
-        />
-      </video> */}
-      {/* NOTE: IF WEBM IS STORED LOCALLY, IT FAILS. IF IT IS A WEBM RENDERED BY CLOUDINARY, IT WORKS. */}
-      <img
-        src="https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/play/fyiw6cyrqbriysugmqgc"
-        alt="home page image"
-        layout="responsive"
-        width={500}
-        height={500}
-      />
-      <video autoPlay loop muted playsInline>
-        <source
-          src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/play/gla0hqfer8yzhpquznw2"
-          type="video/mp4"
-        />
-      </video>
     </main>
   );
 }

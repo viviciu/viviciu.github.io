@@ -236,7 +236,7 @@ export default function Projects() {
             </label>
           </div>
         </article>
-        <article className="w-full mx-auto grid grid-cols-2 gap-[2rem] sm:gap-[5rem] sm:grid-cols-5 lg:grid-cols-7 place-content-center">
+        <article className="w-full mx-auto grid grid-cols-2 gap-[0.2rem] sm:gap-[1rem] sm:grid-cols-5 lg:grid-cols-7 place-content-center">
           {displayedItems}
         </article>
       </section>
