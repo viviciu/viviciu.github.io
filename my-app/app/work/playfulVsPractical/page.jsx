@@ -285,7 +285,7 @@ export default function PlayfulVsPractical() {
       <div className="mt-[4rem]"></div>
       <New3Video
         src={
-          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/elqxufreseulmgvbxs1n"
+          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto,q_auto/v1/pmini/elqxufreseulmgvbxs1n"
         }
         text1="Carrying my form around with me everywhere, listening to music on the go influenced different grips. I found myself preferring using the smaller radius paddle, sometimes the larger radius paddle, sometimes even scrubbing it like a DJ depending on the rhythm."
       />
