@@ -47,7 +47,16 @@ export default function Liminal() {
         }
       />
       {/* "/imgs/play/BannanaVHS-optimize.gif" */}
-      
+
+      {/* video under f_mp4 codec */}
+      <video controls>
+                <source
+                  src={
+                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+                  }
+                  type="video/mp4"
+                />
+              </video>
     </main>
   );
 }
