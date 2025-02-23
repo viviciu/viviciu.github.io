@@ -48,7 +48,7 @@ export default function Projects() {
               height={500} // Example height, adjust as needed
               onClick={() => handleImageClick(item, index)}
             />
-          ) : item.fileType === "webm" ? (
+          ) : item.fileType === "mp4" ? (
             <video
               className="w-full h-full object-cover translate-y-0 transition group-hover:translate-y-2 cursor-pointer"
               width={500} // Example width, adjust as needed
@@ -59,7 +59,7 @@ export default function Projects() {
               muted
               playsInline
             >
-              <source src={item.url} type="video/webm" />
+              <source src={item.url} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           ) : null}

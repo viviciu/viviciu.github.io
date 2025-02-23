@@ -1,29 +1,15 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
 import Title from "../../_components/Title";
-import Context from "../../_components/Context";
+import New3VideoCoudinary from "../../_components/New3VideoCloudinary"
 import Context2 from "../../_components/Context2";
-import Context4 from "../../_components/Context4";
-import CoverYAML from "../../_components/CoverYAML";
-import Header from "../../_components/Header";
 import YAMLBar from "../../_components/YAMLBar";
-import DividerLine from "../../_components/DividerLine";
-import New from "../../_components/New";
-import New2 from "../../_components/New2";
-import New3 from "../../_components/New3";
-import New3Video from "../../_components/New3Video";
-import New4 from "../../_components/New4";
-import Image from "next/image";
-import Link from "next/link";
-import UnderDevelopment from "../../_components/UnderDevelopment";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import Head from "next/head";
+
 
 export default function Liminal() {
   const members = [];
   const tools = ["Touchdesigner"];
-  const myRole = "Procedural Animation";
-  const timeline = "";
+  const myRole = "Procedural animation";
+  const timeline = "Nov 2024 — Present";
 
 
 // test
@@ -39,15 +25,149 @@ export default function Liminal() {
           </div>
         }
       />
-      {/* Role: Interaction Design, 3D Web Development, UI/UX Immersive Experiences" ? */}
+
       <YAMLBar client="Self" year="2024" role="Procedural Animation" />
-      <CoverYAML
-        img={
-          "https://image.mux.com/EWeOGWvhBZ79DwTqSLKtR02F19MmWBk1xQZEN01hTLny00/animated.gif?width=600"
+      {/* "https://image.mux.com/EWeOGWvhBZ79DwTqSLKtR02F19MmWBk1xQZEN01hTLny00/animated.gif?width=600" */}
+
+      {/* COVER YAML EXPANDED */}
+      <main className=" pb-[5.06rem]">
+        <div className="h-fit w-full">
+          <video className="w-full h-auto" autoPlay loop muted playsInline>
+            <source
+              src={
+                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk"
+              }
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </main>
+
+      <Context2
+        context={
+          <div>
+            Explorations into procedural animation.
+          </div>
+        }
+        myRole={myRole}
+        members={members}
+        tools={tools}
+        timeline={timeline}
+      />
+
+      <New3VideoCoudinary
+        src={
+          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk"
+        }
+        text1={
+          <div>
+            Experiments with mapping audio waveform normals onto geometry in
+            touchdesigner, being my first time giving generative design a shot,
+            I feel like half creator half viewer in the process. it&apos;s this
+            odd give to the computer take from the computer I can&apos;t really
+            compare to anything else.
+            <br />
+            <br />
+            Audio: A Time of Quiet Between Storms, Hans Zimmer
+          </div>
         }
       />
-      {/* "/imgs/play/BannanaVHS-optimize.gif" */}
-      
+
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
+      {/* <New3VideoCoudinaryAutoplay
+        src={
+          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/kxuxwhu3vchw1p09ctlw"
+        }
+        caption="Procedural nodes could change color or other properties via various inputs like audio, visual, and lidar sensor data. Here, I manipulate a constant RGB value node manually instead."
+      />
+
+      <New3VideoCoudinaryAutoplayLoop
+        src={
+          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/vx8mvjx494uj0j5rohru"
+        }
+        caption="Video as input to particle pointcloud data."
+      /> */}
+
+      {/* GRID */}
+      <div
+        className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 place-content-center
+          "
+      >
+        <video autoPlay loop muted playsInline className="pt-2">
+          <source
+            src={
+              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/k6yrnavjpkvpwedpwkqd"
+            }
+            type="video/mp4"
+          />
+        </video>
+        <video autoPlay loop muted playsInline className="pt-2">
+          <source
+            src={
+              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk"
+            }
+            type="video/mp4"
+          />
+        </video>
+
+        <video autoPlay loop muted playsInline className="pt-2">
+          <source
+            src={
+              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/pf1tssh39e5pqkirptca"
+            }
+            type="video/mp4"
+          />
+        </video>
+        <div>
+          <video autoPlay loop muted playsInline className="pt-2">
+            {/* dune process */}
+            <source
+              src={
+                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/kxuxwhu3vchw1p09ctlw"
+              }
+              type="video/mp4"
+            />
+          </video>
+          <p>
+            Procedural nodes could change color or other properties via various
+            inputs like audio, visual, and lidar sensor data. Here, a constant RGB value node is changed manually instead.
+          </p>
+        </div>
+        
+        <div>
+          <video autoPlay loop muted playsInline className="pt-2">
+            <source
+              src={
+                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/vx8mvjx494uj0j5rohru"
+              }
+              type="video/mp4"
+            />
+          </video>
+          <p>Video as input to particle pointcloud data.</p>
+        </div>
+
+        <video autoPlay loop muted playsInline className="pt-2 w-full h-full">
+          <source
+            src={
+              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/ipka2uztgvg4ky0w5nmn"
+            }
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      {/* https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/touchdesigner/k6yrnavjpkvpwedpwkqd */}
+
+      {/* <p>BELOW: video under f_mp4 codec, autoPlay loop muted playsInLine </p>
+      <video autoPlay loop muted playsInline>
+        <source
+          src={
+            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+          }
+          type="video/mp4"
+        />
+      </video> */}
     </main>
   );
 }
