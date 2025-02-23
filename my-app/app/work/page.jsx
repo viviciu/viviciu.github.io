@@ -29,14 +29,29 @@ export default function Projects() {
             pb-[1rem]
           text-[1.55rem] leading-[1.55rem] font-Suisse translate-y-0 "
           >
-            <Image
-              src={item.url}
-              alt={item.name}
-              className="w-full h-full object-cover pb-[0.6rem]"
-              unoptimized={item.url.endsWith(".gif")} // Add unoptimized property for GIFs
-              width={500} // Example width, adjust as needed
-              height={500} // Example height, adjust as needed
-            />
+            {item.fileType === "img" ? (
+              <Image
+                src={item.url}
+                alt={item.name}
+                className="w-full h-full object-cover pb-[0.6rem]"
+                width={500} // Example width, adjust as needed
+                height={500} // Example height, adjust as needed
+              />
+            ) : item.fileType === "mp4" ? (
+              <video
+                className="w-full h-full object-cover pb-[0.6rem]"
+                width={500} // Example width, adjust as needed
+                height={500} // Example height, adjust as needed
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src={item.url} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : null}
+
             {/* Renders line breaks: Include \n in the name prop in items.js */}
             {/* Mobile title sizing here */}
             <p className="w-[70%] lg:text-[1.55rem] lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">

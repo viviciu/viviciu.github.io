@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./_components/Navbar";
 import Cursor from "./_components/Cursor";
 import Head from "next/head"
+import { Analytics } from "@vercel/analytics/react";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -30,8 +31,9 @@ export default function RootLayout({ children }) {
       <body className="">
         <Cursor />
         {/* <SmoothScrolling> */}
-          <Navbar />
-          {children}
+        <Navbar />
+        {children}
+        <Analytics />
         {/* </SmoothScrolling> */}
       </body>
     </html>
