@@ -149,6 +149,24 @@ export default function TypographyAnimation() {
           type="video/mp4"
         />
       </video>
+      <p>BELOW: video under f_mpeg </p>
+      <video controls>
+        <source
+          src={
+            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mov,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+          }
+          type="video/mp4"
+        />
+      </video>
+      <p>BELOW: video under f_mpeg LOOPED</p>
+      <video autoPlay loop muted playsInline>
+        <source
+          src={
+            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mov,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+          }
+          type="video/mp4"
+        />
+      </video>
 
       <p>BELOW: video under f_mp4 codec, autoPlay loop muted playsInLine </p>
       <video autoPlay loop muted playsInline>

@@ -12,7 +12,7 @@ export const items = [
   {
     id: "touchdesignerSeries",
     name: "Touchdesigner Experiments,",
-    url: "/imgs/touchDesigner/duneTouchDesigner.gif",
+    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk",
     category: "code",
     categorySpecific: "some generative procedural animations.",
   },
