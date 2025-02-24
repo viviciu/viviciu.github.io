@@ -53,10 +53,10 @@ export default function Projects() {
             ) : null}
 
             {/* TITLE PARENT DIV */}
-            <div className="flex justify-between">
+            <div className="">
               {/* Renders line breaks: Include \n in the name prop in items.js */}
               {/* Mobile title sizing here */}
-              <p className="w-[70%] lg:text-[1.55rem] lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
+              <p className="font-Suisse w-[70%] lg:text-[1.55rem] lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
                 {item.name.split("\n").map((line, index) => (
                   <React.Fragment key={index}>
                     {line}
@@ -65,11 +65,11 @@ export default function Projects() {
                   </React.Fragment>
                 ))}
               </p>
-              <div className="font-custom text-[0.8rem] tracking-tighter text-gray-400">TAG</div>
+              <div className="font-Suisse tracking-tighter text-gray-400">Conversational AI</div>
             </div>
 
             {/* Conditionally renders if the title description is there. It is not rendered on mobile, but the space is rendered on lg devices. */}
-            {item.categorySpecific && (
+            {/* {item.categorySpecific && (
               <p
                 className="
       w-[60%]
@@ -82,7 +82,7 @@ export default function Projects() {
               >
                 {item.categorySpecific}
               </p>
-            )}
+            )} */}
           </div>
         </Link>
         {/* CARD CATEGORY LABEL */}
