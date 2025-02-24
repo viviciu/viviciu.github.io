@@ -20,8 +20,7 @@ export default function Liminal() {
       <Title
         text1={
           <div>
-            TouchDesigner Experiments, <br /> my explorations into procedural
-            animation.
+            TouchDesigner Experiments, <br /> some explorations in generative design.
           </div>
         }
       />
@@ -46,7 +45,9 @@ export default function Liminal() {
       <Context2
         context={
           <div>
-            Explorations into procedural animation.
+            Explorations into how this procedural, node-based software can
+            leverage inputs of data—such as image, video, and sound—to
+            generatively create infinite variations of assets in a design system.
           </div>
         }
         myRole={myRole}
@@ -131,10 +132,11 @@ export default function Liminal() {
           </video>
           <p>
             Procedural nodes could change color or other properties via various
-            inputs like audio, visual, and lidar sensor data. Here, a constant RGB value node is changed manually instead.
+            inputs like audio, visual, and lidar sensor data. Here, a constant
+            RGB value node is changed manually instead.
           </p>
         </div>
-        
+
         <div>
           <video autoPlay loop muted playsInline className="pt-2">
             <source

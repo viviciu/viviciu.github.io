@@ -84,7 +84,7 @@ export default {
         AdobeTextPro: ["AdobeTextPro"],
         CMUSerif: ["CMU-Serif"],
         Helvetica: ["Helvetica-Neue"],
-        SuisseWorks: ["SuisseWorks"],
+        // SuisseWorks: ["SuisseWorks"],
         SFProDisplay: ["SFProDisplay"],
       },
       // RESPONSIVE DESIGN : SCREEN SIZES

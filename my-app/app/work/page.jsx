@@ -56,7 +56,7 @@ export default function Projects() {
             <div className="">
               {/* Renders line breaks: Include \n in the name prop in items.js */}
               {/* Mobile title sizing here */}
-              <p className="font-Suisse w-[70%] lg:text-[1.55rem] lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
+              <p className="w-[70%] lg:text-p lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
                 {item.name.split("\n").map((line, index) => (
                   <React.Fragment key={index}>
                     {line}
@@ -65,7 +65,9 @@ export default function Projects() {
                   </React.Fragment>
                 ))}
               </p>
-              <div className="font-Suisse tracking-tighter text-gray-400">Conversational AI</div>
+              <div className="text-p  tracking-tight text-gray-300">
+                {item.category}
+              </div>
             </div>
 
             {/* Conditionally renders if the title description is there. It is not rendered on mobile, but the space is rendered on lg devices. */}
@@ -92,9 +94,9 @@ export default function Projects() {
 
   return (
     <main className="m-1">
-      <section className=" lg:mx-4 mx-2 mt-[12rem]">
+      <section className="lg:mx-4 mx-2 mt-[12rem]">
         {/* ITEMS */}
-        <article className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 place-content-center ">
+        <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[0.5rem]">
           {displayedItems}
         </article>
       </section>
