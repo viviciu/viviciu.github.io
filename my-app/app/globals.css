@@ -124,7 +124,7 @@
 
   a {
     /* @apply hover:text-mwsGrey; */
-    cursor: none;
+    /* cursor: none; */
   }
 
   
@@ -209,7 +209,9 @@ body {
   background: #fafafa; /* bg used to be #151515, #080808 */
   border-color: #3b3b3b;
   user-select: none;
-  cursor: none;
+  /* USED FOR THE <Cursor /> Component */
+  /* cursor: none; */
+  cursor: crosshair;
   
   touch-action: auto;
 }
