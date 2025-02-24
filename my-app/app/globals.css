@@ -121,6 +121,12 @@
       font-weight: 300;
       font-style: normal;
     }
+    @font-face {
+      font-family: 'InputMono';
+      src: url(../public/assets/fonts/InputMono/InputMono-Regular.ttf) format('truetype');
+      font-weight: 300;
+      font-style: normal;
+    }
 
   a {
     /* @apply hover:text-mwsGrey; */
@@ -252,4 +258,9 @@ body {
 
 .checkbox-label-checked:hover {
   color: #333333; /* Aka offblack in tailwind.config */
+}
+
+/* FONT ISSUE ON WORK */
+.font-custom {
+  font-family: 'InputMono', monospace;
 }

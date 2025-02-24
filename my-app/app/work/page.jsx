@@ -27,7 +27,7 @@ export default function Projects() {
           <div
             className="flex flex-col justify-center relative group 
             pb-[1rem]
-          text-[1.55rem] leading-[1.55rem] font-Suisse translate-y-0 "
+          text-[1.55rem] leading-[1.55rem]  translate-y-0 "
           >
             {item.fileType === "img" ? (
               <Image
@@ -52,16 +52,22 @@ export default function Projects() {
               </video>
             ) : null}
 
-            {/* Renders line breaks: Include \n in the name prop in items.js */}
-            {/* Mobile title sizing here */}
-            <p className="w-[70%] lg:text-[1.55rem] lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
-              {item.name.split("\n").map((line, index) => (
-                <React.Fragment key={index}>
-                  {line}
-                  <br />
-                </React.Fragment>
-              ))}
-            </p>
+            {/* TITLE PARENT DIV */}
+            <div className="flex justify-between">
+              {/* Renders line breaks: Include \n in the name prop in items.js */}
+              {/* Mobile title sizing here */}
+              <p className="w-[70%] lg:text-[1.55rem] lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
+                {item.name.split("\n").map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
+              <div className="font-custom text-[0.8rem] tracking-tighter text-gray-400">TAG</div>
+            </div>
+
             {/* Conditionally renders if the title description is there. It is not rendered on mobile, but the space is rendered on lg devices. */}
             {item.categorySpecific && (
               <p
@@ -70,7 +76,7 @@ export default function Projects() {
       opacity-0
       transition
       group-hover:opacity-100
-      text-[1.55rem] leading-[1.55rem] font-Suisse
+      text-[1.55rem] leading-[1.55rem] 
       hidden sm:block
     "
               >
