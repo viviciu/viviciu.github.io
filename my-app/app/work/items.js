@@ -2,39 +2,47 @@
 // include the tools you're proficient in in your about page.
 export const items = [
   {
+    id: "elysium",
+    name: "Lunar Gala: Elysium",
+    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/pb738gjil4ij16f7jtyf",
+    fileType: "mp4",
+    category: "UI/UX, Creative Code, Brand",
+    categorySpecific: "",
+  },
+  {
     id: "playfulVsPractical",
-    name: "Playful vs. Practical,",
+    name: "Playful vs. Practical",
     url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd",
     // url: "/imgs/DSC05668-thumbnail.jpg",
     fileType: "mp4",
-    category: "design",
+    category: "Industrial Design",
     categorySpecific: "a synergy of language, form, and context.",
   },
   // YOU MUST KEEP F_AUTO:VIDEO, NOT F_MP4, IN ORDER TO USE IT WITH AN <Image /> tag
   {
     id: "touchdesignerSeries",
-    name: "Touchdesigner Experiments,",
-    url:"https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk",
+    name: "Touchdesigner Experiments",
+    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk",
     // OLD GIF: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/touchdesigner/e8cbelbypsufwsk0nsly"
     fileType: "mp4",
-    category: "code",
+    category: "Generative Design",
     categorySpecific: "some generative procedural animations.",
   },
 
   {
     id: "typographyAnimation",
-    name: "Kinetic type animation,",
+    name: "Kinetic type animation",
     url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa",
     fileType: "img",
-    category: "design",
+    category: "Motion",
     categorySpecific: "a study in time and motion narrating a typeface.",
   },
   {
     id: "liminal",
-    name: "Liminal,",
+    name: "Lunar Gala: Liminal",
     url: "/imgs/lg-home-COVER.webp",
     fileType: "img",
-    category: "code",
+    category: "UI/UX, Creative Code, Brand",
     categorySpecific:
       "a realm where the very essence of self and time finds itself in flux.",
   },
@@ -49,10 +57,10 @@ export const items = [
 
   {
     id: "cminiPoster",
-    name: "Dirty Dozen Flyer,",
-    url: "/imgs/cminiPoster/Staicu_Viviana_finalDirtyDozen.jpg",
+    name: "Dirty Dozen Poster",
+    url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/dirtyDozen/ohrjjkyqzw79yl4mknyq",
     fileType: "img",
-    category: "design",
+    category: "Brand",
     categorySpecific: "an exercise in type hierarchy.",
   },
   // {

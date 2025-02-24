@@ -29,12 +29,11 @@ export default function RootLayout({ children }) {
         <title>staicu, viviana</title>
       </head>
       <body className="">
-        <Cursor />
-        {/* <SmoothScrolling> */}
+        {/* Must set cursor: none; in Globals css to make cursor component work */}
+        {/* <Cursor /> */}
         <Navbar />
         {children}
         <Analytics />
-        {/* </SmoothScrolling> */}
       </body>
     </html>
   );

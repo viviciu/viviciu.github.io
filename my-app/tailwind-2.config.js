@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -79,14 +79,14 @@ export default {
 
       // font family
       fontFamily: {
-        // SUISSE FONT CAUSED SCROLLING TO BE FUCKED :(
-        // Suisse: ["Suisse"],
         AdobeTextPro: ["AdobeTextPro"],
+        Suisse: ["Suisse"],
         CMUSerif: ["CMU-Serif"],
         Helvetica: ["Helvetica-Neue"],
-        // SuisseWorks: ["SuisseWorks"],
+        SuisseWorks: ["SuisseWorks"],
         SFProDisplay: ["SFProDisplay"],
       },
+
       // RESPONSIVE DESIGN : SCREEN SIZES
       // SEE https://tailwindcss.com/docs/responsive-design FOR DEFAULTS (sm,md,lg,xl,2xl)
       // SEE THIS SIZE FOR COMMON DEVICE WIDTHS: https://www.mydevice.io/ and https://www.icwebdesign.co.uk/common-viewport-sizes
@@ -97,7 +97,9 @@ export default {
     },
   },
   plugins: [
-    // POSSIBLY UNNECCESARY AS OF ::022425
+    // for prose
+    require("@tailwindcss/typography"),
+    // for checkbox changing color of label
     function ({ addUtilities }) {
       addUtilities({
         ".checkbox-label-checked": {
