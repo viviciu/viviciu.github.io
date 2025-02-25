@@ -13,10 +13,11 @@ import New2 from "../../_components/New2";
 import New3 from "../../_components/New3";
 import New4 from "../../_components/New4";
 import Image from "next/image";
-import Link from "next/link"
 import UnderDevelopment from "../../_components/UnderDevelopment";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import Head from "next/head";
+
+import { MdOutlineArrowOutward } from "react-icons/md";
+import Link from "next/link";
 
 export default function Liminal() {
   const members = [];
