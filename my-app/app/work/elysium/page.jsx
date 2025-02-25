@@ -108,8 +108,7 @@ export default function Liminal() {
               cross-functional collaboration in a team of 4 designers and 5
               devs. Lead concept design, interaction, and UI / UX for
               Pittsburgh&apos;s largest fashion show&apos;s website.
-              <br /> <br />
-              I designed and developed the site&apos;s home page
+              <br /> <br />I designed and developed the site&apos;s home page
               GLSL particles to create a library of different particle behaviors
               to fit with this year&apos;s identity, and the UI motion.
               {/* TODO include blurb about archive */}
@@ -124,52 +123,109 @@ export default function Liminal() {
         <DividerLine text={"HOME: GLSL Particle system"} />
 
         <Header text={"How can particle motion encapsulate each act?"} />
-        <New3VideoCloudinaryAutoplayLoop
-          src={
-            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/b3wfxabgpgpm7z9gsw6w"
-            // https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/ygpilt8rzxvf4kqj3nyp
-            //
-          }
-          caption={""}
-          text1={
-            <div>
-              Act I: Emergence <br /> <br />
+
+        {/* PROJ CONTENT 01 */}
+        {/* <div>
+          <New3VideoCloudinaryAutoplayLoop
+            src={
+              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/b3wfxabgpgpm7z9gsw6w"
+              // https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/ygpilt8rzxvf4kqj3nyp
+              //
+            }
+            caption={""}
+            text1={
+              <div>
+                Act I: Emergence <br /> <br />
+                The dawn of your journey, brimming with hope, passion, and
+                light. Untouched by the world’s challenges, yet poised to
+                embrace it all.
+              </div>
+            }
+          />
+          <New3VideoCloudinaryAutoplayLoop
+            src={
+              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh"
+            }
+            caption={""}
+            text1={
+              <div>
+                Act II: Blossom <br /> <br />
+                In the early steps of your journey, you flourish and grow. You
+                conquer the new horizons, and you can see yourself blooming into
+                the person you have always wanted to be.
+              </div>
+            }
+          />
+          <New3VideoCloudinaryAutoplayLoop
+            src={
+              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr"
+              // https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/ygpilt8rzxvf4kqj3nyp
+              //
+            }
+            caption={""}
+            text1={
+              <div>
+                Act IV: Embrace <br /> <br />
+                You have walked far, encountering all the pitfalls and flaws of
+                the world, therefore exposing the flaws of you. You have come to
+                realize there is never an end to your journey, but you have come
+                to embrace it.
+              </div>
+            }
+          />
+        </div> */}
+        {/* PROJ CONTENT 02 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="">
+            <video autoPlay loop muted playsInline className="pt-2 w-[800px]">
+              <source
+                src={
+                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/b3wfxabgpgpm7z9gsw6w"
+                }
+                type="video/mp4"
+              />
+            </video>
+            <p className="pt-2 m:pt-4">
+              <span className="font-bold">Act I: Emergence</span>
+              <br /> <br />
               The dawn of your journey, brimming with hope, passion, and light.
               Untouched by the world’s challenges, yet poised to embrace it all.
-            </div>
-          }
-        />
-        <New3VideoCloudinaryAutoplayLoop
-          src={
-            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh"
-          }
-          caption={""}
-          text1={
-            <div>
-              Act II: Blossom <br /> <br />
+            </p>
+          </div>
+          <div className="">
+            <video autoPlay loop muted playsInline className="pt-2">
+              <source
+                src={
+                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh"
+                }
+                type="video/mp4"
+              />
+            </video>
+            <p className="pt-2 m:pt-4">
+              <span className="font-bold">Act II: Blossom</span> <br /> <br />
               In the early steps of your journey, you flourish and grow. You
               conquer the new horizons, and you can see yourself blooming into
               the person you have always wanted to be.
-            </div>
-          }
-        />
-        <New3VideoCloudinaryAutoplayLoop
-          src={
-            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr"
-            // https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/ygpilt8rzxvf4kqj3nyp
-            //
-          }
-          caption={""}
-          text1={
-            <div>
-              Act IV: Embrace <br /> <br />
+            </p>
+          </div>
+          <div className="">
+            <video autoPlay loop muted playsInline className="pt-2">
+              <source
+                src={
+                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr"
+                }
+                type="video/mp4"
+              />
+            </video>
+            <p className="pt-2 m:pt-4">
+              <span className="font-bold">Act IV: Embrace</span> <br /> <br />
               You have walked far, encountering all the pitfalls and flaws of
               the world, therefore exposing the flaws of you. You have come to
               realize there is never an end to your journey, but you have come
               to embrace it.
-            </div>
-          }
-        />
+            </p>
+          </div>
+        </div>
 
         <Header text={"Preloader"} />
         <New3VideoCloudinaryAutoplayLoop
@@ -179,6 +235,110 @@ export default function Liminal() {
           caption={""}
           text1={""}
         />
+        <Header text={"Process"} />
+        {/* GRID */}
+
+        <div
+          className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 place-content-center
+          "
+        >
+          <video autoPlay loop muted playsInline className="pt-2">
+            <source
+              src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/anim01-modelline.webm"
+              }
+              type="video/webm"
+            />
+          </video>
+          <video autoPlay loop muted playsInline className="pt-2">
+            <source
+              src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_anim02-acts.mov.webm"
+              }
+              type="video/webm"
+            />
+          </video>
+          <Image
+            className="pt-2"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-1.png.webp"
+            }
+            height={500}
+            width={500}
+          />
+          <Image
+            className="pt-2"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-2.png.webp"
+            }
+            height={500}
+            width={500}
+          />
+          <Image
+            className="pt-2"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-4.png.webp"
+            }
+            height={500}
+            width={500}
+          />
+          <Image
+            className="pt-2"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-5.png.webp"
+            }
+            height={500}
+            width={500}
+          />
+          <Image
+            className="pt-2"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/actChangeAnimationSequence.png"
+            }
+            height={500}
+            width={500}
+          />
+          <Image
+            className="pt-2"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/020725_navIterations.png"
+            }
+            height={500}
+            width={500}
+          />
+
+          <video autoPlay loop muted playsInline className="pt-2">
+            <source
+              src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_glsl-experiments-1.mov.webm"
+              }
+              type="video/webm"
+            />
+          </video>
+          <video autoPlay loop muted playsInline className="pt-2">
+            <source
+              src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_glsl-experiments-2.mov.webm"
+              }
+              type="video/webm"
+            />
+          </video>
+          <video autoPlay loop muted playsInline className="pt-2">
+            <source
+              src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_glsl-experiments-3.mov.webm"
+              }
+              type="video/webm"
+            />
+          </video>
+
+          <div>
+            <video autoPlay loop muted playsInline className="pt-2">
+              <source src={""} type="video/webm" />
+            </video>
+            <p>CAPTION.</p>
+          </div>
+        </div>
       </main>
     </>
   );

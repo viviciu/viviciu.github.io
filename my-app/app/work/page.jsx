@@ -60,7 +60,6 @@ export default function Projects() {
                 {item.name.split("\n").map((line, index) => (
                   <React.Fragment key={index}>
                     {line}
-
                     <br />
                   </React.Fragment>
                 ))}
