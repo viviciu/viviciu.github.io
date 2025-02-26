@@ -2,7 +2,7 @@ import React, { forwardRef } from "react"; // IMPORTANT
 
 const Callout = ({ text }) => {
   return (
-    <main className="bg-black mx-[-1rem]">
+    <main className=" mx-[-1rem]">
       <div
         // gap-[5.06rem] !!
         className="
@@ -15,7 +15,7 @@ const Callout = ({ text }) => {
       "
       >
         <h1
-          className="text-offwhite 
+          className="text-offBlack2
             font-SFProDisplay
             text-regular
             tracking-['var(--ls-h1)']

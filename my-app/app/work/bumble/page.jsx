@@ -5,8 +5,7 @@ import Context2 from "../../_components/Context2";
 import Header from "../../_components/Header";
 import YAMLBar from "../../_components/YAMLBar";
 import DividerLine from "../../_components/DividerLine";
-import New from "../../_components/New";
-import New2 from "../../_components/New2";
+import CalloutSmall from "@/app/_components/CalloutSmall";
 import New3 from "../../_components/New3";
 import Image from "next/image";
 import UnderDevelopment from "../../_components/UnderDevelopment"
@@ -45,7 +44,7 @@ export default function Liminal() {
         <main className=" pb-[5.06rem]">
           <div className="h-fit w-full">
             <Image
-              className="pt-2"
+              className="pt-2 w-full"
               src={
                 "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png"
               }
@@ -67,28 +66,13 @@ export default function Liminal() {
         <Context2
           context={
             <div>
-              <Link
-                href="https://2025.lunargala.org"
-                className="relative group underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit site
-                <MdOutlineArrowOutward
-                  className="inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-00 leading-p3
-        lg:text-p
-        text
-        font-SuisseWorks
-        font-regular
-    "
-                />
-              </Link>
-              <br /> <br />
               Bumble is a dating and social networking app where women make the
               first move in heterosexual matches, promoting a more respectful
-              and empowering dynamic. The conceptual breif proposed to leverage
-              mobile precision location services to increase conversion rates of
-              non-paying users by informing them of nearby matches in real time.
+              and empowering dynamic. My Advanced IXD course gave me the
+              opportunity to reframe a conceptual design breif: It proposed to
+              leverage mobile precision location services to increase conversion
+              rates of non-paying users by informing them of nearby matches in
+              real time.
               <br /> <br /> Through secondary research and provided data on X
               and Y, I identified genuine user pain points and reframed the
               problem to be human-centered while meeting the needs of all
@@ -108,67 +92,75 @@ export default function Liminal() {
 
         <DividerLine text={"Current state of Bumble"} />
 
-        <Header text={"Problem Space"} />
-
-        {/* PROJ CONTENT 01 */}
-
+        <Header text={"Pain Points"} />
         {/* PROJ CONTENT 02 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-          <div className="">
-            <video autoPlay loop muted playsInline className="pt-2 w-[800px]">
-              <source
+        <div className="grid grid-cols-1 gap-[2rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+            <div className="flex justify-center items-center">
+              <Image
+                className="pt-2 w-1/4"
                 src={
-                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/b3wfxabgpgpm7z9gsw6w"
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/likedYou-transparent.png"
                 }
-                type="video/mp4"
+                height={500}
+                width={500}
               />
-            </video>
-            <p className="pt-2 m:pt-4">
-              <span className="font-bold">Act I: Emergence</span>
-              <br /> <br />
-              The dawn of your journey, brimming with hope, passion, and light.
-              Untouched by the world’s challenges, yet poised to embrace it all.
-            </p>
+            </div>
+            <div className="flex justify-center items-center">
+              <i className="text-[1.5rem] leading-tight w-1/2">
+                “Exactly! Sometimes they even unmatch before I can even send
+                them a message. Like why not be more selective.” –Reddit user
+              </i>
+            </div>
           </div>
-          <div className="">
-            <video autoPlay loop muted playsInline className="pt-2">
-              <source
-                src={
-                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh"
-                }
-                type="video/mp4"
-              />
-            </video>
-            <p className="pt-2 m:pt-4">
-              <span className="font-bold">Act II: Blossom</span> <br /> <br />
-              In the early steps of your journey, you flourish and grow. You
-              conquer the new horizons, and you can see yourself blooming into
-              the person you have always wanted to be.
-            </p>
-          </div>
-          <div className="">
-            <video autoPlay loop muted playsInline className="pt-2">
-              <source
-                src={
-                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr"
-                }
-                type="video/mp4"
-              />
-            </video>
-            <p className="pt-2 m:pt-4">
-              <span className="font-bold">Act IV: Embrace</span> <br /> <br />
-              You have walked far, encountering all the pitfalls and flaws of
-              the world, therefore exposing the flaws of you. You have come to
-              realize there is never an end to your journey, but you have come
-              to embrace it.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="flex justify-center items-center">
+              <div className="w-1/2">
+                <strong className="text-p">Decision Fatigue</strong>
+                <br />
+                <br />
+                Many male users engage in mass swiping to maximize match
+                potential, often ignoring connections that do not meet their
+                perceived standards.
+              </div>
+            </div>
+            <div className="flex justify-center items-center">
+              <div className="w-1/2">
+                <strong className="text-p">Meaningless matches</strong>
+                <br />
+                <br />
+                As a result, even when women initiate conversations, they
+                frequently experience disengagement or ghosting before
+                meaningful interactions can develop.
+              </div>
+            </div>
           </div>
         </div>
+
+        {/* <New3
+          img1={
+            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/reddit-many-transparent.png"
+          }
+          text1={<div>text here</div>}
+        /> */}
+        <DividerLine text={"Proposed Solution"} />
+        <CalloutSmall
+          text1={
+            <div>
+              Help women find meaningful matches, <i>fast</i>.
+            </div>
+          }
+          text2="Bumble's 'session' mode reduces decision fatigue and encourages
+              authentic connections by enabling users in high-density areas to
+              spontaneously meet at partnered local businesses."
+        />
+
+        {/* PROJ CONTENT 01 */}
 
         <Header text={"Preloader"} />
         <New3VideoCloudinaryAutoplayLoop
           src={
-            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/lg/uelohmn4ldqfkuldngoo"
+            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bumbleWalkthrough.mov"
           }
           caption={""}
           text1={""}
