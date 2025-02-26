@@ -11,6 +11,14 @@ export const items = [
     category: "UI/UX, Creative Code, Brand",
     categorySpecific: "",
   },
+  // {
+  //   id: "bumble",
+  //   name: "Bumble Sessions",
+  //   url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
+  //   fileType: "img",
+  //   category: "UI/UX, Service Design",
+  //   categorySpecific: "",
+  // },
 
   // YOU MUST KEEP F_AUTO:VIDEO, NOT F_MP4, IN ORDER TO USE IT WITH AN <Image /> tag
   {
@@ -40,6 +48,15 @@ export const items = [
     category: "Industrial Design",
     categorySpecific: "a synergy of language, form, and context.",
   },
+  // {
+  //   id: "spatula",
+  //   name: "Spatula",
+  //   url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/play/lohb80s9ngarowqrs78s",
+  //   // url: "/imgs/DSC05668-thumbnail.jpg",
+  //   fileType: "img",
+  //   category: "Industrial Design",
+  //   categorySpecific: "",
+  // },
   {
     id: "liminal",
     name: "Lunar Gala: Liminal",

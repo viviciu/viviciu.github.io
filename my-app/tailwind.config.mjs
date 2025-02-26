@@ -23,6 +23,9 @@ export default {
         offBlack: "#333333",
         offBlack1: "#373737",
         offBlack2: "#515151",
+        offBlack3: "var(--offBlack3)",
+        // offBlack3: "rgba(139, 142, 144, 1)",
+        // 139	142	144
         zinc: "#101010",
         threejsBlue: "hsl(0, 95, 70)",
         "blog-headerBlock": "rgba(217, 217, 217, 0.14)",
@@ -69,7 +72,7 @@ export default {
         p3: "var(--lh-p3)",
         // h4pp == PP Neue montreal website large p text, their h4
         h4pp: "1",
-        callout: "var(--lh-callout)",
+        callout: "var(--lh-callout2)",
       },
 
       // LETTER SPACING (tracking?)

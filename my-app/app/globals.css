@@ -171,6 +171,7 @@
 
   --fs-callout: 3.1925rem;
   --lh-callout: 3.25rem;
+  --lh-callout2: 4rem;
   --w-callout: 300;
 
 
@@ -179,6 +180,7 @@
   --offBlack: #333333;
   --offBlack1: #373737;
   --offBlack2: #515151;
+  --offBlack3: #939393;
 }
 }
 

@@ -1,4 +1,3 @@
-import { appleImg } from '../../public/utils';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
