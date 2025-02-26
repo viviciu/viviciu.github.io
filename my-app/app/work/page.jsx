@@ -21,7 +21,7 @@ export default function Projects() {
     .filter((item) => !selectedLabel || selectedLabel === item.category)
 
     .map((item) => (
-      <div key={item.id} className="item space-y-2">
+      <div key={item.id} className="break-inside-avoid item space-y-2">
         {/* PARENT GROUP */}
         <Link href={"/work/" + item.id}>
           <div
@@ -95,6 +95,17 @@ export default function Projects() {
     <main className="m-1">
       <section className="lg:mx-4 mx-2 mt-[12rem]">
         {/* ITEMS */}
+        {/* COLUMNS WITH NO WHITE SPACE GAPS:
+        https://chatgpt.com/share/67bf1c78-1de8-8011-a3b7-73adb2a6c5ea
+        <div class="columns-3 gap-4">
+  <div class="break-inside-avoid bg-blue-500 p-4 mb-4">Item 1</div>
+  <div class="break-inside-avoid bg-red-500 p-4 mb-4">Item 2</div>
+  <div class="break-inside-avoid bg-green-500 p-4 mb-4">Item 3</div>
+  <div class="break-inside-avoid bg-yellow-500 p-4 mb-4">Item 4</div>
+  <div class="break-inside-avoid bg-purple-500 p-4 mb-4">Item 5</div>
+</div>
+ */}
+        {/* OLD CLASSNAME FOR ARTICLE: w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[0.5rem] */}
         <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[0.5rem]">
           {displayedItems}
         </article>

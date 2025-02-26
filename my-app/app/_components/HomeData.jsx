@@ -1,5 +1,4 @@
 "use client";
-import { appleImg } from "../../public/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { React, useState, useEffect } from "react";
