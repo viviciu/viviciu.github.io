@@ -307,8 +307,21 @@ caption
             Time sensitivity increases engagement for more meetups.
           </h1>
         </div>
-        <main className="flex pt-[3rem] gap-x-[5rem]">
-          <div className="w-fit">
+        <main className="pt-[3rem]">
+          <div className="flex items-center w-full justify-center">
+            <div className="w-2/3">
+              <Image
+                className="pt-2"
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/livedissected-2.png"
+                }
+                layout="responsive"
+                height={500}
+                width={500}
+              />
+            </div>
+          </div>
+          <div className="w-2/3 pt-[5rem]">
             <div className="grid grid-cols-3 pt-[3rem] gap-y-[5rem]">
               <div className="font-p col-start-1">
                 Applied Social Psychology
@@ -331,28 +344,18 @@ caption
 
               <div className="font-p">Value to Users</div>
               <div className="col-span-2">
-                <span className="font-bold">Loss Aversion</span> — The potential to lose a match causes
-                users to take immediate action over endless dwelling or
-                comparing options, which means more decisions and more stress.
+                <span className="font-bold">Loss Aversion</span> — Endless
+                dwelling or comparing options causes means more decisions and
+                more stress. The potential to lose a match causes users to take
+                immediate action and be closer to their goal of meeting someone genuine.
                 <br />
                 <br />
-                <span className="font-bold">EBA</span> — Potential
-                matches may suggest a local business to meet at, helping the
-                sender differentiate themselves, and help the users eliminate matches suggesting places they do not enjoy.
+                <span className="font-bold">EBA</span> — Potential matches may
+                suggest a local business to meet at, helping the sender
+                differentiate themselves, and help the users eliminate matches
+                suggesting places they do not enjoy.
               </div>
             </div>
-          </div>
-
-          <div className="flex items-center ">
-            <Image
-              className="pt-2"
-              src={
-                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/livedissected-2.png"
-              }
-              layout="responsive"
-              height={500}
-              width={500}
-            />
           </div>
         </main>
 
