@@ -79,7 +79,7 @@ export default function Liminal() {
               stakeholders.
               <br /> <br />
               Process under development.{" "}
-              <span className="font-bold">Last updated 02.26.2025</span>
+              <span className="font-bold">Last updated 02.28.2025</span>
               {/* TODO finish writing this */}
               {/* <br /> <br />Leveraging precision location services, and existing technologies like Live Activity and the Dynamic Island components of iOS ---------LEAD TO SUCCESS------- */}
             </div>
@@ -92,7 +92,7 @@ export default function Liminal() {
 
         <DividerLine text={"Current state of Bumble"} />
 
-        <Header text={"Pain Points"} />
+        <Header text={"Identified Pain Points"} />
         {/* PROJ CONTENT 02 */}
         <div className="grid grid-cols-1 gap-[2rem]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
@@ -129,9 +129,9 @@ export default function Liminal() {
                 <strong className="text-p">Meaningless matches</strong>
                 <br />
                 <br />
-                As a result, even when women initiate conversations, they
-                frequently experience disengagement or ghosting before
-                meaningful interactions can develop.
+                As a result of mass swiping, even when women initiate
+                conversations, they frequently experience disengagement or
+                ghosting before meaningful interactions can develop.
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function Liminal() {
         <CalloutSmall
           text1={
             <div>
-              Help women find meaningful matches, <i>fast</i>.
+              Help women find meaningful local matches, <i>fast</i>.
             </div>
           }
           text2="Bumble's 'session' mode reduces decision fatigue and encourages
@@ -157,118 +157,155 @@ export default function Liminal() {
 
         {/* PROJ CONTENT 01 */}
 
-        <Header text={"Preloader"} />
-        <New3VideoCloudinaryAutoplayLoop
-          src={
-            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bumbleWalkthrough.mov"
+        {/* <Header
+          text={
+            "Entering a Bumble Session reveals local users available for a spontaneous date."
           }
-          caption={""}
-          text1={""}
-        />
-        <Header text={"Process"} />
-        {/* GRID */}
+        /> */}
+        <main>
+          <div
+            className=" 
+          lg:grid lg:grid-cols-3
+          gap-[5rem] 
+          w-full h-fit 
+          items-center
+          pt-[0.5rem]" // important padding top here
+          >
+            <div
+              className="
+            leading-[1.5rem]
+            lg:text-[1rem]
+            tracking-[0.005em]
+            text
+            font-Suisse
+            font-regular
+            text-offBlack2"
+            >
+              <span className="font-bold">
+                Entering a Bumble Session reveals local users available for a
+                spontaneous date.
+              </span>
+              <br />
+              <br />
+              In a session, only users in a 1.5MI radius also in a session can
+              be seen. These users are not visible on the typical feed, which
+              brings exclusivity through users&apos; temporary nature—users have
+              to act fast before they leave the Session.
+              <br />
+              <br />
+            </div>
 
-        <div
-          className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 place-content-center
-          "
-        >
-          <video autoPlay loop muted playsInline className="pt-2">
-            <source
-              src={
-                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/anim01-modelline.webm"
-              }
-              type="video/webm"
-            />
-          </video>
-          <video autoPlay loop muted playsInline className="pt-2">
-            <source
-              src={
-                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_anim02-acts.mov.webm"
-              }
-              type="video/webm"
-            />
-          </video>
-          <Image
-            className="pt-2"
-            src={
-              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-1.png.webp"
-            }
-            height={500}
-            width={500}
-          />
-          <Image
-            className="pt-2"
-            src={
-              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-2.png.webp"
-            }
-            height={500}
-            width={500}
-          />
-          <Image
-            className="pt-2"
-            src={
-              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-4.png.webp"
-            }
-            height={500}
-            width={500}
-          />
-          <Image
-            className="pt-2"
-            src={
-              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-5.png.webp"
-            }
-            height={500}
-            width={500}
-          />
-          <Image
-            className="pt-2"
-            src={
-              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/actChangeAnimationSequence.png"
-            }
-            height={500}
-            width={500}
-          />
-          <Image
-            className="pt-2"
-            src={
-              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/020725_navIterations.png"
-            }
-            height={500}
-            width={500}
-          />
+            <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 ">
+              <div className=" flex justify-center ">
+                {/* CLOUDINARY */}
+                <video autoPlay loop muted playsInline className="h-[700px]">
+                  <source
+                    src={
+                      "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bumbleWalkthrough.mov"
+                    }
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
 
-          <video autoPlay loop muted playsInline className="pt-2">
-            <source
-              src={
-                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_glsl-experiments-1.mov.webm"
-              }
-              type="video/webm"
-            />
-          </video>
-          <video autoPlay loop muted playsInline className="pt-2">
-            <source
-              src={
-                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_glsl-experiments-2.mov.webm"
-              }
-              type="video/webm"
-            />
-          </video>
-          <video autoPlay loop muted playsInline className="pt-2">
-            <source
-              src={
-                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_glsl-experiments-3.mov.webm"
-              }
-              type="video/webm"
-            />
-          </video>
-
-          <div>
-            <video autoPlay loop muted playsInline className="pt-2">
-              <source src={""} type="video/webm" />
-            </video>
-            <p>CAPTION.</p>
+              {/* <div className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
+caption
+              </div> */}
+            </div>
+            <div className="">
+              <span className="font-bold">Glowing ring</span>
+              <br />
+              <br />
+              Constant motion indicates feelings of activity, in motion, and
+              "fleeting" on an emotional level. As if your "radar" has turned on
+              and gives a nod to the 1.5MI radius pool of users you&apos;re
+              restricted to. Functionally, it indicates a state change: Your
+              Session has begun.
+            </div>
           </div>
+        </main>
+
+        {/* WIDE ONBOARDING */}
+
+        <div className="pt-[5rem]"></div>
+        <Header text={""} />
+        <main className="w-full">
+          <Image
+            className="pt-2 w-full"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/compressed_onboarding-frame-2.png.webp"
+            }
+            layout="responsive"
+            height={1000}
+            width={1000}
+          />
+          {/* CAPTION */}
+          <div className="flex justify-center pt-2">Session matching User Flow</div>
+        </main>
+
+        {/* WIDE ONBOARDING */}
+
+        <div className="pt-[10rem]"></div>
+        {/* <Header
+          text={
+            "Live Activities and Dynamic Island integration encourage engagement with matches."
+          }
+        /> */}
+        <div className="w-full flex">
+          {/* HEADER EXPANDED */}
+          <div
+            className="
+        w-1/2 h-fit 
+        items-start"
+          >
+            <h1 className="font-SFProDisplay  text-[3rem] leading-[3rem] tracking-tight">
+              Live Activities and Dynamic Island integration encourage
+              engagement with matches.
+            </h1>
+          </div>
+
+          <video autoPlay loop muted playsInline className="pt-2 h-[700px]">
+            <source
+              src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/timer-liveActivity.mov"
+              }
+              type="video/mp4"
+            />
+          </video>
         </div>
+
+        {/* details */}
+        <div className="pt-[5rem]"></div>
+        {/* HEADER EXPANDED */}
+        <div
+          className="
+        w-1/2 h-fit 
+        items-start"
+        >
+          <h1 className="font-SFProDisplay  text-[3rem] leading-[3rem] tracking-tight">
+            Time sensitivity increases engagement for more meetups.
+          </h1>
+        </div>
+        <main className="flex justify-start pt-[3rem] gap-x-[5rem]">
+          <p className="w-1/4">
+            Studies have shown that humans are{" "}
+            <span className="font-bold">loss averse</span>—meaning, they would
+            rather not <i>lose</i> something than gain something new.
+          </p>
+          <div className="w-1/2 ">
+            <Image
+              className="pt-2"
+              src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/livedissected-2.png"
+              }
+              layout="responsive"
+              height={500}
+              width={500}
+            />
+          </div>
+        </main>
+
+        <div className="pt-[15rem]"></div>
       </main>
     </>
   );

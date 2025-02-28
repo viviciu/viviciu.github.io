@@ -106,7 +106,7 @@ export default function Projects() {
 </div>
  */}
         {/* OLD CLASSNAME FOR ARTICLE: w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[0.5rem] */}
-        <article className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[0.5rem]">
+        <article className="w-full mx-auto columns-3 gap-[0.5rem]">
           {displayedItems}
         </article>
       </section>

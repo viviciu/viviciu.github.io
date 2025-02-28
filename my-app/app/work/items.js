@@ -8,19 +8,20 @@ export const items = [
     // url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh",
     // url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/n5xvgcsapxlnsxyfuzsp",
     fileType: "mp4",
-    category: "UI/UX, Creative Code, Brand",
+    category: "Generative Design Systems, Brand, UI/UX",
     categorySpecific: "",
   },
-  // {
-  //   id: "bumble",
-  //   name: "Bumble Sessions",
-  //   url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
-  //   fileType: "img",
-  //   category: "UI/UX, Service Design",
-  //   categorySpecific: "",
-  // },
 
   // YOU MUST KEEP F_AUTO:VIDEO, NOT F_MP4, IN ORDER TO USE IT WITH AN <Image /> tag
+  {
+    id: "playfulVsPractical",
+    name: "Playful vs. Practical",
+    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd",
+    // url: "/imgs/DSC05668-thumbnail.jpg",
+    fileType: "mp4",
+    category: "Industrial Design",
+    categorySpecific: "a synergy of language, form, and context.",
+  },
   {
     id: "touchdesignerSeries",
     name: "Touchdesigner Experiments",
@@ -34,20 +35,13 @@ export const items = [
   {
     id: "typographyAnimation",
     name: "Kinetic type animation",
-    url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa",
+    // url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa",
+    url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/dsmxcrxddfumriwed9w5",
     fileType: "img",
     category: "Motion",
     categorySpecific: "a study in time and motion narrating a typeface.",
   },
-  {
-    id: "playfulVsPractical",
-    name: "Playful vs. Practical",
-    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd",
-    // url: "/imgs/DSC05668-thumbnail.jpg",
-    fileType: "mp4",
-    category: "Industrial Design",
-    categorySpecific: "a synergy of language, form, and context.",
-  },
+
   // {
   //   id: "spatula",
   //   name: "Spatula",
@@ -57,14 +51,23 @@ export const items = [
   //   category: "Industrial Design",
   //   categorySpecific: "",
   // },
+
   {
     id: "liminal",
     name: "Lunar Gala: Liminal",
     url: "/imgs/lg-home-COVER.webp",
     fileType: "img",
-    category: "UI/UX, Creative Code, Brand",
+    category: "Creative Code, Brand",
     categorySpecific:
       "a realm where the very essence of self and time finds itself in flux.",
+  },
+  {
+    id: "bumble",
+    name: "Bumble Sessions",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
+    fileType: "img",
+    category: "UI/UX, Service Design",
+    categorySpecific: "",
   },
 
   {
