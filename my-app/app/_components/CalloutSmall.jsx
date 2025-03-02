@@ -7,12 +7,14 @@ const Callout = ({ text1, text2 }) => {
         // gap-[5.06rem] !!
         className="
       pt-[10.61rem] pb-[8.81rem]
-      w-1/2
+      
       flex flex-col
       gap-[2rem] 
       h-fit 
       mx-5
       text-center
+
+      items-center
       "
       >
         <h1
@@ -21,11 +23,11 @@ const Callout = ({ text1, text2 }) => {
             text-regular
             tracking-['var(--ls-h1)']
             leading-['var(--lh-h1)]
-            lg:text-h1
-            md:text-h1
-            leading-callout
             text-4xl
+            md:text-h1
+            md:leading-callout
             
+            md:w-2/3
             "
         >
           {text1}
@@ -35,13 +37,15 @@ const Callout = ({ text1, text2 }) => {
             font-SFProDisplay
             text-regular
             tracking-['var(--ls-h1)']
-            lg:leading-['var(--lh-h1)]
+            leading-normal
+            md:leading-['var(--lh-h1)]
+            text-p
             lg:text-2xl
             md:text-2xl
             leading-tighter
             md:leading-callout
             text-2xl
-            
+            md:w-1/2
             "
         >
           {text2}

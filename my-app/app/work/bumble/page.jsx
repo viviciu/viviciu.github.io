@@ -106,12 +106,16 @@ export default function Liminal() {
           timeline={timeline}
         />
 
-        <DividerLine text={"Current state of Bumble"} />
+        <DividerLine text={"Problem statement & User research insights"} />
+        <CalloutSmall
+          text1={
+            <div>Women face decision fatigue from mass-swiping male users.</div>
+          }
+        />
 
-        <Header text={"Identified Pain Points"} />
         {/* PROJ CONTENT 02 */}
-        <div className="grid grid-cols-1 gap-[2rem]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 gap-[1rem] md:gap-[2rem]">
+          <div className="grid grid-cols-2 lg:grid-cols-2 gap-5">
             <div className="flex justify-center items-center">
               <Image
                 className="pt-2 w-1/4"
@@ -123,26 +127,27 @@ export default function Liminal() {
               />
             </div>
             <div className="flex justify-center items-center">
-              <i className="text-[1.5rem] leading-tight w-1/2">
+              <i className="text-[1rem] md:text-[1.5rem] leading-tight w-1/2">
                 “Exactly! Sometimes they even unmatch before I can even send
                 them a message. Like why not be more selective.” –Reddit user
               </i>
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="grid grid-cols-2">
             <div className="flex justify-center items-center">
-              <div className="w-1/2">
+              <div className="w-3/4 md:w-1/2">
                 <strong className="text-p">Decision Fatigue</strong>
                 <br />
                 <br />
                 Many male users engage in mass swiping to maximize match
                 potential, often ignoring connections that do not meet their
-                perceived standards. This was a screenshot of my actual test
-                account, which included only 1 photo of half of my face visible.
+                perceived standards. This was a screenshot of my actual Bumble
+                account, which included only 1 photo of half of my face visible
+                used to audit the platform.
               </div>
             </div>
             <div className="flex justify-center items-center">
-              <div className="w-1/2">
+              <div className="w-3/4 md:w-1/2">
                 <strong className="text-p">Meaningless matches</strong>
                 <br />
                 <br />
@@ -161,10 +166,16 @@ export default function Liminal() {
           text1={<div>text here</div>}
         /> */}
         <DividerLine text={"Proposed Solution"} />
+        {/* OLD VERSIONS OF SOLUTION CALLOUT
+        A location & time-sensitive "Session" mode to help women find
+              meaningful matches, <i>fast</i>.
+              <br />A location & time-sensitive "Session" mode that enables
+              spontaneous dates to help women find meaningful matches,{" "}
+              <i>fast</i>. */}
         <CalloutSmall
           text1={
             <div>
-              Help women find meaningful local matches, <i>fast</i>.
+              Bumble Sessions: Spontaneous, meaningful dates—<i>fast</i>.
             </div>
           }
           text2="Bumble's 'session' mode reduces decision fatigue and encourages
@@ -198,7 +209,7 @@ export default function Liminal() {
             font-regular
             text-offBlack2"
             >
-              <span className="font-bold">
+              <span className="font-bold text-p">
                 Entering a Bumble Session reveals local users available for a
                 spontaneous date.
               </span>
@@ -230,7 +241,7 @@ caption
               </div> */}
             </div>
             <div className="">
-              <span className="font-bold">
+              <span className="font-bold text-p">
                 Glowing Ring signals Presence and Availability
               </span>
               <br />
@@ -259,7 +270,7 @@ caption
             width={1000}
           />
           {/* CAPTION */}
-          <div className="flex justify-center pt-2">
+          <div className="flex justify-center pt-2 text-offBlack3">
             Session matching User Flow
           </div>
         </main>
@@ -272,14 +283,14 @@ caption
             "Live Activities and Dynamic Island integration encourage engagement with matches."
           }
         /> */}
-        <div className="w-full flex">
+        <div className="w-full md:flex">
           {/* HEADER EXPANDED */}
           <div
             className="
-        w-1/2 h-fit 
+        md:w-1/2 h-fit 
         items-start"
           >
-            <h1 className="font-SFProDisplay  text-[3rem] leading-[3rem] tracking-tight">
+            <h1 className="font-SFProDisplay  text-3xl md:text-[3rem] leading-tight md:leading-[3rem] tracking-tight">
               Live Activities and Dynamic Island integration encourage
               engagement with matches.
             </h1>
@@ -300,16 +311,16 @@ caption
         {/* HEADER EXPANDED */}
         <div
           className="
-        w-1/2 h-fit 
+        md:w-1/2 h-fit 
         items-start"
         >
-          <h1 className="font-SFProDisplay  text-[3rem] leading-[3rem] tracking-tight">
+          <h1 className="font-SFProDisplay  text-3xl md:text-[3rem] leading-tight md:leading-[3rem] tracking-tight">
             Time sensitivity increases engagement for more meetups.
           </h1>
         </div>
         <main className="pt-[3rem]">
           <div className="flex items-center w-full justify-center">
-            <div className="w-2/3">
+            <div className="md:w-2/3">
               <Image
                 className="pt-2"
                 src={
@@ -321,7 +332,7 @@ caption
               />
             </div>
           </div>
-          <div className="w-2/3 pt-[5rem]">
+          <div className="md:w-2/3 pt-[5rem]">
             <div className="grid grid-cols-3 pt-[3rem] gap-y-[5rem]">
               <div className="font-p col-start-1">
                 Applied Social Psychology
@@ -347,7 +358,8 @@ caption
                 <span className="font-bold">Loss Aversion</span> — Endless
                 dwelling or comparing options causes means more decisions and
                 more stress. The potential to lose a match causes users to take
-                immediate action and be closer to their goal of meeting someone genuine.
+                immediate action and be closer to their goal of meeting someone
+                genuine.
                 <br />
                 <br />
                 <span className="font-bold">EBA</span> — Potential matches may
