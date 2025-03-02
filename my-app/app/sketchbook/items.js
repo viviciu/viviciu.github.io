@@ -1,6 +1,20 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
   {
+    id: "blackbg1",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/vivi078-blackbg.jpg",
+    category: "",
+    categorySpecific: "",
+  },
+  {
+    id: "two",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/vivi088-blackbg.jpg",
+    category: "",
+    categorySpecific: "",
+  },
+  {
     id: "s1",
     name: "",
     url: "/imgs/sketchbook/compressed-0036.jpg",
