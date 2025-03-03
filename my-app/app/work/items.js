@@ -13,15 +13,7 @@ export const items = [
   },
 
   // YOU MUST KEEP F_AUTO:VIDEO, NOT F_MP4, IN ORDER TO USE IT WITH AN <Image /> tag
-  {
-    id: "playfulVsPractical",
-    name: "Playful vs. Practical",
-    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd",
-    // url: "/imgs/DSC05668-thumbnail.jpg",
-    fileType: "mp4",
-    category: "Industrial Design",
-    categorySpecific: "a synergy of language, form, and context.",
-  },
+
   {
     id: "touchdesignerSeries",
     name: "Touchdesigner Experiments",
@@ -31,7 +23,15 @@ export const items = [
     category: "Generative Design",
     categorySpecific: "some generative procedural animations.",
   },
-
+  {
+    id: "playfulVsPractical",
+    name: "Playful vs. Practical",
+    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd",
+    // url: "/imgs/DSC05668-thumbnail.jpg",
+    fileType: "mp4",
+    category: "Industrial Design",
+    categorySpecific: "a synergy of language, form, and context.",
+  },
   {
     id: "typographyAnimation",
     name: "Kinetic type animation",
@@ -53,6 +53,14 @@ export const items = [
   // },
 
   {
+    id: "spatula",
+    name: "Spatula",
+    url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/play/lohb80s9ngarowqrs78s",
+    fileType: "img",
+    category: "Industrial Design",
+    categorySpecific: "",
+  },
+  {
     id: "liminal",
     name: "Lunar Gala: Liminal",
     url: "/imgs/lg-home-COVER.webp",
@@ -61,7 +69,6 @@ export const items = [
     categorySpecific:
       "a realm where the very essence of self and time finds itself in flux.",
   },
-
   {
     id: "bumble",
     name: "Bumble Sessions",
@@ -79,15 +86,6 @@ export const items = [
     category: "Brand",
     categorySpecific: "an exercise in type hierarchy.",
   },
-  // {
-  //   id: "spatula",
-  //   name: "Lunar Gala: Liminal",
-  //   url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/play/lohb80s9ngarowqrs78s",
-  //   fileType: "img",
-  //   category: "Creative Code, Brand",
-  //   categorySpecific:
-  //     "a realm where the very essence of self and time finds itself in flux.",
-  // },
 
   // {
   //   id: "15-112",

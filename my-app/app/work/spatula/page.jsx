@@ -1,28 +1,24 @@
-"use client"
+"use client";
 import React, { useState, useEffect, useRef } from "react";
-import Title from "../../_components/Title"
+import Title from "../../_components/Title";
 import Context2 from "../../_components/Context2";
 import Header from "../../_components/Header";
 import YAMLBar from "../../_components/YAMLBar";
 import DividerLine from "../../_components/DividerLine";
 import Image from "next/image";
 import New3 from "@/app/_components/New3";
-import UnderDevelopment from "../../_components/UnderDevelopment"
+import UnderDevelopment from "../../_components/UnderDevelopment";
 import New3VideoCloudinaryAutoplayLoop from "@/app/_components/New3VideoCloudinaryAutoplayLoop";
 
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Link from "next/link";
 
 export default function Liminal() {
-  const members = [
-    
-  ];
+  const members = [];
   const tools = ["Solidwords", "Rapid Prototyping"];
   const myRole = "Solo";
-  const timeline = "4 weeks"
+  const timeline = "4 weeks";
 
-
-  
   // A realm where the very essence of self and time finds itself in flux.
   return (
     <>
@@ -54,11 +50,36 @@ export default function Liminal() {
         <Context2
           context={
             <div>
-              {/* <br /> <br />
-              TLDR blurb vicki said, check old notebook
-              <br /> <br /> P1
-              <br /> <br />P2
-               */}
+              {/* TLDR blurb vicki said, check old notebook  */}
+              Inspired by the harmonious, integrated flow of muscles, I aimed to
+              establish a direct 1:1 relationship between the user’s grip and
+              the spatula’s working edge.
+              <br /> <br />
+              Like the geometry of the human body, this tension-form emerged
+              solely from fair curves. The seamless twist follows the planes of
+              the palm-arm bridge,{" "}
+              <span className="font-bold">
+                transforming the spatula into a natural extension of the arm,
+                uniting them as one.
+              </span>
+              <br />
+              <br />
+              <Link
+                href="https://docs.google.com/presentation/d/1mjYN5Ele80n-BdIcCPfrU_GkfO86X-lorzGYpoGJitw/edit?usp=sharing"
+                className="relative group underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Full process deck
+                <MdOutlineArrowOutward
+                  className="inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-00 leading-p3
+        lg:text-p
+        text
+        font-SuisseWorks
+        font-regular
+    "
+                />
+              </Link>
             </div>
           }
           myRole={myRole}
@@ -193,14 +214,13 @@ export default function Liminal() {
         />
 
         {/* https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_edit-07072.jpg.webp */}
-        
+
         {/* GRID */}
 
         <div
           className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 place-content-center
           "
         >
-      
           <Image
             className="pt-2"
             src={
@@ -257,7 +277,6 @@ export default function Liminal() {
             height={500}
             width={500}
           />
-          
 
           {/* <div>
             <video autoPlay loop muted playsInline className="pt-2">
