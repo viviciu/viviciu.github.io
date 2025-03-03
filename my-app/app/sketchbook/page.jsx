@@ -89,17 +89,39 @@ export default function Projects() {
           and inspirations.
         </div>
       </div>
-
-      <section className="flex flex-col mx-4 mt-32">
+      {/* FANTASTICAL MACHINE SKETCHES */}
+      <section className="columns-1 md:columns-2 lg:columns-3 gap-[0.5rem] mt-32 mx-[0.25rem] ">
+        <Image
+          src={"/imgs/sketchbook/neutronMachine-06499.jpg"}
+          className="h-full object-cover break-inside-avoid"
+          width={500}
+          height={500}
+        />
+        <Image
+          src={"/imgs/sketchbook/neutronMachine-06498.jpg"}
+          className="h-full object-cover break-inside-avoid"
+          width={500}
+          height={500}
+        />
+        <Image
+          src={"/imgs/sketchbook/neutronMachine-06496_large.jpg"}
+          className="h-full object-cover break-inside-avoid"
+          width={500}
+          height={500}
+        />
+      </section>
+      {/* GRID OF IMAGES */}
+      <section className="flex flex-col mx-[0.25rem]">
         {/* lg:mb-[11vh] mb-[2.5rem] mt-[11vh] 
           flex flex-wrap sm:flex-row 
           lg:text-h1  md:text-[2.75rem] text-[1.6rem] tracking-tight
           lg:leading-[3.7rem]
           leading-[1.6rem]
           font-h1 font-medium */}
+
         {/* PREVIOUSLY:
           w-full mx-auto grid grid-cols-2  gap-[0.5rem] sm:grid-cols-5 lg:grid-cols-5  place-content-center */}
-        <article className="w-full mx-auto columns-1 md:columns-3 gap-[0.5rem]  place-content-center">
+        <article className="w-full mx-auto columns-1 md:columns-5 gap-[0.5rem]  place-content-center">
           {displayedItems}
         </article>
       </section>
