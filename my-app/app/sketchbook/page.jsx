@@ -25,7 +25,7 @@ export default function Projects() {
 
   const displayedItems = items.map((item, index) => (
     <div key={item.id} className="item">
-      <div className="justify-center relative group text-cap">
+      <div className="justify-center relative group text-cap pt-[0.5rem] break-inside-avoid">
         <Image
           src={item.url}
           alt={item.name}
@@ -70,9 +70,9 @@ export default function Projects() {
           />
         </div>
         {/* CODE FROM CONTEXT2 COMPONENT BELOW FOR DESC. */}
-        
-          <div
-            className="
+
+        <div
+          className="
             pt-[1rem]
       w-full h-fit 
       items-start
@@ -84,21 +84,44 @@ export default function Projects() {
         font-regular
         text-offBlack2
         "
-          >
-            Sketches from freshman—sophomore year. My process, lessons learned,
-            and inspirations.
-          </div>
+        >
+          Sketches from freshman—sophomore year. My process, lessons learned,
+          and inspirations.
         </div>
-
-
-      <section className="flex flex-col mx-4 mt-32">
+      </div>
+      {/* FANTASTICAL MACHINE SKETCHES */}
+      <section className="columns-1 md:columns-2 lg:columns-3 gap-[0.5rem] mt-32 mx-[0.25rem] ">
+        <Image
+          src={"/imgs/sketchbook/neutronMachine-06499.jpg"}
+          className="h-full object-cover break-inside-avoid"
+          width={500}
+          height={500}
+        />
+        <Image
+          src={"/imgs/sketchbook/neutronMachine-06498.jpg"}
+          className="h-full object-cover break-inside-avoid"
+          width={500}
+          height={500}
+        />
+        <Image
+          src={"/imgs/sketchbook/neutronMachine-06496_large.jpg"}
+          className="h-full object-cover break-inside-avoid"
+          width={500}
+          height={500}
+        />
+      </section>
+      {/* GRID OF IMAGES */}
+      <section className="flex flex-col mx-[0.25rem]">
         {/* lg:mb-[11vh] mb-[2.5rem] mt-[11vh] 
           flex flex-wrap sm:flex-row 
           lg:text-h1  md:text-[2.75rem] text-[1.6rem] tracking-tight
           lg:leading-[3.7rem]
           leading-[1.6rem]
           font-h1 font-medium */}
-        <article className="w-full mx-auto grid grid-cols-2 lg:gap-[2rem] gap-[0.6rem] sm:grid-cols-5 lg:grid-cols-5  place-content-center">
+
+        {/* PREVIOUSLY:
+          w-full mx-auto grid grid-cols-2  gap-[0.5rem] sm:grid-cols-5 lg:grid-cols-5  place-content-center */}
+        <article className="w-full mx-auto columns-1 md:columns-5 gap-[0.5rem]  place-content-center">
           {displayedItems}
         </article>
       </section>
