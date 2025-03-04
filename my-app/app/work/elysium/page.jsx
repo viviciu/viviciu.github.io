@@ -178,11 +178,12 @@ export default function Liminal() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           <div className="">
             <video autoPlay loop muted playsInline className="pt-2 w-[800px]">
+              {/* "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/b3wfxabgpgpm7z9gsw6w" */}
               <source
                 src={
-                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/b3wfxabgpgpm7z9gsw6w"
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/030425/act-emergence.mov.webm"
                 }
-                type="video/mp4"
+                type="video/webm"
               />
             </video>
             <p className="pt-2 m:pt-4">
@@ -194,11 +195,12 @@ export default function Liminal() {
           </div>
           <div className="">
             <video autoPlay loop muted playsInline className="pt-2">
+              {/* OLD "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh" */}
               <source
                 src={
-                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh"
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/030425/act-blossom.mov.webm"
                 }
-                type="video/mp4"
+                type="video/webm"
               />
             </video>
             <p className="pt-2 m:pt-4">
@@ -210,11 +212,12 @@ export default function Liminal() {
           </div>
           <div className="">
             <video autoPlay loop muted playsInline className="pt-2">
+              {/* OLD "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr" */}
               <source
                 src={
-                  "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr"
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/030425/act-embrace-900.webm"
                 }
-                type="video/mp4"
+                type="video/webm"
               />
             </video>
             <p className="pt-2 m:pt-4">
