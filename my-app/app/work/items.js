@@ -36,7 +36,9 @@ export const items = [
     id: "typographyAnimation",
     name: "Kinetic type animation",
     // url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa",
+    // LIGATURES BELOW
     url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/dsmxcrxddfumriwed9w5",
+    // url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/athelas-cover.mov.webm",
     fileType: "img",
     category: "Motion",
     categorySpecific: "a study in time and motion narrating a typeface.",

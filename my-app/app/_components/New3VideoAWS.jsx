@@ -32,10 +32,10 @@ const New3VideoCloudinaryAutoplay = ({ text1, src, caption }) => {
             {src && (
               <div className="col-start-1">
                 {/* CLOUDINARY */}
-                <video controls autoPlay>
+                <video controls>
                   <source
                     src={src}
-                    type="video/mp4"
+                    type="video/webm"
                   />
                 </video>
               </div>

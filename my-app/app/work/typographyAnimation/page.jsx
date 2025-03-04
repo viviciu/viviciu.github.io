@@ -12,6 +12,7 @@ import New3 from "../../_components/New3";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Header from "../../_components/Header";
 import New3Grid from "../../_components/New3Grid";
+import New3VideoCloudinaryAutoplay from "@/app/_components/New3VideoAWS";
 
 export default function TypographyAnimation() {
   const members = [];
@@ -58,10 +59,10 @@ export default function TypographyAnimation() {
               />
             </Link>
             <br />
-            <br />
-            A 60-second video highlighting the typeface Athelas in the context
-            of its use: Making literature readable on the screen. An exercise of time and motion in visually describing and comparing
-            the various forms and attributes of the typeface.
+            <br />A 60-second video highlighting the typeface Athelas in the
+            context of its use: Making literature readable on the screen. An
+            exercise of time and motion in visually describing and comparing the
+            various forms and attributes of the typeface.
           </div>
         }
         myRole={myRole}
@@ -72,7 +73,7 @@ export default function TypographyAnimation() {
 
       <div className="lg:pt-[3rem]">
         {" "}
-        <Header text={"Process"} />
+        <DividerLine text={"Process"} />
       </div>
       {/* columns */}
       <div className="mt-[0.6rem] mb-32 lg:columns-3 sm:columns-2 w-full place-content-center gap-[0.6rem]">
@@ -136,11 +137,34 @@ export default function TypographyAnimation() {
                 layout="responsive"
               /> */}
       </div>
+      <DividerLine text={"Highlights"} />
+      {/* LARGE PLAYABLE THUMBNAILS */}
+      <New3VideoCloudinaryAutoplay
+        src={
+          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/comp_beginning_rgb.mov.webm"
+        }
+      />
+      <New3VideoCloudinaryAutoplay
+        src={
+          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/comp_text-jumble-audio.mov.webm"
+        }
+      />
+      <New3VideoCloudinaryAutoplay
+        src={
+          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/comp_e-to-ligatures.mov.webm"
+        }
+      />
+      <New3VideoCloudinaryAutoplay
+        src={
+          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/comp_ending-audio.mov.webm"
+        }
+      />
+
+      <DividerLine text={"Magazine spread on the history of Athelas"} />
       <New3
         img1={"/imgs/typographyAnimation/FINALSPREAD.jpeg"}
         text1={
           <div>
-            Final magazine spread for my typeface, <i>Athelas</i>.
             <br />
             Spread process on{" "}
             <Link
