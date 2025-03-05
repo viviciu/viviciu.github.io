@@ -69,7 +69,7 @@ export default function Projects() {
             <div className="">
               {/* Renders line breaks: Include \n in the name prop in items.js */}
               {/* Mobile title sizing here */}
-              <p className="w-[70%] lg:text-p lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
+              <p className="w-[70%] md:text-p lg:leading-[1.55rem] text-[1rem] leading-[1rem]">
                 {item.name &&
                   item.name.split("\n").map((line, index) => (
                     <React.Fragment key={index}>
@@ -79,7 +79,7 @@ export default function Projects() {
                   ))}
               </p>
               {item.category && (
-                <div className="text-p  tracking-tight text-gray-300">
+                <div className="text-[1rem] leading-[1rem] md:text-p  tracking-tight text-gray-300">
                   {item.category}
                 </div>
               )}
@@ -122,7 +122,7 @@ export default function Projects() {
 </div>
  */}
         {/* OLD CLASSNAME FOR ARTICLE: w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[0.5rem] */}
-        <article className="w-full mx-auto columns-3 gap-[0.5rem]">
+        <article className="w-full mx-auto columns-2 md:columns-3 gap-[0.5rem]">
           {displayedItems}
         </article>
       </section>
