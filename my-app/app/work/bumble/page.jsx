@@ -17,8 +17,8 @@ import Link from "next/link";
 
 export default function Liminal() {
   const members = [];
-  const tools = ["Figma", "Keynote", "User research"];
-  const myRole = "UX/UI";
+  const tools = ["Figma", "Keynote", "User research", "User Flows", "Systems Thinking", "Scaling Design Systems", "Behavioral Science"];
+  const myRole = "UX | UI";
   const timeline = "4 weeks";
 
   // MODAL
@@ -117,7 +117,7 @@ export default function Liminal() {
             }
           />
 
-          <YAMLBar client="Bumble — Conceptual" year="2025" role="UX/UI" />
+          <YAMLBar client="Bumble | Concept" year="2025" role="UX | UI" />
 
           <main className="pb-[5.06rem]">
             <div className="h-fit w-full">
@@ -135,30 +135,37 @@ export default function Liminal() {
           <Context2
             context={
               <div>
-                <Link
-                  href="https://2025.lunargala.org"
-                  className="relative group underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Visit site
-                  <MdOutlineArrowOutward className="inline-block ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-p3 lg:text-p text font-SuisseWorks font-regular" />
-                </Link>
-                <br /> <br />
-                Bumble is a dating and social networking app where women make
-                the first move in heterosexual matches, promoting a more
-                respectful and empowering dynamic. My Advanced IXD course gave
-                me the opportunity to reframe a conceptual design breif: It
-                proposed to leverage mobile precision location services to
-                increase conversion rates of non-paying users by informing them
-                of nearby matches in real time.
-                <br /> <br /> Through secondary research and provided data on X
-                and Y, I identified genuine user pain points and reframed the
-                problem to be human-centered while meeting the needs of all
-                stakeholders.
-                {/* <br /> <br />
-                Process under development.{" "}
-                <span className="font-bold">Last updated 02.26.2025</span> */}
+                Bumble is a dating app empowering women to make the first move
+                in heterosexual matches.
+                <br />
+                <br />
+                Despite the app&apos;s success, women on Bumble still experience
+                decision fatigue due to mass swiping by male users, leading to
+                disengagement and low-quality matches. To address this,{" "}
+                <strong>Bumble Sessions</strong> introduces spontaneous,
+                location-based dating, enabling users to meet in real-time at
+                partnered businesses. Bumble Sessions reduces choice overload,
+                encourages meaningful connections, and{" "}
+                <strong>
+                  leverages systems-thinking to create a circular revenue stream
+                  for Bumble
+                </strong>{" "}
+                through in-person business partnerships and premium
+                subscriptions. By introducing behavioral science principles and
+                precision location services, Bumble Sessions enhances user
+                experience while driving engagement and monetization.
+                <br />
+                <br />
+                My Advanced IXD course gave me the opportunity to reframe a
+                conceptual design breif to create solutions meeting both the
+                needs of users and Bumble. The result was a{" "}
+                <strong>new business model</strong> , new approach to dating,
+                and{" "}
+                <strong>
+                  {" "}
+                  built off Bumble&apos;s existing design system with 3 new
+                  components.
+                </strong>
               </div>
             }
             myRole={myRole}
@@ -296,7 +303,7 @@ export default function Liminal() {
           </main>
 
           <div className="pt-[5rem]"></div>
-          <Header text={""} />
+
           <main className="w-full">
             <Image
               className="pt-2 w-full"
@@ -315,6 +322,7 @@ export default function Liminal() {
 
           <div className="pt-[10rem]"></div>
           <div className="md:pt-[5rem]"></div>
+          {/* EXPANDED HEADER */}
           <div
             className="
           md:w-2/3 h-fit 
@@ -325,7 +333,7 @@ export default function Liminal() {
             </h1>
           </div>
           <main className="pt-[2rem] md:pt-[5rem]">
-            <div className="md:flex items-center w-full  gap-[4rem]">
+            <div className="lg:flex items-center justify-center w-full  gap-[4rem]">
               <video autoPlay loop muted playsInline className="pt-2 h-[700px]">
                 <source
                   src={
@@ -334,7 +342,16 @@ export default function Liminal() {
                   type="video/mp4"
                 />
               </video>
-              <div className="md:w-[50%]">
+              <div className="md:w-[50%] h-[900px] flex flex-col justify-evenly">
+                <Image
+                  className="pt-2"
+                  src={
+                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/dynamicIslandDiagram.png"
+                  }
+                  layout="responsive"
+                  height={500}
+                  width={500}
+                />
                 <Image
                   className="pt-2"
                   src={
@@ -344,43 +361,66 @@ export default function Liminal() {
                   height={500}
                   width={500}
                 />
+                <Image
+                  className="pt-2"
+                  src={
+                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/multipleMatchesUseCase.png"
+                  }
+                  layout="responsive"
+                  height={500}
+                  width={500}
+                />
               </div>
             </div>
-            <div className="md:w-2/3 pt-[5rem]">
-              <div className="grid grid-cols-3 pt-[3rem] gap-y-[5rem]">
-                <div className="col-start-1 text-p">
-                  Applied Social Psychology
-                </div>
+            <div className="flex justify-center text-offBlack3">
+              Users may swipe left on a match to decline the invite
+            </div>
+            {/* APPLIED PSYCHOLOGY */}
+            {/* EXPANDED HEADER */}
+            <div
+              className="
+          md:w-2/3 h-fit 
+          items-start mt-[10rem]"
+            >
+              <h1 className="font-SFProDisplay  text-3xl md:text-[3rem] leading-tight md:leading-[3rem] tracking-tight">
+                Applied Behavioral Science
+              </h1>
+            </div>
+            {/* <Header text={"Applied Social Psychology"} /> */}
+            <div className="md:w-2/3 lg:mt-[3rem] space-y-[5rem]">
+              <div className="grid grid-cols-3 pt-[3rem] gap-y-[1rem]">
+                <div className="col-start-1 text-p">Loss Aversion</div>
+
                 <div className="col-start-2 col-span-2">
                   Studies have shown that humans are{" "}
                   <span className="font-bold">loss averse</span>—meaning, they
                   would rather not <i>lose</i> something than gain something
                   new.
-                  <br />
-                  <br />
+                </div>
+                <div className="text-p">Value to User</div>
+                <div className="col-start-2 col-span-2">
+                  Endlessly dwelling on or comparing options leads to more
+                  decisions and increased stress. The fear of losing a match
+                  motivates users to take immediate action, meet in person more
+                  often, and get closer to their goal of meeting someone
+                  genuine.
+                </div>
+              </div>
+              <div className="grid grid-cols-3 pt-[3rem] gap-y-[1rem]">
+                <div className="text-p">Elimination by Aspects</div>
+                <div className="col-span-2">
                   <span className="font-bold">
                     Elimination By Aspects (EBA)
                   </span>{" "}
                   is a decision making strategy that helps people eliminate
                   options that don&apos;t meet a set criterion, reducing the
                   cognitive load to make complex decisions.
-                  <br />
-                  <br />
                 </div>
-
-                <div className="text-p">Value to Users</div>
+                <div className="text-p">Value to User</div>
                 <div className="col-span-2">
-                  <span className="font-bold">Loss Aversion</span> — Endless
-                  dwelling or comparing options causes means more decisions and
-                  more stress. The potential to lose a match causes users to
-                  take immediate action and be closer to their goal of meeting
-                  someone genuine.
-                  <br />
-                  <br />
-                  <span className="font-bold">EBA</span> — Potential matches may
-                  suggest a local business to meet at, helping the sender
-                  differentiate themselves, and help the users eliminate matches
-                  suggesting places they do not enjoy.
+                  Potential matches can suggest a local business to meet at,
+                  allowing the sender to stand out and helping users avoid
+                  matches who suggest places they don't enjoy.
                 </div>
               </div>
             </div>
@@ -508,6 +548,13 @@ export default function Liminal() {
                   height={1000}
                   width={1000}
                 />
+                <div className="flex justify-center text-offBlack3">
+                  Average Adoption Rate of location-based notifications, by
+                  city.
+                </div>
+                <div className="flex justify-center text-offBlack3">
+                  Data was sourced from my course, Adv IXD.
+                </div>
               </div>
             </div>
             {/* https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bumble-kpis.png */}
