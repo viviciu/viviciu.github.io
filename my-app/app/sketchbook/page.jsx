@@ -78,14 +78,14 @@ export default function Projects() {
       items-start
       col-span-3
         leading-p3
-        text-p
+
         text
         font-SuisseWorks
         font-regular
         text-offBlack2
         "
         >
-          Sketches from freshman—sophomore year. My process, lessons learned,
+          My process, lessons learned,
           and inspirations.
         </div>
       </div>

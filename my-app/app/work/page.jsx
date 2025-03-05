@@ -25,9 +25,9 @@ export default function Projects() {
         {/* PARENT GROUP */}
         <Link href={"/work/" + item.id}>
           <div
-            className="flex flex-col justify-center relative group 
-            pb-[1rem]
-          text-[1.55rem] leading-[1.55rem]  translate-y-0 "
+            className={`flex flex-col justify-center relative group 
+            ${item.name ? "pb-[1rem]" : ""}
+          text-[1.55rem] leading-[1.55rem]  translate-y-0 `}
           >
             {item.fileType === "img" ? (
               <Image
@@ -70,16 +70,19 @@ export default function Projects() {
               {/* Renders line breaks: Include \n in the name prop in items.js */}
               {/* Mobile title sizing here */}
               <p className="w-[70%] lg:text-p lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
-                {item.name.split("\n").map((line, index) => (
-                  <React.Fragment key={index}>
-                    {line}
-                    <br />
-                  </React.Fragment>
-                ))}
+                {item.name &&
+                  item.name.split("\n").map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
               </p>
-              <div className="text-p  tracking-tight text-gray-300">
-                {item.category}
-              </div>
+              {item.category && (
+                <div className="text-p  tracking-tight text-gray-300">
+                  {item.category}
+                </div>
+              )}
             </div>
 
             {/* Conditionally renders if the title description is there. It is not rendered on mobile, but the space is rendered on lg devices. */}

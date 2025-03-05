@@ -54,7 +54,7 @@ export default function Liminal() {
     <>
       <div className="flex">
         {/* Side Navbar */}
-        <nav className="fixed top-10 left-0 h-full p-4">
+        <nav className="fixed top-20 left-0 h-full p-4">
           <ul className="space-y-2">
             <li>
               <button
