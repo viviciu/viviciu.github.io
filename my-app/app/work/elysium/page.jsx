@@ -27,6 +27,7 @@ import "../../_components/greyBGLines.css";
 import Footer from "../../_components/Footer";
 import Head from "next/head";
 import New3VideoCloudinaryAutoplayLoop from "@/app/_components/New3VideoCloudinaryAutoplayLoop";
+import New3VideoAWS from "@/app/_components/New3VideoAWS";
 
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Link from "next/link";
@@ -41,7 +42,7 @@ export default function Liminal() {
     "Kaitlyn Ng",
     "Lucy Wang",
   ];
-  const tools = ["Three.js", "GLSL", "Touchdesigner", "UX/UI", "Figma"];
+  const tools = ["Three.js", "GLSL", "Touchdesigner", "UX | UI", "Figma"];
   const myRole = "Co-head, Creative Technologist";
   const timeline = "6 months"
 
@@ -106,7 +107,7 @@ export default function Liminal() {
               .
               <br /> <br /> I creatively directed and facilitated
               cross-functional collaboration in a team of 4 designers and 5
-              devs. Lead concept design, interaction, and UI / UX for
+              devs. Lead concept design, interaction, and UI | UX for
               Pittsburgh&apos;s largest fashion show&apos;s website.
               <br /> <br />I designed and developed the site&apos;s home page
               GLSL particles to create a library of different particle behaviors
@@ -234,6 +235,14 @@ export default function Liminal() {
         <New3VideoCloudinaryAutoplayLoop
           src={
             "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/lg/uelohmn4ldqfkuldngoo"
+          }
+          caption={""}
+          text1={""}
+        />
+        <Header text={"Archive — Under Development"} />
+        <New3VideoAWS
+          src={
+            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_archive_preloader.mov.webm"
           }
           caption={""}
           text1={""}

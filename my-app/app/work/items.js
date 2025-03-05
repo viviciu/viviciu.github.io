@@ -8,7 +8,7 @@ export const items = [
     // url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh",
     // url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/n5xvgcsapxlnsxyfuzsp",
     fileType: "mp4",
-    category: "Generative Design Systems, Brand, UI/UX",
+    category: "Generative Design Systems, Brand, UI | UX",
     categorySpecific: "",
   },
 
@@ -23,6 +23,7 @@ export const items = [
     category: "Generative Design",
     categorySpecific: "some generative procedural animations.",
   },
+
   {
     id: "playfulVsPractical",
     name: "Playful vs. Practical",
@@ -36,7 +37,9 @@ export const items = [
     id: "typographyAnimation",
     name: "Kinetic type animation",
     // url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa",
+    // LIGATURES BELOW
     url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/dsmxcrxddfumriwed9w5",
+    // url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/athelas-cover.mov.webm",
     fileType: "img",
     category: "Motion",
     categorySpecific: "a study in time and motion narrating a typeface.",
@@ -51,6 +54,16 @@ export const items = [
   //   category: "Industrial Design",
   //   categorySpecific: "",
   // },
+  {
+    id: "touchdesignerSeries",
+    name: "",
+    // STAR
+    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/pf1tssh39e5pqkirptca",
+
+    fileType: "mp4",
+    category: "",
+    categorySpecific: "some generative procedural animations.",
+  },
 
   {
     id: "spatula",
@@ -58,6 +71,15 @@ export const items = [
     url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/play/lohb80s9ngarowqrs78s",
     fileType: "img",
     category: "Industrial Design",
+    categorySpecific: "",
+  },
+
+  {
+    id: "bumble",
+    name: "Bumble Sessions",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
+    fileType: "img",
+    category: "UI | UX, Design Systems",
     categorySpecific: "",
   },
   {
@@ -69,15 +91,6 @@ export const items = [
     categorySpecific:
       "a realm where the very essence of self and time finds itself in flux.",
   },
-  {
-    id: "bumble",
-    name: "Bumble Sessions",
-    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
-    fileType: "img",
-    category: "UI/UX, Service Design",
-    categorySpecific: "",
-  },
-
   {
     id: "cminiPoster",
     name: "Dirty Dozen Poster",

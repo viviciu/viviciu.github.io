@@ -25,9 +25,9 @@ export default function Projects() {
         {/* PARENT GROUP */}
         <Link href={"/work/" + item.id}>
           <div
-            className="flex flex-col justify-center relative group 
-            pb-[1rem]
-          text-[1.55rem] leading-[1.55rem]  translate-y-0 "
+            className={`flex flex-col justify-center relative group 
+            ${item.name ? "pb-[1rem]" : ""}
+          text-[1.55rem] leading-[1.55rem]  translate-y-0 `}
           >
             {item.fileType === "img" ? (
               <Image
@@ -50,23 +50,39 @@ export default function Projects() {
                 <source src={item.url} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            ) : item.fileType === "webm" ? (
+              <video
+                className="w-full h-full object-cover pb-[0.6rem]"
+                width={500} // Example width, adjust as needed
+                height={500} // Example height, adjust as needed
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src={item.url} type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
             ) : null}
 
             {/* TITLE PARENT DIV */}
             <div className="">
               {/* Renders line breaks: Include \n in the name prop in items.js */}
               {/* Mobile title sizing here */}
-              <p className="w-[70%] lg:text-p lg:leading-[1.55rem] text-[1.2rem] leading-[1.25rem]">
-                {item.name.split("\n").map((line, index) => (
-                  <React.Fragment key={index}>
-                    {line}
-                    <br />
-                  </React.Fragment>
-                ))}
+              <p className="w-[70%] md:text-p lg:leading-[1.55rem] text-[1rem] leading-[1rem]">
+                {item.name &&
+                  item.name.split("\n").map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
               </p>
-              <div className="text-p  tracking-tight text-gray-300">
-                {item.category}
-              </div>
+              {item.category && (
+                <div className="text-[1rem] leading-[1rem] md:text-p  tracking-tight text-gray-300">
+                  {item.category}
+                </div>
+              )}
             </div>
 
             {/* Conditionally renders if the title description is there. It is not rendered on mobile, but the space is rendered on lg devices. */}
@@ -106,7 +122,7 @@ export default function Projects() {
 </div>
  */}
         {/* OLD CLASSNAME FOR ARTICLE: w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[0.5rem] */}
-        <article className="w-full mx-auto columns-3 gap-[0.5rem]">
+        <article className="w-full mx-auto columns-2 md:columns-3 gap-[0.5rem]">
           {displayedItems}
         </article>
       </section>
