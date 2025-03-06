@@ -62,6 +62,19 @@ export default function Projects() {
               <source src={item.url} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+          ) : item.fileType === "webm" ? (
+            <video
+              className="w-full h-full object-cover pb-[0.6rem]"
+              width={500} // Example width, adjust as needed
+              height={500} // Example height, adjust as needed
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src={item.url} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           ) : null}
         </div>
       </div>

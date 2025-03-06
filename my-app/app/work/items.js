@@ -82,6 +82,15 @@ export const items = [
     category: "UI | UX, Design Systems",
     categorySpecific: "",
   },
+  // {
+  //   id: "cinematography",
+  //   name: "cinema",
+  //   url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cinema/cover-wipedClean.png",
+  //   fileType: "img",
+  //   category: "Creative Code, Brand",
+  //   categorySpecific:
+  //     "a realm where the very essence of self and time finds itself in flux.",
+  // },
   {
     id: "liminal",
     name: "Lunar Gala: Liminal",
