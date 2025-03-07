@@ -59,6 +59,14 @@ export const items = [
   {
     id: "test-dohnut",
     name: "t1",
+    url: "https://stream.mux.com/bWtOP7AxOvsonYYuecvDfLM00QVyHjZu8lIOvatm011bE.m3u8",
+    fileType: "webm",
+    category: "3d",
+    categorySpecific: "",
+  },
+  {
+    id: "test-dohnut",
+    name: "t1",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_lg-gif-spin.mov.webm",
     fileType: "webm",
     category: "3d",

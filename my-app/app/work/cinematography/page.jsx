@@ -49,10 +49,19 @@ export default function Cinematography() {
       />
 
       {/* https://res.cloudinary.com/ddjxpkewq/video/upload/q_auto/v1/pmini/elqxufreseulmgvbxs1n */}
-      <New3Video
+      {/* <New3Video
         src={"bWtOP7AxOvsonYYuecvDfLM00QVyHjZu8lIOvatm011bE"}
         text1="wiped clean, 2022."
-      />
+      /> */}
+      <div className="w-2/3">
+        <video autoPlay loop controls muted playsInline>
+          <source
+            src="https://stream.mux.com/bWtOP7AxOvsonYYuecvDfLM00QVyHjZu8lIOvatm011bE.m3u8"
+            type="video/webm"
+          />
+        </video>
+        <div className="">wiped clean, 2022</div>
+      </div>
       <div
         className=" lg:grid lg:grid-cols-6
           gap-[5.06rem] 
