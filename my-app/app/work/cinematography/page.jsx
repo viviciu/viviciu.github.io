@@ -62,13 +62,22 @@ export default function Cinematography() {
         </video>
         <div className="">wiped clean, 2022</div>
       </div>
+      
+{/* VIMEO EMBED */}
+      {/* <div className="w-[50rem]">
+        <iframe
+          src="https://player.vimeo.com/video/1063762366?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+          title="confusion-deathnote-suanna-graphics-meme-motion"
+          className="w-[50rem]"
+        ></iframe>
+      </div> */}
       <div
         className=" lg:grid lg:grid-cols-6
           gap-[5.06rem] 
           w-full h-[18rem]"
       >
-        {/* DOCUMENTATION: https://www.npmjs.com/package/react-iframe */}
-
         <div className="col-start-3 col-span-4 h-[25rem]">
           <Iframe
             url={embedUrl} // Ensure the URL is in the correct embed format
