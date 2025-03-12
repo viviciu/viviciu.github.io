@@ -150,13 +150,22 @@ export default function Spatula() {
             context={
               <div>
                 {/* TLDR blurb vicki said, check notebook from november, at the beginning of the notebook. (impact)  */}
-                Inspired by the harmonious, integrated flow of muscles, I aimed
+                {/* Inspired by the harmonious, integrated flow of muscles, I aimed
                 to establish a direct 1:1 relationship between the user’s grip
                 and the spatula’s working edge.
                 <br /> <br />
                 Like the geometry of the human body, this tension-form emerged
                 solely from fair curves. The seamless twist follows the planes
-                of the palm-arm bridge,{" "}
+                of the palm-arm bridge,{" "} */}
+                Inspired by the harmonious, integrated flux of muscles and
+                tendons, this spatula acts as a seamless extension of the hand,
+                translating human intent into precise control through a direct
+                1:1 relationship between the thumb and the working edge.
+                <br />
+                <br />
+                Like the geometry of our body, this tension-form emerged solely
+                from fair curves. The seamless twist follows the planes of the
+                palm-arm bridge,{" "}
                 <span className="font-bold">
                   transforming the spatula into a natural extension of the arm,
                   uniting them as one.
@@ -169,12 +178,29 @@ export default function Spatula() {
             timeline={timeline}
           />
           <div id="FINAL FORM" ref={intentRef}>
-            {/* COLUMNS SHOWCASE */}
-
             <DividerLine
               text={"showcase with wood, greyfoam, and flashlight"}
             />
-            <div className="columns-3 gap-[0.5rem]  mt-[5rem]">
+            <div className="w-full">
+              <Image
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_big.png.webp"
+                }
+                height={500}
+                width={500}
+                layout="responsive"
+              />
+            </div>
+            {/* COLUMNS SHOWCASE */}
+            {/* <div className="columns-3 gap-[0.5rem]  mt-[5rem]">
+              <Image
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07111.jpg.webp"
+                }
+                height={500}
+                width={500}
+                layout="responsive"
+              />
               <Image
                 src={
                   "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07153.jpg.webp"
@@ -191,14 +217,7 @@ export default function Spatula() {
                 width={500}
                 layout="responsive"
               />
-              {/* <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-C0050.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              /> */}
+
 
               <Image
                 src={
@@ -216,14 +235,7 @@ export default function Spatula() {
                 width={500}
                 layout="responsive"
               />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07111.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
+
               <Image
                 src={
                   "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-2-2.jpg.webp"
@@ -235,15 +247,55 @@ export default function Spatula() {
 
               <Image
                 src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07144.jpg.webp"
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07086.jpg.webp"
                 }
                 height={500}
                 width={500}
                 layout="responsive"
               />
-            </div>
+              <Image
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07469.jpg.webp"
+                }
+                height={500}
+                width={500}
+                layout="responsive"
+              />
+              <Image
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07453.jpg.webp"
+                }
+                height={500}
+                width={500}
+                layout="responsive"
+              />
+              <Image
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07467.jpg.webp"
+                }
+                height={500}
+                width={500}
+                layout="responsive"
+              />
+              <Image
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07456.jpg.webp"
+                }
+                height={500}
+                width={500}
+                layout="responsive"
+              />
+              <Image
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07472.jpg.webp"
+                }
+                height={500}
+                width={500}
+                layout="responsive"
+              />
+            </div> */}
 
-            <DividerLine text={"Intent and use"} />
+            <DividerLine text={"Intended use case: laterial swiping"} />
             {/* VIDEO SHOWCASE */}
             <div className="mt-[5rem]"></div>
             <div className="md:flex md:h-[66.65vh] w-full gap-[0.5rem]">
@@ -304,7 +356,132 @@ export default function Spatula() {
                 <p className="text-offBlack3">Ample grip area allowance</p>
               </div>
             </div>
+
+            {/* DIVIDER */}
+            <div className="h-[5rem] md:h-[10rem]"></div>
+            {/* CLEAR LINE OF ACTION */}
+            <New3
+              img1="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-C0049.jpg.webp"
+              text1={
+                <div>
+                  The direct 1:1 relationship between the thumb and the working
+                  edge follows the user's intent precisely, ensuring that the
+                  spatula feels instinctive,{" "}
+                  <strong>
+                    as if it were an extension of the body itself.
+                  </strong>
+                </div>
+              }
+              caption="There is a clear line of action starting at the arm, down to the wrist, thumb, and finally, blade edge."
+            />
+
             {/* THENAR EMINENCE IMG */}
+            {/* NEW 3 EXPANDED FOR 2 IMGS */}
+            <main>
+              <div
+                className=" 
+      lg:grid lg:grid-cols-6
+      gap-[5.06rem] 
+      w-full h-fit 
+      items-start
+      pt-[5rem]"
+              >
+                {/* <div
+                  className="
+        col-span-2
+        leading-[1.5rem]
+        lg:text-[1rem]
+        tracking-[0.005em]
+        text
+        font-Suisse
+        font-regular
+        text-offBlack2"
+                >
+                  text
+                </div> */}
+                <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+                  <div className="flex w-full gap-[0.5rem]">
+                    <div>
+                      <Image
+                        src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_twistThenarEminence-edit-1.jpg.webp"
+                        alt="home page image"
+                        layout="responsive"
+                        width={500}
+                        height={500}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_twistThenarEminence-edit-2.jpg.webp"
+                        alt="home page image"
+                        layout="responsive"
+                        width={500}
+                        height={500}
+                      />
+                    </div>
+                  </div>
+
+                  <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
+                    The twist natrually fits the thenar eminence of the palm
+                    perfectly, offering grip support and control.
+                  </p>
+                </div>
+              </div>
+            </main>
+            {/* USING LIGHT TO REVEAL IMPERFECTIONS */}
+            <main>
+              <div
+                className=" 
+      lg:grid lg:grid-cols-6
+      gap-[5.06rem] 
+      w-full h-fit 
+      items-start
+      pt-[5rem]"
+              >
+                {/* <div
+                  className="
+        col-span-2
+        leading-[1.5rem]
+        lg:text-[1rem]
+        tracking-[0.005em]
+        text
+        font-Suisse
+        font-regular
+        text-offBlack2"
+                >
+                  text
+                </div> */}
+                <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+                  <div className="flex w-full gap-[0.5rem]">
+                    <div>
+                      <Image
+                        src={
+                          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07083.jpg.webp"
+                        }
+                        height={500}
+                        width={500}
+                        layout="responsive"
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src={
+                          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07082.jpg.webp"
+                        }
+                        height={500}
+                        width={500}
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+
+                  <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
+                    Focused light informed me what planes needed more or less
+                    sanding. It reveals plane elevation.
+                  </p>
+                </div>
+              </div>
+            </main>
           </div>
 
           <div ref={processRef}>
@@ -452,6 +629,182 @@ export default function Spatula() {
               it were an extension of the body itself.
             </div> */}
               </div>
+
+              {/* NEW SECTION: PROTOTYPING & CAD */}
+              <main>
+                <DividerLine text={"Prototyping & CAD"} />
+                {/* CAD */}
+                <div
+                  className=" 
+      lg:grid lg:grid-cols-6
+      gap-[5.06rem] 
+      w-full h-fit 
+      items-start
+      pt-[5rem]"
+                >
+                  <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+                    <div className="flex w-full gap-[0.5rem]">
+                      <div className="w-[60rem]">
+                        <Image
+                          src={
+                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/finalTopViewSketches.png"
+                          }
+                          height={500}
+                          width={500}
+                          layout="responsive"
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={
+                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/SOLIDWORKS-SPATULA-3.png"
+                          }
+                          height={500}
+                          width={500}
+                          layout="responsive"
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={
+                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/SOLIDWORKS-SPATULA-1.png"
+                          }
+                          height={500}
+                          width={500}
+                          layout="responsive"
+                        />
+                      </div>
+                    </div>
+
+                    <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
+                      Solidworks helped speed visualizing minor tweaks to my
+                      base top and side profiles.
+                    </p>
+                  </div>
+                </div>
+                {/* CAD */}
+                <div
+                  className=" 
+      lg:grid lg:grid-cols-6
+      gap-[5.06rem] 
+      w-full h-fit 
+      items-start
+      pt-[5rem]"
+                >
+                  <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+                    <div className="flex w-full gap-[0.5rem]">
+                      <div>
+                        <video
+                          className=""
+                          controls
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                        >
+                          <source
+                            src={
+                              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0031-trim.MP4.webm"
+                            }
+                            type="video/webm"
+                          />
+                        </video>
+                      </div>
+                      <div>
+                        <video
+                          className="
+                              
+                              https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0031-trim.MP4.webm"
+                          controls
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                        >
+                          <source
+                            src={
+                              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0034-trim.MP4.webm"
+                            }
+                            type="video/webm"
+                          />
+                        </video>
+                      </div>
+                    </div>
+
+                    <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
+                      (L) First prototype was too visually heavy, opted for a
+                      slimmer, tighter profile
+                      <br />
+                      (R) Considering creating a slice so form follows the
+                      motions function.
+                    </p>
+                  </div>
+                </div>
+                <div className="pt-[5rem]"></div>
+                <New3
+                  img1="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/sketchbook-printouts.png"
+                  caption={
+                    <div>
+                      Observing how it looks at every angle, where the palm
+                      needs more support. I often find photographing and
+                      physically iterating in the latter half of a project is
+                      most effective for refinement.
+                    </div>
+                  }
+                />
+                {/* USING LIGHT TO REVEAL IMPERFECTIONS */}
+                <div
+                  className=" 
+      lg:grid lg:grid-cols-6
+      gap-[5.06rem] 
+      w-full h-fit 
+      items-start
+      pt-[5rem]"
+                >
+                  {/* <div
+                  className="
+        col-span-2
+        leading-[1.5rem]
+        lg:text-[1rem]
+        tracking-[0.005em]
+        text
+        font-Suisse
+        font-regular
+        text-offBlack2"
+                >
+                  text
+                </div> */}
+                  <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+                    <div className="flex w-full gap-[0.5rem]">
+                      <div>
+                        <Image
+                          src={
+                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07083.jpg.webp"
+                          }
+                          height={500}
+                          width={500}
+                          layout="responsive"
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src={
+                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07082.jpg.webp"
+                          }
+                          height={500}
+                          width={500}
+                          layout="responsive"
+                        />
+                      </div>
+                    </div>
+
+                    <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
+                      Focused light informed me what planes needed more or less
+                      sanding. It reveals plane elevation.
+                    </p>
+                  </div>
+                </div>
+              </main>
             </main>
           </div>
         </main>
