@@ -64,7 +64,7 @@ export default function Spatula() {
                 className="hover:text-mwsGrey transition-colors duration-200 cursor-pointer"
                 onClick={() => scrollToRef(intentRef)}
               >
-                Showcase & Intent
+                Showcase
               </button>
             </li>
             <li>
@@ -105,15 +105,7 @@ export default function Spatula() {
                 className="hover:text-mwsGrey transition-colors duration-200"
                 onClick={() => scrollToRef(prototypingRef)}
               >
-                Prototyping & CAD
-              </button>
-            </li>
-            <li>
-              <button
-                className="hover:text-mwsGrey transition-colors duration-200 cursor-pointer"
-                onClick={() => scrollToRef(finalRef)}
-              >
-                Final
+                Modelmaking & CAD
               </button>
             </li>
           </ul>
@@ -178,9 +170,6 @@ export default function Spatula() {
             timeline={timeline}
           />
           <div id="FINAL FORM" ref={intentRef}>
-            <DividerLine
-              text={"showcase with wood, greyfoam, and flashlight"}
-            />
             <div className="w-full">
               <Image
                 src={
@@ -631,7 +620,7 @@ export default function Spatula() {
               </div>
 
               {/* NEW SECTION: PROTOTYPING & CAD */}
-              <main>
+              <main ref={prototypingRef}>
                 <DividerLine text={"Prototyping & CAD"} />
                 {/* CAD */}
                 <div
