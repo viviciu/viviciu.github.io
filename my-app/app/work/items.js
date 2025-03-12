@@ -69,7 +69,7 @@ export const items = [
     id: "spatula",
     name: "Spatula",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0053-trim-cover.MP4.webm",
-    fileType: "img",
+    fileType: "webm",
     category: "Industrial Design",
     categorySpecific: "",
   },
