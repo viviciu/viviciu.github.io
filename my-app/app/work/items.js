@@ -4,11 +4,12 @@ export const items = [
   {
     id: "elysium",
     name: "Lunar Gala: Elysium",
-    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr",
-    // url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/peypqarqejx6fezrlawh",
-    // url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/n5xvgcsapxlnsxyfuzsp",
-    fileType: "mp4",
-    category: "Generative Design Systems, Brand, UI | UX",
+    // url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/comp_elysiumLaunchReel-5x4-startTrim.mov.webm",
+    // url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/comp_elysiumLaunchReel-5x4-endTrim.mov.webm",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/comp_elysiumLaunchReel-5x4.mov.webm",
+    // url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr",
+    fileType: "webm",
+    category: "Generative Design Systems, Brand, Motion, UI | UX",
     categorySpecific: "",
   },
 
