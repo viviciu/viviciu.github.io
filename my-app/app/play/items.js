@@ -1,6 +1,14 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
   {
+    id: "elysiumcircle",
+    name: "elysiumcircle",
+    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr",
+    category: "",
+    fileType: "mp4",
+    categorySpecific: "",
+  },
+  {
     id: "xrCube",
     name: "XRcube",
     url: "https://image.mux.com/jysKZgic9HN6hv3xGk9QVJsFwdrKQvTZ0101ucmtqXPp00/animated.gif?width=320",

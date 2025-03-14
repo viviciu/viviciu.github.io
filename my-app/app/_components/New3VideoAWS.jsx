@@ -1,16 +1,12 @@
-// 6 COL GRID USED HERE. USE NEW4 FOR NO GRID.
-
-
-const New3VideoCloudinaryAutoplay = ({ text1, src, caption }) => { 
+const New3VideoCloudinaryAutoplay = ({ text1, src, caption }) => {
   return (
-    <main>
+    <main className="w-full">
       <div
         className=" 
           lg:grid lg:grid-cols-6
           gap-[5.06rem] 
-          w-full h-fit 
-          items-start
-          pt-[0.5rem]" // important padding top here
+          w-full h-full 
+          pt-[0.5rem]"
       >
         {text1 && (
           <div
@@ -27,22 +23,20 @@ const New3VideoCloudinaryAutoplay = ({ text1, src, caption }) => {
             {text1}
           </div>
         )}
-        <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
-          <div className=" col-start-1">
+        <div className="col-start-3 col-span-4 h-full flex flex-col">
+          {/* Ensure this wrapper div is full height */}
+          <div className="h-full flex">
             {src && (
-              <div className="col-start-1">
+              <div className="h-[80vh] flex justify-center">
                 {/* CLOUDINARY */}
-                <video controls>
-                  <source
-                    src={src}
-                    type="video/webm"
-                  />
+                <video className="" controls>
+                  <source src={src} type="video/webm" />
                 </video>
               </div>
             )}
           </div>
           {caption && (
-            <div className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
+            <div className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] flex justify-center">
               {caption}
             </div>
           )}
