@@ -24,28 +24,28 @@ export default function About() {
           <span className="text-black font-semibold">
             Viviana Staicu (b.2005)
           </span>{" "}
-          is an industrial designer. interaction designer. experience
-          prototyper. creative technologist. Currently, she is exploring the
-          intersection between physical and digital design, studying industrial
-          design in university and procedural animation in her studio practice.
+          is a multidisciplinary designer. storyteller. interaction designer.
+          experience prototyper. creative technologist. Currently, she is
+          exploring the intersections between creative code, motion design, and
+          brand identity.
           <br />
           <br />
           In her practice, she aims to reignite curiosity and play through
-          honest, unobtrusive design. She has created objects that delight,
-          immersive websites, 3D renderings, and UI/UX designs.
+          honest, unobtrusive design. She has created generative designs,
+          procedural animations, objects that delight, immersive websites, 3D
+          renderings, and UI | UX designs.
           <br />
           <br />
           She currently studies{" "}
           <span className="text-black font-semibold">
-            Industrial Design and HCI
+            Design and HCI
           </span>{" "}
           at{" "}
           <span className="text-black font-semibold">
             Carnegie Mellon University
           </span>{" "}
-          and comes from Baltimore {">"} Pittsburgh. Feel free to
-          shoot her an email with any inquiries or if you&apos;ve got an
-          idea—lets talk!
+          and comes from Baltimore {">"} Pittsburgh. Feel free to shoot her an
+          email with any inquiries or if you&apos;ve got an idea—lets talk!
           <br />
           <br />
           <Link
