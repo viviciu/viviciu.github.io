@@ -1,10 +1,10 @@
-const New3VideoCloudinaryAutoplay = ({ text1, src, caption }) => {
+const New3VideoAWS = ({ text1, src, caption }) => {
   return (
     <main className="w-full">
-      <div
+      <section
         className=" 
           lg:grid lg:grid-cols-6
-          gap-[5.06rem] 
+          gap-[3rem] 
           w-full h-full 
           pt-[0.5rem]"
       >
@@ -27,9 +27,8 @@ const New3VideoCloudinaryAutoplay = ({ text1, src, caption }) => {
           {/* Ensure this wrapper div is full height */}
           <div className="h-full flex">
             {src && (
-              <div className="h-[80vh] flex justify-center">
-                {/* CLOUDINARY */}
-                <video className="" controls>
+              <div className="w-full flex justify-center max-h-[80vh]">
+                <video className="w-full" controls>
                   <source src={src} type="video/webm" />
                 </video>
               </div>
@@ -41,9 +40,9 @@ const New3VideoCloudinaryAutoplay = ({ text1, src, caption }) => {
             </div>
           )}
         </div>
-      </div>
+      </section>
     </main>
   );
 };
 
-export default New3VideoCloudinaryAutoplay;
+export default New3VideoAWS;

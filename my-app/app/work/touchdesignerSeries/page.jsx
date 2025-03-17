@@ -1,6 +1,7 @@
 "use client";
 import Title from "../../_components/Title";
 import New3VideoCoudinary from "../../_components/New3VideoCloudinary"
+import New3VideoAWS from "../../_components/New3VideoAWS"
 import Context2 from "../../_components/Context2";
 import YAMLBar from "../../_components/YAMLBar";
 
@@ -20,13 +21,13 @@ export default function Liminal() {
       <Title
         text1={
           <div>
-            TouchDesigner Experiments, <br /> some explorations in generative design.
+            TouchDesigner Experiments, <br /> some explorations in generative
+            design.
           </div>
         }
       />
 
       <YAMLBar client="Self" year="2024" role="Procedural Animation" />
-      {/* "https://image.mux.com/EWeOGWvhBZ79DwTqSLKtR02F19MmWBk1xQZEN01hTLny00/animated.gif?width=600" */}
 
       {/* COVER YAML EXPANDED */}
       <main className=" pb-[5.06rem]">
@@ -34,9 +35,9 @@ export default function Liminal() {
           <video className="w-full h-auto" autoPlay loop muted playsInline>
             <source
               src={
-                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk"
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/dune-trimmed-cover-thumbnail.mov.webm"
               }
-              type="video/mp4"
+              type="video/webm"
             />
           </video>
         </div>
@@ -47,7 +48,8 @@ export default function Liminal() {
           <div>
             Explorations into how this procedural, node-based software can
             leverage inputs of data—such as image, video, and sound—to
-            generatively create infinite variations of assets in a design system.
+            generatively create infinite variations of assets in a design
+            system.
           </div>
         }
         myRole={myRole}
@@ -56,9 +58,9 @@ export default function Liminal() {
         timeline={timeline}
       />
 
-      <New3VideoCoudinary
+      <New3VideoAWS
         src={
-          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk"
+          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/compressed_010425_dune-full.mov.webm"
         }
         text1={
           <div>
@@ -76,100 +78,65 @@ export default function Liminal() {
 
       {/* SPACER */}
       <div className="mt-[4rem]"></div>
-      {/* <New3VideoCoudinaryAutoplay
-        src={
-          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/kxuxwhu3vchw1p09ctlw"
-        }
-        caption="Procedural nodes could change color or other properties via various inputs like audio, visual, and lidar sensor data. Here, I manipulate a constant RGB value node manually instead."
-      />
-
-      <New3VideoCoudinaryAutoplayLoop
-        src={
-          "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/vx8mvjx494uj0j5rohru"
-        }
-        caption="Video as input to particle pointcloud data."
-      /> */}
 
       {/* GRID */}
-      <div
-        className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 place-content-center
-          "
-      >
-        <video autoPlay loop muted playsInline className="pt-2">
+      <div className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 space-y-[0.5rem] place-content-center">
+        <video autoPlay loop muted playsInline className="w-full">
           <source
             src={
-              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/k6yrnavjpkvpwedpwkqd"
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/compressed_pointCloudModel.mov.webm"
             }
-            type="video/mp4"
+            type="video/webm"
           />
         </video>
-        <video autoPlay loop muted playsInline className="pt-2">
+        <p>Video as input to particle pointcloud data.</p>
+        <video autoPlay loop muted playsInline className="w-full">
+          {/* dune process */}
           <source
             src={
-              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk"
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/compressed_particles_noiseSculpting.0.mov.webm"
             }
-            type="video/mp4"
+            type="video/webm"
           />
         </video>
-
-        <video autoPlay loop muted playsInline className="pt-2">
+        <video autoPlay loop muted playsInline className="w-full">
           <source
             src={
-              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/pf1tssh39e5pqkirptca"
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/compressed_td_dune-colorChange-process-trim.mov.webm"
             }
-            type="video/mp4"
+            type="video/webm"
           />
         </video>
-        <div>
-          <video autoPlay loop muted playsInline className="pt-2">
-            {/* dune process */}
-            <source
-              src={
-                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/kxuxwhu3vchw1p09ctlw"
-              }
-              type="video/mp4"
-            />
-          </video>
-          <p>
-            Procedural nodes could change color or other properties via various
-            inputs like audio, visual, and lidar sensor data. Here, a constant
-            RGB value node is changed manually instead.
-          </p>
-        </div>
-
-        <div>
-          <video autoPlay loop muted playsInline className="pt-2">
-            <source
-              src={
-                "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/vx8mvjx494uj0j5rohru"
-              }
-              type="video/mp4"
-            />
-          </video>
-          <p>Video as input to particle pointcloud data.</p>
-        </div>
-
-        <video autoPlay loop muted playsInline className="pt-2 w-full h-full">
+        <p>
+          Procedural nodes could change color or other properties via various
+          inputs like audio, visual, and lidar sensor data. Here, a constant RGB
+          value node is changed manually instead.
+        </p>
+        <video autoPlay loop muted playsInline className="w-full">
           <source
             src={
-              "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/ipka2uztgvg4ky0w5nmn"
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/compressed_BannanaVHS.1.mov.webm"
             }
-            type="video/mp4"
+            type="video/webm"
+          />
+        </video>
+        <video autoPlay loop muted playsInline className="w-full h-full">
+          <source
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/comp_compressed_particles_noiseSculpting-2-2-trim.mov.webm.webm"
+            }
+            type="video/webm"
+          />
+        </video>
+        <video autoPlay loop muted playsInline className="w-full h-full">
+          <source
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/comp_compressed_DUNE-yellowPurple.mov.webm.webm"
+            }
+            type="video/webm"
           />
         </video>
       </div>
-
-      {/* https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/touchdesigner/k6yrnavjpkvpwedpwkqd */}
-
-      {/* <p>BELOW: video under f_mp4 codec, autoPlay loop muted playsInLine </p>
-      <video autoPlay loop muted playsInline>
-        <source
-          src={
-            "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
-          }
-          type="video/mp4"
-        />
-      </video> */}
     </main>
   );
 }

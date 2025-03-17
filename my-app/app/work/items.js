@@ -18,9 +18,8 @@ export const items = [
   {
     id: "touchdesignerSeries",
     name: "Touchdesigner Experiments",
-    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/touchdesigner/tn1qnhqpbextyksfdpvk",
-    // OLD GIF: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/touchdesigner/e8cbelbypsufwsk0nsly"
-    fileType: "mp4",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/dune-trimmed-cover-thumbnail.mov.webm",
+    fileType: "webm",
     category: "Generative Design",
     categorySpecific: "some generative procedural animations.",
   },
@@ -28,9 +27,9 @@ export const items = [
   {
     id: "playfulVsPractical",
     name: "Playful vs. Practical",
-    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/comp_cover-pickup-playfulpractical.mp4.webm",
     // url: "/imgs/DSC05668-thumbnail.jpg",
-    fileType: "mp4",
+    fileType: "webm",
     category: "Industrial Design",
     categorySpecific: "a synergy of language, form, and context.",
   },
@@ -59,9 +58,8 @@ export const items = [
     id: "touchdesignerSeries",
     name: "",
     // STAR
-    url: "https://res.cloudinary.com/ddjxpkewq/video/upload/f_mp4,q_auto/v1/touchdesigner/pf1tssh39e5pqkirptca",
-
-    fileType: "mp4",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/compressed_particles_noiseSculpting.0.mov.webm",
+    fileType: "webm",
     category: "",
     categorySpecific: "some generative procedural animations.",
   },
@@ -75,14 +73,6 @@ export const items = [
     categorySpecific: "",
   },
 
-  {
-    id: "bumble",
-    name: "Bumble Sessions",
-    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
-    fileType: "img",
-    category: "UI | UX, Design Systems",
-    categorySpecific: "",
-  },
   // {
   //   id: "cinematography",
   //   name: "cinema",
@@ -92,6 +82,7 @@ export const items = [
   //   categorySpecific:
   //     "a realm where the very essence of self and time finds itself in flux.",
   // },
+
   {
     id: "liminal",
     name: "Lunar Gala: Liminal",
@@ -100,6 +91,14 @@ export const items = [
     category: "Creative Code, Brand",
     categorySpecific:
       "a realm where the very essence of self and time finds itself in flux.",
+  },
+  {
+    id: "bumble",
+    name: "Bumble Sessions",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
+    fileType: "img",
+    category: "UI | UX, Design Systems",
+    categorySpecific: "",
   },
   {
     id: "cminiPoster",

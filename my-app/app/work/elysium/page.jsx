@@ -72,9 +72,9 @@ export default function Liminal() {
               <video className="w-full h-auto" autoPlay loop muted playsInline>
                 <source
                   src={
-                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/lx2pjp7hndviaxq2pjwv"
+                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_Elysium_cover_portfolio-trim.mov.webm"
                   }
-                  type="video/mp4"
+                  type="video/webm"
                 />
               </video>
             </div>
@@ -129,7 +129,6 @@ export default function Liminal() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             <div className="">
               <video autoPlay loop muted playsInline className="pt-2 w-[800px]">
-                {/* "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/b3wfxabgpgpm7z9gsw6w" */}
                 <source
                   src={
                     "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/030425/act-emergence.mov.webm"
@@ -164,7 +163,6 @@ export default function Liminal() {
             </div>
             <div className="">
               <video autoPlay loop muted playsInline className="pt-2">
-                {/* OLD "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/elysium/d05qjnyo3ahj9quokazr" */}
                 <source
                   src={
                     "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/030425/act-embrace-900.webm"
@@ -203,10 +201,10 @@ export default function Liminal() {
               </div>
               <div className="w-[66%] h-auto">
                 {/* CLOUDINARY */}
-                <video className="" controls autoplay playsInline muted>
+                <video className="w-full" controls autoplay playsInline muted>
                   <source
-                    src="https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/lg/uelohmn4ldqfkuldngoo"
-                    type="video/mp4"
+                    src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_xiao-preloader-4_1_2-800px.mp4.webm"
+                    type="video/webm"
                   />
                 </video>
                 <p className="flex justify-center text-offBlack3">
@@ -274,6 +272,13 @@ export default function Liminal() {
           >
             <Image
               src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/particles-V5-crop.png"
+              }
+              height={500}
+              width={500}
+            />
+            <Image
+              src={
                 "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_HomeIterations-1.png.webp"
               }
               height={500}
@@ -300,6 +305,21 @@ export default function Liminal() {
               height={500}
               width={500}
             />
+            <Image
+              src={
+                "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/particles-v3-crop.png"
+              }
+              height={500}
+              width={500}
+            />
+            <video autoPlay loop muted playsInline>
+              <source
+                src={
+                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/elysium/compressed_particlesZoomedIn-interaction-experiment-trim.mov.webm"
+                }
+                type="video/webm"
+              />
+            </video>
             <video autoPlay loop muted playsInline>
               <source
                 src={

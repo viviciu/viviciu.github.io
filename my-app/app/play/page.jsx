@@ -125,27 +125,10 @@ export default function Projects() {
               htmlFor="code"
               onClick={() => handleClick("code")}
             >
-              Digital,
+              Code,
             </label>
           </div>
-          <div className="">
-            <input
-              type="radio"
-              id="product"
-              className="mr-1 appearance-none"
-              onChange={() => handleClick("product")}
-            />
-            <label
-              className={`
-                cursor-none
-                checkbox-label-checked
-                ${selectedLabel === "product" ? "clicked" : ""}`}
-              htmlFor="product"
-              onClick={() => handleClick("product")}
-            >
-              Product,
-            </label>
-          </div>
+
           <div className="">
             <input
               type="radio"
@@ -185,16 +168,16 @@ export default function Projects() {
               type="radio"
               id="print"
               className="mr-1 appearance-none"
-              onChange={() => handleClick("print")}
+              onChange={() => handleClick("graphic")}
             />
             <label
               className={`
                 checkbox-label-checked
-                ${selectedLabel === "print" ? "clicked" : ""}`}
-              htmlFor="print"
-              onClick={() => handleClick("print")}
+                ${selectedLabel === "graphic" ? "clicked" : ""}`}
+              htmlFor="graphic"
+              onClick={() => handleClick("graphic")}
             >
-              Print,
+              Graphic,
             </label>
           </div>
           <div className="">
@@ -229,6 +212,24 @@ export default function Projects() {
               onClick={() => handleClick("motion")}
             >
               Motion,
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="radio"
+              id="product"
+              className="mr-1 appearance-none"
+              onChange={() => handleClick("product")}
+            />
+            <label
+              className={`
+                cursor-none
+                checkbox-label-checked
+                ${selectedLabel === "product" ? "clicked" : ""}`}
+              htmlFor="product"
+              onClick={() => handleClick("product")}
+            >
+              Product,
             </label>
           </div>
           <div className="">
