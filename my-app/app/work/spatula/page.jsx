@@ -1,803 +1,632 @@
 "use client";
-import React, { useState, useRef } from "react";
+import Image from "next/image";
+import MuxPlayer from "@mux/mux-player-react";
+
 import Title from "../../_components/Title";
 import Context2 from "../../_components/Context2";
-import Header from "../../_components/Header";
+import CoverYAMLVideo from "../../_components/CoverYAMLVideo";
 import YAMLBar from "../../_components/YAMLBar";
 import DividerLine from "../../_components/DividerLine";
-import CalloutSmall from "@/app/_components/CalloutSmall";
-import New3 from "../../_components/New3";
-import Image from "next/image";
-import UnderDevelopment from "../../_components/UnderDevelopment";
-import "../../_components/greyBGLines.css";
-import New3VideoCloudinaryAutoplayLoop from "@/app/_components/New3VideoCloudinaryAutoplayLoop";
-
 import { MdOutlineArrowOutward } from "react-icons/md";
-import Link from "next/link";
-import { prototype } from "postcss/lib/at-rule";
+import New3Video from "../../_components/New3Video";
+import New3 from "../../_components/New3";
+import New4 from "../../_components/New4";
+import New3Grid from "../../_components/New3Grid";
+import Header from "../../_components/Header";
 
-export default function Spatula() {
+export default function PlayfulVsPractical() {
   const members = [];
-  const tools = ["Solidwords", "Rapid Prototyping"];
-  const myRole = "Solo";
-  const timeline = "4 weeks";
+  const tools = ["Rapid Prototyping", "Desktop Modelmaking"];
+  const myRole = "Timeline";
 
-  // MODAL
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalImageSrc, setModalImageSrc] = useState("");
+  // OLD LENIS SCROLL STUFF
 
-  const handleImageClick = (src) => {
-    setModalImageSrc(src);
-    setIsModalOpen(true);
-  };
+  // const [activeIndex, setActiveIndex] = useState(0);
+  // const componentRefs = [useRef(null), useRef(null), useRef(null)];
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setModalImageSrc("");
-  };
+  // const handleScroll = () => {
+  //   const scrollPosition = window.scrollY + window.innerHeight / 2;
+  //   componentRefs.forEach((ref, index) => {
+  //     if (ref.current) {
+  //       const { offsetTop, offsetHeight } = ref.current;
+  //       console.log(index);
+  //       if (
+  //         scrollPosition >= offsetTop &&
+  //         scrollPosition < offsetTop + offsetHeight
+  //       ) {
+  //         setActiveIndex(index);
+  //       }
+  //     }
+  //   });
+  // };
 
-  // Refs for sections
-  const intentRef = useRef(null);
-  const processRef = useRef(null);
-  const inspoRef = useRef(null);
-  const constraintsRef = useRef(null);
-  const ergonomicsRef = useRef(null);
-  const prototypingRef = useRef(null);
-  const finalRef = useRef(null);
-  const KPIsRef = useRef(null);
-
-  const scrollToRef = (ref) => {
-    window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
-
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+  // A realm where the very essence of self and time finds itself in flux.
   return (
-    <>
-      <div className="flex">
-        {/* Side Navbar */}
-        <nav className="fixed top-20 left-0 h-full p-4">
-          <ul className="space-y-2">
-            <li>
-              <button
-                className="hover:text-mwsGrey transition-colors duration-200 cursor-pointer"
-                onClick={() => scrollToRef(intentRef)}
-              >
-                Showcase
-              </button>
-            </li>
-            <li>
-              <button
-                className="hover:text-mwsGrey transition-colors duration-200 cursor-pointer"
-                onClick={() => scrollToRef(processRef)}
-              >
-                Process
-              </button>
-            </li>
-            <li>
-              <button
-                className="hover:text-mwsGrey transition-colors duration-200 cursor-pointer"
-                onClick={() => scrollToRef(inspoRef)}
-              >
-                Inspiration
-              </button>
-            </li>
-            <li>
-              <button
-                className="hover:text-mwsGrey transition-colors duration-200 cursor-pointer"
-                onClick={() => scrollToRef(ergonomicsRef)}
-              >
-                Ergonomics
-              </button>
-            </li>
-            <li>
-              <button
-                className="hover:text-mwsGrey transition-colors duration-200 cursor-pointer"
-                onClick={() => scrollToRef(constraintsRef)}
-              >
-                Setting constraints
-              </button>
-            </li>
-
-            <li>
-              <button
-                className="hover:text-mwsGrey transition-colors duration-200"
-                onClick={() => scrollToRef(prototypingRef)}
-              >
-                Modelmaking & CAD
-              </button>
-            </li>
-          </ul>
-        </nav>
-
-        {/* CASE STUDY BEGINS HERE */}
-        <main className="block px-4 ml-48">
-          <Title
-            text1={
+    <main className=" block px-4">
+      <Title
+        text1={
+          <div>
+            Playful vs. Practical, <br /> a synergy of language, form, and
+            context.
+          </div>
+        }
+      />
+      <YAMLBar
+        client="Products Studio I: Form and Context"
+        year="2024"
+        role="Industrial Design"
+      />
+      <CoverYAMLVideo url="https://www.youtube.com/watch?v=aewhf6EUHoQ&t=132s" />
+      <Context2
+        context={
+          <div>
+            Process under development.
+            <br />
+            Last update:{" "}
+            <span className="font-Suisse font-semibold"> 11 January 2025 </span>
+            <br />
+            <br />
+            Inspired by a lamp post on campus and the familiar gestures we
+            conjure from hearing music, this study reflects a playful yet
+            precise object. It is one that incites methodical exploration over
+            immediate understanding. It traces the evolution of a relationship
+            through the initial spark of curiosity, the uncertainty of trial and
+            error, and ultimate delight of learning something foreign.
+            <br />
+            <br />
+            <br />
+            <br />
+            <strong>Breif :</strong>
+            <br />
+            Exploring the material relationships between elastic band and wood,
+            design a sensible working object that has playful or practical
+            device-like characteristics. Unite form studies to determine the
+            appropriate look, feel, make, and performance of the device. The
+            models do not have to work, but must allow us to imagine so without
+            distraction and interruption.
+            <br />
+            <br />
+            How do the pieces of this device come together as a whole making a
+            satisfying interaction? The working nature of the device derives
+            itself from the properties, characteristics, look, and feel of
+            material.
+          </div>
+        }
+        myRole={myRole}
+        timeline="Aug — Oct 2024"
+        members={members}
+        tools={tools}
+      />
+      {/* <DividerLine text="Takeaways" /> */}
+      <Header text={"Outcomes & Takeaways"} />
+      <div className="lg:grid lg:grid-cols-4 gap-[4rem] lg:pb-[14rem] pb-[5rem]">
+        <New4
+          text1={
+            <div>
               <div>
-                unsichtbar, <br /> Inspired by how muscles flow into one
-                another, this spatula serves as a tooling extension of
-                one&apos;s body.
-              </div>
-            }
-          />
-          <YAMLBar client="Products Studio II" year="2025" role="Designer" />
-          {/* COVER YAML EXPANDED */}
-          {/* GREY FOAM CLIP: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_compressed_C0039-trim-handHold.mov.webm" */}
-          <main className=" pb-[5.06rem]">
-            <div className="h-fit w-full">
-              <video className="w-full h-auto" autoPlay loop muted playsInline>
-                <source
-                  src={
-                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0053-trim-cover.MP4.webm"
-                  }
-                  type="video/webm"
-                />
-              </video>
-            </div>
-          </main>
-
-          <Context2
-            context={
-              <div>
-                {/* TLDR blurb vicki said, check notebook from november, at the beginning of the notebook. (impact)  */}
-                {/* Inspired by the harmonious, integrated flow of muscles, I aimed
-                to establish a direct 1:1 relationship between the user’s grip
-                and the spatula’s working edge.
-                <br /> <br />
-                Like the geometry of the human body, this tension-form emerged
-                solely from fair curves. The seamless twist follows the planes
-                of the palm-arm bridge,{" "} */}
-                Inspired by the harmonious, integrated flux of muscles and
-                tendons, this spatula acts as a seamless extension of the hand,
-                translating human intent into precise control through a direct
-                1:1 relationship between the thumb and the working edge.
+                <strong className="text-black">
+                  My best ideas spark from the physical process of modelmaking.{" "}
+                </strong>
                 <br />
-                <br />
-                Like the geometry of our body, this tension-form emerged solely
-                from fair curves. The seamless twist follows the planes of the
-                palm-arm bridge,{" "}
-                <span className="font-bold">
-                  transforming the spatula into a natural extension of the arm,
-                  uniting them as one.
-                </span>
-              </div>
-            }
-            myRole={myRole}
-            members={members}
-            tools={tools}
-            timeline={timeline}
-          />
-          <div id="FINAL FORM" ref={intentRef}>
-            <div className="w-full">
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_big.png.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-            </div>
-            {/* COLUMNS SHOWCASE */}
-            {/* <div className="columns-3 gap-[0.5rem]  mt-[5rem]">
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07111.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07153.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-C0049.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-
-
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07161.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07129.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-2-2.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07086.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07469.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07453.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07467.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07456.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07472.jpg.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
-            </div> */}
-
-            <DividerLine text={"Intended use case: laterial swiping"} />
-            {/* VIDEO SHOWCASE */}
-            <div className="mt-[5rem]"></div>
-            <div className="md:flex md:h-[66.65vh] w-full gap-[0.5rem]">
-              <video className="" controls autoPlay loop muted playsInline>
-                <source
-                  src={
-                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0056-trim.MP4.webm"
-                  }
-                  type="video/webm"
-                />
-              </video>
-              <video className="" controls autoPlay loop muted playsInline>
-                <source
-                  src={
-                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0054-trim.MP4.webm"
-                  }
-                  type="video/webm"
-                />
-              </video>
-            </div>
-
-            {/* FEATURES */}
-            <div className="pt-[5rem]"></div>
-            <DividerLine text={"features"} />
-            {/* GROUP OF 3 */}
-            <div className="grid grid-cols-3 gap-[0.5rem] mt-[5rem]">
-              <div className="flex flex-col justify-center items-center">
-                <Image
-                  src={
-                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/edit-1-4-final.jpg"
-                  }
-                  height={500}
-                  width={500}
-                  layout="responsive"
-                />
-                <p className="text-offBlack3">Thumb aligns to working edge</p>
-              </div>
-              <div className="flex flex-col justify-center items-center">
-                <Image
-                  src={
-                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/edit-4-5-final.jpg"
-                  }
-                  height={500}
-                  width={500}
-                  layout="responsive"
-                />
-                <p className="text-offBlack3">1:1 Relationship</p>
-              </div>
-              <div className="flex flex-col justify-center items-center">
-                <Image
-                  src={
-                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/edit-3-5-final.jpg"
-                  }
-                  height={500}
-                  width={500}
-                  layout="responsive"
-                />
-                <p className="text-offBlack3">Ample grip area allowance</p>
+                Actually holding the parts in 3D space raises opportunities to
+                connect, dismantle, and discover new proportional relationships.
+                Sometimes this can be distracting as I&apos;m constantly tempted
+                to diverge from the plan with the allure of the &quot;what
+                ifs&quot;, the potential of a new idea. To me, ideas are time
+                sensitive. You can&apos;t let them run away, so at times process
+                models become mutilated as I try to bring new ideas to life on
+                old work.{" "}
               </div>
             </div>
-
-            {/* DIVIDER */}
-            <div className="h-[5rem] md:h-[10rem]"></div>
-            {/* CLEAR LINE OF ACTION */}
-            <New3
-              img1="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-C0049.jpg.webp"
-              text1={
-                <div>
-                  The direct 1:1 relationship between the thumb and the working
-                  edge follows the user's intent precisely, ensuring that the
-                  spatula feels instinctive,{" "}
-                  <strong>
-                    as if it were an extension of the body itself.
-                  </strong>
-                </div>
-              }
-              caption="There is a clear line of action starting at the arm, down to the wrist, thumb, and finally, blade edge."
-            />
-
-            {/* THENAR EMINENCE IMG */}
-            {/* NEW 3 EXPANDED FOR 2 IMGS */}
-            <main>
-              <div
-                className=" 
-      lg:grid lg:grid-cols-6
-      gap-[5.06rem] 
-      w-full h-fit 
-      items-start
-      pt-[5rem]"
-              >
-                {/* <div
-                  className="
-        col-span-2
-        leading-[1.5rem]
-        lg:text-[1rem]
-        tracking-[0.005em]
-        text
-        font-Suisse
-        font-regular
-        text-offBlack2"
-                >
-                  text
-                </div> */}
-                <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
-                  <div className="flex w-full gap-[0.5rem]">
-                    <div>
-                      <Image
-                        src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_twistThenarEminence-edit-1.jpg.webp"
-                        alt="home page image"
-                        layout="responsive"
-                        width={500}
-                        height={500}
-                      />
-                    </div>
-                    <div>
-                      <Image
-                        src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_twistThenarEminence-edit-2.jpg.webp"
-                        alt="home page image"
-                        layout="responsive"
-                        width={500}
-                        height={500}
-                      />
-                    </div>
-                  </div>
-
-                  <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
-                    The twist natrually fits the thenar eminence of the palm
-                    perfectly, offering grip support and control.
-                  </p>
-                </div>
-              </div>
-            </main>
-            {/* USING LIGHT TO REVEAL IMPERFECTIONS */}
-            <main>
-              <div
-                className=" 
-      lg:grid lg:grid-cols-6
-      gap-[5.06rem] 
-      w-full h-fit 
-      items-start
-      pt-[5rem]"
-              >
-                {/* <div
-                  className="
-        col-span-2
-        leading-[1.5rem]
-        lg:text-[1rem]
-        tracking-[0.005em]
-        text
-        font-Suisse
-        font-regular
-        text-offBlack2"
-                >
-                  text
-                </div> */}
-                <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
-                  <div className="flex w-full gap-[0.5rem]">
-                    <div>
-                      <Image
-                        src={
-                          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07083.jpg.webp"
-                        }
-                        height={500}
-                        width={500}
-                        layout="responsive"
-                      />
-                    </div>
-                    <div>
-                      <Image
-                        src={
-                          "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07082.jpg.webp"
-                        }
-                        height={500}
-                        width={500}
-                        layout="responsive"
-                      />
-                    </div>
-                  </div>
-
-                  <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
-                    Focused light informed me what planes needed more or less
-                    sanding. It reveals plane elevation.
-                  </p>
-                </div>
-              </div>
-            </main>
-          </div>
-
-          <div ref={processRef}>
-            <CalloutSmall text1={"Process"} n />
-          </div>
-
-          <div ref={inspoRef}>
-            <DividerLine text={"Inspiration"} />
-            <CalloutSmall
-              text1={<div>Muscles, caustics, and hands.</div>}
-              text2={
-                <div>
-                  The harmonious symmetry created by how light caustics
-                  interact, the way muscles fold into one another, and geometry
-                  of our hands are all formed by{" "}
-                  <strong className="text-offBlack1">fair curves</strong>.
-                  Muscles and hands have a sense of tension during flexion /
-                  extension, which subconsciously influenced the recurring
-                  tapers which seem under tension in my spatula.
-                </div>
-              }
-            />
-          </div>
-
-          <div className="flex justify-center">
-            <div className="w-1/2">
-              <Image
-                src={
-                  "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_inspo-sketches-frame.png.webp"
-                }
-                height={500}
-                width={500}
-                layout="responsive"
-              />
+          }
+        />
+        <New4
+          text1={
+            <div>
+              <strong className="text-black">
+                Never leave an idea in concept—it&apos;ll have to be made
+                eventually.
+              </strong>
+              <br />
+              Just do something when you don&apos;t know what. Get everything
+              out of your system on paper and start building immediately. The
+              sketchbook can be an endless hole of unrealistic concepts never
+              brought to fruition.
             </div>
-          </div>
-
-          <div className="pt-[5rem] md:pt-[10rem]"></div>
-          {/* NEW SECTION */}
-          <div ref={ergonomicsRef}>
-            {/* EXPANDED HEADER */}
-            <div
-              className="
-          md:w-2/3 h-fit 
-          items-start"
-            >
-              <h1 className="font-SFProDisplay  text-3xl md:text-[3rem] leading-tight md:leading-[3rem] tracking-tight">
-                Ergonomics Discoveries: Toothpaste revealing form
-              </h1>
+          }
+        />
+        <New4
+          text1={
+            <div>
+              <strong className="text-black">
+                Not every aspect of form needs to bluntly communicate its
+                intended use.
+              </strong>
+              <br />
+              An object that isn&apos;t quick to understand is something I used
+              to think was a poor design. This piece taught me that objects can
+              act as a violins: only through exploration, play, and some
+              teaching one is able to handle it with grace. Not everything is or
+              should be intuitive. This piece traces the evolution of a
+              relationship through the initial spark of curiosity, the
+              uncertainty of trial and error, and ultimate delight of learning
+              something foreign.
             </div>
-            <main className="pt-[2rem] md:pt-[5rem]">
-              <div className="w-full">
-                <Image
-                  className="pt-2"
-                  src={
-                    "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_handstudies-sketches-frame-toothpaste.png.webp"
-                  }
-                  layout="responsive"
-                  height={500}
-                  width={500}
-                />
-              </div>
+          }
+        />
 
-              <div className="grid grid-cols-3 pt-[3rem] gap-y-[3rem]">
-                <div className="col-start-1 text-p">Using only Fair Curves</div>
-
-                <div className="col-start-2 col-span-2">
-                  The harmonious arcs & fair curves in the naturally occurring
-                  geometry of our hands inspired me to try drawing various long
-                  arcs in relation to one another, whether that be a golden
-                  ratio relation, rule of thirds, or by primitive circles. I
-                  found more success in this approach than by trying to directly
-                  emulate the flow forms of my inspirations.
-                </div>
-                <div className="text-p">Ergonomics Discoveries</div>
-                <div className="col-start-2 col-span-2">
-                  <div className="grid grid-cols-4 gap-[2rem]">
-                    <div>1</div>
-                    <div className="col-span-3">
-                      Studying the planes of my toothpaste one morning, I
-                      realized how the bottom of the thenar eminence is a
-                      horizontal plane (in the sketched grip), while the
-                      underside of your forearm (where veins are) is vertical in
-                      this grip. By running my fingers across these planes eyes
-                      closed, I visualized that a 90º twist was occurring
-                      between the hand to wrist to forearm connection.{" "}
-                      <strong>
-                        In pursuit to make my spatula integrated with the
-                        transition of these body parts, I aimed to create top &
-                        side views that might afford a twist as such.
-                      </strong>
-                    </div>
-                    <div>2</div>
-                    <div className="col-span-3">
-                      In studying the planes, I found the &apos;palm
-                      triangle&apos; plane is a key area requiring volume and
-                      support for the intent of my spatula&apos;s motion.
-                    </div>
-                    <div>3</div>
-                    <div className="col-span-3">
-                      The Thenar Eminence (thumb meat area) becomes a push-plane
-                      against my middle and index for grasping thinner forms.
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* NEW SECTION */}
-              <div ref={constraintsRef}>
-                <DividerLine text={"Setting Constraints"} />
-                {/* old callout idea: A direct 1:1 relationship between the thumb and working edge */}
-                <CalloutSmall
-                  text1={<div>When the thumb moves, the food follows.</div>}
-                  text2={
-                    <div>
-                      The direct 1:1 relationship between the thumb and the
-                      working edge follows the user's intent precisely, ensuring
-                      that the spatula feels instinctive, as if it were an
-                      extension of the body itself.
-                    </div>
-                  }
-                />
-                <div className="w-full">
-                  <Image
-                    src={
-                      "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_lineOfActionFrame.png.webp"
-                    }
-                    height={500}
-                    width={500}
-                    layout="responsive"
-                  />
-                  <div className="flex justify-center text-offBlack3">
-                    The spatula becomes an extended "wedge" emerging from the
-                    arm.
-                  </div>
-                </div>
-                {/* EXTRA BLURB. */}
-                {/* <div className="pt-[1rem] md:w-2/3">
-              I designed my spatula to function as a seamless extension of the
-              hand, transforming natural movement into precise control. By
-              establishing a direct 1:1 relationship between the thumb and the
-              working edge, the tool follows the user's intent—when the thumb
-              moves, the food follows. This approach prioritizes ergonomics and
-              responsiveness, ensuring that the spatula feels instinctive, as if
-              it were an extension of the body itself.
-            </div> */}
-              </div>
-
-              {/* NEW SECTION: PROTOTYPING & CAD */}
-              <main ref={prototypingRef}>
-                <DividerLine text={"Prototyping & CAD"} />
-                {/* CAD */}
-                <div
-                  className=" 
-      lg:grid lg:grid-cols-6
-      gap-[5.06rem] 
-      w-full h-fit 
-      items-start
-      pt-[5rem]"
-                >
-                  <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
-                    <div className="flex w-full gap-[0.5rem]">
-                      <div className="w-[60rem]">
-                        <Image
-                          src={
-                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/finalTopViewSketches.png"
-                          }
-                          height={500}
-                          width={500}
-                          layout="responsive"
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={
-                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/SOLIDWORKS-SPATULA-3.png"
-                          }
-                          height={500}
-                          width={500}
-                          layout="responsive"
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={
-                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/SOLIDWORKS-SPATULA-1.png"
-                          }
-                          height={500}
-                          width={500}
-                          layout="responsive"
-                        />
-                      </div>
-                    </div>
-
-                    <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
-                      Solidworks helped speed visualizing minor tweaks to my
-                      base top and side profiles.
-                    </p>
-                  </div>
-                </div>
-                {/* CAD */}
-                <div
-                  className=" 
-      lg:grid lg:grid-cols-6
-      gap-[5.06rem] 
-      w-full h-fit 
-      items-start
-      pt-[5rem]"
-                >
-                  <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
-                    <div className="flex w-full gap-[0.5rem]">
-                      <div>
-                        <video
-                          className=""
-                          controls
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                        >
-                          <source
-                            src={
-                              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0031-trim.MP4.webm"
-                            }
-                            type="video/webm"
-                          />
-                        </video>
-                      </div>
-                      <div>
-                        <video
-                          className="
-                              
-                              https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0031-trim.MP4.webm"
-                          controls
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                        >
-                          <source
-                            src={
-                              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0034-trim.MP4.webm"
-                            }
-                            type="video/webm"
-                          />
-                        </video>
-                      </div>
-                    </div>
-
-                    <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
-                      (L) First prototype was too visually heavy, opted for a
-                      slimmer, tighter profile
-                      <br />
-                      (R) Considering creating a slice so form follows the
-                      motions function.
-                    </p>
-                  </div>
-                </div>
-                <div className="pt-[5rem]"></div>
-                <New3
-                  img1="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/sketchbook-printouts.png"
-                  caption={
-                    <div>
-                      Observing how it looks at every angle, where the palm
-                      needs more support. I often find photographing and
-                      physically iterating in the latter half of a project is
-                      most effective for refinement.
-                    </div>
-                  }
-                />
-                {/* USING LIGHT TO REVEAL IMPERFECTIONS */}
-                <div
-                  className=" 
-      lg:grid lg:grid-cols-6
-      gap-[5.06rem] 
-      w-full h-fit 
-      items-start
-      pt-[5rem]"
-                >
-                  {/* <div
-                  className="
-        col-span-2
-        leading-[1.5rem]
-        lg:text-[1rem]
-        tracking-[0.005em]
-        text
-        font-Suisse
-        font-regular
-        text-offBlack2"
-                >
-                  text
-                </div> */}
-                  <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
-                    <div className="flex w-full gap-[0.5rem]">
-                      <div>
-                        <Image
-                          src={
-                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07083.jpg.webp"
-                          }
-                          height={500}
-                          width={500}
-                          layout="responsive"
-                        />
-                      </div>
-                      <div>
-                        <Image
-                          src={
-                            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/comp_edit-07082.jpg.webp"
-                          }
-                          height={500}
-                          width={500}
-                          layout="responsive"
-                        />
-                      </div>
-                    </div>
-
-                    <p className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem] text-offBlack3 flex justify-center">
-                      Focused light informed me what planes needed more or less
-                      sanding. It reveals plane elevation.
-                    </p>
-                  </div>
-                </div>
-              </main>
-            </main>
-          </div>
-        </main>
+        <New4
+          text1={
+            <div>
+              <strong className="text-black">
+                Trust your intuition, and be ready to hear &quot;No.&quot;
+              </strong>
+              <br />
+              In the beginning, I felt every single decision had to be backed by
+              specific logic. While this is true to an extent, ignoring
+              intuition only held me back from committing to what I truly felt
+              was strong. There&apos;s incredible value to what your hands and
+              eyes can tell you without words. This project was an exercise not
+              only in taking a functional, rubber-band form into a model that
+              conveys the movement without elastic function, but a trust
+              exercise. A style exercise.
+            </div>
+          }
+        />
       </div>
-    </>
+
+      {/* <DividerLine text="Process" /> */}
+      {/* Experimental video grid of 3 cols */}
+      {/* <div className="mt-10 mb-32 lg:grid grid-cols-3 gap-[0.6rem] flex flex-col">
+        <div>
+          <Video src={C0469} />
+          <p className="mt-1">Tabletop exploration A</p>
+        </div>
+        <div>
+          <Video src={C0475} />
+          <p className="mt-1">Tabletop exploration B</p>
+        </div>
+        <div>
+          <img src="https://image.mux.com/TKWj6nwkH0082l008G96sOHKN3X6PklbfOzrN8oaJ62hw/animated.gif?width=500" />
+          <p className="mt-1">
+            &quot;Isn&apos;t a flip just a &apos;long&apos; spin?&quot;
+          </p>
+        </div>
+        <div>
+          <img src="https://image.mux.com/3lLZyuv4c8WHV2s02Im1wqxpVGdHN1apOzd3FuAmfeRU/animated.gif?width=500" />
+          <p className="mt-1">caption</p>
+        </div>
+      </div> */}
+
+      <Header text={"Process"} />
+
+      {/* MODIFIED NEW3GRID */}
+
+      <div
+        className=" 
+                            lg:grid lg:grid-cols-6
+                            gap-[5.06rem] 
+                            w-full h-fit 
+                            items-start
+                            pt-[0.5rem]" // important padding top here
+      >
+        <div
+          className="
+                              col-span-2
+                              leading-[1.5rem]
+                              lg:text-[1rem]
+                              tracking-[0.005em]
+                              text
+                              font-Suisse
+                              font-regular
+                              text-offBlack2"
+        >
+          In the everyday, sometimes I imagine how I might interact with the
+          static forms in the world around me—as if I could bend, hinge, or
+          extrude fascinating forms. I wonder what context the form could live
+          in and who they might serve.
+          <br />
+          <br />
+          This lamp on campus inspired my initial elastic band working model. I
+          thought: What if I could put my hand on top, and methodically rotate
+          it laterally?
+        </div>
+
+        <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+          <div className="grid grid-cols-2 gap-2">
+            <div className="col-start-1">
+              <Image
+                src={"/imgs/playfulPractical/movingLampSketch.webp"}
+                alt="Imagining everyday static objects moving in my mind"
+                layout="responsive"
+                width={200}
+                height={500}
+              />
+              <Image
+                className="pt-[0.6rem]"
+                src={"/imgs/playfulPractical/constructionProcess.webp"}
+                alt="Construction Process"
+                layout="responsive"
+                width={500}
+                height={500}
+              />
+              <p className="font-Suisse pt-6 lg:text-[1rem] text-[0.75rem]">
+                Imagining how static forms in my everyday life could be
+                interacted with inspired my initial elastic form.
+              </p>
+            </div>
+
+            <div className="col-start-2">
+              <Image
+                src={"/imgs/playfulPractical/sketchFirstModel.webp"}
+                alt="Sketch"
+                layout="responsive"
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
+      {/* https://res.cloudinary.com/ddjxpkewq/video/upload/q_auto/v1/pmini/elqxufreseulmgvbxs1n */}
+      <New3Video
+        src={"lTR3OdEqMK4MRbKIIoee02cANBwt00YrJd8cUlr6qInlU"}
+        text1="Carrying my form around with me everywhere, listening to music on the go influenced different grips. I found myself preferring using the smaller radius paddle, sometimes the larger radius paddle, sometimes even scrubbing it like a DJ depending on the rhythm."
+      />
+
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
+      {/* NEW3VIDEO GRID OF 4 GIFs */}
+      <New3Grid
+        caption={
+          <div>
+            Top: Toying with scrap parts inspiring tabletop idea. Bottom: Hybrid
+            tabletop-handheld model.
+          </div>
+        }
+        img1="https://image.mux.com/9REJpbYaWwZDSBex5302HhjOao1mCCv53936TZ6T01SV8/animated.gif?width=320"
+        img2="https://image.mux.com/01MIq98IRiA013B4S9oBpiYjpVmZqFptQy5rf00QxXrgS8/animated.gif?width=320"
+        img3="https://image.mux.com/wnPigEnjWslHEA01Ugc1PQKlbf3DHg01u1ebJub7un4fc/animated.gif?width=320"
+        img4="https://image.mux.com/KO4WMlrBo2eEd5VTg2Z2Z02P3tV5wyoUlYD00azrk02lGQ/animated.gif?width=320"
+        text1={
+          <div>
+            Thinking about the context of where my object might live, I wanted
+            to explore how the essence of the interaction could get translated
+            to a fixed tabletop tool.
+            <br />
+            <br />
+            The modelmaking process sparked the idea of a hybrid ( bottom gifs
+            )—where one could use it at home, and while travelling.{" "}
+            <strong>
+              Ideas are time sensitive—so I get a rough prototype out of my
+              system as quickly as possible using the scraps on my desk to see
+              if theres potential.{" "}
+            </strong>{" "}
+            This initial rough form gives my hands and eyes so much information
+            as to what my next step is, which lead to the bottom final form.
+            <br />
+            <br />
+            Though not a marketable object, I gravitated more towards this being
+            a playful audiotechnical instrument.
+          </div>
+        }
+      />
+
+      {/* SPACER */}
+      <div className="mt-[8rem]"></div>
+      {/* 2 VIDEO GRID */}
+      <div
+        className=" 
+                            lg:grid lg:grid-cols-6
+                            gap-[5.06rem] 
+                            w-full h-fit 
+                            items-start
+                            pt-[0.5rem]" // important padding top here
+      >
+        <div
+          className="
+                              col-span-2
+                              leading-[1.5rem]
+                              lg:text-[1rem]
+                              tracking-[0.005em]
+                              text
+                              font-Suisse
+                              font-regular
+                              text-offBlack2"
+        >
+          The negative space from my original form brought me back to refine it.
+          Compared to the desktop model, the negative space and handheld nature
+          gave rise to a novel instrument, one which affords an opportunity to
+          explore a foreign interaction.
+          <br />
+          <br />
+          It becomes a skillfull instrument—
+          <strong>
+            bringing a user through a journey of intrigue, methodical inquiry,
+            play, and ultimately delight
+          </strong>{" "}
+          from learning something new.
+          <br />
+          <br />I angled the paddle as I noticed my wrists natrually want to
+          rotate like turning a doorknob, improving ergonomics. The concave wood
+          paddle affords a place for users to rest their fingers in.
+        </div>
+
+        <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+          <div className="grid grid-cols-2 gap-2">
+            <div className="col-start-1">
+              {/* https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/elqxufreseulmgvbxs1n */}
+              <MuxPlayer
+                playbackId="S6HhGtHxXD94J5601DcYuXHX7HMq6L7W1j5n02kiLxLsg"
+                metadataVideoTitle="Placeholder (optional)"
+                metadata-viewer-user-id="Placeholder (optional)"
+                primary-color="#ffffff"
+                secondary-color="#000000"
+                accent-color="#e0e0e0"
+              />
+            </div>
+
+            <div className="col-start-2">
+              {/* "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/gd2ae1jp8y01gvpc1ip8" */}
+              <MuxPlayer
+                playbackId="zVJ9pdfRWm118c701Ne8GKv8aSQe01A6l00EMNnAmxEF8o"
+                metadataVideoTitle="Placeholder (optional)"
+                metadata-viewer-user-id="Placeholder (optional)"
+                primary-color="#ffffff"
+                secondary-color="#000000"
+                accent-color="#e0e0e0"
+              />
+            </div>
+          </div>
+
+          <div className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
+            Left: Strained wrist. Right: Angled paddle improved ergonomics.
+          </div>
+        </div>
+      </div>
+      {/* SPACER */}
+      <div className="mt-[8rem]"></div>
+      {/* 2 VIDEO GRID */}
+      <div
+        className=" 
+                            lg:grid lg:grid-cols-6
+                            gap-[5.06rem] 
+                            w-full h-fit 
+                            items-start
+                            pt-[0.5rem]" // important padding top here
+      >
+        <div
+          className="
+                              col-span-2
+                              leading-[1.5rem]
+                              lg:text-[1rem]
+                              tracking-[0.005em]
+                              text
+                              font-Suisse
+                              font-regular
+                              text-offBlack2"
+        >
+          Designing the entire experience starts from before the user is aware
+          of its presence—how does one approach it? Pick it up? The moment you
+          pick up a form influences the way you might interact with it and needs
+          consideration.
+          <br />
+          <br />
+          Starting with a clay counterform to inform me of what shapes the
+          intented grip creates, I then shaved away what was not essential to
+          give just enough info of how to pick it up.
+          <br />
+          <br />
+          Widening the palm-facing side and extending subtle edges pointed
+          towards the head of the form, indicating where your other hand should
+          interact.
+        </div>
+
+        <div className="lg:pt-0 pt-8  lg:pb-0 pb-16 col-start-3 col-span-4">
+          <div className="grid grid-cols-2 gap-2">
+            <div className="col-start-1">
+              <Image
+                src="/imgs/playfulPractical/clay-sideView.webp"
+                alt="home page image"
+                layout="responsive"
+                width={200}
+                height={500}
+              />
+            </div>
+
+            <div className="col-start-2">
+              {/* <video controls>
+                <source
+                  src={
+                    "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ebwqu7ijxeh3vm6qklkr"
+                  }
+                  type="video/webm"
+                />
+              </video> */}
+              <MuxPlayer
+                playbackId="vndVXCMoIyGDq4iOnkRuOT2o02zZkWX8pgzrJ00N0102nRE"
+                metadataVideoTitle="Placeholder (optional)"
+                metadata-viewer-user-id="Placeholder (optional)"
+                primary-color="#ffffff"
+                secondary-color="#000000"
+                accent-color="#ffffff"
+              />
+            </div>
+            <div className="col-start-1">
+              <Image
+                src="/imgs/playfulPractical/C0517_ss-styrene.webp"
+                alt="home page image"
+                layout="responsive"
+                width={200}
+                height={500}
+              />
+            </div>
+            <div className="col-start-2">
+              <Image
+                src="/imgs/playfulPractical/chipboardGripPrototype_ss.webp"
+                alt="home page image"
+                layout="responsive"
+                width={200}
+                height={500}
+              />
+            </div>
+          </div>
+
+          <div className="font-Suisse pt-2 lg:text-[1rem] text-[0.75rem]">
+            Picking up the form: Clay counterforms informed a precision
+            chipboard mockup.
+          </div>
+        </div>
+      </div>
+      {/* SPACER */}
+      <div className="mt-[8rem]"></div>
+      <Header text={"Final Form"} />
+      {/* "https://res.cloudinary.com/ddjxpkewq/video/upload/f_auto:video,q_auto/v1/pmini/ilcojxlzsai4oil7qhhd" */}
+      <New3Video
+        src={"OM3C02pVXgherNuIQx7HShpMY5brM901qRVzDUobCmK0100"}
+        text1={
+          <div>
+            From testing prototypes with my peers, I found the top styrene
+            &apos;hood&apos; was found uncessesary to the essence of the grip.
+            Thus, only the tapered pointing arrows, like hands, directed the
+            eyes towards the wooden paddle for the other hand to rest.
+            <br />
+            <br />
+            Further iterations and explorations leading to the final form are
+            found in the process video above.
+          </div>
+        }
+      />
+      {/* SPACER */}
+      <div className="mt-[4rem]"></div>
+      {/* finalCoverImg_manyIterations */}
+      {/* <DividerLine text="Process" /> */}
+      {/* Experimental video grid of 3 cols */}
+      <div className="mt-10 lg:grid lg:grid-cols-3 gap-[0.6rem] flex flex-col">
+        <div className="col-span-3 col-start-1">
+          <Image
+            src="/imgs/playfulPractical/finalCoverImg_manyIterations.webp"
+            height={500}
+            width={1400}
+            layout="responsive"
+          />
+        </div>
+      </div>
+      <div className="mt-[0.6rem] mb-32 lg:columns-3 sm:columns-2 w-full place-content-center gap-[0.6rem]">
+        <div className="">
+          <Image
+            className="mt-[0.6rem]"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_036-throwcylinderinAir.jpg.webp"
+            }
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+
+          <Image
+            className="mt-[0.6rem]"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_044.jpg.webp"
+            }
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+
+          <Image
+            className="mt-[0.6rem]"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_054.jpg.webp"
+            }
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            className="mt-[0.6rem]"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_051.jpg.webp"
+            }
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            src="https://image.mux.com/TKWj6nwkH0082l008G96sOHKN3X6PklbfOzrN8oaJ62hw/animated.gif?width=320"
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            className="mt-[0.6rem]"
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_043.jpg.webp"
+            }
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            className="mt-[0.6rem]"
+            src={"/imgs/playfulPractical/DSC05499.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+
+        <div>
+          <Image
+            src={"/imgs/playfulPractical/DSC04956.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            className="mt-[0.6rem]"
+            src={"/imgs/playfulPractical/DSC04934.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+          <Image
+            className="mt-[0.6rem]"
+            src={"/imgs/playfulPractical/DSC04825.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+
+        {/* col 3 */}
+        <div>
+          <Image
+            src={"/imgs/playfulPractical/DSC04918.webp"}
+            height={500}
+            width={500}
+            layout="responsive"
+          />
+        </div>
+        {/* <Image
+          className="mt-[0.6rem]"
+          src={
+            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/4x5-instaFrame-suanna-aphi.jpg"
+          }
+          height={500}
+          width={500}
+          layout="responsive"
+        /> */}
+      </div>
+    </main>
   );
 }

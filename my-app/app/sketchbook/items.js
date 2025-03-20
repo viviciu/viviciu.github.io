@@ -73,6 +73,43 @@ export const items = [
     categorySpecific: "",
   },
   {
+    id: "036",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_036-throwcylinderinAir.jpg.webp",
+    category: "sketch",
+    categorySpecific: "",
+  },
+  {
+    id: "043",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_043.jpg.webp",
+    category: "sketch",
+    categorySpecific: "",
+  },
+  {
+    id: "044",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_044.jpg.webp",
+    category: "sketch",
+    categorySpecific: "",
+  },
+
+  {
+    id: "054",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_054.jpg.webp",
+    category: "sketch",
+    categorySpecific: "",
+  },
+  {
+    id: "051",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_051.jpg.webp",
+    category: "sketch",
+    categorySpecific: "",
+  },
+
+  {
     id: "defercoffeemachine",
     name: "",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/vivi091.jpg",
@@ -105,6 +142,14 @@ export const items = [
     name: "",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/vivi026-5x7.jpg",
     category: "",
+    categorySpecific: "",
+  },
+
+  {
+    id: "035",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/sketches/comp_035.jpg.webp",
+    category: "sketch",
     categorySpecific: "",
   },
   {
@@ -149,7 +194,7 @@ export const items = [
     category: "",
     categorySpecific: "",
   },
-  
+
   // {
   //   id: "",
   //   name: "",
@@ -207,7 +252,7 @@ export const items = [
     category: "",
     categorySpecific: "",
   },
- 
+
   {
     id: "s3",
     name: "",
@@ -237,4 +282,12 @@ export const items = [
     category: "sketch",
     categorySpecific: "",
   },
+
+  // {
+  //   id: "",
+  //   name: "",
+  //   url: "",
+  //   category: "sketch",
+  //   categorySpecific: "",
+  // },
 ];
