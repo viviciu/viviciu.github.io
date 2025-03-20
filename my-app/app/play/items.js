@@ -118,7 +118,7 @@ export const items = [
     category: "motion",
     categorySpecific: "",
   },
-  
+
   {
     id: "me-standing-instreet",
     name: "",
@@ -154,19 +154,20 @@ export const items = [
     fileType: "webp",
     category: "3d",
   },
-  {
-    id: "gradientstudies",
-    name: "",
-    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_gradientStudies.jpg.webp",
-    fileType: "webp",
-    category: "graphic",
-  },
+
   {
     id: "aphi-dj",
     name: "",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_aphi-linkedin-4x5-instaFrame.jpg.webp",
     fileType: "webp",
     category: "photo",
+  },
+  {
+    id: "gradientstudies",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_gradientStudies.jpg.webp",
+    fileType: "webp",
+    category: "graphic",
   },
   // {
   //   id: "aphi-blue-angry-girls",
