@@ -64,9 +64,10 @@ export default function Projects() {
             </video>
           ) : item.fileType === "webm" ? (
             <video
-              className="w-full h-full object-cover pb-[0.6rem]"
+              className="w-full h-full object-cover translate-y-0 transition group-hover:translate-y-2 cursor-pointer"
               width={500} // Example width, adjust as needed
               height={500} // Example height, adjust as needed
+              onClick={() => handleImageClick(item, index)}
               autoPlay
               loop
               muted
