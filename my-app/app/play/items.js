@@ -1,8 +1,24 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
   {
+    id: "metaballs-webgl",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_webgl-metaballs-trim.mov.webm",
+    category: "code",
+    fileType: "webm",
+    categorySpecific: "",
+  },
+  {
+    id: "metaballs-ae",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_metaballs-3.mp4.webm",
+    category: "code",
+    fileType: "webm",
+    categorySpecific: "",
+  },
+  {
     id: "xrCube",
-    name: "XRcube",
+    name: "",
     url: "https://image.mux.com/jysKZgic9HN6hv3xGk9QVJsFwdrKQvTZ0101ucmtqXPp00/animated.gif?width=320",
     category: "3d",
     fileType: "webp",
