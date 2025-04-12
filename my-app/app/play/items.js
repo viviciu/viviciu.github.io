@@ -1,6 +1,38 @@
 // A separate file with items (url should contain a link for each image)
 export const items = [
   {
+    id: "redRender-4BoardStool",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_041125_exploded-larger.mp4.webm",
+    category: "3d",
+    fileType: "webm",
+    categorySpecific: "",
+  },
+  {
+    id: "redRender-4BoardStool-01",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_edit-041125_render.jpg.webp",
+    category: "3d",
+    fileType: "webp",
+    categorySpecific: "",
+  },
+  {
+    id: "redRender-4BoardStool-02",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_edit-041125_bottomView.jpg.webp",
+    category: "3d",
+    fileType: "webp",
+    categorySpecific: "",
+  },
+  {
+    id: "redRender-4BoardStool-03",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_edit-041125_partsRender01.jpg.webp",
+    category: "3d",
+    fileType: "webp",
+    categorySpecific: "",
+  },
+  {
     id: "metaballs-webgl",
     name: "",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_webgl-metaballs-trim.mov.webm",
