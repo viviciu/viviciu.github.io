@@ -24,7 +24,7 @@ export default function About() {
           <span className="text-black font-semibold">
             Viviana Staicu (b.2005)
           </span>{" "}
-          is a multidisciplinary designer. storyteller. interaction designer.
+          is a storyteller. interaction designer.
           experience prototyper. creative technologist. Currently, she is
           exploring the intersections between creative code, motion design, and
           brand identity.

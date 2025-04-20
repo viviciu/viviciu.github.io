@@ -89,6 +89,9 @@ export default {
         Helvetica: ["Helvetica-Neue"],
         // SuisseWorks: ["SuisseWorks"],
         SFProDisplay: ["SFProDisplay"],
+        LabMono: ["LabMono"],
+        MonumentGroteskSemiMono: ["MonumentGroteskSemiMono"],
+        // MonumentGroteskSemiMonoThin: ["MonumentGroteskSemiMonoThin"],
       },
       // RESPONSIVE DESIGN : SCREEN SIZES
       // SEE https://tailwindcss.com/docs/responsive-design FOR DEFAULTS (sm,md,lg,xl,2xl)

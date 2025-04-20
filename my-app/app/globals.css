@@ -127,6 +127,24 @@
       font-weight: 300;
       font-style: normal;
     }
+    @font-face {
+      font-family: 'LabMono';
+      src: url(../public/assets/fonts/labmono-regular-web.woff) format('woff');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'MonumentGroteskSemiMono';
+      src: url(../public/assets/fonts/ABCMonumentGroteskSemi-Mono-Regular-Trial.woff) format('woff');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'MonumentGroteskSemiMonoThin';
+      src: url(../public/assets/fonts/ABCMonumentGroteskSemi-Mono-Thin-Trial.woff) format('woff');
+      font-weight: 100;
+      font-style: normal;
+    }
 
   a {
     /* @apply hover:text-mwsGrey; */
