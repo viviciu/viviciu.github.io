@@ -45,17 +45,21 @@ const HomeData = () => {
 
   return (
     // do w-full to make grid work.
-      <div className="absolute bottom-[10rem] left-0 w-full">
-        <div className="grid grid-cols-5">
-          <div className=" lg:col-start-2 col-start-2 p-0 m-0 text-offBlack text-cap font-SuisseWorks">
-            x {mouseX}, y {mouseY}
-          </div>
-          {/* prev absolute top-60 left-40 */}
-          <div className="lg:col-start-2 col-start-2 text-offBlack text-cap font-SuisseWorks">
-            {osInfo.name} {osInfo.version}
-          </div>  
+    <div className="absolute bottom-[10rem] left-0 w-full">
+      <div className="grid grid-cols-5">
+        <div className=" lg:col-start-2 col-start-2 p-0 m-0 text-offBlack text-cap font-SuisseWorks">
+          {/* x {mouseX}, y {mouseY} */}
+        </div>
+        {/* prev absolute top-60 left-40 */}
+        {/* font-MonumentGroteskSemiMono */}
+        <div className="lg:col-start-2 col-start-2 col-span-1 text-offBlack text-[12px]  leading-[1.2rem]  ">
+          {/* {osInfo.name} {osInfo.version} */}
+          <br />
+          Multidisciplinary designer exploring motion, generative visual
+          systems, and multimodal identities.
         </div>
       </div>
+    </div>
   );
 };
 
