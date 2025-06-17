@@ -1,0 +1,13 @@
+{
+  "name": "static-portfolio",
+  "version": "1.0.0",
+  "description": "Static portfolio site with Tailwind CSS",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/main.css -o ./css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21"
+  }
+} 

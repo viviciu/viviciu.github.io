@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play | staicu, viviana</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/cube.svg" />
+  <link rel="apple-touch-icon" type="image/svg+xml" href="/assets/cube.svg" />
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <script>
+    fetch('/navbar.html')
+      .then(res => res.text())
+      .then(html => { document.getElementById('navbar').innerHTML = html; });
+  </script>
+
+  <main class="m-1 mt-[10rem]">
+    <section class="flex flex-col mx-4 mt-16">
+      <article id="play-filters" class="block mb-8 lg:mb-[11vh] mt-[11vh] lg:text-h1 md:text-[2.75rem] text-[1.6rem] tracking-tight lg:leading-[3.7rem] leading-[1.6rem] font-h1 font-medium">
+        <!-- Filter buttons rendered by JS -->
+      </article>
+      <article id="play-grid" class="w-full mx-auto grid grid-cols-2 gap-[0.2rem] sm:gap-[1rem] sm:grid-cols-5 lg:grid-cols-7 place-content-center">
+        <!-- Items rendered by JS -->
+      </article>
+    </section>
+    <!-- Modal -->
+    <div id="play-modal" class="fixed inset-0 bg-white bg-opacity-85 flex justify-start items-start z-50" style="display:none;">
+      <div id="play-modal-content" class="relative m-[0.6rem] cursor-pointer">
+        <!-- Modal content rendered by JS -->
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; });
+  </script>
+  <script src="js/play.js"></script>
+</body>
+</html> 
