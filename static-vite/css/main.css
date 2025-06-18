@@ -1,0 +1,223 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font faces (copy from globals.css) */
+@font-face {
+  font-family: 'CMU-Serif';
+  font-weight: 400;
+  src: url(/fonts/cmunbi.ttf) format("ttf");
+}
+@font-face {
+  font-family: 'AdobeTextPro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/fonts/AdobeTextPro-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(../assets/fonts/suisseWorks/SuisseWorks-Regular-WebTrial.woff2) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url(../assets/fonts/suisseWorks/SuisseWorks-RegularItalic-WebTrial.woff2) format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Suisse';
+  src: url(../assets/fonts/Suiss/SuisseIntlTrial-Book.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse';
+  src: url(../assets/fonts/Suiss/SuisseIntlTrial-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse';
+  src: url(../assets/fonts/Suiss/SuisseIntlTrial-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse';
+  src: url(../assets/fonts/Suiss/SuisseIntlTrial-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url(../assets/fonts/helvetica/HelveticaNeueThin.otf) format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url(../assets/fonts/helvetica/HelveticaNeueLight.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url(../assets/fonts/helvetica/HelveticaNeueRoman.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Helvetica-Neue';
+  src: url(../assets/fonts/helvetica/HelveticaNeueMedium.otf) format('opentype');
+  font-weight: 500; 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url(../assets/fonts/helvetica/HelveticaNeueBold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica-Neue';
+  src: url(../assets/fonts/helvetica/HelveticaNeueBlack.otf) format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url(../assets/fonts/SFProDisplay/SF-Pro-Display-Black.otf) format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url(../assets/fonts/SFProDisplay/SF-Pro-Display-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url(../assets/fonts/SFProDisplay/SF-Pro-Display-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url(../assets/fonts/SFProDisplay/SF-Pro-Display-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url(../assets/fonts/SFProDisplay/SF-Pro-Display-Light.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'InputMono';
+  src: url(../assets/fonts/InputMono/InputMono-Regular.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LabMono';
+  src: url(../assets/fonts/labmono-regular-web.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MonumentGroteskSemiMono';
+  src: url(../assets/fonts/ABCMonumentGroteskSemi-Mono-Regular-Trial.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MonumentGroteskSemiMonoThin';
+  src: url(../assets/fonts/ABCMonumentGroteskSemi-Mono-Thin-Trial.woff) format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+:root {
+  --font-h1: "SFPRoDisplay";
+  --fs-h1: 3.875rem;
+  --lh-h1: 1.625rem;
+  --ls-h1: -0.13019rem;
+  --fs-cap: 0.8rem;
+  --fs-p: 1.2rem;
+  --lh-p: 1.625rem;
+  --lh-cap:0.9rem;
+  --lh-pMobile: 1.7rem;
+  --lh-p3: 1.5rem;
+  --fs-callout: 3.1925rem;
+  --lh-callout: 3.25rem;
+  --lh-callout2: 4rem;
+  --w-callout: 300;
+  --mwsGrey: #d4d4d4;
+  --offBlack: #333333;
+  --offBlack1: #373737;
+  --offBlack2: #515151;
+  --offBlack3: #939393;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+  touch-action: auto;
+}
+
+body {
+  color: #333333;
+  width: 100vw;
+  height: 100%;
+  background: #fafafa;
+  border-color: #3b3b3b;
+  user-select: none;
+  cursor: crosshair;
+  touch-action: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  scrollbar-width: none;
+}
+
+.scrim-max-width {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  max-width: 1120px;
+}
+
+.clicked {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.checkbox-label-checked {
+  color: #d4d4d4;
+  transition: color 0.5s ease;
+}
+
+.checkbox-label-checked:hover {
+  color: #333333;
+}
+
+.font-custom {
+  font-family: 'InputMono', monospace;
+} 
