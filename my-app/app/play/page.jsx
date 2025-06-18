@@ -84,6 +84,7 @@ export default function Projects() {
   return (
     <main className="m-1">
       <section className="flex flex-col mx-4">
+        {/* RADIO BUTTONS */}
         <article
           className="
           lg:mb-[11vh] mb-[2.5rem] mt-[11vh] 
@@ -251,7 +252,7 @@ export default function Projects() {
             </label>
           </div>
         </article>
-        <article className="w-full mx-auto grid grid-cols-2 gap-[0.2rem] sm:gap-[1rem] sm:grid-cols-5 lg:grid-cols-7 place-content-center">
+        <article className="w-full mx-auto grid grid-cols-2 gap-[0.2rem] sm:gap-[1rem] sm:grid-cols-5 lg:grid-cols-5 place-content-center">
           {displayedItems}
         </article>
       </section>

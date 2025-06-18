@@ -36,6 +36,15 @@ export default function TypographyAnimation() {
         role="Motion Design"
       />
       <CoverYAMLVideo url="https://www.youtube.com/watch?v=7d-jYvQeNq4" />
+      <iframe
+      className="w-full h-[60vh] lg:h-[80vh] mb-8"
+        src="https://player.vimeo.com/video/1063762366?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        width="1920"
+        height="1080"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+        title="confusion-deathnote-suanna-graphics-meme-motion"
+      ></iframe>
       <Context2
         context={
           <div>
@@ -71,10 +80,6 @@ export default function TypographyAnimation() {
         tools={tools}
       />
 
-      <div className="lg:pt-[3rem]">
-        {" "}
-        <DividerLine text={"Process"} />
-      </div>
       {/* columns */}
       <div className="mt-[0.6rem] mb-32 lg:columns-3 sm:columns-2 w-full place-content-center gap-[0.6rem]">
         {/* COL 1 */}

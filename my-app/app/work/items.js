@@ -25,15 +25,6 @@ export const items = [
   },
 
   {
-    id: "playfulVsPractical",
-    name: "Playful vs. Practical",
-    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/comp_cover-pickup-playfulpractical.mp4.webm",
-    // url: "/imgs/DSC05668-thumbnail.jpg",
-    fileType: "webm",
-    category: "Industrial Design",
-    categorySpecific: "a synergy of language, form, and context.",
-  },
-  {
     id: "typographyAnimation",
     name: "Kinetic type animation",
     // url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa",
@@ -43,6 +34,23 @@ export const items = [
     fileType: "webm",
     category: "Motion",
     categorySpecific: "a study in time and motion narrating a typeface.",
+  },
+  {
+    id: "visionPro",
+    name: "Vision Pro for Neurodivergent Users",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/letStoriesFindYou.png",
+    fileType: "img",
+    category: "UI | UX, Motion Design",
+    categorySpecific: "",
+  },
+  {
+    id: "playfulVsPractical",
+    name: "Playful vs. Practical",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/comp_cover-pickup-playfulpractical.mp4.webm",
+    // url: "/imgs/DSC05668-thumbnail.jpg",
+    fileType: "webm",
+    category: "Industrial Design",
+    categorySpecific: "a synergy of language, form, and context.",
   },
 
   // {
@@ -83,22 +91,25 @@ export const items = [
   //     "a realm where the very essence of self and time finds itself in flux.",
   // },
 
+  // {
+  //   id: "liminal",
+  //   name: "Lunar Gala: Liminal",
+  //   url: "/imgs/lg-home-COVER.webp",
+  //   fileType: "img",
+  //   category: "Creative Code, Brand",
+  //   categorySpecific:
+  //     "a realm where the very essence of self and time finds itself in flux.",
+  // },
   {
-    id: "liminal",
-    name: "Lunar Gala: Liminal",
-    url: "/imgs/lg-home-COVER.webp",
-    fileType: "img",
-    category: "Creative Code, Brand",
-    categorySpecific:
-      "a realm where the very essence of self and time finds itself in flux.",
-  },
-  {
-    id: "bumble",
-    name: "Bumble Sessions",
-    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
-    fileType: "img",
-    category: "UI | UX, Design Systems",
-    categorySpecific: "",
+    id: "typographyAnimation",
+    name: "Kinetic type animation",
+    // url: "https://res.cloudinary.com/ddjxpkewq/image/upload/f_auto,q_auto/v1/c-animation/s3k9v38udigxjapryyxa",
+    // LIGATURES BELOW
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/comp_ligatures%2Bending-noaudio.mov.webm",
+    // url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/cmini/athelas-cover.mov.webm",
+    fileType: "webm",
+    category: "Motion",
+    categorySpecific: "a study in time and motion narrating a typeface.",
   },
   {
     id: "cminiPoster",
@@ -107,6 +118,14 @@ export const items = [
     fileType: "img",
     category: "Brand",
     categorySpecific: "an exercise in type hierarchy.",
+  },
+  {
+    id: "bumble",
+    name: "Bumble Sessions",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
+    fileType: "img",
+    category: "UI | UX, Design Systems",
+    categorySpecific: "",
   },
 
   // {
