@@ -85,7 +85,7 @@ export default function Projects() {
         text-offBlack2
         "
         >
-          My process, lessons learned,
+          A peek at my process
           and inspirations.
         </div>
       </div>
