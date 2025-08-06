@@ -24,14 +24,12 @@ export default function About() {
           <span className="text-black font-semibold">
             Viviana Staicu (b.2005)
           </span>{" "}
-          is a storyteller. interaction designer.
-          experience prototyper. creative technologist. Currently, she is
-          exploring the intersections between creative code, motion design, and
+          is a storyteller. motion designer. interactive prototyper. Currently, she is exploring the intersections between creative code, motion design, and
           brand identity.
           <br />
           <br />
           In her practice, she aims to reignite curiosity and play through
-          honest, unobtrusive design. She has created generative designs,
+          honest design. She has created generative work,
           procedural animations, objects that delight, immersive websites, 3D
           renderings, and UI | UX designs.
           <br />
