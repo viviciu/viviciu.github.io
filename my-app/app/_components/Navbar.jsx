@@ -4,7 +4,7 @@ import React from 'react'
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 
-const Navbar = () => {
+export default function Navbar({ onAboutClick }) {
   return (
     // doing height 0 allows the nav to be sticky and not take up space.. so it overlays the canvas as if the position was absolute.
     <div
@@ -24,25 +24,26 @@ const Navbar = () => {
           <Link href="/">staicu, viviana</Link>
         </div>
 
-        <div className="lg:col-start-5  col-start-2 col-span-3 flex justify-end">
-          {["work","play", "sketchbook", "about"].map((item, index, array) => (
-            // The React.Fragment is used to group the elements together without adding an extra node to the DOM. The key prop is moved to the React.Fragment because keys should be on the outermost element returned by map.
+        <div className="lg:col-start-5  col-start-2 col-span-3 flex justify-end items-center">
+          {["work", "play", "sketchbook", "about"].map((item, idx, arr) => (
             <React.Fragment key={item}>
-              <Link
-                href={"/" + item} // you can combine strings like this
-                className="hover:text-mwsGrey"
-              >
-                {item}
-              </Link>
-              {index < array.length - 1 && ", "}
+              {item === "about" ? (
+                <button
+                  className="hover:text-mwsGrey"
+                  onClick={onAboutClick}
+                >
+                  {item}
+                </button>
+              ) : (
+                <Link href={"/" + item} className="hover:text-mwsGrey">
+                  {item}
+                </Link>
+              )}
+              {idx < arr.length - 1 && ", "}
             </React.Fragment>
           ))}
-
-          
         </div>
       </nav>
     </div>
   );
 }
-
-export default Navbar
