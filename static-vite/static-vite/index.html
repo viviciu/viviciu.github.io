@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | staicu, viviana</title>
+    <link rel="icon" type="image/svg+xml" href="/cube.svg">
+    <link rel="apple-touch-icon" href="/cube.svg">
+    <link rel="stylesheet" href="/css/globals.css">
+</head>
+<body>
+    <!-- About Overlay -->
+    <div id="aboutOverlay" class="fixed inset-0 bg-black/50 backdrop-blur-md z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-8 max-w-4xl w-full max-h-[80vh] overflow-y-auto">
+                <div class="flex justify-between items-start mb-6">
+                    <h1 class="text-3xl font-bold text-gray-900">About</h1>
+                    <button id="closeAbout" class="text-gray-500 hover:text-gray-700 text-2xl font-light">
+                        ×
+                    </button>
+                </div>
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        I'm a creative technologist and designer based in Pittsburgh, PA. I work at the intersection of design, technology, and art, creating experiences that are both beautiful and functional.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        My work spans across various mediums including web design, 3D graphics, motion design, and interactive installations. I'm passionate about pushing the boundaries of what's possible in digital spaces.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900">Skills</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• Web Design & Development</li>
+                                <li>• 3D Graphics & Animation</li>
+                                <li>• Motion Design</li>
+                                <li>• Interactive Design</li>
+                                <li>• Creative Coding</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900">Tools</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• React/Next.js</li>
+                                <li>• Three.js/WebGL</li>
+                                <li>• Adobe Creative Suite</li>
+                                <li>• TouchDesigner</li>
+                                <li>• Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent">
+        <!-- Your existing navbar and content here -->
+        <nav class="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-sm border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <a href="/" class="text-xl font-bold text-gray-900">staicu, viviana</a>
+                    </div>
+                    <div class="flex items-center space-x-8">
+                        <a href="/" class="text-gray-700 hover:text-gray-900 transition-colors">Home</a>
+                        <button id="aboutBtn" class="text-gray-700 hover:text-gray-900 transition-colors">About</button>
+                        <a href="/work" class="text-gray-700 hover:text-gray-900 transition-colors">Work</a>
+                        <a href="/play" class="text-gray-700 hover:text-gray-900 transition-colors">Play</a>
+                        <a href="/sketchbook" class="text-gray-700 hover:text-gray-900 transition-colors">Sketchbook</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="pt-16">
+            <!-- Your existing work page content -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <h1 class="text-4xl font-bold text-gray-900 mb-8">Work</h1>
+                <div id="workGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Work items will be populated by JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/work.js"></script>
+    <script>
+        // About overlay functionality
+        const aboutBtn = document.getElementById('aboutBtn');
+        const aboutOverlay = document.getElementById('aboutOverlay');
+        const closeAbout = document.getElementById('closeAbout');
+        const mainContent = document.getElementById('mainContent');
+
+        function openAbout() {
+            aboutOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeAboutModal() {
+            aboutOverlay.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Event listeners
+        aboutBtn.addEventListener('click', openAbout);
+        closeAbout.addEventListener('click', closeAboutModal);
+        
+        // Close on overlay click (outside modal)
+        aboutOverlay.addEventListener('click', (e) => {
+            if (e.target === aboutOverlay) {
+                closeAboutModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !aboutOverlay.classList.contains('hidden')) {
+                closeAboutModal();
+            }
+        });
+    </script>
+</body>
+</html> 

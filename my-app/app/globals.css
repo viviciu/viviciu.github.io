@@ -4,16 +4,11 @@
 
 @layer base {
   @font-face {
-    font-family: 'CMU-Serif';
+    font-family: 'ABC-Diatype-Reg';
+    src: url(../public/assets/fonts/ABC-Diatype/ABCDiatype-Regular-Trial.woff2) format('woff');
     font-weight: 400;
-    src: url(/fonts/cmunbi.ttf) format("ttf");
-  }
-  @font-face {
-    font-family: 'AdobeTextPro';
     font-style: normal;
-    font-weight: 400;
-    src: url(../public/assets/fonts/AdobeTextPro-Regular.woff) format('woff'); 
-    }
+  }
   @font-face {
     font-family: 'SuisseWorks';
     src: url(../public/assets/fonts/suisseWorks/SuisseWorks-Regular-WebTrial.woff2) format('woff');
@@ -283,4 +278,8 @@ body {
 /* FONT ISSUE ON WORK */
 .font-custom {
   font-family: 'InputMono', monospace;
+}
+
+html, body, button, input, textarea, select, [role="button"] {
+  cursor: crosshair !important;
 }

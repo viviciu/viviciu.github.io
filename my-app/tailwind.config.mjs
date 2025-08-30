@@ -84,13 +84,13 @@ export default {
       fontFamily: {
         // SUISSE FONT CAUSED SCROLLING TO BE FUCKED :(
         // Suisse: ["Suisse"],
-        AdobeTextPro: ["AdobeTextPro"],
-        CMUSerif: ["CMU-Serif"],
+
         Helvetica: ["Helvetica-Neue"],
-        // SuisseWorks: ["SuisseWorks"],
+        SuisseWorks: ["SuisseWorks"],
         SFProDisplay: ["SFProDisplay"],
         LabMono: ["LabMono"],
         MonumentGroteskSemiMono: ["MonumentGroteskSemiMono"],
+        ABCDiatypeReg: ["ABC-Diatype-Reg"],
         // MonumentGroteskSemiMonoThin: ["MonumentGroteskSemiMonoThin"],
       },
       // RESPONSIVE DESIGN : SCREEN SIZES
