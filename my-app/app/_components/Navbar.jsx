@@ -35,7 +35,7 @@ export default function Navbar({ onAboutClick }) {
                   {item}
                 </button>
               ) : (
-                <Link href={"/" + item} className="hover:text-mwsGrey">
+                <Link href={item === "work" ? "/" : "/" + item} className="hover:text-mwsGrey">
                   {item}
                 </Link>
               )}

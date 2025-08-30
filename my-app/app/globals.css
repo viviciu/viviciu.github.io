@@ -280,6 +280,6 @@ body {
   font-family: 'InputMono', monospace;
 }
 
-html, body, button, input, textarea, select, a, [role="button"] {
+html, body, button, input, textarea, select, [role="button"] {
   cursor: crosshair !important;
 }
