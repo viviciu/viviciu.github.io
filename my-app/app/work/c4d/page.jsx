@@ -52,6 +52,15 @@ export default function Liminal() {
         <video autoPlay loop muted playsInline className="w-full">
           <source
             src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/c4d/comp_myfirsthoudinirender.mov.webm"
+            }
+            type="video/webm"
+          />
+        </video>
+        <p>Vellum Balloon simulation in Houdini, rendered in Redshift.</p>
+        <video autoPlay loop muted playsInline className="w-full">
+          <source
+            src={
               "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/c4d/2.7MB_COVER_comp_final-poppingPills.mov.webm"
             }
             type="video/webm"
@@ -75,6 +84,7 @@ export default function Liminal() {
           height={500}
           width={500}
         />
+
         <Image
           src={
             "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/poppingPills-blur.jpg"
@@ -106,6 +116,20 @@ export default function Liminal() {
         <Image
           src={
             "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/Bread.jpg"
+          }
+          height={500}
+          width={500}
+        />
+        <Image
+          src={
+            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/c4d/comp_edit-AEFSD.jpg.webp"
+          }
+          height={500}
+          width={500}
+        />
+        <Image
+          src={
+            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/c4d/edit-EXTRA-GUM-EKTACHROME-100%2B.png"
           }
           height={500}
           width={500}
