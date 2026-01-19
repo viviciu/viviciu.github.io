@@ -41,7 +41,6 @@ export default function Liminal() {
         timeline={timeline}
       />
 
-      <DividerLine text={""} />
       <div className="mt-[2rem]"></div>
 
       {/* SPACER */}
@@ -49,15 +48,13 @@ export default function Liminal() {
 
       {/* GRID */}
       <div className="w-full mx-auto lg:columns-3 sm:columns-2 lg:gap-[0.6rem] gap-3 space-y-[0.5rem] place-content-center">
-        <video autoPlay loop muted playsInline className="w-full">
-          <source
-            src={
-              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/c4d/comp_myfirsthoudinirender.mov.webm"
-            }
-            type="video/webm"
-          />
-        </video>
-        <p>Vellum Balloon simulation in Houdini, rendered in Redshift.</p>
+      <Image
+          src={
+            "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/IMG_4629.jpg"
+          }
+          height={500}
+          width={500}
+        />
         <video autoPlay loop muted playsInline className="w-full">
           <source
             src={
@@ -70,6 +67,25 @@ export default function Liminal() {
           Experimenting with a 1/2s shutter speed and motion blur. Hard lighting
           and shadows helped create light-trail like effects.
         </p>
+        <video autoPlay loop muted playsInline className="w-full">
+          <source
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/comp_crunchy.mp4.webm"
+            }
+            type="video/webm"
+          />
+        </video>
+        <video autoPlay loop muted playsInline className="w-full">
+          <source
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/c4d/comp_myfirsthoudinirender.mov.webm"
+            }
+            type="video/webm"
+          />
+        </video>
+        <p>Vellum Balloon simulation in Houdini, rendered in Redshift.</p>
+        
+        
         <Image
           src={
             "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_poppingPills_mojo-II_1.1.1.jpg.webp"
@@ -100,8 +116,8 @@ export default function Liminal() {
           width={500}
         />
         <p>
-          Creating custom LUTs in Lightroom Classic as a base to edit footage in
-          Davinci Resolve.
+          Creating LUTs in Lightroom Classic as a base to edit footage in
+          Davinci.
         </p>
         <Image
           src={

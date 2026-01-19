@@ -9,17 +9,34 @@ export const items = [
     category: "Motion",
     categorySpecific: "some generative procedural animations.",
   },
-
-  // YOU MUST KEEP F_AUTO:VIDEO, NOT F_MP4, IN ORDER TO USE IT WITH AN <Image /> tag
-
   {
     id: "touchdesignerSeries",
-    name: "Touchdesigner Experiments",
+    name: "Touchdesigner Explorations",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/touchdesigner/dune-trimmed-cover-thumbnail.mov.webm",
     fileType: "webm",
     category: "Generative Design",
     categorySpecific: "",
   },
+  // {
+  //   id: "bumble",
+  //   name: "Bumble Sessions",
+  //   url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
+  //   fileType: "img",
+  //   category: "UI | UX, Design Systems",
+  //   categorySpecific: "",
+  // },
+  {
+    id: "mile10",
+    name: "Mile10 for OEM",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAY-SIDE-WHITE.jpg",
+    fileType: "img",
+    category: "Industrial Design, Visulization",
+    categorySpecific: "some generative procedural animations.",
+  },
+
+  // YOU MUST KEEP F_AUTO:VIDEO, NOT F_MP4, IN ORDER TO USE IT WITH AN <Image /> tag
+
+  
   {
     id: "playfulVsPractical",
     name: "Playful vs. Practical",
@@ -35,7 +52,7 @@ export const items = [
     name: "Vision Pro for Neurodivergent Users",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/letStoriesFindYou.png",
     fileType: "img",
-    category: "UI | UX, Motion",
+    category: "Cinematography, Motion, UI | UX",
     categorySpecific: "",
   },
   {
@@ -107,14 +124,7 @@ export const items = [
   //   category: "Brand",
   //   categorySpecific: "an exercise in type hierarchy.",
   // },
-  {
-    id: "bumble",
-    name: "Bumble Sessions",
-    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/bumble/bubmlesessions-cover.png",
-    fileType: "img",
-    category: "UI | UX, Design Systems",
-    categorySpecific: "",
-  },
+  
 
   // {
   //   id: "15-112",

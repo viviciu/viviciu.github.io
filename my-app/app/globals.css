@@ -169,12 +169,12 @@
 
 :root {
   /* FONTS */
-  --font-h1: "SFPRoDisplay";
+  --font-h1: "Arial";
   --fs-h1: 3.875rem;
   --lh-h1: 1.625rem;
   --ls-h1: -0.13019rem;
 
-  --fs-cap: 0.8rem; /* captions */
+  --fs-cap: 14px; /* captions, used to be 0.8rem */
   --fs-p: 1.2rem;
   /* prev 1.37294rem */
   --lh-p: 1.625rem;
@@ -239,15 +239,30 @@ body {
 
 
 
-/* Hide scrollbar for WebKit browsers */
+/* Custom floating scrollbar for WebKit browsers */
 body::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+  background: transparent;
 }
 
-/* Hide scrollbar for Firefox */
+body::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 8px 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.4);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.6);
+}
+
+/* Floating scrollbar for Firefox */
 body {
-  scrollbar-width: none;
-  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(150, 150, 150, 0.4) transparent;
 }
 
 
