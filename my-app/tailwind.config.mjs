@@ -91,6 +91,7 @@ export default {
         LabMono: ["LabMono"],
         MonumentGroteskSemiMono: ["MonumentGroteskSemiMono"],
         ABCDiatypeReg: ["ABC-Diatype-Reg"],
+        Arial: ["Arial"],
         // MonumentGroteskSemiMonoThin: ["MonumentGroteskSemiMonoThin"],
       },
       // RESPONSIVE DESIGN : SCREEN SIZES

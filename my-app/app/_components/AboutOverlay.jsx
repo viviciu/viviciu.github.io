@@ -31,13 +31,18 @@ export default function AboutOverlay({ isOpen, onClose }) {
         {/* 6 columns x 4 rows grid, 15px gaps, 32px horizontal margin */}
 
         <div className="col-start-1 col-span-3 row-span-1 text-sm">
-          Viviana Staicu (b.2005) is a storyteller. motion designer. interactive
-          prototyper. Currently, she is exploring the intersections between
-          creative code, motion design, and brand identity. Trying to keep
-          things playful. She has created 3D renders, generative work,
-          procedural animations, objects that delight, and immersive websites.
-          She currently studies Design and HCI at Carnegie Mellon University and
-          comes from Baltimore {">"} Pittsburgh.
+          I'm a a multidisciplinary designer studying Industrial Design and HCI at Carnegie Mellon University.
+          I've been into image-making for a pretty long time, and my fascination with light lead me to love visualization and CGI.
+          In ID, I'm interested in subjects around calm technology, and everyday carry items that make life just a little more delightful.
+          <br />
+          <br />
+          I enjoy learning new processes that force me to think differently, which has lead me to become a chronic side quester: <br />
+          I've worked on websites, directed a spectulative app promotion film, and worked at an AI startup aiming to spark more authentic human connection.
+
+          <br />
+          <br />
+
+          I come from Baltimore {">"} now based in Pittsburgh.
         </div>
         {/* MINI BOX */}
         <div className="col-start-3 row-start-3 col-span-4 row-span-4 text-sm">
@@ -45,14 +50,26 @@ export default function AboutOverlay({ isOpen, onClose }) {
           <div className="grid grid-cols-4 grid-rows-2">
             <div className="col-span-2">
               <div className="">
-                Interaction Designer @ Augmented Perception Lab, HCII
+                3D Motion Designer @ Lunar Gala
               </div>
               <div className="">2025—Present</div>
             </div>
             {/* DESC */}
             <div className="col-span-2">
-              Making MR interfaces better than just a floating pane;
-              <br /> Bringing tangible connection to online work relationships.
+              Designing some backdrop motion for Pittsburgh's largest final show.
+            </div>
+          </div>
+          {/* TITLE */}
+          <div className="grid grid-cols-4 grid-rows-2">
+            <div className="col-span-2">
+              <div className="">
+                Industrial Designer @ Augemented Perception Lab
+              </div>
+              <div className="">2025—2025</div>
+            </div>
+            {/* DESC */}
+            <div className="col-span-2">
+              Spent a semester prototyping a device which helps those in distributed teams feel more connected.
             </div>
           </div>
           {/* TITLE */}

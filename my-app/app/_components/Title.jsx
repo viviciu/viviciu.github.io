@@ -17,7 +17,7 @@ const Title = forwardRef(({ text1 }, ref) => { // NOTICE REF HERE
       >
         <div
           className="text-offblack 
-            font-SFProDisplay
+            font-ABC-Diatype-Reg
             font-semibold
             tracking-['var(--ls-h1)']
             lg:leading-['var(--lh-h1)]

@@ -2,6 +2,14 @@
 export const items = [
 
   {
+    id: "me-sonder",
+    name: "",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/000020710020.JPEG",
+    category: "photo",
+    fileType: "webp",
+    categorySpecific: "",
+  },
+  {
     id: "waswaswas-zurich",
     name: "",
     url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/play/comp_edit-DSC09049-2.jpg.webp",
