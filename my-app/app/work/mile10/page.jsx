@@ -28,7 +28,7 @@ export default function Mile10() {
       {/* SECTION TITLE */}
       <div className="pt-12">
         <div className="text-center">Mile 10 for OEM, 2025</div>
-        <div className="text-center">4 weeks, Solidworks, Bambu, C4D</div>
+        <div className="text-center">4 weeks, Individual, Solidworks, Bambu, C4D</div>
       </div>
 
       {/* BODY */}
@@ -49,7 +49,8 @@ export default function Mile10() {
             }
             type="video/webm"
           />
-        </video></div>
+        </video>
+        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">process reel</div></div>
 
         <div className="p-12"></div>
         <div className="text-left">Evidence shows that over 40% of University Students smoke nicotine, and 46% of U.S undergrads meet Substance Use Disorder criteria, yet only 5% seek help.
@@ -61,11 +62,14 @@ export default function Mile10() {
           Vapes are far from any solution, and apps fail to support recovery from relapses—once you break a streak, it can feel like all progress was lost, making it easy to completely give up. Apps are also far less visible compared to physical or human interventions.
           <br />
           <br />
-          How could quitting nicotine be approached in the form of progressive overload? Could progress be made permanently visible? What might encourage you to keep trying, even when you slip up?</div>
+          How could quitting nicotine be approached in the form of progressive overload? Could progress be made permanently visible? What might encourage you to keep trying, even when you slip up? 
+          <br />
+          <br />
+          An easy to maintain solution that makes progress permanent and visible is not present in the current market. </div>
 
 
 
-        <div className="text-center mx-[-20%] text-[1.687rem] pb-40 pt-40">What would it look like to make quitting nicotine a celebratory journey? <br /> How could products sustain motivation post-relapse?</div>
+        <div className="text-center mx-[-30%] text-[1.687rem] pb-40 pt-40">How could quitting nicotine become a celebratory journey? <br /> Could products sustain motivation post-relapse?</div>
 
       </div>
 
@@ -166,35 +170,7 @@ export default function Mile10() {
         </div>
       </div>
 
-      <div className="w-[100%] mx-auto pt-40">
-        <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-6.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
-  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-7.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
-  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-8.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
-  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-9.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
-  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-10.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
-        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">instructional booklet, included in every box</div>
-      </div>
-
-      {/* . */}
-      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
-        <div className="text-left">
-        An instructional booklet is included in every box, with step-by-step instructions for how to engage with Mile 10.
-        </div>
-      </div>
-      <div className="w-[100%] mx-auto pt-40 gap-2">
-      <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3787.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
-      <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3790.jpeg.webp" className="mt-2" alt="" width={500} height={500} layout="responsive" />
-        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">instructional booklet, included in every box</div>
-      </div>
-
-      {/* . */}
-      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
-        <div className="text-left">
-        idk
-        </div>
-      </div>
-      <div className="w-[50%] mx-auto pt-40 gap-2">
-      
+      <div className="w-[30%] mx-auto pt-40 gap-2">
       <video
       controls
           autoPlay
@@ -212,11 +188,39 @@ export default function Mile10() {
 
         <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">packaging experience</div>
       </div>
+
+      <div className=" mx-[10%] pt-40">
+        <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-6.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-7.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-8.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-9.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-10.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">instructional booklet, included in every box</div>
+      </div>
       <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
         <div className="text-left">
-        a thoughtful, layer-by-layer unboxing experience gives Mile 10 the ability to chunk information to the user, finishing with a graphical info booklet.
+        An instructional booklet is included in every box, with step-by-step instructions for how to engage with Mile 10.
         </div>
       </div>
+      
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+
+        </div>
+      </div>
+      <div className="mx-[10%] pt-40 gap-2">
+      <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3787.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+      <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3790.jpeg.webp" className="mt-2" alt="" width={500} height={500} layout="responsive" />
+        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">final showcase</div>
+      </div>
+
+      {/* . */}
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        
+        </div>
+      </div>
+      
 
 {/* PROCESS */}
 <div className="columns-3 gap-2 pt-40 mx-[10%] [&>*]:mb-2">
