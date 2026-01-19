@@ -111,14 +111,203 @@ export default function Mile10() {
         <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAY-BLURNIB-RENDER.jpg" alt="disc" width={500} height={500} layout="responsive" />
         <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">nib, in orange</div>
       </div>
-
-      {/* . */}
       <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
         <div className="text-left">
         Every night, you shift the nib closer to the center—one step closer to your goal. Deeper rings show the days that you had the strongest cravings, but resisted—something to you can celebrate even if you break sobriety later. Life happens, but it’s no reason to give up. 
         </div>
       </div>
+      <div className="w-[30%] mx-auto pt-40">
+        <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_edit-GH-squ.jpg.webp" alt="disc" width={500} height={500} layout="responsive" />
+        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">nib, in orange</div>
+      </div>
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        display it on a stand, or keep with you always as a reminder of your growth.
+        </div>
+      </div>
+      <div className="w-[60%] mx-auto pt-40">
+        <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/peeracc.png" alt="disc" width={500} height={500} layout="responsive" />
+      </div>
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        trade the shell of your current milestone disc with a friend also quitting—each shell has a barcode with your unique identifier stamped on.
+        </div>
+      </div>
+      <div className="w-[60%] mx-auto pt-40">
+        <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_edit-KJVKNDJ.jpg.webp" alt="disc" width={500} height={500} layout="responsive" />
+      </div>
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        Mile 10 comes with 5 discs, each in different finishes representing different milestones and aligned with OEM’s brand colorway. premium finishes like chrome for the 6 month mark, and a concrete disc for the one year milestone represent a symbol of achievement and grit.
+        <br />
+        <br />
+        concrete on the 1 year milestone makes it physically tougher to engrave, as it’s expected there to be thousands of disc rotations over a long time period.
+        </div>
+      </div>
+      <div className="w-[70%] mx-auto pt-40">
+        <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_intro2.jpeg.webp" alt="disc" width={500} height={500} layout="responsive" />
+        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">study and rational for choosing OEM as Mile 10's brand extension</div>
+      </div>
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        
+        </div>
+      </div>
+      <div className="w-[30%] mx-auto pt-40">
+        <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_edit-gfhsdaf.jpg.webp" alt="disc" width={500} height={500} layout="responsive" />
+        {/* <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">nib, in orange</div> */}
+      </div>
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        Each disc comes in it’s own case, waiting for you to unveil it when you’re ready. A ring graphic reveals itself when taking out the disc, encouraging users to complete their milestone.
+        <br />
+        <br />
+        Additional discs are provided free of charge for insurance-bearing users via university health services.
+        </div>
+      </div>
 
+      <div className="w-[100%] mx-auto pt-40">
+        <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-6.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-7.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-8.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-9.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_vstaicu-storyboard-final-205mmx100mm-02-10.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">instructional booklet, included in every box</div>
+      </div>
+
+      {/* . */}
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        An instructional booklet is included in every box, with step-by-step instructions for how to engage with Mile 10.
+        </div>
+      </div>
+      <div className="w-[100%] mx-auto pt-40 gap-2">
+      <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3787.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+      <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3790.jpeg.webp" className="mt-2" alt="" width={500} height={500} layout="responsive" />
+        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">instructional booklet, included in every box</div>
+      </div>
+
+      {/* . */}
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        idk
+        </div>
+      </div>
+      <div className="w-[50%] mx-auto pt-40 gap-2">
+      
+      <video
+      controls
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3854.MOV.webm"
+            }
+            type="video/webm"
+          />
+        </video>
+
+        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">packaging experience</div>
+      </div>
+      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+        <div className="text-left">
+        a thoughtful, layer-by-layer unboxing experience gives Mile 10 the ability to chunk information to the user, finishing with a graphical info booklet.
+        </div>
+      </div>
+
+{/* PROCESS */}
+<div className="columns-3 gap-2 pt-40 mx-[10%] [&>*]:mb-2">
+<video
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_cool-spin.mov.webm"
+            }
+            type="video/webm"
+          />
+        </video>
+  
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_edit-DSC09380.jpg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_edit-DSC09383.jpg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IDK.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3515.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3628.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3652.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3693.JPG.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3701.jpeg.webp" alt="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3693.JPG.webp" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3713.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3717.PNG.webp" alt="" width={500} height={500} layout="responsive" />
+  <video
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src={
+              "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_SPIN.mov.webm"
+            }
+            type="video/webm"
+          />
+        </video>
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3724.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3743.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3770.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  
+  
+  
+  
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_FINAL-4.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_FINAL-6.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_intro2.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_FINAL-5.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_measuretool.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_sdljkfhur.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_ss010.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_freeform-sketch.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_mechanism.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_moreee-oem-logo.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_cragrphicindex.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_ericNotebook.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_CROP.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_oem-logo.png.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_whatsaddictionrecoverymean.jpg.webp" alt="" width={500} height={500} layout="responsive" />
+  <Image src="" alt="" width={500} height={500} layout="responsive" />
+  
+  <video
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src={
+              ""
+            }
+            type="video/webm"
+          />
+        </video>
+  <video
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src={
+              ""
+            }
+            type="video/webm"
+          />
+        </video>
+</div>
 
 
       <div className="pt-40 pb-80 text-center font-Arial text-[1.125rem]">
