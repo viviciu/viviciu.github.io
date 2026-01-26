@@ -14,7 +14,7 @@ export default function Mile10() {
     <main className="block px-4 font-Arial text-p">
       {/* HERO IMAGE */}
     <div className="w-[50%] relative pt-12 mx-auto">
-    <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/coverimg-alpha-crop.png" alt="disc" width={500} height={500} layout="responsive" />
+    <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/012526crop.png" alt="disc" width={500} height={500} layout="responsive" />
       {/* <div className="flex">
       <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAY-SIDE-WHITE.jpg" alt="disc" width={500} height={500} layout="responsive" />
       <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAYYYY.jpg" alt="disc" width={500} height={500} layout="responsive" />
@@ -27,9 +27,9 @@ export default function Mile10() {
 
       {/* SECTION TITLE */}
       <div className="pt-12">
-        <div className="text-center">Mile 10 for OEM, 2025</div>
+        <div className="text-center">Mile 10 for On Earth Momentarily™, 2025</div>
         <div className="text-center">4 weeks, Individual, Solidworks, Bambu, C4D</div>
-        <a href="https://drive.google.com/file/d/1B6qURWkGYWRig1GnrVh18hK8Q7n6Pm2q/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-center block underline">Full Sketchbook PDF</a>
+        <a href="https://drive.google.com/file/d/1B6qURWkGYWRig1GnrVh18hK8Q7n6Pm2q/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-center block underline">96 Sketchbook Pages</a>
       </div>
 
       {/* BODY */}
