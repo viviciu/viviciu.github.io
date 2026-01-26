@@ -27,8 +27,9 @@ export const items = [
   // },
   {
     id: "mile10",
-    name: "Mile10 for OEM",
-    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAY-SIDE-WHITE.jpg",
+    name: "Mile10 for OEM®",
+    // url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAY-SIDE-WHITE.jpg",
+    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/coverimg-alpha-crop.png",
     fileType: "img",
     category: "Industrial Design, Visulization",
     categorySpecific: "some generative procedural animations.",

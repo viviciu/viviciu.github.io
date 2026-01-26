@@ -13,8 +13,8 @@ export default function Mile10() {
   return (
     <main className="block px-4 font-Arial text-p">
       {/* HERO IMAGE */}
-    <div className=" h-full relative pt-12 mx-2">
-    <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/comp_edit-oem-02-tiff-2.jpg.webp" alt="disc" width={500} height={500} layout="responsive" />
+    <div className="w-[50%] relative pt-12 mx-auto">
+    <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/coverimg-alpha-crop.png" alt="disc" width={500} height={500} layout="responsive" />
       {/* <div className="flex">
       <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAY-SIDE-WHITE.jpg" alt="disc" width={500} height={500} layout="responsive" />
       <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAYYYY.jpg" alt="disc" width={500} height={500} layout="responsive" />
@@ -29,6 +29,7 @@ export default function Mile10() {
       <div className="pt-12">
         <div className="text-center">Mile 10 for OEM, 2025</div>
         <div className="text-center">4 weeks, Individual, Solidworks, Bambu, C4D</div>
+        <a href="https://drive.google.com/file/d/1B6qURWkGYWRig1GnrVh18hK8Q7n6Pm2q/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-center block underline">Full Sketchbook PDF</a>
       </div>
 
       {/* BODY */}
@@ -51,6 +52,11 @@ export default function Mile10() {
           />
         </video>
         <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">process reel</div></div>
+        
+        {/* <div className="pt-40 pb-40 text-center font-Arial text-[1.125rem]">
+        under construction <br />
+        —01.19.2026
+      </div> */}
 
         <div className="p-12"></div>
         <div className="text-left">Evidence shows that over 40% of University Students smoke nicotine, and 46% of U.S undergrads meet Substance Use Disorder criteria, yet only 5% seek help.
@@ -122,11 +128,11 @@ export default function Mile10() {
       </div>
       <div className="w-[30%] mx-auto pt-40">
         <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_edit-GH-squ.jpg.webp" alt="disc" width={500} height={500} layout="responsive" />
-        <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">nib, in orange</div>
+
       </div>
       <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
         <div className="text-left">
-        display it on a stand, or keep with you always as a reminder of your growth.
+        Display it on a stand, or keep with you always as a reminder of your growth.
         </div>
       </div>
       <div className="w-[60%] mx-auto pt-40">
@@ -134,7 +140,7 @@ export default function Mile10() {
       </div>
       <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
         <div className="text-left">
-        trade the shell of your current milestone disc with a friend also quitting—each shell has a barcode with your unique identifier stamped on.
+        Trade the shell of your current milestone disc with a friend also quitting—each shell has a barcode with your unique identifier stamped on.
         </div>
       </div>
       <div className="w-[60%] mx-auto pt-40">
@@ -223,6 +229,8 @@ export default function Mile10() {
       
 
 {/* PROCESS */}
+<a href="https://drive.google.com/file/d/1B6qURWkGYWRig1GnrVh18hK8Q7n6Pm2q/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-center block underline">Full Sketchbook PDF</a>
+<a href="https://docs.google.com/document/d/1bxIB3USA6xnIPXkUN-zVusBmKzxAHLrV3jREtLD_1-k/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-center block underline">Design proposal, research protocol, supporting documentation</a>
 <div className="columns-3 gap-2 pt-40 mx-[10%] [&>*]:mb-2">
 <video
           autoPlay
@@ -238,14 +246,18 @@ export default function Mile10() {
           />
         </video>
   
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/oem-shoutout-2.jpeg" alt="" width={500} height={500} layout="responsive" />
+  {/* <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/oem-shoutout-1.PNG" alt="" width={500} height={500} layout="responsive" /> */}
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_edit-DSC09380.jpg.webp" alt="" width={500} height={500} layout="responsive" />
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_edit-DSC09383.jpg.webp" alt="" width={500} height={500} layout="responsive" />
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IDK.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3515.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3628.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3652.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
+  
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3693.JPG.webp" alt="" width={500} height={500} layout="responsive" />
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3701.jpeg.webp" alt="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3693.JPG.webp" width={500} height={500} layout="responsive" />
+  <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/oem-shoutout-1.PNG" alt="" width={500} height={500} layout="responsive" />
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3713.jpeg.webp" alt="" width={500} height={500} layout="responsive" />
   <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10-process/comp_IMG_3717.PNG.webp" alt="" width={500} height={500} layout="responsive" />
   <video
