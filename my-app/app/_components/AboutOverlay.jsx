@@ -50,13 +50,26 @@ export default function AboutOverlay({ isOpen, onClose }) {
           <div className="grid grid-cols-4 grid-rows-2">
             <div className="col-span-2">
               <div className="">
+                Designer @ Gentle Systems
+              </div>
+              <div className="">2026—Present</div>
+            </div>
+            {/* DESC */}
+            <div className="col-span-2">
+              3D Visualization & Industrial Design concepting.
+            </div>
+          </div>
+          {/* TITLE */}
+          <div className="grid grid-cols-4 grid-rows-2">
+            <div className="col-span-2">
+              <div className="">
                 3D Motion Designer @ Lunar Gala
               </div>
               <div className="">2025—Present</div>
             </div>
             {/* DESC */}
             <div className="col-span-2">
-              Designing some backdrop motion for Pittsburgh's largest final show.
+              Designing backdrop motion for Pittsburgh's largest final show.
             </div>
           </div>
           {/* TITLE */}
