@@ -79,14 +79,14 @@ export const items = [
   //   categorySpecific: "some generative procedural animations.",
   // },
 
-  {
-    id: "spatula",
-    name: "Spatula",
-    url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0053-trim-cover.MP4.webm",
-    fileType: "webm",
-    category: "Industrial Design",
-    categorySpecific: "",
-  },
+  // {
+  //   id: "spatula",
+  //   name: "Spatula",
+  //   url: "https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/spatula/compressed_C0053-trim-cover.MP4.webm",
+  //   fileType: "webm",
+  //   category: "Industrial Design",
+  //   categorySpecific: "",
+  // },
 
   // {
   //   id: "cinematography",

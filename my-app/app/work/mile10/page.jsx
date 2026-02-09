@@ -13,7 +13,7 @@ export default function Mile10() {
   return (
     <main className="block px-4 font-Arial text-p">
       {/* HERO IMAGE */}
-    <div className="w-[50%] relative pt-12 mx-2">
+    <div className="w-[50%] relative pt-12 mx-auto">
     <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/coverimg-alpha-crop.png" alt="disc" width={500} height={500} layout="responsive" />
       {/* <div className="flex">
       <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/edit-XRAY-SIDE-WHITE.jpg" alt="disc" width={500} height={500} layout="responsive" />
