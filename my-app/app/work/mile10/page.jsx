@@ -33,15 +33,13 @@ export default function Mile10() {
       </div>
 
       {/* BODY */}
-      <div className="pt-12 font-Arial text-[1.1rem] mx-[25%]">
+      <div className="pt-12 font-Arial text-[1.1rem] mx-10 md:mx-[12rem] lg:mx-[25%]">
 
-        <div className="text-left leading-p2 tracking-p2">In 2024, I worked with Dar from 1x to develop designs for Neo Gamma. At the time, development had largely been completed on the body. They wanted to work on the suit and the head to bring it to a level they felt would be ready for the home.
-          <br />
-          <br />
+        <div className="text-center leading-p2 tracking-p2">
           
-          A coin that celebrates quitting substances—without guilt. Mile 10 makes progress permanently visible, which encourages users to keep trying even if they relapse. </div>
+          A coin that celebrates quitting substances—without guilt. It makes progress permanently visible, which encourages users to keep trying even if they relapse. </div>
 
-        <div className="w-[60%] mx-auto pt-12"><video
+        <div className="w-[40%] mx-auto pt-12"><video
         controls
           autoPlay
           loop
@@ -61,7 +59,7 @@ export default function Mile10() {
         
 
 <div className="text-center">
-  Only 5% of college students who meet Substance Use Disorder criteria seek help.
+  Only 5% of college students who meet Substance Use Disorder criteria seek help. How can this be?
 </div>
 
         <div className="text-center mx-[-30%] text-[1.687rem] pb-40 pt-40 leading-p2 tracking-p2">How could quitting nicotine become a celebratory journey? <br /> Could products sustain motivation post-relapse?</div>
