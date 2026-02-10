@@ -73,11 +73,13 @@ export default {
         // h4pp == PP Neue montreal website large p text, their h4
         h4pp: "1",
         callout: "var(--lh-callout2)",
+        p2: "var(--lh-p2)",
       },
 
       // LETTER SPACING (tracking?)
       letterSpacing: {
         h1: "-0.13019rem",
+        p2: "var(--ls-p2)",
       },
 
       // font family
@@ -91,7 +93,8 @@ export default {
         LabMono: ["LabMono"],
         MonumentGroteskSemiMono: ["MonumentGroteskSemiMono"],
         ABCDiatypeReg: ["ABC-Diatype-Reg"],
-        Arial: ["Arial"],
+        Arial: ["ArialReg"],
+        ArialLightReg: ["ArialLightReg"],
         // MonumentGroteskSemiMonoThin: ["MonumentGroteskSemiMonoThin"],
       },
       // RESPONSIVE DESIGN : SCREEN SIZES

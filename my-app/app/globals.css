@@ -140,6 +140,18 @@
       font-weight: 100;
       font-style: normal;
     }
+    @font-face {
+      font-family: 'ArialReg';
+      font-style: normal;
+      font-weight: normal;
+      src: url(../public/assets/fonts/Arial/ARIAL.woff), format('woff');
+      }
+    @font-face {
+      font-family: 'ArialLightReg';
+      font-style: normal;
+      font-weight: normal;
+      src: url(../public/assets/fonts/Arial/ARIALLGT.woff), format('woff');
+      }
 
   a {
     /* @apply hover:text-mwsGrey; */
@@ -181,6 +193,12 @@
   --lh-cap:0.9rem;
   --lh-pMobile: 1.7rem;
   --lh-p3: 1.5rem; /* leading for serif paragraph text */
+
+
+/* paragraph for mile 10 */
+  /* letter spacing */
+  --ls-p2: -0.012em; 
+  --lh-p2: 1.28;
 
   --fs-callout: 3.1925rem;
   --lh-callout: 3.25rem;
@@ -263,6 +281,8 @@ body::-webkit-scrollbar-thumb:hover {
 body {
   scrollbar-width: thin;
   scrollbar-color: rgba(150, 150, 150, 0.4) transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
