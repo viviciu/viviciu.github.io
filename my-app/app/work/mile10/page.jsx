@@ -11,7 +11,7 @@ export default function Mile10() {
   const timeline = "Jan 2026 — Present";
 
   return (
-    <main className="block px-4 font-Arial text-p">
+    <main className="block px-4 font-Arial text-p text-[#121212] antialiased">
       {/* HERO IMAGE */}
     <div className="w-[50%] relative pt-12 mx-auto">
     <Image src="https://vstaicu-portfolio-assets.s3.us-east-2.amazonaws.com/mile10/coverimg-alpha-crop.png" alt="disc" width={500} height={500} layout="responsive" />
@@ -28,14 +28,18 @@ export default function Mile10() {
       {/* SECTION TITLE */}
       <div className="pt-12">
         <div className="text-center">Mile 10 for OEM, 2025</div>
-        <div className="text-center">4 weeks, Individual, Solidworks, Bambu, C4D</div>
-        <a href="https://drive.google.com/file/d/1B6qURWkGYWRig1GnrVh18hK8Q7n6Pm2q/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-center block underline">Full Sketchbook PDF</a>
+        <div className="text-center">6 weeks | Individual | Solidworks | Bambu | Cinema 4D</div>
+        {/* <a href="https://drive.google.com/file/d/1B6qURWkGYWRig1GnrVh18hK8Q7n6Pm2q/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-center block underline">Full Sketchbook PDF</a> */}
       </div>
 
       {/* BODY */}
-      <div className="pt-12 font-Arial text-[1.125rem] mx-[28%]">
+      <div className="pt-12 font-Arial text-[1.1rem] mx-[25%]">
 
-        <div className="text-left">A little over-engineered case that approaches quitting nicotine in a way that is visible and celebratory, supporting recovery through the occasional relapse.</div>
+        <div className="text-left leading-p2 tracking-p2">In 2024, I worked with Dar from 1x to develop designs for Neo Gamma. At the time, development had largely been completed on the body. They wanted to work on the suit and the head to bring it to a level they felt would be ready for the home.
+          <br />
+          <br />
+          
+          A coin that celebrates quitting substances—without guilt. Mile 10 makes progress permanently visible, which encourages users to keep trying even if they relapse. </div>
 
         <div className="w-[60%] mx-auto pt-12"><video
         controls
@@ -54,23 +58,13 @@ export default function Mile10() {
         <div className="pt-2 text-center font-Arial text-[.9rem] text-gray-300">process reel</div></div>
 
         <div className="p-12"></div>
-        <div className="text-left">Evidence shows that over 40% of University Students smoke nicotine, and 46% of U.S undergrads meet Substance Use Disorder criteria, yet only 5% seek help.
-          <br />
-          <br />
-          University healthcare service <i>waitlists can exceed over one month</i> until students can even begin to receive help.
-          <br />
-          <br />
-          Vapes are far from any solution, and apps fail to support recovery from relapses—once you break a streak, it can feel like all progress was lost, making it easy to completely give up. Apps are also far less visible compared to physical or human interventions.
-          <br />
-          <br />
-          How could quitting nicotine be approached in the form of progressive overload? Could progress be made permanently visible? What might encourage you to keep trying, even when you slip up? 
-          <br />
-          <br />
-          An easy to maintain solution that makes progress permanent and visible is not present in the current market. </div>
+        
 
+<div className="text-center">
+  Only 5% of college students who meet Substance Use Disorder criteria seek help.
+</div>
 
-
-        <div className="text-center mx-[-30%] text-[1.687rem] pb-40 pt-40">How could quitting nicotine become a celebratory journey? <br /> Could products sustain motivation post-relapse?</div>
+        <div className="text-center mx-[-30%] text-[1.687rem] pb-40 pt-40 leading-p2 tracking-p2">How could quitting nicotine become a celebratory journey? <br /> Could products sustain motivation post-relapse?</div>
 
       </div>
 
